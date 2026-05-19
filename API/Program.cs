@@ -1,3 +1,4 @@
+using Application.Activities.Queries;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
 
@@ -11,7 +12,8 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
     opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 builder.Services.AddCors();
-
+builder.Services.AddMediatR(mediatr =>
+    mediatr.RegisterServicesFromAssemblyContaining<GetActivitiesList.Handler>());
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -21,7 +23,7 @@ if (app.Environment.IsDevelopment())
 app.UseCors(options => options
     .AllowAnyHeader()
     .AllowAnyMethod()
-    .WithOrigins("http://localhost:3000", "https://localhost:3001"));
+    .WithOrigins("http://localhost:3000", "https://localhost:3000"));
 app.MapControllers();
 
 using var scope = app.Services.CreateScope();
