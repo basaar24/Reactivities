@@ -1,4 +1,5 @@
 using Application.Activities.Queries;
+using Domain;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
 
@@ -11,6 +12,7 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
 {
     opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+builder.Services.AddScoped<IMapper<Activity, Activity>, ActivityMapper>();
 builder.Services.AddCors();
 builder.Services.AddMediatR(mediatr =>
     mediatr.RegisterServicesFromAssemblyContaining<GetActivitiesList.Handler>());
