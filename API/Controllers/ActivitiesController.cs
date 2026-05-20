@@ -10,7 +10,7 @@ public class ActivitiesController : BaseApiController
     [HttpGet]
     public async Task<ActionResult<List<Activity>>> GetActivitiesAsync()
     {
-        return await Mediator.Send(new GetActivitiesList.Query());
+        return await Mediator.Send(new GetActivityList.Query());
     }
 
     [HttpGet("{id}")]
