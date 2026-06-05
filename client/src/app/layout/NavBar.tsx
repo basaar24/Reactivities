@@ -2,11 +2,14 @@ import { Group } from "@mui/icons-material";
 import {
   AppBar,
   Box,
-  Button,
   Container,
+  MenuItem,
+  MenuList,
   Toolbar,
   Typography,
 } from "@mui/material";
+import MenuItemLink from "../shared/components/MenuItemLink";
+import { NavLink } from "react-router";
 
 export default function NavBar() {
   return (
@@ -20,52 +23,21 @@ export default function NavBar() {
       >
         <Container maxWidth="xl">
           <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-            <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
-              <Group fontSize="large" />
-              <Typography variant="h4" sx={{ fontWeight: "bold" }}>
-                Reactivities
-              </Typography>
-            </Box>
-            <Box sx={{ display: "flex" }}>
-              <Button
-                sx={{
-                  fontSize: "1.2rem",
-                  textTransform: "uppercase",
-                  fontWeight: "bold",
-                  color: "white",
-                }}
-              >
-                Activities
-              </Button>
-              <Button
-                sx={{
-                  fontSize: "1.2rem",
-                  textTransform: "uppercase",
-                  fontWeight: "bold",
-                  color: "white",
-                }}
-              >
-                About
-              </Button>
-              <Button
-                sx={{
-                  fontSize: "1.2rem",
-                  textTransform: "uppercase",
-                  fontWeight: "bold",
-                  color: "white",
-                }}
-              >
-                Contact
-              </Button>
-            </Box>
-            <Button
-              onClick={() => {}}
-              size="large"
-              variant="contained"
-              color="warning"
-            >
-              Create Activity
-            </Button>
+            <MenuList disablePadding>
+              <MenuItem component={NavLink} to="/" sx={{ display: "flex", gap: 2 }}>
+                <Group fontSize="large" />
+                <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+                  Reactivities
+                </Typography>
+              </MenuItem>
+            </MenuList>
+            <MenuList disablePadding sx={{ display: "flex" }}>
+              <MenuItemLink to="/activities">Activities</MenuItemLink>
+              <MenuItemLink to="/createActivity">Create Activity</MenuItemLink>
+            </MenuList>
+            <MenuList disablePadding>
+              <MenuItem>User menu</MenuItem>
+            </MenuList>
           </Toolbar>
         </Container>
       </AppBar>
