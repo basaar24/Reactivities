@@ -43,16 +43,31 @@ Every API action follows the pattern: **Controller → MediatR → Handler → D
 
 ```
 client/src/
-├── app/layout/          # App shell: App.tsx (root state), NavBar.tsx
-├── features/activities/ # Feature slices: dashboard/, details/, form/
+├── app/
+│   ├── layout/          # App shell: App.tsx (outlet wrapper), NavBar.tsx
+│   ├── router/Routes.tsx # React Router v7 browser router definition
+│   └── shared/components/MenuItemLink.tsx  # NavLink-wrapped MUI MenuItem
+├── features/
+│   ├── activities/      # Feature slices: dashboard/, details/, form/
+│   └── home/HomePage.tsx
 └── lib/
     ├── api/agent.tsx    # Axios instance; base URL from VITE_API_URL env var
     └── hooks/useActivities.tsx  # All React Query hooks for activities
 ```
 
+**Routing** uses React Router v7 (`createBrowserRouter`). `App.tsx` is the root layout component rendering `<Outlet />`; it no longer holds local activity state.
+
 **Server state** is managed entirely with TanStack React Query v5. The `useActivities` hook exposes queries and mutations; components do not call Axios directly.
 
-**Local UI state** (selected activity, edit mode) lives in `App.tsx` and is passed down as props — no global state manager.
+**Route structure:**
+
+| Path | Component |
+|---|---|
+| `/` | `HomePage` |
+| `/activities` | `ActivityDashboard` |
+| `/activities/:id` | `ActivityDetails` |
+| `/createActivity` | `ActivityForm` (create mode) |
+| `/manage/:id` | `ActivityForm` (edit mode) |
 
 ### API Routes
 
@@ -73,3 +88,4 @@ Base path: `/api/activities`
 - **HTTPS required locally**: Vite uses `vite-plugin-mkcert` for self-signed certs. The `.env.development` sets `VITE_API_URL=https://localhost:5001/api`.
 - **TypeScript strict mode**: no implicit `any`, no unused locals/parameters — the build will fail on type errors.
 - **Database seeding**: `DbInitializer.SeedData()` runs on every startup if the database is empty; no manual seed step needed.
+- **No global state manager**: routing replaced the `App.tsx` selected-activity / edit-mode local state. Navigation between views uses React Router instead of prop drilling.

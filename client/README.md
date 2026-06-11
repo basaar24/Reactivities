@@ -1,75 +1,66 @@
-# React + TypeScript + Vite
+# 🎯 Reactivities — React Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React + TypeScript + Vite frontend for the Reactivities activity management app.
 
-Currently, two official plugins are available:
+## 🛠️ Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+| Library | Purpose |
+|---|---|
+| ⚛️ React 19 + TypeScript | UI framework |
+| ⚡ Vite + `vite-plugin-mkcert` | Dev server with local HTTPS |
+| 🔀 React Router v7 | Client-side routing |
+| 🔄 TanStack React Query v5 | Server state / data fetching |
+| 🎨 MUI (Material UI) | Component library |
+| 🌐 Axios | HTTP client |
 
-## React Compiler
+## 🚀 Getting Started
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev      # https://localhost:3000
+npm run build    # TypeScript compile + Vite bundle
+npm run lint     # ESLint check
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+The API must be running at `https://localhost:5001` (set in `.env.development` via `VITE_API_URL`).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📁 Project Structure
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+src/
+├── app/
+│   ├── layout/
+│   │   ├── App.tsx              # Root layout — renders <Outlet />
+│   │   └── NavBar.tsx           # Top nav bar with route links
+│   ├── router/
+│   │   └── Routes.tsx           # createBrowserRouter route definitions
+│   └── shared/components/
+│       └── MenuItemLink.tsx     # NavLink-wrapped MUI MenuItem
+├── features/
+│   ├── activities/
+│   │   ├── dashboard/           # ActivityDashboard, ActivityList, ActivityCard
+│   │   ├── details/             # ActivityDetails
+│   │   └── form/                # ActivityForm (create + edit)
+│   └── home/
+│       └── HomePage.tsx
+└── lib/
+    ├── api/agent.tsx            # Axios instance (1s artificial delay interceptor)
+    ├── hooks/useActivities.tsx  # All React Query hooks
+    └── types/index.d.ts         # Shared TypeScript types
+```
+
+## 🗺️ Routes
+
+| Path | Component | Notes |
+|---|---|---|
+| `/` | `HomePage` | 🏠 Landing page |
+| `/activities` | `ActivityDashboard` | 📋 List of all activities |
+| `/activities/:id` | `ActivityDetails` | 🔍 Read-only detail view |
+| `/createActivity` | `ActivityForm` | ✏️ Create mode |
+| `/manage/:id` | `ActivityForm` | 🛠️ Edit mode |
+
+## 🧠 State Management
+
+- 🔄 **Server state** — TanStack React Query v5 via `useActivities` hook. Components never call Axios directly.
+- 🚫 **No global client state** — navigation between views uses React Router; there is no Redux or Zustand.
+- ♻️ **Cache invalidation** — create/update/delete mutations invalidate the `["activities"]` query key to trigger a refetch.

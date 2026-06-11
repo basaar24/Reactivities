@@ -43,13 +43,33 @@ Reactivities/
 ├── Persistence/  # EF Core DbContext + migrations
 └── client/       # React + Vite frontend
     └── src/
-        ├── app/layout/           # App shell and navigation
-        ├── features/activities/  # Activity UI (dashboard, details, form)
-        └── lib/                  # Axios agent and React Query hooks
+        ├── app/
+        │   ├── layout/           # App.tsx (root layout) + NavBar.tsx
+        │   ├── router/           # React Router v7 route definitions
+        │   └── shared/           # Shared UI components (MenuItemLink)
+        ├── features/
+        │   ├── activities/       # dashboard/, details/, form/
+        │   └── home/             # HomePage
+        └── lib/
+            ├── api/              # Axios instance (agent.tsx)
+            ├── hooks/            # useActivities React Query hooks
+            └── types/            # Shared TypeScript types
 ```
+
+## 🗺️ Routes
+
+| Path | Component | Notes |
+|---|---|---|
+| `/` | `HomePage` | Landing page |
+| `/activities` | `ActivityDashboard` | List all activities |
+| `/activities/:id` | `ActivityDetails` | Read-only detail view |
+| `/createActivity` | `ActivityForm` | Create mode |
+| `/manage/:id` | `ActivityForm` | Edit mode |
 
 ## 🏗️ Architecture
 
-The backend follows **clean architecture** with the CQRS pattern via MediatR. Controllers are thin — they forward requests to MediatR handlers which contain all business logic.
+**Backend** follows clean architecture with the CQRS pattern via MediatR. Controllers are thin — they delegate all logic to MediatR handlers via `Mediator.Send()`.
 
-The frontend uses **TanStack React Query** for all server state (fetching, caching, mutations). Components interact with the API exclusively through the `useActivities` custom hook.
+**Frontend** uses React Router v7 for navigation (no local state in `App.tsx`) and TanStack React Query v5 for all server state. Components interact with the API exclusively through the `useActivities` hook — never calling Axios directly.
+
+**API routes** are all under `/api/activities` and support GET list, GET by id, POST, PUT, and DELETE.
