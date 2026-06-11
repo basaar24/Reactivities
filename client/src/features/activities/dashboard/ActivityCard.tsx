@@ -8,6 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import { useActivities } from "../../../lib/hooks/useActivities";
+import { useNavigate } from "react-router";
 
 type Props = {
   activity: Activity;
@@ -15,6 +16,7 @@ type Props = {
 
 export default function ActivityCard({ activity }: Props) {
   const { deleteActivity } = useActivities();
+  const navigate = useNavigate();
 
   return (
     <Card sx={{ borderRadius: 3 }}>
@@ -34,7 +36,7 @@ export default function ActivityCard({ activity }: Props) {
         <Chip label={activity.category} variant="outlined" />
         <Box sx={{ display: "flex", gap: 1 }}>
           <Button
-            onClick={() => {}}
+            onClick={() => navigate(`/activities/${activity.id}`)}
             size="medium"
             variant="contained"
           >
