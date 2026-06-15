@@ -66,6 +66,24 @@ Reactivities/
 | `/createActivity` | `ActivityForm` | Create mode |
 | `/manage/:id` | `ActivityForm` | Edit mode |
 
+## 🧹 Code Quality
+
+| Tool | Purpose |
+|---|---|
+| ESLint 10 (flat config) | Linting — TypeScript + React rules |
+| Prettier 3 | Formatting — enforced via pre-commit |
+| Husky 9 | Git hooks runner |
+| lint-staged | Scopes pre-commit checks to staged files only |
+
+```bash
+cd client
+npm run lint          # ESLint check
+npm run format        # Prettier — format all files
+npm run format:check  # Prettier — check without writing (CI)
+```
+
+On every `git commit`, Husky runs lint-staged which applies `eslint --fix` and `prettier --write` to staged `.ts`/`.tsx` files automatically.
+
 ## 🏗️ Architecture
 
 **Backend** follows clean architecture with the CQRS pattern via MediatR. Controllers are thin — they delegate all logic to MediatR handlers via `Mediator.Send()`.

@@ -15,9 +15,11 @@ dotnet ef database update --project Persistence --startup-project API
 ### Frontend (React + Vite)
 ```bash
 cd client
-npm run dev      # Start dev server on https://localhost:3000
-npm run build    # TypeScript compile + Vite bundle
-npm run lint     # ESLint check
+npm run dev           # Start dev server on https://localhost:3000
+npm run build         # TypeScript compile + Vite bundle
+npm run lint          # ESLint check
+npm run format        # Prettier — rewrite all files
+npm run format:check  # Prettier — check only (CI)
 ```
 
 Both servers must run simultaneously for development. The API auto-seeds the SQLite database on startup.
@@ -89,3 +91,4 @@ Base path: `/api/activities`
 - **TypeScript strict mode**: no implicit `any`, no unused locals/parameters — the build will fail on type errors.
 - **Database seeding**: `DbInitializer.SeedData()` runs on every startup if the database is empty; no manual seed step needed.
 - **No global state manager**: routing replaced the `App.tsx` selected-activity / edit-mode local state. Navigation between views uses React Router instead of prop drilling.
+- **Prettier + Husky**: `client/.prettierrc` enforces formatting (single quotes, no semis, 100-char width). Husky's pre-commit hook lives at `.husky/pre-commit` in the repo root (not inside `client/`) because `.git` is at the repo root. The hook runs `cd client && npx lint-staged`, which applies `eslint --fix` and `prettier --write` to staged `.ts`/`.tsx` files. The `prepare` script in `client/package.json` is `cd .. && husky` for the same reason.
