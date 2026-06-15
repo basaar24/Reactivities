@@ -1,4 +1,4 @@
-import { AccessTime, Place } from "@mui/icons-material";
+import { AccessTime, Place } from '@mui/icons-material'
 import {
   Avatar,
   Box,
@@ -9,36 +9,36 @@ import {
   Chip,
   Divider,
   Typography,
-} from "@mui/material";
-import { Link, useNavigate } from "react-router";
-import { formatDate } from "../../../lib/util/util";
+} from '@mui/material'
+import { Link, useNavigate } from 'react-router'
+import { formatDate } from '../../../lib/util/util'
 
 type Props = {
-  activity: Activity;
-};
+  activity: Activity
+}
 
 export default function ActivityCard({ activity }: Props) {
-  const navigate = useNavigate();
-  const isHost = false;
-  const isGoing = false;
-  const isCancelled = false;
-  const label = isHost ? "You are hosting" : "You are going";
-  const color = isHost ? "secondary" : isGoing ? "warning" : "default";
+  const navigate = useNavigate()
+  const isHost = false
+  const isGoing = false
+  const isCancelled = false
+  const label = isHost ? 'You are hosting' : 'You are going'
+  const color = isHost ? 'secondary' : isGoing ? 'warning' : 'default'
 
   return (
     <Card elevation={3} sx={{ borderRadius: 3 }}>
       <Box
         sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
         }}
       >
         <CardHeader
           avatar={<Avatar sx={{ height: 80, width: 80 }} />}
           title={activity.title}
           titleTypographyProps={{
-            fontWeight: "bold",
+            fontWeight: 'bold',
             fontSize: 20,
           }}
           subheader={
@@ -49,18 +49,14 @@ export default function ActivityCard({ activity }: Props) {
         />
         <Box
           sx={{
-            display: "flex",
-            flexDirection: "column",
+            display: 'flex',
+            flexDirection: 'column',
             gap: 2,
             mr: 2,
           }}
         >
-          {(isHost || isGoing) && (
-            <Chip label={label} color={color} sx={{ borderRadius: 2 }} />
-          )}
-          {isCancelled && (
-            <Chip label="Cancelled" color="error" sx={{ borderRadius: 2 }} />
-          )}
+          {(isHost || isGoing) && <Chip label={label} color={color} sx={{ borderRadius: 2 }} />}
+          {isCancelled && <Chip label="Cancelled" color="error" sx={{ borderRadius: 2 }} />}
         </Box>
       </Box>
 
@@ -69,27 +65,29 @@ export default function ActivityCard({ activity }: Props) {
       <CardContent sx={{ p: 0 }}>
         <Box
           sx={{
-            display: "flex",
-            alignItems: "center",
+            display: 'flex',
+            alignItems: 'center',
             mb: 2,
             px: 2,
           }}
         >
-          <Box sx={{display: "flex", flexGrow: 0}}>
+          <Box sx={{ display: 'flex', flexGrow: 0 }}>
             <AccessTime sx={{ mr: 1 }} />
             <Typography variant="body2" noWrap>
               {formatDate(activity.date)}
             </Typography>
           </Box>
           <Place sx={{ ml: 3, mr: 1 }} />
-          <Typography variant="body2" noWrap>{activity.venue}</Typography>
+          <Typography variant="body2" noWrap>
+            {activity.venue}
+          </Typography>
         </Box>
         <Divider />
         <Box
           sx={{
-            display: "flex",
+            display: 'flex',
             gap: 2,
-            backgroundColor: "grey.200",
+            backgroundColor: 'grey.200',
             py: 3,
             pl: 3,
           }}
@@ -105,11 +103,11 @@ export default function ActivityCard({ activity }: Props) {
           onClick={() => navigate(`/activities/${activity.id}`)}
           size="medium"
           variant="contained"
-          sx={{ display: "flex", justifySelf: "self-end", borderRadius: 3 }}
+          sx={{ display: 'flex', justifySelf: 'self-end', borderRadius: 3 }}
         >
           View
         </Button>
       </CardContent>
     </Card>
-  );
+  )
 }

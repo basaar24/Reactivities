@@ -1,29 +1,29 @@
-import { Card, Badge, CardMedia, Box, Typography, Button } from "@mui/material";
-import { Link } from "react-router";
-import { formatDate } from "../../../lib/util/util";
+import { Card, Badge, CardMedia, Box, Typography, Button } from '@mui/material'
+import { Link } from 'react-router'
+import { formatDate } from '../../../lib/util/util'
 
 type Props = {
-  activity: Activity;
-};
+  activity: Activity
+}
 
 export default function ActivityDetailsHeader({ activity }: Props) {
-  const isCancelled = false;
-  const isHost = true;
-  const isGoing = true;
-  const loading = false;
+  const isCancelled = false
+  const isHost = true
+  const isGoing = true
+  const loading = false
 
   return (
     <Card
       sx={{
-        position: "relative",
+        position: 'relative',
         mb: 2,
-        backgroundColor: "transparent",
-        overflow: "hidden",
+        backgroundColor: 'transparent',
+        overflow: 'hidden',
       }}
     >
       {isCancelled && (
         <Badge
-          sx={{ position: "absolute", left: 40, top: 20, zIndex: 1000 }}
+          sx={{ position: 'absolute', left: 40, top: 20, zIndex: 1000 }}
           color="error"
           badgeContent="Cancelled"
         />
@@ -36,47 +36,43 @@ export default function ActivityDetailsHeader({ activity }: Props) {
       />
       <Box
         sx={{
-          position: "absolute",
+          position: 'absolute',
           bottom: 0,
-          width: "100%",
-          color: "white",
+          width: '100%',
+          color: 'white',
           padding: 2,
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          alignItems: "flex-end",
-          background:
-            "linear-gradient(to top, rgba(0, 0, 0, 1.0), transparent)",
-          boxSizing: "border-box",
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignItems: 'flex-end',
+          background: 'linear-gradient(to top, rgba(0, 0, 0, 1.0), transparent)',
+          boxSizing: 'border-box',
         }}
       >
         {/* Text Section */}
         <Box>
-          <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+          <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
             {activity.title}
           </Typography>
           <Typography variant="subtitle1">{formatDate(activity.date)}</Typography>
           <Typography variant="subtitle2">
-            Hosted by{" "}
-            <Link
-              to={`/profiles/username`}
-              style={{ color: "white", fontWeight: "bold" }}
-            >
+            Hosted by{' '}
+            <Link to={`/profiles/username`} style={{ color: 'white', fontWeight: 'bold' }}>
               Bob
             </Link>
           </Typography>
         </Box>
 
         {/* Buttons aligned to the right */}
-        <Box sx={{ display: "flex", gap: 2 }}>
+        <Box sx={{ display: 'flex', gap: 2 }}>
           {isHost ? (
             <>
               <Button
                 variant="contained"
-                color={isCancelled ? "success" : "error"}
+                color={isCancelled ? 'success' : 'error'}
                 onClick={() => {}}
               >
-                {isCancelled ? "Re-activate Activity" : "Cancel Activity"}
+                {isCancelled ? 'Re-activate Activity' : 'Cancel Activity'}
               </Button>
               <Button
                 variant="contained"
@@ -91,15 +87,15 @@ export default function ActivityDetailsHeader({ activity }: Props) {
           ) : (
             <Button
               variant="contained"
-              color={isGoing ? "primary" : "info"}
+              color={isGoing ? 'primary' : 'info'}
               onClick={() => {}}
               disabled={isCancelled || loading}
             >
-              {isGoing ? "Cancel Attendance" : "Join Activity"}
+              {isGoing ? 'Cancel Attendance' : 'Join Activity'}
             </Button>
           )}
         </Box>
       </Box>
     </Card>
-  );
+  )
 }

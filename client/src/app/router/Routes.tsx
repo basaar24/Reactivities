@@ -1,23 +1,23 @@
-import { createBrowserRouter } from "react-router";
-import App from "../layout/App";
-import HomePage from "../../features/home/HomePage";
-import ActivityDashboard from "../../features/activities/dashboard/ActivityDashboard";
-import ActivityForm from "../../features/activities/form/ActivityForm";
-import ActivityDetailsPage from "../../features/activities/details/ActivityDetailsPage";
+import { createBrowserRouter } from 'react-router'
+import App from '../layout/App'
+import HomePage from '../../features/home/HomePage'
+import ActivityDashboard from '../../features/activities/dashboard/ActivityDashboard'
+import ActivityForm from '../../features/activities/form/ActivityForm'
+import ActivityDetailsPage from '../../features/activities/details/ActivityDetailsPage'
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
     children: [
-      { path: "", element: <HomePage /> },
-      { path: "activities", element: <ActivityDashboard key="activities" /> },
+      { path: '', element: <HomePage /> },
+      { path: 'activities', element: <ActivityDashboard key="activities" /> },
       {
-        path: "activities/:id",
+        path: 'activities/:id',
         element: <ActivityDetailsPage key="activitiesId" />,
       },
-      { path: "createActivity", element: <ActivityForm key="create" /> },
-      { path: "manage/:id", element: <ActivityForm key="manage" /> },
+      { path: 'createActivity', element: <ActivityForm key="create" /> },
+      { path: 'manage/:id', element: <ActivityForm key="manage" /> },
     ],
   },
-]);
+])

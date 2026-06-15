@@ -8,31 +8,31 @@ import {
   Avatar,
   ListItemText,
   Grid,
-} from "@mui/material";
+} from '@mui/material'
 
 export default function ActivityDetailsSidebar() {
-  const following = true;
-  const isHost = true;
+  const following = true
+  const isHost = true
   return (
     <>
       <Paper
         sx={{
-          textAlign: "center",
-          border: "none",
-          backgroundColor: "primary.main",
-          color: "white",
+          textAlign: 'center',
+          border: 'none',
+          backgroundColor: 'primary.main',
+          color: 'white',
           p: 2,
         }}
       >
         <Typography variant="h6">2 people going</Typography>
       </Paper>
       <Paper sx={{ padding: 2 }}>
-        <Grid container sx={{ alignItems: "center" }}>
+        <Grid container sx={{ alignItems: 'center' }}>
           <Grid size={8}>
-            <List sx={{ display: "flex", flexDirection: "column" }}>
+            <List sx={{ display: 'flex', flexDirection: 'column' }}>
               <ListItem>
                 <ListItemAvatar>
-                  <Avatar alt={"attendee name"} src={"/assets/user.png"} />
+                  <Avatar alt={'attendee name'} src={'/assets/user.png'} />
                 </ListItemAvatar>
                 <ListItemText>
                   <Typography variant="h6">Bob</Typography>
@@ -43,22 +43,17 @@ export default function ActivityDetailsSidebar() {
           <Grid
             size={4}
             sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "flex-end",
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'flex-end',
               gap: 1,
             }}
           >
             {isHost && (
-              <Chip
-                label="Host"
-                color="warning"
-                variant="filled"
-                sx={{ borderRadius: 2 }}
-              />
+              <Chip label="Host" color="warning" variant="filled" sx={{ borderRadius: 2 }} />
             )}
             {following && (
-              <Typography variant="body2" sx={{ color: "orange" }}>
+              <Typography variant="body2" sx={{ color: 'orange' }}>
                 Following
               </Typography>
             )}
@@ -66,5 +61,5 @@ export default function ActivityDetailsSidebar() {
         </Grid>
       </Paper>
     </>
-  );
+  )
 }

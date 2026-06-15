@@ -1,15 +1,15 @@
-import { Box, Container, CssBaseline } from "@mui/material";
-import NavBar from "./NavBar";
-import { Outlet, useLocation } from "react-router";
-import HomePage from "../../features/home/HomePage";
+import { Box, Container, CssBaseline } from '@mui/material'
+import NavBar from './NavBar'
+import { Outlet, useLocation } from 'react-router'
+import HomePage from '../../features/home/HomePage'
 
 function App() {
-  const location = useLocation();
+  const location = useLocation()
 
   return (
-    <Box sx={{ bgcolor: "#eeeeee", minHeight: "100vh" }}>
+    <Box sx={{ bgcolor: '#eeeeee', minHeight: '100vh' }}>
       <CssBaseline />
-      {location.pathname === "/" ? (
+      {location.pathname === '/' ? (
         <HomePage />
       ) : (
         <>
@@ -20,7 +20,7 @@ function App() {
         </>
       )}
     </Box>
-  );
+  )
 }
 
-export default App;
+export default App

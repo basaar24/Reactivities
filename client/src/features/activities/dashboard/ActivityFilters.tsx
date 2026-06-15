@@ -1,29 +1,20 @@
-import { Event, FilterList } from "@mui/icons-material";
-import {
-  Box,
-  ListItemText,
-  MenuItem,
-  MenuList,
-  Paper,
-  Typography,
-} from "@mui/material";
-import "react-calendar/dist/Calendar.css";
-import Calendar from "react-calendar";
+import { Event, FilterList } from '@mui/icons-material'
+import { Box, ListItemText, MenuItem, MenuList, Paper, Typography } from '@mui/material'
+import 'react-calendar/dist/Calendar.css'
+import Calendar from 'react-calendar'
 
 export default function ActivityFilters() {
   return (
-    <Box
-      sx={{ display: "flex", flexDirection: "column", gap: 3, borderRadius: 3 }}
-    >
+    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3, borderRadius: 3 }}>
       <Paper sx={{ p: 3, borderRadius: 3 }}>
-        <Box sx={{ width: "100%" }}>
+        <Box sx={{ width: '100%' }}>
           <Typography
             variant="h6"
             sx={{
-              display: "flex",
-              alignItems: "center",
+              display: 'flex',
+              alignItems: 'center',
               mb: 1,
-              color: "primary.main",
+              color: 'primary.main',
             }}
           >
             <FilterList sx={{ mr: 1 }} />
@@ -42,14 +33,14 @@ export default function ActivityFilters() {
           </MenuList>
         </Box>
       </Paper>
-      <Box component={Paper} sx={{ width: "100%", p: 3, borderRadius: 3 }}>
+      <Box component={Paper} sx={{ width: '100%', p: 3, borderRadius: 3 }}>
         <Typography
           variant="h6"
           sx={{
-            display: "flex",
-            alignItems: "center",
+            display: 'flex',
+            alignItems: 'center',
             mb: 1,
-            color: "primary.main",
+            color: 'primary.main',
           }}
         >
           <Event sx={{ mr: 1 }} />
@@ -58,5 +49,5 @@ export default function ActivityFilters() {
         <Calendar />
       </Box>
     </Box>
-  );
+  )
 }

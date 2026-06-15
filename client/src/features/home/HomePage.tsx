@@ -1,31 +1,30 @@
-import { Group } from "@mui/icons-material";
-import { Box, Button, Paper, Typography } from "@mui/material";
-import { useNavigate } from "react-router";
+import { Group } from '@mui/icons-material'
+import { Box, Button, Paper, Typography } from '@mui/material'
+import { useNavigate } from 'react-router'
 
 export default function HomePage() {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   return (
     <Paper
       sx={{
-        color: "white",
-        display: "flex",
-        flexDirection: "column",
+        color: 'white',
+        display: 'flex',
+        flexDirection: 'column',
         gap: 6,
-        alignItems: "center",
-        alignContent: "center",
-        justifyContent: "center",
-        height: "100vh",
-        backgroundImage:
-          "linear-gradient(135deg, #182a73 0%, #218aae 69%, #20a7ac 89%)",
+        alignItems: 'center',
+        alignContent: 'center',
+        justifyContent: 'center',
+        height: '100vh',
+        backgroundImage: 'linear-gradient(135deg, #182a73 0%, #218aae 69%, #20a7ac 89%)',
       }}
     >
       <Box
         sx={{
-          display: "flex",
-          alignItems: "center",
-          alignContent: "center",
-          color: "white",
+          display: 'flex',
+          alignItems: 'center',
+          alignContent: 'center',
+          color: 'white',
           gap: 3,
         }}
       >
@@ -34,13 +33,13 @@ export default function HomePage() {
       </Box>
       <Typography variant="h2">Welcome to reactivities</Typography>
       <Button
-        onClick={() => navigate("/activities")}
+        onClick={() => navigate('/activities')}
         size="large"
         variant="contained"
-        sx={{ height: 80, borderRadius: 4, fontSize: "1.5rem" }}
+        sx={{ height: 80, borderRadius: 4, fontSize: '1.5rem' }}
       >
         Take me to the activities!
       </Button>
     </Paper>
-  );
+  )
 }

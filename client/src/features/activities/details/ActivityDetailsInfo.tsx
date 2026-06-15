@@ -1,15 +1,15 @@
-import { CalendarToday, Info, Place } from "@mui/icons-material";
-import { Divider, Grid, Paper, Typography } from "@mui/material";
-import { formatDate } from "../../../lib/util/util";
+import { CalendarToday, Info, Place } from '@mui/icons-material'
+import { Divider, Grid, Paper, Typography } from '@mui/material'
+import { formatDate } from '../../../lib/util/util'
 
 type Props = {
-  activity: Activity;
-};
+  activity: Activity
+}
 
 export default function ActivityDetailsInfo({ activity }: Props) {
   return (
     <Paper sx={{ mb: 2 }}>
-      <Grid container sx={{ alignItems: "center", pl: 2, py: 1 }}>
+      <Grid container sx={{ alignItems: 'center', pl: 2, py: 1 }}>
         <Grid size={1}>
           <Info color="info" fontSize="large" />
         </Grid>
@@ -18,7 +18,7 @@ export default function ActivityDetailsInfo({ activity }: Props) {
         </Grid>
       </Grid>
       <Divider />
-      <Grid container sx={{ alignItems: "center", pl: 2, py: 1 }}>
+      <Grid container sx={{ alignItems: 'center', pl: 2, py: 1 }}>
         <Grid size={1}>
           <CalendarToday color="info" fontSize="large" />
         </Grid>
@@ -28,7 +28,7 @@ export default function ActivityDetailsInfo({ activity }: Props) {
       </Grid>
       <Divider />
 
-      <Grid container sx={{ alignItems: "center", pl: 2, py: 1 }}>
+      <Grid container sx={{ alignItems: 'center', pl: 2, py: 1 }}>
         <Grid size={1}>
           <Place color="info" fontSize="large" />
         </Grid>
@@ -39,5 +39,5 @@ export default function ActivityDetailsInfo({ activity }: Props) {
         </Grid>
       </Grid>
     </Paper>
-  );
+  )
 }

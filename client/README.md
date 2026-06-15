@@ -4,14 +4,14 @@ React + TypeScript + Vite frontend for the Reactivities activity management app.
 
 ## 🛠️ Tech Stack
 
-| Library | Purpose |
-|---|---|
-| ⚛️ React 19 + TypeScript | UI framework |
-| ⚡ Vite + `vite-plugin-mkcert` | Dev server with local HTTPS |
-| 🔀 React Router v7 | Client-side routing |
-| 🔄 TanStack React Query v5 | Server state / data fetching |
-| 🎨 MUI (Material UI) | Component library |
-| 🌐 Axios | HTTP client |
+| Library                        | Purpose                      |
+| ------------------------------ | ---------------------------- |
+| ⚛️ React 19 + TypeScript       | UI framework                 |
+| ⚡ Vite + `vite-plugin-mkcert` | Dev server with local HTTPS  |
+| 🔀 React Router v7             | Client-side routing          |
+| 🔄 TanStack React Query v5     | Server state / data fetching |
+| 🎨 MUI (Material UI)           | Component library            |
+| 🌐 Axios                       | HTTP client                  |
 
 ## 🚀 Getting Started
 
@@ -51,13 +51,13 @@ src/
 
 ## 🗺️ Routes
 
-| Path | Component | Notes |
-|---|---|---|
-| `/` | `HomePage` | 🏠 Landing page |
-| `/activities` | `ActivityDashboard` | 📋 List of all activities |
-| `/activities/:id` | `ActivityDetails` | 🔍 Read-only detail view |
-| `/createActivity` | `ActivityForm` | ✏️ Create mode |
-| `/manage/:id` | `ActivityForm` | 🛠️ Edit mode |
+| Path              | Component           | Notes                     |
+| ----------------- | ------------------- | ------------------------- |
+| `/`               | `HomePage`          | 🏠 Landing page           |
+| `/activities`     | `ActivityDashboard` | 📋 List of all activities |
+| `/activities/:id` | `ActivityDetails`   | 🔍 Read-only detail view  |
+| `/createActivity` | `ActivityForm`      | ✏️ Create mode            |
+| `/manage/:id`     | `ActivityForm`      | 🛠️ Edit mode              |
 
 ## 🧠 State Management
 
