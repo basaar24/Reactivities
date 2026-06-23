@@ -8,7 +8,7 @@ A full-stack activity management app built with **React 19 + TypeScript** on the
 |---|---|
 | 🎨 Frontend | React 19, TypeScript, Vite, Material UI |
 | 🔄 State / Data | TanStack React Query v5, Axios |
-| ⚙️ Backend | ASP.NET Core 10, MediatR (CQRS) |
+| ⚙️ Backend | ASP.NET Core 10, MediatR (CQRS), AutoMapper |
 | 🗄️ Database | SQLite via Entity Framework Core 10 |
 
 ## 🚀 Getting Started
@@ -19,8 +19,9 @@ A full-stack activity management app built with **React 19 + TypeScript** on the
 
 ### Running the app
 
-**⚙️ Backend** (from repo root):
+**⚙️ Backend** (from `backend/`):
 ```bash
+cd backend
 dotnet run --project API
 ```
 API runs at `https://localhost:5001`. The database is created and seeded automatically on first run.
@@ -37,11 +38,13 @@ App runs at `https://localhost:3000`.
 
 ```
 Reactivities/
-├── API/          # ASP.NET Core controllers
-├── Application/  # MediatR CQRS handlers (business logic)
-├── Domain/       # Core entities
-├── Persistence/  # EF Core DbContext + migrations
-└── client/       # React + Vite frontend
+├── backend/
+│   ├── API/          # ASP.NET Core controllers
+│   ├── Application/  # MediatR handlers + request DTOs + AutoMapper profiles
+│   ├── Domain/       # Core entities
+│   ├── Persistence/  # EF Core DbContext + migrations
+│   └── Tests/        # Bruno integration tests
+└── client/           # React + Vite frontend
     └── src/
         ├── app/
         │   ├── layout/           # App.tsx (root layout) + NavBar.tsx
@@ -86,7 +89,7 @@ On every `git commit`, Husky runs lint-staged which applies `eslint --fix` and `
 
 ## 🏗️ Architecture
 
-**Backend** follows clean architecture with the CQRS pattern via MediatR. Controllers are thin — they delegate all logic to MediatR handlers via `Mediator.Send()`.
+**Backend** follows clean architecture with the CQRS pattern via MediatR. Controllers are thin — they delegate all logic to MediatR handlers via `Mediator.Send()`. AutoMapper maps request DTOs (e.g. `CreateActivityRequest`) to domain entities, keeping validation attributes off the `Activity` entity.
 
 **Frontend** uses React Router v7 for navigation (no local state in `App.tsx`) and TanStack React Query v5 for all server state. Components interact with the API exclusively through the `useActivities` hook — never calling Axios directly.
 
