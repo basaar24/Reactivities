@@ -6,6 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### Backend (.NET 10)
 ```bash
+cd backend
 dotnet build                          # Build all projects
 dotnet run --project API              # Start API server (https://localhost:5001)
 dotnet ef migrations add <Name> --project Persistence --startup-project API
@@ -30,16 +31,20 @@ This is a full-stack activity management app using **clean architecture** on the
 
 ### Backend — Clean Architecture + CQRS
 
-Four C# projects in `Reactivities.slnx`:
+Four C# projects in `backend/Reactivities.slnx`:
 
 | Project | Role |
 |---|---|
 | `API` | ASP.NET Core controllers; thin — delegates all logic to MediatR |
-| `Application` | MediatR handlers (Queries + Commands); business logic lives here |
+| `Application` | MediatR handlers (Queries + Commands) + request DTOs + AutoMapper profiles |
 | `Domain` | `Activity` entity and core models; no dependencies |
 | `Persistence` | EF Core `AppDbContext` with SQLite; migrations in `Persistence/Migrations/` |
 
 Every API action follows the pattern: **Controller → MediatR → Handler → DbContext**. Controllers call `Mediator.Send()` and return the result directly.
+
+**AutoMapper** (`Application/Core/Mappings/MappingProfiles.cs`) maps `CreateActivityRequest → Activity` and `Activity → Activity`. Registered in `Program.cs` via `AddAutoMapper`.
+
+**Request DTOs** live in `Application/Activities/Requests/`. `CreateActivityRequest` is used for POST to keep validation attributes off the domain entity.
 
 ### Frontend — Feature-Based React
 
