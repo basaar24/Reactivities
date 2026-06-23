@@ -1,3 +1,4 @@
+using AutoMapper;
 using Domain;
 using MediatR;
 using Persistence;
@@ -11,7 +12,7 @@ public class UpdateActivity
         public required Activity Activity { get; set; }
     }
 
-    public class Handler(AppDbContext context, IMapper<Activity, Activity> mapper) : IRequestHandler<Command>
+    public class Handler(AppDbContext context, IMapper mapper) : IRequestHandler<Command>
     {
         public async Task Handle(Command request, CancellationToken cancellationToken)
         {
