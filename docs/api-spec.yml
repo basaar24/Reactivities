@@ -1,0 +1,248 @@
+openapi: 3.0.3
+info:
+  title: Reactivities API
+  version: 1.0.0
+  description: >
+    Activity management REST API built with ASP.NET Core 10, MediatR (CQRS),
+    Entity Framework Core 10, and SQLite. All endpoints are under /api/activities.
+  contact:
+    email: basaar.24@gmail.com
+
+servers:
+  - url: https://localhost:5001/api
+    description: Local development (HTTPS — self-signed cert, use -k with curl)
+
+paths:
+  /activities:
+    get:
+      summary: Get all activities
+      operationId: getActivityList
+      tags: [Activities]
+      responses:
+        '200':
+          description: List of all activities
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Activity'
+              example:
+                - id: "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+                  title: "Future Music Festival"
+                  date: "2026-10-15T18:00:00"
+                  description: "An outdoor music festival in London."
+                  category: "music"
+                  isCancelled: false
+                  city: "London"
+                  venue: "Hyde Park"
+                  latitude: 51.5074
+                  longitude: -0.1278
+
+    post:
+      summary: Create a new activity
+      operationId: createActivity
+      tags: [Activities]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ActivityRequest'
+            example:
+              title: "Craft Beer Tasting"
+              date: "2026-09-20T19:00:00"
+              description: "Sample craft beers from local breweries."
+              category: "drinks"
+              city: "London"
+              venue: "The Craft House"
+              latitude: 51.5120
+              longitude: -0.0982
+      responses:
+        '200':
+          description: The GUID of the newly created activity (plain string, not JSON object)
+          content:
+            application/json:
+              schema:
+                type: string
+                format: uuid
+              example: "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+        '400':
+          description: Validation error — one or more required fields missing
+
+  /activities/{id}:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        description: Activity GUID
+        schema:
+          type: string
+          format: uuid
+
+    get:
+      summary: Get a single activity by ID
+      operationId: getActivityDetails
+      tags: [Activities]
+      responses:
+        '200':
+          description: The activity with the given ID
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Activity'
+        '404':
+          description: Activity not found
+
+    put:
+      summary: Update an existing activity
+      operationId: updateActivity
+      tags: [Activities]
+      description: >
+        Replaces all writable fields on the activity identified by the `id` path parameter.
+        The request body must include the full Activity object (including `id`).
+        Note: the current implementation routes PUT to /activities (no id in path) —
+        the id is read from the request body.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Activity'
+            example:
+              id: "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+              title: "Updated Beer Tasting"
+              date: "2026-09-21T19:00:00"
+              description: "Updated description."
+              category: "drinks"
+              isCancelled: false
+              city: "London"
+              venue: "New Venue"
+              latitude: 51.5120
+              longitude: -0.0982
+      responses:
+        '204':
+          description: Activity updated successfully — no response body
+        '404':
+          description: Activity not found
+
+    delete:
+      summary: Delete an activity
+      operationId: deleteActivity
+      tags: [Activities]
+      responses:
+        '200':
+          description: Activity deleted successfully — no response body
+        '404':
+          description: Activity not found
+
+components:
+  schemas:
+    Activity:
+      type: object
+      description: >
+        Full activity entity as returned by GET endpoints and required by PUT.
+        JSON property names are camelCase (ASP.NET Core default serialization).
+      required:
+        - id
+        - title
+        - date
+        - description
+        - category
+        - isCancelled
+        - city
+        - venue
+        - latitude
+        - longitude
+      properties:
+        id:
+          type: string
+          format: uuid
+          description: GUID primary key — auto-generated on create, never provided by client on POST
+          example: "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+        title:
+          type: string
+          description: Display name of the activity
+          example: "Future Music Festival"
+        date:
+          type: string
+          format: date-time
+          description: ISO 8601 date-time when the activity takes place
+          example: "2026-10-15T18:00:00"
+        description:
+          type: string
+          description: Full description of the activity
+          example: "An outdoor music festival in London."
+        category:
+          type: string
+          description: Classification of the activity
+          enum: [drinks, culture, music, travel, film]
+          example: "music"
+        isCancelled:
+          type: boolean
+          description: Whether the activity has been cancelled
+          default: false
+          example: false
+        city:
+          type: string
+          description: City where the activity takes place
+          example: "London"
+        venue:
+          type: string
+          description: Specific venue or address within the city
+          example: "Hyde Park"
+        latitude:
+          type: number
+          format: double
+          description: Geographic latitude coordinate (optional, defaults to 0.0)
+          example: 51.5074
+        longitude:
+          type: number
+          format: double
+          description: Geographic longitude coordinate (optional, defaults to 0.0)
+          example: -0.1278
+
+    ActivityRequest:
+      type: object
+      description: >
+        Write DTO used for POST (create). Omits `id` and `isCancelled` —
+        those fields are set server-side only.
+      required:
+        - title
+        - description
+        - category
+        - city
+        - venue
+      properties:
+        title:
+          type: string
+          example: "Craft Beer Tasting"
+        date:
+          type: string
+          format: date-time
+          example: "2026-09-20T19:00:00"
+        description:
+          type: string
+          example: "Sample craft beers from local breweries."
+        category:
+          type: string
+          enum: [drinks, culture, music, travel, film]
+          example: "drinks"
+        city:
+          type: string
+          example: "London"
+        venue:
+          type: string
+          example: "The Craft House"
+        latitude:
+          type: number
+          format: double
+          example: 51.5120
+        longitude:
+          type: number
+          format: double
+          example: -0.0982
+
+tags:
+  - name: Activities
+    description: CRUD operations for activity management
