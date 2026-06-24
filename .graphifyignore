@@ -9,7 +9,27 @@ coverage/
 .env.*
 *.pem
 *.key
-# If you only need to analyze the src:
-*
-!src/
-!src/**
+# Binary / generated
+*.sqlite
+*.db
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.ico
+*.woff
+*.woff2
+*.ttf
+*.eot
+# .NET build output
+bin/
+obj/
+# EF Core migrations (auto-generated)
+backend/Persistence/Migrations/
+# Frontend lock files
+client/package-lock.json
+client/yarn.lock
+# Graph outputs (avoid circular)
+graphify-out/
+# lidr-specboot subproject (separate repo)
+lidr-specboot/

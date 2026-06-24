@@ -475,9 +475,9 @@
     "semantic_hash": "e5e9f5af72f279e30f9eb9491a486f10"
   },
   "CLAUDE.md": {
-    "mtime": 1782239088.3478177,
-    "ast_hash": "81b0f48d5aa4c8307d1df22eb8987f50",
-    "semantic_hash": "81b0f48d5aa4c8307d1df22eb8987f50"
+    "mtime": 1782335636.3141844,
+    "ast_hash": "a9c4213c6ac0e95864ca25077dc21be1",
+    "semantic_hash": "a9c4213c6ac0e95864ca25077dc21be1"
   },
   "README.md": {
     "mtime": 1782239123.6966689,
@@ -530,9 +530,9 @@
     "semantic_hash": "1a8f84017d79c4b22c75445669accdba"
   },
   "Reactivities/README.md": {
-    "mtime": 1782239539.9586039,
-    "ast_hash": "59f6e3332d2efc8609ff5b4bf06a4c25",
-    "semantic_hash": "59f6e3332d2efc8609ff5b4bf06a4c25"
+    "mtime": 1782322461.4772973,
+    "ast_hash": "2e4a9692e8a3446d7ca39beb6011e15b",
+    "semantic_hash": "2e4a9692e8a3446d7ca39beb6011e15b"
   },
   "Reactivities/ai-specs/agents/backend-developer.md": {
     "mtime": 1782239539.9596045,
@@ -955,9 +955,9 @@
     "semantic_hash": "f03fe2b3b57458e4e51426cc4ea5145a"
   },
   "openspec/config.yaml": {
-    "mtime": 1782248144.3466518,
-    "ast_hash": "9e3e7672b387a282583011181ab35f9a",
-    "semantic_hash": "9e3e7672b387a282583011181ab35f9a"
+    "mtime": 1782320147.3818016,
+    "ast_hash": "41e7e829874890a38b375444a5edf4e7",
+    "semantic_hash": "41e7e829874890a38b375444a5edf4e7"
   },
   "client/public/favicon.svg": {
     "mtime": 1781209735.204227,
@@ -1013,5 +1013,70 @@
     "mtime": 1779382170.836903,
     "ast_hash": "219eaea67aafa864db091919ce3f5d82",
     "semantic_hash": "219eaea67aafa864db091919ce3f5d82"
+  },
+  ".claude/settings.local.json": {
+    "mtime": 1782335271.9194877,
+    "ast_hash": "f777025e0c18a1b5862e77d9becd44b7",
+    "semantic_hash": "f777025e0c18a1b5862e77d9becd44b7"
+  },
+  ".husky/post-checkout": {
+    "mtime": 1782319769.6165144,
+    "ast_hash": "d1834b3694d51554cac7b58aed3141a6",
+    "semantic_hash": "d1834b3694d51554cac7b58aed3141a6"
+  },
+  ".husky/post-commit": {
+    "mtime": 1782319769.6145089,
+    "ast_hash": "a54c5adc3f97d8c7b8cf3348c90b12f2",
+    "semantic_hash": "a54c5adc3f97d8c7b8cf3348c90b12f2"
+  },
+  "Reactivities/ai-specs/skills/run-parallel-tasks/SKILL.md": {
+    "mtime": 1782322461.4782977,
+    "ast_hash": "9ef43fbe2faf5516ebf7dc6e24212bc3",
+    "semantic_hash": "9ef43fbe2faf5516ebf7dc6e24212bc3"
+  },
+  "Reactivities/ai-specs/skills/run-parallel-tasks/references/parallel-tasks.md": {
+    "mtime": 1782322461.4792979,
+    "ast_hash": "2200a78feffd3210fd295a1e979ab404",
+    "semantic_hash": "2200a78feffd3210fd295a1e979ab404"
+  },
+  "Reactivities/setup-sdd.md": {
+    "mtime": 1782322461.4822974,
+    "ast_hash": "df50f6f636e2050b914e4c11c1921d22",
+    "semantic_hash": "df50f6f636e2050b914e4c11c1921d22"
+  },
+  "ai-specs/prompts/setup-docs.md": {
+    "mtime": 1782334420.5747068,
+    "ast_hash": "7a46ffa672a84f9ba4caeceacf700afa",
+    "semantic_hash": "7a46ffa672a84f9ba4caeceacf700afa"
+  },
+  "ai-specs/prompts/setup-openspec.md": {
+    "mtime": 1782334422.4891634,
+    "ast_hash": "dbe68de5d805f04e3d70cd491bb65cc1",
+    "semantic_hash": "dbe68de5d805f04e3d70cd491bb65cc1"
+  },
+  "openspec/changes/migrate-automapper-to-custommapper/.openspec.yaml": {
+    "mtime": 1782336099.2645683,
+    "ast_hash": "73ffee90dc3b87122c6566135315bcf3",
+    "semantic_hash": "73ffee90dc3b87122c6566135315bcf3"
+  },
+  "openspec/changes/migrate-automapper-to-custommapper/design.md": {
+    "mtime": 1782336271.660622,
+    "ast_hash": "387852d84c147b5cf5a62bb82ea79da1",
+    "semantic_hash": "387852d84c147b5cf5a62bb82ea79da1"
+  },
+  "openspec/changes/migrate-automapper-to-custommapper/proposal.md": {
+    "mtime": 1782336212.912165,
+    "ast_hash": "628359496a9425dfd9b486aa833ca152",
+    "semantic_hash": "628359496a9425dfd9b486aa833ca152"
+  },
+  "openspec/changes/migrate-automapper-to-custommapper/specs/activity-mapping/spec.md": {
+    "mtime": 1782336311.2109172,
+    "ast_hash": "6033ecfba34da494b75b600a6e9c3abf",
+    "semantic_hash": "6033ecfba34da494b75b600a6e9c3abf"
+  },
+  "openspec/changes/migrate-automapper-to-custommapper/tasks.md": {
+    "mtime": 1782336334.9086156,
+    "ast_hash": "29ee62dfa4dd2ea65fee0d2b55fe07be",
+    "semantic_hash": "29ee62dfa4dd2ea65fee0d2b55fe07be"
   }
 }
