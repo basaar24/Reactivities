@@ -97,3 +97,40 @@ Base path: `/api/activities`
 - **Database seeding**: `DbInitializer.SeedData()` runs on every startup if the database is empty; no manual seed step needed.
 - **No global state manager**: routing replaced the `App.tsx` selected-activity / edit-mode local state. Navigation between views uses React Router instead of prop drilling.
 - **Prettier + Husky**: `client/.prettierrc` enforces formatting (single quotes, no semis, 100-char width). Husky's pre-commit hook lives at `.husky/pre-commit` in the repo root (not inside `client/`) because `.git` is at the repo root. The hook runs `cd client && npx lint-staged`, which applies `eslint --fix` and `prettier --write` to staged `.ts`/`.tsx` files. The `prepare` script in `client/package.json` is `cd .. && husky` for the same reason.
+
+## Analysis Protocol
+
+### Graphify Codebase Analysis
+
+## Step 1 — Load the graph report (always do this first)
+Read graphify-out/GRAPH_REPORT.md before opening any source file.
+Review: god nodes, community clusters, and surprising cross-module connections.
+Use this graph data as the primary lens for all analysis below.
+
+## Step 2 — Architecture overview
+Summarise the project's main architecture in 10 concise points.
+Ground every point in the graph (node degree, community membership, dependency edges).
+
+## Step 3 — Critical modules & risk surface
+Identify the most critical modules using graph metrics (god nodes, high betweenness centrality).
+For each critical module, describe:
+- Why it is critical (metric evidence)
+- What breaks if it is changed
+- Hidden ripple effects visible in the graph
+
+## Step 4 — Audit plan
+Propose a prioritised audit plan based on graph findings.
+Order areas by risk, not by feature importance.
+Flag any module with no inbound or outbound connections (orphans / dead code).
+
+## Step 5 — Client-ready report
+Produce a structured report with these five sections:
+1. General architecture — high-level summary for a non-technical stakeholder
+2. Technical risks — graph-evidenced risks ranked by severity
+3. Undocumented areas — modules or flows with missing or thin documentation
+4. Critical dependencies — external libs or internal god nodes the system cannot function without
+5. Quick wins — low-effort, high-impact improvements (refactors, docs, tests)
+
+---
+Constraint: do not open individual source files until Steps 1–3 are complete.
+All claims must reference graph evidence (node name, metric, community ID).
