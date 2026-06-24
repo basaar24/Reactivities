@@ -1,0 +1,251 @@
+# Backend Standards
+
+This document defines development standards, architecture patterns, and coding conventions for the Reactivities backend — an ASP.NET Core 10 Web API built with Clean Architecture and CQRS.
+
+## Technology Stack
+
+| Layer | Technology |
+|---|---|
+| Runtime | .NET 10, C# 13 |
+| Web framework | ASP.NET Core Web API |
+| CQRS / mediator | MediatR |
+| ORM | Entity Framework Core 10 |
+| Database | SQLite (local dev); file: `reactivities.db` |
+| Object mapping | AutoMapper + custom `IMapper<TSource, TDest>` |
+| Dependency injection | `Microsoft.Extensions.DependencyInjection` (built-in) |
+
+---
+
+## Project Structure (Clean Architecture)
+
+```
+backend/
+├── API/
+│   ├── Controllers/         # ASP.NET Core controllers — thin, no business logic
+│   ├── Program.cs           # DI registrations, middleware pipeline
+│   └── appsettings*.json
+├── Application/
+│   ├── Activities/
+│   │   ├── Commands/        # CreateActivity, UpdateActivity, DeleteActivity
+│   │   └── Queries/         # GetActivityList, GetActivityDetails
+│   ├── Activities/Requests/ # DTOs: ActivityRequest
+│   └── Core/
+│       └── Mappings/        # AutoMapper profiles, IMapper interface, concrete mappers
+├── Domain/
+│   └── Activity.cs          # Sole domain entity; no dependencies
+└── Persistence/
+    ├── AppDbContext.cs       # EF Core DbContext; one DbSet<Activity>
+    ├── DbInitializer.cs      # Seeds 9 sample activities on first run
+    └── Migrations/          # EF Core migration files
+```
+
+**Dependency rule**: Domain → (none); Persistence → Domain; Application → Domain; API → Application + Persistence. Never reference a higher layer from a lower one.
+
+---
+
+## Architecture Patterns
+
+### CQRS with MediatR
+
+Every feature is a self-contained class with nested `Query`/`Command` and `Handler`:
+
+```csharp
+// Query example
+public class GetActivityList
+{
+    public class Query : IRequest<List<Activity>> { }
+
+    public class Handler(AppDbContext context) : IRequestHandler<Query, List<Activity>>
+    {
+        public async Task<List<Activity>> Handle(Query request, CancellationToken ct)
+            => await context.Activities.ToListAsync(ct);
+    }
+}
+
+// Command example (returns value)
+public class CreateActivity
+{
+    public class Command : IRequest<string>
+    {
+        public required ActivityRequest ActivityRequest { get; set; }
+    }
+
+    public class Handler(AppDbContext context, IMapper<ActivityRequest, Activity> mapper)
+        : IRequestHandler<Command, string>
+    {
+        public async Task<string> Handle(Command request, CancellationToken ct)
+        {
+            var activity = mapper.Map(request.ActivityRequest);
+            context.Activities.Add(activity);
+            await context.SaveChangesAsync(ct);
+            return activity.Id;
+        }
+    }
+}
+```
+
+### Controller Pattern
+
+Controllers inherit `BaseApiController` (which exposes `IMediator`). They call `Mediator.Send(...)` and return the result directly — zero business logic:
+
+```csharp
+[HttpGet]
+public async Task<ActionResult<List<Activity>>> GetActivities()
+    => await Mediator.Send(new GetActivityList.Query());
+
+[HttpPost]
+public async Task<ActionResult<string>> CreateActivity(ActivityRequest activityRequest)
+    => await Mediator.Send(new CreateActivity.Command { ActivityRequest = activityRequest });
+```
+
+### DTOs
+
+- `ActivityRequest` is the write DTO used for POST. It omits `Id` and `IsCancelled` — fields that must never come from the client on create.
+- PUT uses the full `Activity` entity (the `Id` from the route is trusted server-side).
+- **Never** bind a domain entity directly as a POST request body.
+
+---
+
+## Mapping
+
+Two parallel mapping approaches coexist:
+
+### AutoMapper (update path)
+
+`Application/Core/Mappings/MappingProfiles.cs` maps `Activity → Activity` (for updates, copying writable fields from the incoming entity onto the tracked EF entity).
+
+### Custom `IMapper<TSource, TDest>` (create path)
+
+```csharp
+public interface IMapper<TSource, TDest>
+{
+    void Map(TSource source, TDest destination);
+    TDest Map(TSource source);
+}
+```
+
+`ActivityRequestMapper` implements `IMapper<ActivityRequest, Activity>`. It copies the 8 writable fields and deliberately skips `Id` and `IsCancelled`.
+
+Register both in `Program.cs`:
+```csharp
+builder.Services.AddAutoMapper(typeof(MappingProfiles));
+builder.Services.AddScoped<IMapper<ActivityRequest, Activity>, ActivityRequestMapper>();
+```
+
+---
+
+## Domain Entity Conventions
+
+```csharp
+public class Activity
+{
+    public string Id { get; set; } = Guid.NewGuid().ToString();
+    public required string Title { get; set; }
+    public DateTime Date { get; set; }
+    public required string Description { get; set; }
+    public required string Category { get; set; }
+    public bool IsCancelled { get; set; }
+    public required string City { get; set; }
+    public required string Venue { get; set; }
+    public double Latitude { get; set; }
+    public double Longitude { get; set; }
+}
+```
+
+- Use `required` for fields that must be provided by the caller.
+- IDs are GUIDs generated in the entity constructor — never sent from the client on create.
+- Domain entities have no methods, no validation attributes, no framework dependencies.
+
+---
+
+## Naming Conventions
+
+| Element | Convention | Example |
+|---|---|---|
+| Classes / Interfaces | PascalCase | `GetActivityList`, `IMapper<T,U>` |
+| Feature container class | PascalCase noun | `CreateActivity` |
+| Nested handler | `Handler` | `CreateActivity.Handler` |
+| Nested command/query | `Command` or `Query` | `CreateActivity.Command` |
+| Methods | PascalCase | `Handle`, `Map` |
+| Private fields | `_camelCase` | `_context` |
+| Constructor DI (primary) | positional params | `Handler(AppDbContext context)` |
+
+---
+
+## Dependency Injection
+
+Use primary constructors for handler DI (C# 12+):
+
+```csharp
+public class Handler(AppDbContext context, IMapper<ActivityRequest, Activity> mapper)
+    : IRequestHandler<Command, string>
+```
+
+Register MediatR to scan the handler assembly:
+```csharp
+builder.Services.AddMediatR(cfg =>
+    cfg.RegisterServicesFromAssemblyContaining<GetActivityList.Handler>());
+```
+
+---
+
+## Error Handling
+
+- Handlers throw exceptions for unrecoverable errors (e.g., entity not found).
+- Global exception middleware in `Program.cs` converts unhandled exceptions to `500 Internal Server Error`.
+- Return `null` from a handler when an entity is not found; the controller converts `null` to `404 Not Found`.
+
+---
+
+## CORS
+
+Configured in `Program.cs` to allow the Vite dev server:
+
+```csharp
+builder.Services.AddCors(opt =>
+    opt.AddPolicy("CorsPolicy", policy =>
+        policy.AllowAnyHeader()
+              .AllowAnyMethod()
+              .WithOrigins("http://localhost:3000", "https://localhost:3000")));
+```
+
+No authentication or authorization is implemented yet.
+
+---
+
+## EF Core / Database
+
+- `AppDbContext` exposes a single `DbSet<Activity> Activities`.
+- Migrations live in `Persistence/Migrations/`.
+- `DbInitializer.SeedData(context)` is called in `Program.cs` on startup — seeds 9 activities if the table is empty.
+- Use `async`/`await` with `CancellationToken` on all EF queries.
+- Never call `SaveChanges()` (sync) — always `SaveChangesAsync(ct)`.
+
+### Migration workflow
+
+```bash
+cd backend
+dotnet ef migrations add <Name> --project Persistence --startup-project API
+dotnet ef database update --project Persistence --startup-project API
+```
+
+---
+
+## Code Style
+
+- `ArgumentNullException.ThrowIfNull(source)` at the top of mapper methods.
+- Prefer expression-body methods for simple one-liners.
+- No commented-out code.
+- No `var` for non-obvious types; use explicit types where the right-hand side doesn't make the type clear.
+- File-scoped namespaces (`namespace Foo;`) preferred over block-scoped.
+
+---
+
+## Build Verification
+
+```bash
+cd backend
+dotnet build   # must exit 0 — no warnings treated as errors (yet)
+```
+
+There is no automated test suite yet. API correctness is verified via manual curl tests against `https://localhost:5001/api` (use `-k` for self-signed cert). See `docs/development_guide.md` for example curl commands.

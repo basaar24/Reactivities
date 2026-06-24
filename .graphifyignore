@@ -1,0 +1,15 @@
+# .graphifyignore
+node_modules/
+dist/
+build/
+.next/
+coverage/
+*.log
+.env
+.env.*
+*.pem
+*.key
+# If you only need to analyze the src:
+*
+!src/
+!src/**

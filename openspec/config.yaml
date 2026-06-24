@@ -1,0 +1,53 @@
+schema: spec-driven
+
+context: |
+  # Project: Reactivities — Activity Management App
+
+  ## Standards (single source of truth)
+  Always read docs/base-standards.md first. It is the root governance document and links to all other standards.
+
+  - docs/base-standards.md          — core principles, language rules, symlink integrity, OpenSpec artifact update policy
+  - docs/backend-standards.md       — C# Clean Architecture, CQRS/MediatR handler pattern, EF Core, AutoMapper, SQLite conventions
+  - docs/frontend-standards.md      — React 19, TypeScript strict, MUI v9, TanStack React Query v5, MobX, Axios, ESLint/Prettier/Husky
+  - docs/documentation-standards.md — when and how to update technical docs; AI specs feedback loop
+
+  ## Domain Reference
+  - docs/api-spec.yml    — OpenAPI 3.0.3 spec for /api/activities (GET list, GET by id, POST, PUT, DELETE)
+  - docs/data-model.md   — Activity entity (10 fields), ActivityRequest DTO, frontend TypeScript type, mermaid ER diagram
+
+  ## Tech Stack
+  Backend:  .NET 10 · C# 13 · ASP.NET Core Web API · MediatR · EF Core 10 · SQLite · AutoMapper
+  Frontend: React 19 · TypeScript 6 (strict) · Vite 8 · MUI v9 · TanStack React Query v5 · MobX 6 · React Router v7 · Axios
+
+  ## Agent Roles
+  For backend tasks (C#, API, EF Core, MediatR): adopt the role defined in ai-specs/agents/backend-developer.md
+  For frontend tasks (React, TypeScript, MUI, hooks): adopt the role defined in ai-specs/agents/frontend-developer.md
+
+  ## Workflow Skills
+  Reusable workflow guidance lives in ai-specs/skills/. Load the matching SKILL.md before starting any workflow
+  that has a corresponding skill (e.g. commit, code-auditing, adversarial-review, using-git-worktrees).
+
+  ## Key Conventions
+  - Controllers are thin: call Mediator.Send() and return the result — no business logic
+  - Every feature is a self-contained MediatR class with nested Query/Command + Handler
+  - POST uses ActivityRequest DTO (never the raw Activity entity) to prevent client-supplied Id/IsCancelled
+  - All server state on the frontend goes through useActivities hook (lib/hooks/useActivities.ts)
+  - Never import agent.ts directly in feature components
+  - Mutations invalidate the ['activities'] React Query cache key on success
+  - English only in all code, docs, commits, and comments
+
+rules:
+  proposal:
+    - Read docs/base-standards.md before writing the proposal
+    - State which agent role applies (backend-developer or frontend-developer or both)
+    - Reference the relevant docs (api-spec.yml, data-model.md, backend-standards.md, frontend-standards.md) in the context section
+    - Include a Non-goals section
+  tasks:
+    - Step 0 must always be: create feature branch feature/<change-name>
+    - Follow the mandatory steps defined in docs/openspec-tasks-mandatory-steps.md
+    - Backend tasks must include a build verification step (dotnet build — exit 0)
+    - Frontend tasks must include npm run build and npm run lint verification
+    - Manual endpoint testing uses curl -k against https://localhost:5001/api
+    - E2E testing uses Playwright MCP against https://localhost:3000
+    - Final step must update affected docs (api-spec.yml, data-model.md, *-standards.md)
+    - Agent must execute all tests itself — never delegate to the user
