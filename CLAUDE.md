@@ -100,10 +100,37 @@ Base path: `/api/activities`
 
 ## Analysis Protocol
 
+### ⚠️ MANDATORY PRE-TASK PROTOCOL
+
+BEFORE opening any source file, spawning an Explore agent, or running any
+analysis, you MUST complete ALL of the following in order:
+
+1. Confirm `graphify-out/GRAPH_REPORT.md` exists. If it does not, STOP and
+   tell the user before doing anything else.
+
+2. Read `graphify-out/GRAPH_REPORT.md` in full.
+
+3. State out loud: the top 3 god nodes, the number of communities found, and
+   any community whose name is relevant to the current task.
+
+4. Run `graphify query "<topic of the current task>"` using the Bash tool.
+   Use the traversal output to identify which nodes and communities are
+   relevant. Cite at least one graph node or community in your plan.
+
+5. Only after steps 1–4 are complete may you open source files or spawn
+   agents. Prefer reading only the files the graph identified as relevant
+   in step 4.
+
+Do NOT rationalize skipping step 4 ("the report is enough", "I already know
+the files"). The query is mandatory — it surfaces prior planning nodes and
+community context that the report summary omits.
+
+---
+
 ### Graphify Codebase Analysis
 
 ## Step 1 — Load the graph report (always do this first)
-Read graphify-out/GRAPH_REPORT.md before opening any source file.
+Read `graphify-out/GRAPH_REPORT.md` before opening any source file.
 Review: god nodes, community clusters, and surprising cross-module connections.
 Use this graph data as the primary lens for all analysis below.
 
@@ -125,12 +152,11 @@ Flag any module with no inbound or outbound connections (orphans / dead code).
 
 ## Step 5 — Client-ready report
 Produce a structured report with these five sections:
-1. General architecture — high-level summary for a non-technical stakeholder
-2. Technical risks — graph-evidenced risks ranked by severity
-3. Undocumented areas — modules or flows with missing or thin documentation
-4. Critical dependencies — external libs or internal god nodes the system cannot function without
-5. Quick wins — low-effort, high-impact improvements (refactors, docs, tests)
+1. **General architecture** — high-level summary for a non-technical stakeholder
+2. **Technical risks** — graph-evidenced risks ranked by severity
+3. **Undocumented areas** — modules or flows with missing or thin documentation
+4. **Critical dependencies** — external libs or internal god nodes the system cannot function without
+5. **Quick wins** — low-effort, high-impact improvements (refactors, docs, tests)
 
 ---
-Constraint: do not open individual source files until Steps 1–3 are complete.
 All claims must reference graph evidence (node name, metric, community ID).
