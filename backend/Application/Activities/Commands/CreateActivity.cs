@@ -1,5 +1,5 @@
 using Application.Activities.Requests;
-using AutoMapper;
+using Application.Core;
 using Domain;
 using MediatR;
 using Persistence;
@@ -13,12 +13,12 @@ public class CreateActivity
         public required CreateActivityRequest ActivityRequest { get; set; }
     }
 
-    public class Handler(AppDbContext context, IMapper mapper)
+    public class Handler(AppDbContext context, IActivityMapper mapper)
         : IRequestHandler<Command, string>
     {
         public async Task<string> Handle(Command request, CancellationToken cancellationToken)
         {
-            var activity = mapper.Map<Activity>(request.ActivityRequest);
+            var activity = mapper.ToActivity(request.ActivityRequest);
             context.Activities.Add(activity);
             await context.SaveChangesAsync(cancellationToken);
             return activity.Id;
