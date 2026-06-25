@@ -125,9 +125,9 @@
     "semantic_hash": "202cc927dd7747cd945e011d8cb1d001"
   },
   "backend/API/Program.cs": {
-    "mtime": 1782339946.816959,
-    "ast_hash": "782c236d03cc78fc7cb447007e64b539",
-    "semantic_hash": ""
+    "mtime": 1782238803.8251789,
+    "ast_hash": "ab1440a5e935fa46f5c49466e57075df",
+    "semantic_hash": "ab1440a5e935fa46f5c49466e57075df"
   },
   "backend/API/Properties/launchSettings.json": {
     "mtime": 1782238803.826178,
@@ -145,9 +145,9 @@
     "semantic_hash": "521f6acea5555df7367cb0e7a37948f2"
   },
   "backend/Application/Activities/Commands/CreateActivity.cs": {
-    "mtime": 1782339942.407948,
-    "ast_hash": "707c5ab7293248ea856b30880a764e88",
-    "semantic_hash": ""
+    "mtime": 1782238474.212063,
+    "ast_hash": "0c3f13a06f06b1f0c7b4cf48b5c3eb15",
+    "semantic_hash": "0c3f13a06f06b1f0c7b4cf48b5c3eb15"
   },
   "backend/Application/Activities/Commands/DeleteActivity.cs": {
     "mtime": 1779300790.7716455,
@@ -155,9 +155,9 @@
     "semantic_hash": "46c2154d2e56e6858d571d786740549a"
   },
   "backend/Application/Activities/Commands/UpdateActivity.cs": {
-    "mtime": 1782339930.321135,
-    "ast_hash": "8e75f6ef25e5e822702640c6220072f5",
-    "semantic_hash": ""
+    "mtime": 1782238566.4363773,
+    "ast_hash": "5e624b43bd0d023d238ab631f64a0f5a",
+    "semantic_hash": "5e624b43bd0d023d238ab631f64a0f5a"
   },
   "backend/Application/Activities/Queries/GetActivityDetails.cs": {
     "mtime": 1779294232.7524488,
@@ -175,9 +175,14 @@
     "semantic_hash": "8f6367dc3ecd12c2dbfc17299c0222db"
   },
   "backend/Application/Application.csproj": {
-    "mtime": 1782339950.1733866,
-    "ast_hash": "cde6a80bc6e3d96dafa911e263f303c4",
-    "semantic_hash": ""
+    "mtime": 1782236108.2875645,
+    "ast_hash": "34488d2c2e23f475a3053df903020696",
+    "semantic_hash": "34488d2c2e23f475a3053df903020696"
+  },
+  "backend/Application/Core/Mappings/MappingProfiles.cs": {
+    "mtime": 1782238474.199528,
+    "ast_hash": "6e11f3137d7b1c0bdda8b794bd3f1987",
+    "semantic_hash": "6e11f3137d7b1c0bdda8b794bd3f1987"
   },
   "backend/Domain/Activity.cs": {
     "mtime": 1779304298.7605073,
@@ -705,9 +710,9 @@
     "semantic_hash": "e194e2b8a264fe7dcc4a9f1bae5d413f"
   },
   "docs/backend-standards.md": {
-    "mtime": 1782340009.405264,
-    "ast_hash": "0be130426cc6ab5f052077a77b0ebebc",
-    "semantic_hash": ""
+    "mtime": 1782317838.105553,
+    "ast_hash": "94cdac76ebd4022cf2dfbf640bfc5ccb",
+    "semantic_hash": "94cdac76ebd4022cf2dfbf640bfc5ccb"
   },
   "docs/base-standards.md": {
     "mtime": 1782317754.52345,
@@ -1070,58 +1075,8 @@
     "semantic_hash": "6033ecfba34da494b75b600a6e9c3abf"
   },
   "openspec/changes/migrate-automapper-to-custommapper/tasks.md": {
-    "mtime": 1782340030.7393646,
-    "ast_hash": "c33d80a46ae5886e37696ca8f823247b",
-    "semantic_hash": ""
-  },
-  "backend/Application/Core/ActivityMapper.cs": {
-    "mtime": 1782339919.7877128,
-    "ast_hash": "6a7a7a7ea664ce56194cd109aa92618b",
-    "semantic_hash": ""
-  },
-  "backend/Application/Core/IActivityMapper.cs": {
-    "mtime": 1782339917.8409424,
-    "ast_hash": "39c7e5b36771a4736be1e0c5bd83dfec",
-    "semantic_hash": ""
-  },
-  ".serena/memories/backend/core.md": {
-    "mtime": 1782342185.6843843,
-    "ast_hash": "d2bbf2e7d3644f9e6076362f20c806f1",
-    "semantic_hash": ""
-  },
-  ".serena/memories/conventions.md": {
-    "mtime": 1782342164.8467257,
-    "ast_hash": "9eebf989a0dbfb5fa47413c2908c834f",
-    "semantic_hash": ""
-  },
-  ".serena/memories/core.md": {
-    "mtime": 1782342125.0199072,
-    "ast_hash": "0f41d7583ca0f3de3315577b904e4446",
-    "semantic_hash": ""
-  },
-  ".serena/memories/frontend/core.md": {
-    "mtime": 1782342197.56902,
-    "ast_hash": "c2462e2ac5adbd7f5d0c7e114a0b6d4a",
-    "semantic_hash": ""
-  },
-  ".serena/memories/memory_maintenance.md": {
-    "mtime": 1782342048.7947595,
-    "ast_hash": "17877e37a829c58bb20c04228b985ab8",
-    "semantic_hash": ""
-  },
-  ".serena/memories/suggested_commands.md": {
-    "mtime": 1782342145.4921107,
-    "ast_hash": "f60fbd8543b3af271953942710f46585",
-    "semantic_hash": ""
-  },
-  ".serena/memories/task_completion.md": {
-    "mtime": 1782342173.2049828,
-    "ast_hash": "c0cc069c8a7e8b327df699b4dd204959",
-    "semantic_hash": ""
-  },
-  ".serena/memories/tech_stack.md": {
-    "mtime": 1782342134.6884978,
-    "ast_hash": "05de6b5cbc5fcb54782cd969a30a3678",
-    "semantic_hash": ""
+    "mtime": 1782336334.9086156,
+    "ast_hash": "29ee62dfa4dd2ea65fee0d2b55fe07be",
+    "semantic_hash": "29ee62dfa4dd2ea65fee0d2b55fe07be"
   }
 }
