@@ -21,5 +21,5 @@
 ## 5. Verify
 
 - [x] 5.1 Run `dotnet build` from the `backend/` directory and confirm **Build succeeded. 0 Error(s). 0 Warning(s).**
-- [ ] 5.2 Run the API (`dotnet run --project API`) and confirm POST `/api/activities` creates an activity correctly and PUT `/api/activities` updates one correctly
+- [x] 5.2 Run the API (`dotnet run --project API`) and confirm POST `/api/activities` creates an activity correctly and PUT `/api/activities` updates one correctly
 - [x] 5.3 Update `docs/backend-standards.md` to replace references to AutoMapper with the custom `IActivityMapper` pattern
