@@ -93,14 +93,434 @@
   },
   "nodes": [
     {
+      "label": "backend-standards.md",
+      "file_type": "document",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_backend_standards",
+      "community": 40,
+      "norm_label": "backend-standards.md"
+    },
+    {
+      "label": "Backend Standards",
+      "file_type": "document",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_backend_standards_backend_standards",
+      "community": 51,
+      "norm_label": "backend standards"
+    },
+    {
+      "label": "Technology Stack",
+      "file_type": "document",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "docs_backend_standards_technology_stack",
+      "community": 51,
+      "norm_label": "technology stack"
+    },
+    {
+      "label": "Project Structure (Clean Architecture)",
+      "file_type": "document",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "docs_backend_standards_project_structure_clean_architecture",
+      "community": 51,
+      "norm_label": "project structure (clean architecture)"
+    },
+    {
+      "label": "Architecture Patterns",
+      "file_type": "document",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "docs_backend_standards_architecture_patterns",
+      "community": 51,
+      "norm_label": "architecture patterns"
+    },
+    {
+      "label": "CQRS with MediatR",
+      "file_type": "document",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "docs_backend_standards_cqrs_with_mediatr",
+      "community": 51,
+      "norm_label": "cqrs with mediatr"
+    },
+    {
+      "label": "Controller Pattern",
+      "file_type": "document",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "docs_backend_standards_controller_pattern",
+      "community": 51,
+      "norm_label": "controller pattern"
+    },
+    {
+      "label": "DTOs",
+      "file_type": "document",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L102",
+      "_origin": "ast",
+      "id": "docs_backend_standards_dtos",
+      "community": 51,
+      "norm_label": "dtos"
+    },
+    {
+      "label": "Mapping",
+      "file_type": "document",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L110",
+      "_origin": "ast",
+      "id": "docs_backend_standards_mapping",
+      "community": 51,
+      "norm_label": "mapping"
+    },
+    {
+      "label": "Domain Entity Conventions",
+      "file_type": "document",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L131",
+      "_origin": "ast",
+      "id": "docs_backend_standards_domain_entity_conventions",
+      "community": 51,
+      "norm_label": "domain entity conventions"
+    },
+    {
+      "label": "Naming Conventions",
+      "file_type": "document",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L155",
+      "_origin": "ast",
+      "id": "docs_backend_standards_naming_conventions",
+      "community": 51,
+      "norm_label": "naming conventions"
+    },
+    {
+      "label": "Dependency Injection",
+      "file_type": "document",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L169",
+      "_origin": "ast",
+      "id": "docs_backend_standards_dependency_injection",
+      "community": 51,
+      "norm_label": "dependency injection"
+    },
+    {
+      "label": "Error Handling",
+      "file_type": "document",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L186",
+      "_origin": "ast",
+      "id": "docs_backend_standards_error_handling",
+      "community": 51,
+      "norm_label": "error handling"
+    },
+    {
+      "label": "CORS",
+      "file_type": "document",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L194",
+      "_origin": "ast",
+      "id": "docs_backend_standards_cors",
+      "community": 51,
+      "norm_label": "cors"
+    },
+    {
+      "label": "EF Core / Database",
+      "file_type": "document",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L210",
+      "_origin": "ast",
+      "id": "docs_backend_standards_ef_core_database",
+      "community": 51,
+      "norm_label": "ef core / database"
+    },
+    {
+      "label": "Migration workflow",
+      "file_type": "document",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L218",
+      "_origin": "ast",
+      "id": "docs_backend_standards_migration_workflow",
+      "community": 51,
+      "norm_label": "migration workflow"
+    },
+    {
+      "label": "Code Style",
+      "file_type": "document",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L228",
+      "_origin": "ast",
+      "id": "docs_backend_standards_code_style",
+      "community": 51,
+      "norm_label": "code style"
+    },
+    {
+      "label": "Build Verification",
+      "file_type": "document",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L238",
+      "_origin": "ast",
+      "id": "docs_backend_standards_build_verification",
+      "community": 51,
+      "norm_label": "build verification"
+    },
+    {
+      "label": "base-standards.md",
+      "file_type": "document",
+      "source_file": "docs/base-standards.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_base_standards",
+      "community": 40,
+      "norm_label": "base-standards.md"
+    },
+    {
+      "label": "1. Core Principles",
+      "file_type": "document",
+      "source_file": "docs/base-standards.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "docs_base_standards_1_core_principles",
+      "community": 40,
+      "norm_label": "1. core principles"
+    },
+    {
+      "label": "2. Language Standards",
+      "file_type": "document",
+      "source_file": "docs/base-standards.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "docs_base_standards_2_language_standards",
+      "community": 40,
+      "norm_label": "2. language standards"
+    },
+    {
+      "label": "3. Specific Standards",
+      "file_type": "document",
+      "source_file": "docs/base-standards.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "docs_base_standards_3_specific_standards",
+      "community": 40,
+      "norm_label": "3. specific standards"
+    },
+    {
+      "label": "4. Project Skills",
+      "file_type": "document",
+      "source_file": "docs/base-standards.md",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "docs_base_standards_4_project_skills",
+      "community": 40,
+      "norm_label": "4. project skills"
+    },
+    {
+      "label": "5. Planning Model Requirement",
+      "file_type": "document",
+      "source_file": "docs/base-standards.md",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "docs_base_standards_5_planning_model_requirement",
+      "community": 40,
+      "norm_label": "5. planning model requirement"
+    },
+    {
+      "label": "6. Symlink Integrity and Multi-Agent Portability",
+      "file_type": "document",
+      "source_file": "docs/base-standards.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "docs_base_standards_6_symlink_integrity_and_multi_agent_portability",
+      "community": 40,
+      "norm_label": "6. symlink integrity and multi-agent portability"
+    },
+    {
+      "label": "7. Mandatory OpenSpec Artifact Updates for Post-Apply Changes",
+      "file_type": "document",
+      "source_file": "docs/base-standards.md",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "docs_base_standards_7_mandatory_openspec_artifact_updates_for_post_apply_changes",
+      "community": 40,
+      "norm_label": "7. mandatory openspec artifact updates for post-apply changes"
+    },
+    {
+      "label": "data-model.md",
+      "file_type": "document",
+      "source_file": "docs/data-model.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_data_model",
+      "community": 40,
+      "norm_label": "data-model.md"
+    },
+    {
+      "label": "Data Model Documentation",
+      "file_type": "document",
+      "source_file": "docs/data-model.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_data_model_data_model_documentation",
+      "community": 40,
+      "norm_label": "data model documentation"
+    },
+    {
+      "label": "Model Descriptions",
+      "file_type": "document",
+      "source_file": "docs/data-model.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "docs_data_model_model_descriptions",
+      "community": 40,
+      "norm_label": "model descriptions"
+    },
+    {
+      "label": "1. Activity",
+      "file_type": "document",
+      "source_file": "docs/data-model.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "docs_data_model_1_activity",
+      "community": 40,
+      "norm_label": "1. activity"
+    },
+    {
+      "label": "2. CreateActivityRequest (Write DTO)",
+      "file_type": "document",
+      "source_file": "docs/data-model.md",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "docs_data_model_2_createactivityrequest_write_dto",
+      "community": 40,
+      "norm_label": "2. createactivityrequest (write dto)"
+    },
+    {
+      "label": "3. Frontend Type",
+      "file_type": "document",
+      "source_file": "docs/data-model.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "docs_data_model_3_frontend_type",
+      "community": 40,
+      "norm_label": "3. frontend type"
+    },
+    {
+      "label": "Entity-Relationship Diagram",
+      "file_type": "document",
+      "source_file": "docs/data-model.md",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "docs_data_model_entity_relationship_diagram",
+      "community": 40,
+      "norm_label": "entity-relationship diagram"
+    },
+    {
+      "label": "Seed Data",
+      "file_type": "document",
+      "source_file": "docs/data-model.md",
+      "source_location": "L95",
+      "_origin": "ast",
+      "id": "docs_data_model_seed_data",
+      "community": 40,
+      "norm_label": "seed data"
+    },
+    {
+      "label": "Key Design Principles",
+      "file_type": "document",
+      "source_file": "docs/data-model.md",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "docs_data_model_key_design_principles",
+      "community": 40,
+      "norm_label": "key design principles"
+    },
+    {
+      "label": "documentation-standards.md",
+      "file_type": "document",
+      "source_file": "docs/documentation-standards.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_documentation_standards",
+      "community": 40,
+      "norm_label": "documentation-standards.md"
+    },
+    {
+      "label": "Rules and Patterns for documentation and AI specs",
+      "file_type": "document",
+      "source_file": "docs/documentation-standards.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "docs_documentation_standards_rules_and_patterns_for_documentation_and_ai_specs",
+      "community": 40,
+      "norm_label": "rules and patterns for documentation and ai specs"
+    },
+    {
+      "label": "Introduction",
+      "file_type": "document",
+      "source_file": "docs/documentation-standards.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "docs_documentation_standards_introduction",
+      "community": 40,
+      "norm_label": "introduction"
+    },
+    {
+      "label": "General Rules",
+      "file_type": "document",
+      "source_file": "docs/documentation-standards.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "docs_documentation_standards_general_rules",
+      "community": 40,
+      "norm_label": "general rules"
+    },
+    {
+      "label": "Technical Documentation",
+      "file_type": "document",
+      "source_file": "docs/documentation-standards.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "docs_documentation_standards_technical_documentation",
+      "community": 40,
+      "norm_label": "technical documentation"
+    },
+    {
+      "label": "AI Specs",
+      "file_type": "document",
+      "source_file": "docs/documentation-standards.md",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "docs_documentation_standards_ai_specs",
+      "community": 40,
+      "norm_label": "ai specs"
+    },
+    {
+      "label": "Common Pitfalls and Anti-Patterns to be avoided by the AI",
+      "file_type": "document",
+      "source_file": "docs/documentation-standards.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "docs_documentation_standards_common_pitfalls_and_anti_patterns_to_be_avoided_by_the_ai",
+      "community": 40,
+      "norm_label": "common pitfalls and anti-patterns to be avoided by the ai"
+    },
+    {
       "label": "design.md",
       "file_type": "document",
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/design.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_design",
       "community": 63,
-      "norm_label": "design.md"
+      "norm_label": "design.md",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_design"
     },
     {
       "label": "Context",
@@ -108,9 +528,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/design.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_design_context",
       "community": 63,
-      "norm_label": "context"
+      "norm_label": "context",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_design_context"
     },
     {
       "label": "Goals / Non-Goals",
@@ -118,9 +538,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/design.md",
       "source_location": "L14",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_design_goals_non_goals",
       "community": 63,
-      "norm_label": "goals / non-goals"
+      "norm_label": "goals / non-goals",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_design_goals_non_goals"
     },
     {
       "label": "Decisions",
@@ -128,9 +548,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/design.md",
       "source_location": "L27",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_design_decisions",
       "community": 63,
-      "norm_label": "decisions"
+      "norm_label": "decisions",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_design_decisions"
     },
     {
       "label": "1. Interface `IActivityMapper` over a static class",
@@ -138,9 +558,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/design.md",
       "source_location": "L29",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_design_1_interface_iactivitymapper_over_a_static_class",
       "community": 63,
-      "norm_label": "1. interface `iactivitymapper` over a static class"
+      "norm_label": "1. interface `iactivitymapper` over a static class",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_design_1_interface_iactivitymapper_over_a_static_class"
     },
     {
       "label": "2. Placement in `Application/Core/` (not `Domain/`)",
@@ -148,9 +568,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/design.md",
       "source_location": "L37",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_design_2_placement_in_application_core_not_domain",
       "community": 63,
-      "norm_label": "2. placement in `application/core/` (not `domain/`)"
+      "norm_label": "2. placement in `application/core/` (not `domain/`)",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_design_2_placement_in_application_core_not_domain"
     },
     {
       "label": "3. Two methods on the interface",
@@ -158,9 +578,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/design.md",
       "source_location": "L43",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_design_3_two_methods_on_the_interface",
       "community": 63,
-      "norm_label": "3. two methods on the interface"
+      "norm_label": "3. two methods on the interface",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_design_3_two_methods_on_the_interface"
     },
     {
       "label": "4. `AddScoped` registration",
@@ -168,9 +588,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/design.md",
       "source_location": "L52",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_design_4_addscoped_registration",
       "community": 63,
-      "norm_label": "4. `addscoped` registration"
+      "norm_label": "4. `addscoped` registration",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_design_4_addscoped_registration"
     },
     {
       "label": "Risks / Trade-offs",
@@ -178,9 +598,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/design.md",
       "source_location": "L58",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_design_risks_trade_offs",
       "community": 63,
-      "norm_label": "risks / trade-offs"
+      "norm_label": "risks / trade-offs",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_design_risks_trade_offs"
     },
     {
       "label": "Migration Plan",
@@ -188,9 +608,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/design.md",
       "source_location": "L64",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_design_migration_plan",
       "community": 63,
-      "norm_label": "migration plan"
+      "norm_label": "migration plan",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_design_migration_plan"
     },
     {
       "label": "Open Questions",
@@ -198,9 +618,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/design.md",
       "source_location": "L75",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_design_open_questions",
       "community": 63,
-      "norm_label": "open questions"
+      "norm_label": "open questions",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_design_open_questions"
     },
     {
       "label": "proposal.md",
@@ -208,9 +628,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/proposal.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_proposal",
       "community": 65,
-      "norm_label": "proposal.md"
+      "norm_label": "proposal.md",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_proposal"
     },
     {
       "label": "Why",
@@ -218,9 +638,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/proposal.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_proposal_why",
       "community": 65,
-      "norm_label": "why"
+      "norm_label": "why",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_proposal_why"
     },
     {
       "label": "Agent Role",
@@ -228,9 +648,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/proposal.md",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_proposal_agent_role",
       "community": 65,
-      "norm_label": "agent role"
+      "norm_label": "agent role",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_proposal_agent_role"
     },
     {
       "label": "What Changes",
@@ -238,9 +658,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/proposal.md",
       "source_location": "L9",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_proposal_what_changes",
       "community": 65,
-      "norm_label": "what changes"
+      "norm_label": "what changes",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_proposal_what_changes"
     },
     {
       "label": "Capabilities",
@@ -248,9 +668,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/proposal.md",
       "source_location": "L19",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_proposal_capabilities",
       "community": 65,
-      "norm_label": "capabilities"
+      "norm_label": "capabilities",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_proposal_capabilities"
     },
     {
       "label": "New Capabilities",
@@ -258,9 +678,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/proposal.md",
       "source_location": "L21",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_proposal_new_capabilities",
       "community": 65,
-      "norm_label": "new capabilities"
+      "norm_label": "new capabilities",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_proposal_new_capabilities"
     },
     {
       "label": "Modified Capabilities",
@@ -268,9 +688,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/proposal.md",
       "source_location": "L25",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_proposal_modified_capabilities",
       "community": 65,
-      "norm_label": "modified capabilities"
+      "norm_label": "modified capabilities",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_proposal_modified_capabilities"
     },
     {
       "label": "Non-goals",
@@ -278,9 +698,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/proposal.md",
       "source_location": "L29",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_proposal_non_goals",
       "community": 65,
-      "norm_label": "non-goals"
+      "norm_label": "non-goals",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_proposal_non_goals"
     },
     {
       "label": "Impact",
@@ -288,9 +708,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/proposal.md",
       "source_location": "L36",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_proposal_impact",
       "community": 65,
-      "norm_label": "impact"
+      "norm_label": "impact",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_proposal_impact"
     },
     {
       "label": "spec.md",
@@ -298,9 +718,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/specs/activity-mapping/spec.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec",
       "community": 64,
-      "norm_label": "spec.md"
+      "norm_label": "spec.md",
+      "id": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec"
     },
     {
       "label": "ADDED Requirements",
@@ -308,9 +728,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/specs/activity-mapping/spec.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "activity_mapping_spec_added_requirements",
       "community": 64,
-      "norm_label": "added requirements"
+      "norm_label": "added requirements",
+      "id": "activity_mapping_spec_added_requirements"
     },
     {
       "label": "Requirement: Map CreateActivityRequest to Activity",
@@ -318,9 +738,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/specs/activity-mapping/spec.md",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_map_createactivityrequest_to_activity",
       "community": 64,
-      "norm_label": "requirement: map createactivityrequest to activity"
+      "norm_label": "requirement: map createactivityrequest to activity",
+      "id": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_map_createactivityrequest_to_activity"
     },
     {
       "label": "Scenario: All required fields produce a valid Activity",
@@ -328,9 +748,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/specs/activity-mapping/spec.md",
       "source_location": "L7",
       "_origin": "ast",
-      "id": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_all_required_fields_produce_a_valid_activity",
       "community": 64,
-      "norm_label": "scenario: all required fields produce a valid activity"
+      "norm_label": "scenario: all required fields produce a valid activity",
+      "id": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_all_required_fields_produce_a_valid_activity"
     },
     {
       "label": "Scenario: Numeric fields are copied exactly",
@@ -338,9 +758,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/specs/activity-mapping/spec.md",
       "source_location": "L14",
       "_origin": "ast",
-      "id": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_numeric_fields_are_copied_exactly",
       "community": 64,
-      "norm_label": "scenario: numeric fields are copied exactly"
+      "norm_label": "scenario: numeric fields are copied exactly",
+      "id": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_numeric_fields_are_copied_exactly"
     },
     {
       "label": "Requirement: Update Activity from another Activity",
@@ -348,9 +768,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/specs/activity-mapping/spec.md",
       "source_location": "L21",
       "_origin": "ast",
-      "id": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_update_activity_from_another_activity",
       "community": 64,
-      "norm_label": "requirement: update activity from another activity"
+      "norm_label": "requirement: update activity from another activity",
+      "id": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_update_activity_from_another_activity"
     },
     {
       "label": "Scenario: Properties are overwritten on destination",
@@ -358,9 +778,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/specs/activity-mapping/spec.md",
       "source_location": "L25",
       "_origin": "ast",
-      "id": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_properties_are_overwritten_on_destination",
       "community": 64,
-      "norm_label": "scenario: properties are overwritten on destination"
+      "norm_label": "scenario: properties are overwritten on destination",
+      "id": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_properties_are_overwritten_on_destination"
     },
     {
       "label": "Scenario: Destination Id is never overwritten",
@@ -368,9 +788,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/specs/activity-mapping/spec.md",
       "source_location": "L31",
       "_origin": "ast",
-      "id": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_destination_id_is_never_overwritten",
       "community": 64,
-      "norm_label": "scenario: destination id is never overwritten"
+      "norm_label": "scenario: destination id is never overwritten",
+      "id": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_destination_id_is_never_overwritten"
     },
     {
       "label": "Scenario: IsCancelled is carried over in updates",
@@ -378,9 +798,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/specs/activity-mapping/spec.md",
       "source_location": "L36",
       "_origin": "ast",
-      "id": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_iscancelled_is_carried_over_in_updates",
       "community": 64,
-      "norm_label": "scenario: iscancelled is carried over in updates"
+      "norm_label": "scenario: iscancelled is carried over in updates",
+      "id": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_iscancelled_is_carried_over_in_updates"
     },
     {
       "label": "Requirement: Mapper is registered in the DI container",
@@ -388,9 +808,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/specs/activity-mapping/spec.md",
       "source_location": "L43",
       "_origin": "ast",
-      "id": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_mapper_is_registered_in_the_di_container",
       "community": 64,
-      "norm_label": "requirement: mapper is registered in the di container"
+      "norm_label": "requirement: mapper is registered in the di container",
+      "id": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_mapper_is_registered_in_the_di_container"
     },
     {
       "label": "Scenario: Handlers resolve IActivityMapper from DI",
@@ -398,9 +818,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/specs/activity-mapping/spec.md",
       "source_location": "L47",
       "_origin": "ast",
-      "id": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_handlers_resolve_iactivitymapper_from_di",
       "community": 64,
-      "norm_label": "scenario: handlers resolve iactivitymapper from di"
+      "norm_label": "scenario: handlers resolve iactivitymapper from di",
+      "id": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_handlers_resolve_iactivitymapper_from_di"
     },
     {
       "label": "tasks.md",
@@ -408,9 +828,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/tasks.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_tasks",
       "community": 66,
-      "norm_label": "tasks.md"
+      "norm_label": "tasks.md",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_tasks"
     },
     {
       "label": "1. Add Custom Mapper Interface and Implementation",
@@ -418,9 +838,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/tasks.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_tasks_1_add_custom_mapper_interface_and_implementation",
       "community": 66,
-      "norm_label": "1. add custom mapper interface and implementation"
+      "norm_label": "1. add custom mapper interface and implementation",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_tasks_1_add_custom_mapper_interface_and_implementation"
     },
     {
       "label": "2. Update DI Registration",
@@ -428,9 +848,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/tasks.md",
       "source_location": "L6",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_tasks_2_update_di_registration",
       "community": 66,
-      "norm_label": "2. update di registration"
+      "norm_label": "2. update di registration",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_tasks_2_update_di_registration"
     },
     {
       "label": "3. Update MediatR Handlers",
@@ -438,9 +858,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/tasks.md",
       "source_location": "L11",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_tasks_3_update_mediatr_handlers",
       "community": 66,
-      "norm_label": "3. update mediatr handlers"
+      "norm_label": "3. update mediatr handlers",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_tasks_3_update_mediatr_handlers"
     },
     {
       "label": "4. Remove AutoMapper",
@@ -448,9 +868,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/tasks.md",
       "source_location": "L16",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_tasks_4_remove_automapper",
       "community": 66,
-      "norm_label": "4. remove automapper"
+      "norm_label": "4. remove automapper",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_tasks_4_remove_automapper"
     },
     {
       "label": "5. Verify",
@@ -458,9 +878,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/tasks.md",
       "source_location": "L21",
       "_origin": "ast",
-      "id": "2026_06_26_migrate_automapper_to_custommapper_tasks_5_verify",
       "community": 66,
-      "norm_label": "5. verify"
+      "norm_label": "5. verify",
+      "id": "2026_06_26_migrate_automapper_to_custommapper_tasks_5_verify"
     },
     {
       "label": "spec.md",
@@ -468,9 +888,9 @@
       "source_file": "openspec/specs/activity-mapping/spec.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec",
       "community": 62,
-      "norm_label": "spec.md"
+      "norm_label": "spec.md",
+      "id": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec"
     },
     {
       "label": "activity-mapping Specification",
@@ -478,9 +898,9 @@
       "source_file": "openspec/specs/activity-mapping/spec.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "activity_mapping_spec_activity_mapping_specification",
       "community": 62,
-      "norm_label": "activity-mapping specification"
+      "norm_label": "activity-mapping specification",
+      "id": "activity_mapping_spec_activity_mapping_specification"
     },
     {
       "label": "Purpose",
@@ -488,9 +908,9 @@
       "source_file": "openspec/specs/activity-mapping/spec.md",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "activity_mapping_spec_purpose",
       "community": 62,
-      "norm_label": "purpose"
+      "norm_label": "purpose",
+      "id": "activity_mapping_spec_purpose"
     },
     {
       "label": "Requirements",
@@ -498,9 +918,9 @@
       "source_file": "openspec/specs/activity-mapping/spec.md",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "activity_mapping_spec_requirements",
       "community": 62,
-      "norm_label": "requirements"
+      "norm_label": "requirements",
+      "id": "activity_mapping_spec_requirements"
     },
     {
       "label": "Requirement: Map CreateActivityRequest to Activity",
@@ -508,9 +928,9 @@
       "source_file": "openspec/specs/activity-mapping/spec.md",
       "source_location": "L6",
       "_origin": "ast",
-      "id": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_map_createactivityrequest_to_activity",
       "community": 62,
-      "norm_label": "requirement: map createactivityrequest to activity"
+      "norm_label": "requirement: map createactivityrequest to activity",
+      "id": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_map_createactivityrequest_to_activity"
     },
     {
       "label": "Scenario: All required fields produce a valid Activity",
@@ -518,9 +938,9 @@
       "source_file": "openspec/specs/activity-mapping/spec.md",
       "source_location": "L10",
       "_origin": "ast",
-      "id": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_all_required_fields_produce_a_valid_activity",
       "community": 62,
-      "norm_label": "scenario: all required fields produce a valid activity"
+      "norm_label": "scenario: all required fields produce a valid activity",
+      "id": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_all_required_fields_produce_a_valid_activity"
     },
     {
       "label": "Scenario: Numeric fields are copied exactly",
@@ -528,9 +948,9 @@
       "source_file": "openspec/specs/activity-mapping/spec.md",
       "source_location": "L17",
       "_origin": "ast",
-      "id": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_numeric_fields_are_copied_exactly",
       "community": 62,
-      "norm_label": "scenario: numeric fields are copied exactly"
+      "norm_label": "scenario: numeric fields are copied exactly",
+      "id": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_numeric_fields_are_copied_exactly"
     },
     {
       "label": "Requirement: Update Activity from another Activity",
@@ -538,9 +958,9 @@
       "source_file": "openspec/specs/activity-mapping/spec.md",
       "source_location": "L24",
       "_origin": "ast",
-      "id": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_update_activity_from_another_activity",
       "community": 62,
-      "norm_label": "requirement: update activity from another activity"
+      "norm_label": "requirement: update activity from another activity",
+      "id": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_update_activity_from_another_activity"
     },
     {
       "label": "Scenario: Properties are overwritten on destination",
@@ -548,9 +968,9 @@
       "source_file": "openspec/specs/activity-mapping/spec.md",
       "source_location": "L28",
       "_origin": "ast",
-      "id": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_properties_are_overwritten_on_destination",
       "community": 62,
-      "norm_label": "scenario: properties are overwritten on destination"
+      "norm_label": "scenario: properties are overwritten on destination",
+      "id": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_properties_are_overwritten_on_destination"
     },
     {
       "label": "Scenario: Destination Id is never overwritten",
@@ -558,9 +978,9 @@
       "source_file": "openspec/specs/activity-mapping/spec.md",
       "source_location": "L34",
       "_origin": "ast",
-      "id": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_destination_id_is_never_overwritten",
       "community": 62,
-      "norm_label": "scenario: destination id is never overwritten"
+      "norm_label": "scenario: destination id is never overwritten",
+      "id": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_destination_id_is_never_overwritten"
     },
     {
       "label": "Scenario: IsCancelled is carried over in updates",
@@ -568,9 +988,9 @@
       "source_file": "openspec/specs/activity-mapping/spec.md",
       "source_location": "L39",
       "_origin": "ast",
-      "id": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_iscancelled_is_carried_over_in_updates",
       "community": 62,
-      "norm_label": "scenario: iscancelled is carried over in updates"
+      "norm_label": "scenario: iscancelled is carried over in updates",
+      "id": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_iscancelled_is_carried_over_in_updates"
     },
     {
       "label": "Requirement: Mapper is registered in the DI container",
@@ -578,9 +998,9 @@
       "source_file": "openspec/specs/activity-mapping/spec.md",
       "source_location": "L46",
       "_origin": "ast",
-      "id": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_mapper_is_registered_in_the_di_container",
       "community": 62,
-      "norm_label": "requirement: mapper is registered in the di container"
+      "norm_label": "requirement: mapper is registered in the di container",
+      "id": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_mapper_is_registered_in_the_di_container"
     },
     {
       "label": "Scenario: Handlers resolve IActivityMapper from DI",
@@ -588,9 +1008,9 @@
       "source_file": "openspec/specs/activity-mapping/spec.md",
       "source_location": "L50",
       "_origin": "ast",
-      "id": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_handlers_resolve_iactivitymapper_from_di",
       "community": 62,
-      "norm_label": "scenario: handlers resolve iactivitymapper from di"
+      "norm_label": "scenario: handlers resolve iactivitymapper from di",
+      "id": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_handlers_resolve_iactivitymapper_from_di"
     },
     {
       "label": "core.md",
@@ -1321,186 +1741,6 @@
       "community": 52,
       "norm_label": ".updateactivity()",
       "id": "core_iactivitymapper_iactivitymapper_updateactivity"
-    },
-    {
-      "label": "backend-standards.md",
-      "file_type": "document",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 51,
-      "norm_label": "backend-standards.md",
-      "id": "docs_backend_standards"
-    },
-    {
-      "label": "Backend Standards",
-      "file_type": "document",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 51,
-      "norm_label": "backend standards",
-      "id": "docs_backend_standards_backend_standards"
-    },
-    {
-      "label": "Technology Stack",
-      "file_type": "document",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L5",
-      "_origin": "ast",
-      "community": 51,
-      "norm_label": "technology stack",
-      "id": "docs_backend_standards_technology_stack"
-    },
-    {
-      "label": "Project Structure (Clean Architecture)",
-      "file_type": "document",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L19",
-      "_origin": "ast",
-      "community": 51,
-      "norm_label": "project structure (clean architecture)",
-      "id": "docs_backend_standards_project_structure_clean_architecture"
-    },
-    {
-      "label": "Architecture Patterns",
-      "file_type": "document",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L47",
-      "_origin": "ast",
-      "community": 51,
-      "norm_label": "architecture patterns",
-      "id": "docs_backend_standards_architecture_patterns"
-    },
-    {
-      "label": "CQRS with MediatR",
-      "file_type": "document",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L49",
-      "_origin": "ast",
-      "community": 51,
-      "norm_label": "cqrs with mediatr",
-      "id": "docs_backend_standards_cqrs_with_mediatr"
-    },
-    {
-      "label": "Controller Pattern",
-      "file_type": "document",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L88",
-      "_origin": "ast",
-      "community": 51,
-      "norm_label": "controller pattern",
-      "id": "docs_backend_standards_controller_pattern"
-    },
-    {
-      "label": "DTOs",
-      "file_type": "document",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L102",
-      "_origin": "ast",
-      "community": 51,
-      "norm_label": "dtos",
-      "id": "docs_backend_standards_dtos"
-    },
-    {
-      "label": "Mapping",
-      "file_type": "document",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L110",
-      "_origin": "ast",
-      "community": 51,
-      "norm_label": "mapping",
-      "id": "docs_backend_standards_mapping"
-    },
-    {
-      "label": "Domain Entity Conventions",
-      "file_type": "document",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L131",
-      "_origin": "ast",
-      "community": 51,
-      "norm_label": "domain entity conventions",
-      "id": "docs_backend_standards_domain_entity_conventions"
-    },
-    {
-      "label": "Naming Conventions",
-      "file_type": "document",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L155",
-      "_origin": "ast",
-      "community": 51,
-      "norm_label": "naming conventions",
-      "id": "docs_backend_standards_naming_conventions"
-    },
-    {
-      "label": "Dependency Injection",
-      "file_type": "document",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L169",
-      "_origin": "ast",
-      "community": 51,
-      "norm_label": "dependency injection",
-      "id": "docs_backend_standards_dependency_injection"
-    },
-    {
-      "label": "Error Handling",
-      "file_type": "document",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L186",
-      "_origin": "ast",
-      "community": 51,
-      "norm_label": "error handling",
-      "id": "docs_backend_standards_error_handling"
-    },
-    {
-      "label": "CORS",
-      "file_type": "document",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L194",
-      "_origin": "ast",
-      "community": 51,
-      "norm_label": "cors",
-      "id": "docs_backend_standards_cors"
-    },
-    {
-      "label": "EF Core / Database",
-      "file_type": "document",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L210",
-      "_origin": "ast",
-      "community": 51,
-      "norm_label": "ef core / database",
-      "id": "docs_backend_standards_ef_core_database"
-    },
-    {
-      "label": "Migration workflow",
-      "file_type": "document",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L218",
-      "_origin": "ast",
-      "community": 51,
-      "norm_label": "migration workflow",
-      "id": "docs_backend_standards_migration_workflow"
-    },
-    {
-      "label": "Code Style",
-      "file_type": "document",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L228",
-      "_origin": "ast",
-      "community": 51,
-      "norm_label": "code style",
-      "id": "docs_backend_standards_code_style"
-    },
-    {
-      "label": "Build Verification",
-      "file_type": "document",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L238",
-      "_origin": "ast",
-      "community": 51,
-      "norm_label": "build verification",
-      "id": "docs_backend_standards_build_verification"
     },
     {
       "label": "tasks.md",
@@ -4714,188 +4954,6 @@
       "id": "docs_plan_activity_request_mapper_imapper"
     },
     {
-      "label": "Reactivities API Spec (OpenAPI 3.0)",
-      "file_type": "document",
-      "source_file": "docs/api-spec.yml",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 13,
-      "norm_label": "reactivities api spec (openapi 3.0)",
-      "id": "reactivities_docs_api_spec"
-    },
-    {
-      "label": "Activity Resource (API Schema)",
-      "file_type": "concept",
-      "source_file": "docs/api-spec.yml",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 13,
-      "norm_label": "activity resource (api schema)",
-      "id": "reactivities_docs_activity_resource"
-    },
-    {
-      "label": "ActivityRequest Schema (API)",
-      "file_type": "concept",
-      "source_file": "docs/api-spec.yml",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 13,
-      "norm_label": "activityrequest schema (api)",
-      "id": "reactivities_docs_activity_request_schema"
-    },
-    {
-      "label": "Base Standards \u2014 Core Principles",
-      "file_type": "document",
-      "source_file": "docs/base-standards.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 5,
-      "norm_label": "base standards \u2014 core principles",
-      "id": "docs_base_standards_core_principles"
-    },
-    {
-      "label": "Base Standards \u2014 Language Standards (English Only)",
-      "file_type": "document",
-      "source_file": "docs/base-standards.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 5,
-      "norm_label": "base standards \u2014 language standards (english only)",
-      "id": "docs_base_standards_language_standards"
-    },
-    {
-      "label": "Base Standards \u2014 Project Skills (ai-specs/skills)",
-      "file_type": "document",
-      "source_file": "docs/base-standards.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 38,
-      "norm_label": "base standards \u2014 project skills (ai-specs/skills)",
-      "id": "docs_base_standards_project_skills"
-    },
-    {
-      "label": "Base Standards \u2014 Planning Model Requirement (Opus)",
-      "file_type": "document",
-      "source_file": "docs/base-standards.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 37,
-      "norm_label": "base standards \u2014 planning model requirement (opus)",
-      "id": "docs_base_standards_planning_model"
-    },
-    {
-      "label": "Base Standards \u2014 Symlink Integrity and Multi-Agent Portability",
-      "file_type": "document",
-      "source_file": "docs/base-standards.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 39,
-      "norm_label": "base standards \u2014 symlink integrity and multi-agent portability",
-      "id": "docs_base_standards_symlink_integrity"
-    },
-    {
-      "label": "Base Standards \u2014 Mandatory OpenSpec Artifact Updates",
-      "file_type": "document",
-      "source_file": "docs/base-standards.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 5,
-      "norm_label": "base standards \u2014 mandatory openspec artifact updates",
-      "id": "docs_base_standards_openspec_artifact_updates"
-    },
-    {
-      "label": "Data Model \u2014 Activity Entity",
-      "file_type": "document",
-      "source_file": "docs/data-model.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 5,
-      "norm_label": "data model \u2014 activity entity",
-      "id": "docs_data_model_activity_entity"
-    },
-    {
-      "label": "Data Model \u2014 ActivityRequest Write DTO",
-      "file_type": "document",
-      "source_file": "docs/data-model.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 5,
-      "norm_label": "data model \u2014 activityrequest write dto",
-      "id": "docs_data_model_activity_request_dto"
-    },
-    {
-      "label": "Data Model \u2014 Frontend TypeScript Activity Type",
-      "file_type": "document",
-      "source_file": "docs/data-model.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 5,
-      "norm_label": "data model \u2014 frontend typescript activity type",
-      "id": "docs_data_model_frontend_type"
-    },
-    {
-      "label": "Data Model \u2014 Seed Data (DbInitializer)",
-      "file_type": "document",
-      "source_file": "docs/data-model.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 5,
-      "norm_label": "data model \u2014 seed data (dbinitializer)",
-      "id": "docs_data_model_seed_data"
-    },
-    {
-      "label": "Data Model \u2014 Entity-Relationship Diagram",
-      "file_type": "document",
-      "source_file": "docs/data-model.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 5,
-      "norm_label": "data model \u2014 entity-relationship diagram",
-      "id": "docs_data_model_er_diagram"
-    },
-    {
       "label": "Development Guide \u2014 Backend Setup (.NET 10 / SQLite)",
       "file_type": "document",
       "source_file": "docs/development_guide.md",
@@ -4904,7 +4962,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 40,
       "norm_label": "development guide \u2014 backend setup (.net 10 / sqlite)",
       "id": "docs_development_guide_backend_setup"
     },
@@ -4930,7 +4988,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 40,
       "norm_label": "development guide \u2014 ef core migrations",
       "id": "docs_development_guide_ef_migrations"
     },
@@ -4948,32 +5006,6 @@
       "id": "docs_development_guide_curl_testing"
     },
     {
-      "label": "Documentation Standards \u2014 Technical Documentation Update Process",
-      "file_type": "document",
-      "source_file": "docs/documentation-standards.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 5,
-      "norm_label": "documentation standards \u2014 technical documentation update process",
-      "id": "docs_documentation_standards_technical_docs"
-    },
-    {
-      "label": "Documentation Standards \u2014 AI Specs Learning & Rule Update Process",
-      "file_type": "document",
-      "source_file": "docs/documentation-standards.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 40,
-      "norm_label": "documentation standards \u2014 ai specs learning & rule update process",
-      "id": "docs_documentation_standards_ai_specs"
-    },
-    {
       "label": "Frontend Standards \u2014 Technology Stack (React 19/MUI/React Query/MobX)",
       "file_type": "document",
       "source_file": "docs/frontend-standards.md",
@@ -4982,7 +5014,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 38,
       "norm_label": "frontend standards \u2014 technology stack (react 19/mui/react query/mobx)",
       "id": "docs_frontend_standards_tech_stack"
     },
@@ -5008,7 +5040,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 37,
       "norm_label": "frontend standards \u2014 data fetching with react query",
       "id": "docs_frontend_standards_react_query"
     },
@@ -5021,7 +5053,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 37,
       "norm_label": "frontend standards \u2014 http client (axios with interceptors)",
       "id": "docs_frontend_standards_axios"
     },
@@ -5034,7 +5066,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 37,
       "norm_label": "frontend standards \u2014 client state with mobx (uistore)",
       "id": "docs_frontend_standards_mobx"
     },
@@ -5693,12 +5725,432 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_backend_standards",
+      "target": "docs_backend_standards_backend_standards"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/base-standards.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "docs_base_standards",
+      "target": "docs_backend_standards",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_backend_standards_backend_standards",
+      "target": "docs_backend_standards_architecture_patterns"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L238",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_backend_standards_backend_standards",
+      "target": "docs_backend_standards_build_verification"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L228",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_backend_standards_backend_standards",
+      "target": "docs_backend_standards_code_style"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L194",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_backend_standards_backend_standards",
+      "target": "docs_backend_standards_cors"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L169",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_backend_standards_backend_standards",
+      "target": "docs_backend_standards_dependency_injection"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L131",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_backend_standards_backend_standards",
+      "target": "docs_backend_standards_domain_entity_conventions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L210",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_backend_standards_backend_standards",
+      "target": "docs_backend_standards_ef_core_database"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L186",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_backend_standards_backend_standards",
+      "target": "docs_backend_standards_error_handling"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L110",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_backend_standards_backend_standards",
+      "target": "docs_backend_standards_mapping"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L155",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_backend_standards_backend_standards",
+      "target": "docs_backend_standards_naming_conventions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_backend_standards_backend_standards",
+      "target": "docs_backend_standards_project_structure_clean_architecture"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_backend_standards_backend_standards",
+      "target": "docs_backend_standards_technology_stack"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L88",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_backend_standards_architecture_patterns",
+      "target": "docs_backend_standards_controller_pattern"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_backend_standards_architecture_patterns",
+      "target": "docs_backend_standards_cqrs_with_mediatr"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L102",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_backend_standards_architecture_patterns",
+      "target": "docs_backend_standards_dtos"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/backend-standards.md",
+      "source_location": "L218",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_backend_standards_ef_core_database",
+      "target": "docs_backend_standards_migration_workflow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/base-standards.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "docs_base_standards",
+      "target": "docs_base_standards_1_core_principles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/base-standards.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "docs_base_standards",
+      "target": "docs_base_standards_2_language_standards",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/base-standards.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "docs_base_standards",
+      "target": "docs_base_standards_3_specific_standards",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/base-standards.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "docs_base_standards",
+      "target": "docs_base_standards_4_project_skills",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/base-standards.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "docs_base_standards",
+      "target": "docs_base_standards_5_planning_model_requirement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/base-standards.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "docs_base_standards",
+      "target": "docs_base_standards_6_symlink_integrity_and_multi_agent_portability",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/base-standards.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "docs_base_standards",
+      "target": "docs_base_standards_7_mandatory_openspec_artifact_updates_for_post_apply_changes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/base-standards.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "docs_base_standards",
+      "target": "docs_data_model",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/base-standards.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "docs_base_standards",
+      "target": "docs_documentation_standards",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/data-model.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_data_model",
+      "target": "docs_data_model_data_model_documentation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/data-model.md",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "docs_data_model_data_model_documentation",
+      "target": "docs_data_model_entity_relationship_diagram",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/data-model.md",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "docs_data_model_data_model_documentation",
+      "target": "docs_data_model_key_design_principles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/data-model.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "docs_data_model_data_model_documentation",
+      "target": "docs_data_model_model_descriptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/data-model.md",
+      "source_location": "L95",
+      "weight": 1.0,
+      "source": "docs_data_model_data_model_documentation",
+      "target": "docs_data_model_seed_data",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/data-model.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "docs_data_model_model_descriptions",
+      "target": "docs_data_model_1_activity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/data-model.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "docs_data_model_model_descriptions",
+      "target": "docs_data_model_2_createactivityrequest_write_dto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/data-model.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "docs_data_model_model_descriptions",
+      "target": "docs_data_model_3_frontend_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/development_guide.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_development_guide_backend_setup",
+      "target": "docs_data_model_seed_data"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/documentation-standards.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "docs_documentation_standards",
+      "target": "docs_documentation_standards_rules_and_patterns_for_documentation_and_ai_specs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/documentation-standards.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "docs_documentation_standards_rules_and_patterns_for_documentation_and_ai_specs",
+      "target": "docs_documentation_standards_ai_specs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/documentation-standards.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "docs_documentation_standards_rules_and_patterns_for_documentation_and_ai_specs",
+      "target": "docs_documentation_standards_general_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/documentation-standards.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "docs_documentation_standards_rules_and_patterns_for_documentation_and_ai_specs",
+      "target": "docs_documentation_standards_introduction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/documentation-standards.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "docs_documentation_standards_rules_and_patterns_for_documentation_and_ai_specs",
+      "target": "docs_documentation_standards_technical_documentation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/documentation-standards.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "docs_documentation_standards_ai_specs",
+      "target": "docs_documentation_standards_common_pitfalls_and_anti_patterns_to_be_avoided_by_the_ai",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/design.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "2026_06_26_migrate_automapper_to_custommapper_design",
-      "target": "2026_06_26_migrate_automapper_to_custommapper_design_context",
-      "confidence_score": 1.0
+      "target": "2026_06_26_migrate_automapper_to_custommapper_design_context"
     },
     {
       "relation": "contains",
@@ -5706,9 +6158,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/design.md",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "2026_06_26_migrate_automapper_to_custommapper_design",
-      "target": "2026_06_26_migrate_automapper_to_custommapper_design_decisions",
-      "confidence_score": 1.0
+      "target": "2026_06_26_migrate_automapper_to_custommapper_design_decisions"
     },
     {
       "relation": "contains",
@@ -5716,9 +6168,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/design.md",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "2026_06_26_migrate_automapper_to_custommapper_design",
-      "target": "2026_06_26_migrate_automapper_to_custommapper_design_goals_non_goals",
-      "confidence_score": 1.0
+      "target": "2026_06_26_migrate_automapper_to_custommapper_design_goals_non_goals"
     },
     {
       "relation": "contains",
@@ -5726,9 +6178,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/design.md",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "2026_06_26_migrate_automapper_to_custommapper_design",
-      "target": "2026_06_26_migrate_automapper_to_custommapper_design_migration_plan",
-      "confidence_score": 1.0
+      "target": "2026_06_26_migrate_automapper_to_custommapper_design_migration_plan"
     },
     {
       "relation": "contains",
@@ -5736,9 +6188,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/design.md",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "2026_06_26_migrate_automapper_to_custommapper_design",
-      "target": "2026_06_26_migrate_automapper_to_custommapper_design_open_questions",
-      "confidence_score": 1.0
+      "target": "2026_06_26_migrate_automapper_to_custommapper_design_open_questions"
     },
     {
       "relation": "contains",
@@ -5746,9 +6198,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/design.md",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "2026_06_26_migrate_automapper_to_custommapper_design",
-      "target": "2026_06_26_migrate_automapper_to_custommapper_design_risks_trade_offs",
-      "confidence_score": 1.0
+      "target": "2026_06_26_migrate_automapper_to_custommapper_design_risks_trade_offs"
     },
     {
       "relation": "contains",
@@ -5756,9 +6208,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/design.md",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "2026_06_26_migrate_automapper_to_custommapper_design_decisions",
-      "target": "2026_06_26_migrate_automapper_to_custommapper_design_1_interface_iactivitymapper_over_a_static_class",
-      "confidence_score": 1.0
+      "target": "2026_06_26_migrate_automapper_to_custommapper_design_1_interface_iactivitymapper_over_a_static_class"
     },
     {
       "relation": "contains",
@@ -5766,9 +6218,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/design.md",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "2026_06_26_migrate_automapper_to_custommapper_design_decisions",
-      "target": "2026_06_26_migrate_automapper_to_custommapper_design_2_placement_in_application_core_not_domain",
-      "confidence_score": 1.0
+      "target": "2026_06_26_migrate_automapper_to_custommapper_design_2_placement_in_application_core_not_domain"
     },
     {
       "relation": "contains",
@@ -5776,9 +6228,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/design.md",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "2026_06_26_migrate_automapper_to_custommapper_design_decisions",
-      "target": "2026_06_26_migrate_automapper_to_custommapper_design_3_two_methods_on_the_interface",
-      "confidence_score": 1.0
+      "target": "2026_06_26_migrate_automapper_to_custommapper_design_3_two_methods_on_the_interface"
     },
     {
       "relation": "contains",
@@ -5786,9 +6238,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/design.md",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "2026_06_26_migrate_automapper_to_custommapper_design_decisions",
-      "target": "2026_06_26_migrate_automapper_to_custommapper_design_4_addscoped_registration",
-      "confidence_score": 1.0
+      "target": "2026_06_26_migrate_automapper_to_custommapper_design_4_addscoped_registration"
     },
     {
       "relation": "contains",
@@ -5796,9 +6248,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/proposal.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "2026_06_26_migrate_automapper_to_custommapper_proposal",
-      "target": "2026_06_26_migrate_automapper_to_custommapper_proposal_agent_role",
-      "confidence_score": 1.0
+      "target": "2026_06_26_migrate_automapper_to_custommapper_proposal_agent_role"
     },
     {
       "relation": "contains",
@@ -5806,9 +6258,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/proposal.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "2026_06_26_migrate_automapper_to_custommapper_proposal",
-      "target": "2026_06_26_migrate_automapper_to_custommapper_proposal_capabilities",
-      "confidence_score": 1.0
+      "target": "2026_06_26_migrate_automapper_to_custommapper_proposal_capabilities"
     },
     {
       "relation": "contains",
@@ -5816,9 +6268,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/proposal.md",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "2026_06_26_migrate_automapper_to_custommapper_proposal",
-      "target": "2026_06_26_migrate_automapper_to_custommapper_proposal_impact",
-      "confidence_score": 1.0
+      "target": "2026_06_26_migrate_automapper_to_custommapper_proposal_impact"
     },
     {
       "relation": "contains",
@@ -5826,9 +6278,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/proposal.md",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "2026_06_26_migrate_automapper_to_custommapper_proposal",
-      "target": "2026_06_26_migrate_automapper_to_custommapper_proposal_non_goals",
-      "confidence_score": 1.0
+      "target": "2026_06_26_migrate_automapper_to_custommapper_proposal_non_goals"
     },
     {
       "relation": "contains",
@@ -5836,9 +6288,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/proposal.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "2026_06_26_migrate_automapper_to_custommapper_proposal",
-      "target": "2026_06_26_migrate_automapper_to_custommapper_proposal_what_changes",
-      "confidence_score": 1.0
+      "target": "2026_06_26_migrate_automapper_to_custommapper_proposal_what_changes"
     },
     {
       "relation": "contains",
@@ -5846,9 +6298,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/proposal.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "2026_06_26_migrate_automapper_to_custommapper_proposal",
-      "target": "2026_06_26_migrate_automapper_to_custommapper_proposal_why",
-      "confidence_score": 1.0
+      "target": "2026_06_26_migrate_automapper_to_custommapper_proposal_why"
     },
     {
       "relation": "contains",
@@ -5856,9 +6308,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/proposal.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "2026_06_26_migrate_automapper_to_custommapper_proposal_capabilities",
-      "target": "2026_06_26_migrate_automapper_to_custommapper_proposal_modified_capabilities",
-      "confidence_score": 1.0
+      "target": "2026_06_26_migrate_automapper_to_custommapper_proposal_modified_capabilities"
     },
     {
       "relation": "contains",
@@ -5866,9 +6318,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/proposal.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "2026_06_26_migrate_automapper_to_custommapper_proposal_capabilities",
-      "target": "2026_06_26_migrate_automapper_to_custommapper_proposal_new_capabilities",
-      "confidence_score": 1.0
+      "target": "2026_06_26_migrate_automapper_to_custommapper_proposal_new_capabilities"
     },
     {
       "relation": "contains",
@@ -5876,9 +6328,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/specs/activity-mapping/spec.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec",
-      "target": "activity_mapping_spec_added_requirements",
-      "confidence_score": 1.0
+      "target": "activity_mapping_spec_added_requirements"
     },
     {
       "relation": "contains",
@@ -5886,9 +6338,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/specs/activity-mapping/spec.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "activity_mapping_spec_added_requirements",
-      "target": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_map_createactivityrequest_to_activity",
-      "confidence_score": 1.0
+      "target": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_map_createactivityrequest_to_activity"
     },
     {
       "relation": "contains",
@@ -5896,9 +6348,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/specs/activity-mapping/spec.md",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "activity_mapping_spec_added_requirements",
-      "target": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_mapper_is_registered_in_the_di_container",
-      "confidence_score": 1.0
+      "target": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_mapper_is_registered_in_the_di_container"
     },
     {
       "relation": "contains",
@@ -5906,9 +6358,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/specs/activity-mapping/spec.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "activity_mapping_spec_added_requirements",
-      "target": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_update_activity_from_another_activity",
-      "confidence_score": 1.0
+      "target": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_update_activity_from_another_activity"
     },
     {
       "relation": "contains",
@@ -5916,9 +6368,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/specs/activity-mapping/spec.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_map_createactivityrequest_to_activity",
-      "target": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_all_required_fields_produce_a_valid_activity",
-      "confidence_score": 1.0
+      "target": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_all_required_fields_produce_a_valid_activity"
     },
     {
       "relation": "contains",
@@ -5926,9 +6378,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/specs/activity-mapping/spec.md",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_map_createactivityrequest_to_activity",
-      "target": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_numeric_fields_are_copied_exactly",
-      "confidence_score": 1.0
+      "target": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_numeric_fields_are_copied_exactly"
     },
     {
       "relation": "contains",
@@ -5936,9 +6388,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/specs/activity-mapping/spec.md",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_update_activity_from_another_activity",
-      "target": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_destination_id_is_never_overwritten",
-      "confidence_score": 1.0
+      "target": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_destination_id_is_never_overwritten"
     },
     {
       "relation": "contains",
@@ -5946,9 +6398,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/specs/activity-mapping/spec.md",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_update_activity_from_another_activity",
-      "target": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_iscancelled_is_carried_over_in_updates",
-      "confidence_score": 1.0
+      "target": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_iscancelled_is_carried_over_in_updates"
     },
     {
       "relation": "contains",
@@ -5956,9 +6408,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/specs/activity-mapping/spec.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_update_activity_from_another_activity",
-      "target": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_properties_are_overwritten_on_destination",
-      "confidence_score": 1.0
+      "target": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_properties_are_overwritten_on_destination"
     },
     {
       "relation": "contains",
@@ -5966,9 +6418,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/specs/activity-mapping/spec.md",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_mapper_is_registered_in_the_di_container",
-      "target": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_handlers_resolve_iactivitymapper_from_di",
-      "confidence_score": 1.0
+      "target": "openspec_changes_archive_2026_06_26_migrate_automapper_to_custommapper_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_handlers_resolve_iactivitymapper_from_di"
     },
     {
       "relation": "contains",
@@ -5976,9 +6428,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/tasks.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "2026_06_26_migrate_automapper_to_custommapper_tasks",
-      "target": "2026_06_26_migrate_automapper_to_custommapper_tasks_1_add_custom_mapper_interface_and_implementation",
-      "confidence_score": 1.0
+      "target": "2026_06_26_migrate_automapper_to_custommapper_tasks_1_add_custom_mapper_interface_and_implementation"
     },
     {
       "relation": "contains",
@@ -5986,9 +6438,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/tasks.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "2026_06_26_migrate_automapper_to_custommapper_tasks",
-      "target": "2026_06_26_migrate_automapper_to_custommapper_tasks_2_update_di_registration",
-      "confidence_score": 1.0
+      "target": "2026_06_26_migrate_automapper_to_custommapper_tasks_2_update_di_registration"
     },
     {
       "relation": "contains",
@@ -5996,9 +6448,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/tasks.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "2026_06_26_migrate_automapper_to_custommapper_tasks",
-      "target": "2026_06_26_migrate_automapper_to_custommapper_tasks_3_update_mediatr_handlers",
-      "confidence_score": 1.0
+      "target": "2026_06_26_migrate_automapper_to_custommapper_tasks_3_update_mediatr_handlers"
     },
     {
       "relation": "contains",
@@ -6006,9 +6458,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/tasks.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "2026_06_26_migrate_automapper_to_custommapper_tasks",
-      "target": "2026_06_26_migrate_automapper_to_custommapper_tasks_4_remove_automapper",
-      "confidence_score": 1.0
+      "target": "2026_06_26_migrate_automapper_to_custommapper_tasks_4_remove_automapper"
     },
     {
       "relation": "contains",
@@ -6016,9 +6468,9 @@
       "source_file": "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/tasks.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "2026_06_26_migrate_automapper_to_custommapper_tasks",
-      "target": "2026_06_26_migrate_automapper_to_custommapper_tasks_5_verify",
-      "confidence_score": 1.0
+      "target": "2026_06_26_migrate_automapper_to_custommapper_tasks_5_verify"
     },
     {
       "relation": "contains",
@@ -6026,9 +6478,9 @@
       "source_file": "openspec/specs/activity-mapping/spec.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec",
-      "target": "activity_mapping_spec_activity_mapping_specification",
-      "confidence_score": 1.0
+      "target": "activity_mapping_spec_activity_mapping_specification"
     },
     {
       "relation": "contains",
@@ -6036,9 +6488,9 @@
       "source_file": "openspec/specs/activity-mapping/spec.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "activity_mapping_spec_activity_mapping_specification",
-      "target": "activity_mapping_spec_purpose",
-      "confidence_score": 1.0
+      "target": "activity_mapping_spec_purpose"
     },
     {
       "relation": "contains",
@@ -6046,9 +6498,9 @@
       "source_file": "openspec/specs/activity-mapping/spec.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "activity_mapping_spec_activity_mapping_specification",
-      "target": "activity_mapping_spec_requirements",
-      "confidence_score": 1.0
+      "target": "activity_mapping_spec_requirements"
     },
     {
       "relation": "contains",
@@ -6056,9 +6508,9 @@
       "source_file": "openspec/specs/activity-mapping/spec.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "activity_mapping_spec_requirements",
-      "target": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_map_createactivityrequest_to_activity",
-      "confidence_score": 1.0
+      "target": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_map_createactivityrequest_to_activity"
     },
     {
       "relation": "contains",
@@ -6066,9 +6518,9 @@
       "source_file": "openspec/specs/activity-mapping/spec.md",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "activity_mapping_spec_requirements",
-      "target": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_mapper_is_registered_in_the_di_container",
-      "confidence_score": 1.0
+      "target": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_mapper_is_registered_in_the_di_container"
     },
     {
       "relation": "contains",
@@ -6076,9 +6528,9 @@
       "source_file": "openspec/specs/activity-mapping/spec.md",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "activity_mapping_spec_requirements",
-      "target": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_update_activity_from_another_activity",
-      "confidence_score": 1.0
+      "target": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_update_activity_from_another_activity"
     },
     {
       "relation": "contains",
@@ -6086,9 +6538,9 @@
       "source_file": "openspec/specs/activity-mapping/spec.md",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_map_createactivityrequest_to_activity",
-      "target": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_all_required_fields_produce_a_valid_activity",
-      "confidence_score": 1.0
+      "target": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_all_required_fields_produce_a_valid_activity"
     },
     {
       "relation": "contains",
@@ -6096,9 +6548,9 @@
       "source_file": "openspec/specs/activity-mapping/spec.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_map_createactivityrequest_to_activity",
-      "target": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_numeric_fields_are_copied_exactly",
-      "confidence_score": 1.0
+      "target": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_numeric_fields_are_copied_exactly"
     },
     {
       "relation": "contains",
@@ -6106,9 +6558,9 @@
       "source_file": "openspec/specs/activity-mapping/spec.md",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_update_activity_from_another_activity",
-      "target": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_destination_id_is_never_overwritten",
-      "confidence_score": 1.0
+      "target": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_destination_id_is_never_overwritten"
     },
     {
       "relation": "contains",
@@ -6116,9 +6568,9 @@
       "source_file": "openspec/specs/activity-mapping/spec.md",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_update_activity_from_another_activity",
-      "target": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_iscancelled_is_carried_over_in_updates",
-      "confidence_score": 1.0
+      "target": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_iscancelled_is_carried_over_in_updates"
     },
     {
       "relation": "contains",
@@ -6126,9 +6578,9 @@
       "source_file": "openspec/specs/activity-mapping/spec.md",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_update_activity_from_another_activity",
-      "target": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_properties_are_overwritten_on_destination",
-      "confidence_score": 1.0
+      "target": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_properties_are_overwritten_on_destination"
     },
     {
       "relation": "contains",
@@ -6136,9 +6588,9 @@
       "source_file": "openspec/specs/activity-mapping/spec.md",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_requirement_mapper_is_registered_in_the_di_container",
-      "target": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_handlers_resolve_iactivitymapper_from_di",
-      "confidence_score": 1.0
+      "target": "openspec_specs_activity_mapping_spec_md_activity_mapping_spec_scenario_handlers_resolve_iactivitymapper_from_di"
     },
     {
       "relation": "contains",
@@ -7107,176 +7559,6 @@
       "confidence_score": 1.0,
       "source": "core_iactivitymapper_iactivitymapper",
       "target": "core_iactivitymapper_iactivitymapper_updateactivity"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_backend_standards",
-      "target": "docs_backend_standards_backend_standards"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L47",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_backend_standards_backend_standards",
-      "target": "docs_backend_standards_architecture_patterns"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L238",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_backend_standards_backend_standards",
-      "target": "docs_backend_standards_build_verification"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L228",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_backend_standards_backend_standards",
-      "target": "docs_backend_standards_code_style"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L194",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_backend_standards_backend_standards",
-      "target": "docs_backend_standards_cors"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L169",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_backend_standards_backend_standards",
-      "target": "docs_backend_standards_dependency_injection"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L131",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_backend_standards_backend_standards",
-      "target": "docs_backend_standards_domain_entity_conventions"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L210",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_backend_standards_backend_standards",
-      "target": "docs_backend_standards_ef_core_database"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L186",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_backend_standards_backend_standards",
-      "target": "docs_backend_standards_error_handling"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L110",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_backend_standards_backend_standards",
-      "target": "docs_backend_standards_mapping"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L155",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_backend_standards_backend_standards",
-      "target": "docs_backend_standards_naming_conventions"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_backend_standards_backend_standards",
-      "target": "docs_backend_standards_project_structure_clean_architecture"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_backend_standards_backend_standards",
-      "target": "docs_backend_standards_technology_stack"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L88",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_backend_standards_architecture_patterns",
-      "target": "docs_backend_standards_controller_pattern"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L49",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_backend_standards_architecture_patterns",
-      "target": "docs_backend_standards_cqrs_with_mediatr"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L102",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_backend_standards_architecture_patterns",
-      "target": "docs_backend_standards_dtos"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/backend-standards.md",
-      "source_location": "L218",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_backend_standards_ef_core_database",
-      "target": "docs_backend_standards_migration_workflow"
     },
     {
       "relation": "contains",
@@ -10164,166 +10446,6 @@
       "target": "docs_plan_activity_request_mapper_imapper"
     },
     {
-      "relation": "semantically_similar_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "docs/PLAN-ActivityRequestMapper.md",
-      "source_location": null,
-      "weight": 0.95,
-      "source": "docs_plan_activity_request_mapper_dto",
-      "target": "reactivities_docs_activity_request_schema"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/api-spec.yml",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "reactivities_docs_api_spec",
-      "target": "reactivities_docs_activity_request_schema"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/api-spec.yml",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "reactivities_docs_api_spec",
-      "target": "reactivities_docs_activity_resource"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/base-standards.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_base_standards_core_principles",
-      "target": "docs_base_standards_language_standards"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/base-standards.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_base_standards_core_principles",
-      "target": "docs_data_model_activity_entity"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/base-standards.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_base_standards_core_principles",
-      "target": "docs_documentation_standards_technical_docs"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/base-standards.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_base_standards_core_principles",
-      "target": "docs_frontend_standards_tech_stack"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/base-standards.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_base_standards_core_principles",
-      "target": "docs_openspec_tasks_mandatory_steps_checklist"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/base-standards.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_base_standards_openspec_artifact_updates",
-      "target": "docs_openspec_tasks_mandatory_steps_checklist"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/data-model.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_data_model_activity_entity",
-      "target": "docs_data_model_activity_request_dto"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/data-model.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_data_model_activity_entity",
-      "target": "docs_data_model_er_diagram"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/data-model.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_data_model_activity_entity",
-      "target": "docs_data_model_frontend_type"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/data-model.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_data_model_activity_entity",
-      "target": "docs_data_model_seed_data"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/documentation-standards.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_documentation_standards_technical_docs",
-      "target": "docs_data_model_activity_entity"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "docs/data-model.md",
-      "source_location": null,
-      "weight": 0.85,
-      "source": "docs_data_model_frontend_type",
-      "target": "docs_frontend_standards_react_query"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/development_guide.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_development_guide_backend_setup",
-      "target": "docs_data_model_seed_data"
-    },
-    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -10332,16 +10454,6 @@
       "weight": 1.0,
       "source": "docs_development_guide_backend_setup",
       "target": "docs_development_guide_ef_migrations"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/documentation-standards.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_documentation_standards_technical_docs",
-      "target": "docs_development_guide_backend_setup"
     },
     {
       "relation": "conceptually_related_to",
@@ -10362,16 +10474,6 @@
       "weight": 0.85,
       "source": "docs_development_guide_curl_testing",
       "target": "docs_openspec_tasks_mandatory_steps_build_verification"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/documentation-standards.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_documentation_standards_technical_docs",
-      "target": "docs_frontend_standards_tech_stack"
     },
     {
       "relation": "references",
@@ -11012,5 +11114,5 @@
       "source_file": "CLAUDE.md"
     }
   ],
-  "built_at_commit": "b64ec0f91caf4c5372e6017ec07faa358fe2a494"
+  "built_at_commit": "87c40d332524703de03d8ab6821db37308cdb053"
 }
