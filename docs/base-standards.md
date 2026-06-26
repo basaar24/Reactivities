@@ -27,7 +27,7 @@ alwaysApply: true
 
 For detailed standards and guidelines specific to different areas of the project, refer to:
 
-- [Backend Standards](./backend-standards.md) — C# Clean Architecture, CQRS/MediatR, EF Core, AutoMapper, and backend best practices
+- [Backend Standards](./backend-standards.md) — C# Clean Architecture, CQRS/MediatR, EF Core, custom `IActivityMapper`, and backend best practices
 - [Frontend Standards](./frontend-standards.md) — React 19 components, MUI, React Query, MobX, and frontend architecture
 - [Documentation Standards](./documentation-standards.md) — Technical documentation structure, formatting, and maintenance guidelines, including AI standards like this document
 - [OpenSpec Tasks Mandatory Steps](./openspec-tasks-mandatory-steps.md) — Required checklist and execution rules when creating or updating OpenSpec `tasks.md` files
