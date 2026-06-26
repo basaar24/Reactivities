@@ -1,16 +1,16 @@
-# Graph Report - Reactivities  (2026-06-26)
+# Graph Report - Reactivities  (2026-06-25)
 
 ## Corpus Check
-- 158 files · ~75,242 words
+- 158 files · ~75,019 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 504 nodes · 519 edges · 67 communities (41 shown, 26 thin omitted)
-- Extraction: 91% EXTRACTED · 9% INFERRED · 0% AMBIGUOUS · INFERRED: 48 edges (avg confidence: 0.88)
+- 456 nodes · 477 edges · 62 communities (36 shown, 26 thin omitted)
+- Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 50 edges (avg confidence: 0.88)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b64ec0f9`
+- Built from commit: `2d6fd229`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -76,11 +76,6 @@
 - [[_COMMUNITY_Community 59|Community 59]]
 - [[_COMMUNITY_Community 60|Community 60]]
 - [[_COMMUNITY_Community 61|Community 61]]
-- [[_COMMUNITY_Community 62|Community 62]]
-- [[_COMMUNITY_Community 63|Community 63]]
-- [[_COMMUNITY_Community 64|Community 64]]
-- [[_COMMUNITY_Community 65|Community 65]]
-- [[_COMMUNITY_Community 66|Community 66]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 17 edges
@@ -101,10 +96,10 @@
   CLAUDE.md → openspec/changes/migrate-automapper-to-custommapper/design.md
 - `Mandatory Graphify Pre-Task Protocol` --conceptually_related_to--> `Specboot: Augmented Spec-Driven Development Framework`  [INFERRED]
   CLAUDE.md → Reactivities/README.md
+- `OpenSpec Config Customization Prompt (setup-openspec.md)` --conceptually_related_to--> `OpenSpec config.yaml for Reactivities`  [INFERRED]
+  ai-specs/prompts/setup-openspec.md → openspec/config.yaml
 - `Test-Driven Development Principle (Base Standards)` --semantically_similar_to--> `TDD for Documentation (RED-GREEN-REFACTOR)`  [INFERRED] [semantically similar]
   Reactivities/docs/base-standards.md → Reactivities/ai-specs/skills/writing-skills/SKILL.md
-- `Reactivities Tech Stack Context (.NET 10 + React 19)` --conceptually_related_to--> `Reactivities Full-Stack Architecture`  [INFERRED]
-  openspec/config.yaml → CLAUDE.md
 
 ## Import Cycles
 - None detected.
@@ -117,7 +112,7 @@
 - **Multi-Copilot Config Files All Referencing base-standards.md** — reactivities_agents_md_base_standards, reactivities_claude_md_base_standards, reactivities_gemini_md_base_standards, readme_base_standards_single_source [EXTRACTED 1.00]
 - **Reactivities Backend Architecture: Clean Architecture + CQRS + MediatR** — claude_md_clean_architecture_cqrs, claude_md_mediator_pattern, claude_md_automapper, openspec_config_tech_stack [INFERRED 0.85]
 
-## Communities (67 total, 26 thin omitted)
+## Communities (62 total, 26 thin omitted)
 
 ### Community 0 - "Reactivities CQRS Handlers"
 Cohesion: 0.09
@@ -128,8 +123,8 @@ Cohesion: 0.06
 Nodes (31): dependencies, axios, date-fns, @emotion/react, @emotion/styled, @fontsource/roboto, mobx, mobx-react-lite (+23 more)
 
 ### Community 2 - "Reactivities Architecture Docs"
-Cohesion: 0.12
-Nodes (19): AutoMapper MappingProfiles, Clean Architecture + CQRS Pattern, Feature-Based React Structure, Controller → MediatR → Handler → DbContext Pattern, TanStack React Query v5 Server State, Reactivities Full-Stack Architecture, ActivityMapper Placement in Application/Core/, IActivityMapper Interface Design Decision (+11 more)
+Cohesion: 0.21
+Nodes (12): AutoMapper MappingProfiles, Clean Architecture + CQRS Pattern, ActivityMapper Placement in Application/Core/, IActivityMapper Interface Design Decision, Property Drift Risk from Custom Mapper, Two Mapper Methods: ToActivity and UpdateActivity, OpenSpec Change: migrate-automapper-to-custommapper, activity-mapping New Capability (+4 more)
 
 ### Community 3 - "Frontend Dev Toolchain"
 Cohesion: 0.08
@@ -152,8 +147,8 @@ Cohesion: 0.13
 Nodes (19): Anthropic Skill Authoring Best Practices, Evaluation-Driven Development for Skills, Progressive Disclosure Pattern (Skills), Skill Description Field Best Practices, CLAUDE_MD Testing Documentation Variants, Pressure Test Scenarios for Skills, Authority Persuasion Principle, Cialdini Influence Principles (2021) (+11 more)
 
 ### Community 8 - "Multi-Copilot Agent Config"
-Cohesion: 0.14
-Nodes (17): Mandatory Graphify Pre-Task Protocol, Parallel Tasks File Format (Task Block Structure), AGENTS.md Reference to base-standards.md, CLAUDE.md Reference to base-standards.md (Reactivities sub), GEMINI.md Reference to base-standards.md, ai-specs/skills Reusable Workflow Skills, base-standards.md Single Source of Truth Principle, docs/ Technical Context Folder (+9 more)
+Cohesion: 0.09
+Nodes (26): Feature-Based React Structure, Mandatory Graphify Pre-Task Protocol, Controller → MediatR → Handler → DbContext Pattern, TanStack React Query v5 Server State, Reactivities Full-Stack Architecture, OpenSpec Change Rules (proposal/tasks), Reactivities Tech Stack Context (.NET 10 + React 19), OpenSpec config.yaml for Reactivities (+18 more)
 
 ### Community 9 - "TypeScript Node Config"
 Cohesion: 0.11
@@ -259,28 +254,8 @@ Nodes (4): Backend changes, Both, Frontend changes, Task Completion Checklist
 Cohesion: 0.50
 Nodes (3): Backend, Frontend, Tech Stack
 
-### Community 62 - "Community 62"
-Cohesion: 0.15
-Nodes (12): activity-mapping Specification, Purpose, Requirements, Requirement: Map CreateActivityRequest to Activity, Requirement: Mapper is registered in the DI container, Requirement: Update Activity from another Activity, Scenario: All required fields produce a valid Activity, Scenario: Destination Id is never overwritten (+4 more)
-
-### Community 63 - "Community 63"
-Cohesion: 0.18
-Nodes (10): 1. Interface `IActivityMapper` over a static class, 2. Placement in `Application/Core/` (not `Domain/`), 3. Two methods on the interface, 4. `AddScoped` registration, Context, Decisions, Goals / Non-Goals, Migration Plan (+2 more)
-
-### Community 64 - "Community 64"
-Cohesion: 0.18
-Nodes (10): ADDED Requirements, Requirement: Map CreateActivityRequest to Activity, Requirement: Mapper is registered in the DI container, Requirement: Update Activity from another Activity, Scenario: All required fields produce a valid Activity, Scenario: Destination Id is never overwritten, Scenario: Handlers resolve IActivityMapper from DI, Scenario: IsCancelled is carried over in updates (+2 more)
-
-### Community 65 - "Community 65"
-Cohesion: 0.22
-Nodes (8): Agent Role, Capabilities, Impact, Modified Capabilities, New Capabilities, Non-goals, What Changes, Why
-
-### Community 66 - "Community 66"
-Cohesion: 0.33
-Nodes (5): 1. Add Custom Mapper Interface and Implementation, 2. Update DI Registration, 3. Update MediatR Handlers, 4. Remove AutoMapper, 5. Verify
-
 ## Knowledge Gaps
-- **275 isolated node(s):** `Context`, `Goals / Non-Goals`, `1. Interface `IActivityMapper` over a static class`, `2. Placement in `Application/Core/` (not `Domain/`)`, `3. Two methods on the interface` (+270 more)
+- **241 isolated node(s):** `Project Structure`, `Key registrations (Program.cs)`, `API Routes (`/api/activities`)`, `Mapping`, `Backend (C#)` (+236 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **26 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -288,16 +263,16 @@ Nodes (5): 1. Add Custom Mapper Interface and Implementation, 2. Update DI Regis
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `devDependencies` connect `Frontend Dev Toolchain` to `Frontend Dependencies`?**
-  _High betweenness centrality (0.008) - this node is a cross-community bridge._
-- **What connects `Context`, `Goals / Non-Goals`, `1. Interface `IActivityMapper` over a static class` to the rest of the system?**
-  _283 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.010) - this node is a cross-community bridge._
+- **What connects `Project Structure`, `Key registrations (Program.cs)`, `API Routes (`/api/activities`)` to the rest of the system?**
+  _249 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Reactivities CQRS Handlers` be split into smaller, more focused modules?**
   _Cohesion score 0.08502415458937199 - nodes in this community are weakly interconnected._
 - **Should `Frontend Dependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.0625 - nodes in this community are weakly interconnected._
-- **Should `Reactivities Architecture Docs` be split into smaller, more focused modules?**
-  _Cohesion score 0.12280701754385964 - nodes in this community are weakly interconnected._
 - **Should `Frontend Dev Toolchain` be split into smaller, more focused modules?**
   _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
 - **Should `LTI Project Docs` be split into smaller, more focused modules?**
   _Cohesion score 0.11255411255411256 - nodes in this community are weakly interconnected._
+- **Should `Backend Standards and Data Model` be split into smaller, more focused modules?**
+  _Cohesion score 0.11578947368421053 - nodes in this community are weakly interconnected._
