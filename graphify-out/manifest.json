@@ -685,24 +685,24 @@
     "semantic_hash": "7a3d71259a06e11ac2a15fd6d53596ed"
   },
   "docs/api-spec.yml": {
-    "mtime": 1782317929.1884725,
-    "ast_hash": "e194e2b8a264fe7dcc4a9f1bae5d413f",
-    "semantic_hash": "e194e2b8a264fe7dcc4a9f1bae5d413f"
+    "mtime": 1782491644.0758736,
+    "ast_hash": "35ca40aed5910902d3ef12d2eb4df703",
+    "semantic_hash": ""
   },
   "docs/backend-standards.md": {
-    "mtime": 1782340009.405264,
-    "ast_hash": "0be130426cc6ab5f052077a77b0ebebc",
+    "mtime": 1782491611.333125,
+    "ast_hash": "4686eda9551f2fc21eb8dbe23d2d51bb",
     "semantic_hash": ""
   },
   "docs/base-standards.md": {
-    "mtime": 1782317754.52345,
-    "ast_hash": "24c928bacea67a9c359aed06f79ba7a2",
-    "semantic_hash": "24c928bacea67a9c359aed06f79ba7a2"
+    "mtime": 1782491594.0197477,
+    "ast_hash": "3ab9b98fc532af9a77ed4839dab4355b",
+    "semantic_hash": ""
   },
   "docs/data-model.md": {
-    "mtime": 1782317903.9335966,
-    "ast_hash": "ad27550cf8fb98e0101f56fd42732d2f",
-    "semantic_hash": "ad27550cf8fb98e0101f56fd42732d2f"
+    "mtime": 1782491628.9603474,
+    "ast_hash": "f49f2b462320618717c927853aaa5e68",
+    "semantic_hash": ""
   },
   "docs/development_guide.md": {
     "mtime": 1782317798.1200821,
@@ -710,9 +710,9 @@
     "semantic_hash": "97ac5f5184622c30999871d3ea87814c"
   },
   "docs/documentation-standards.md": {
-    "mtime": 1782317777.8018322,
-    "ast_hash": "15c4bcea9df45595650afb22f5306fe8",
-    "semantic_hash": "15c4bcea9df45595650afb22f5306fe8"
+    "mtime": 1782491598.9874454,
+    "ast_hash": "77975ab9587987c5671b3de005e170fb",
+    "semantic_hash": ""
   },
   "docs/frontend-standards.md": {
     "mtime": 1782317878.4377997,

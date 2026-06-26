@@ -1,16 +1,16 @@
 # Graph Report - Reactivities  (2026-06-26)
 
 ## Corpus Check
-- 158 files · ~75,242 words
+- 158 files · ~75,248 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 504 nodes · 519 edges · 67 communities (41 shown, 26 thin omitted)
-- Extraction: 91% EXTRACTED · 9% INFERRED · 0% AMBIGUOUS · INFERRED: 48 edges (avg confidence: 0.88)
+- 512 nodes · 526 edges · 66 communities (43 shown, 23 thin omitted)
+- Extraction: 91% EXTRACTED · 9% INFERRED · 0% AMBIGUOUS · INFERRED: 46 edges (avg confidence: 0.88)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b64ec0f9`
+- Built from commit: `87c40d33`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -53,7 +53,6 @@
 - [[_COMMUNITY_Activity Details Page|Activity Details Page]]
 - [[_COMMUNITY_Planning Model Requirement|Planning Model Requirement]]
 - [[_COMMUNITY_Project Skills Reference|Project Skills Reference]]
-- [[_COMMUNITY_Symlink Integrity Rules|Symlink Integrity Rules]]
 - [[_COMMUNITY_Documentation AI Standards|Documentation AI Standards]]
 - [[_COMMUNITY_Frontend Project Structure|Frontend Project Structure]]
 - [[_COMMUNITY_useStore Hook|useStore Hook]]
@@ -117,7 +116,7 @@
 - **Multi-Copilot Config Files All Referencing base-standards.md** — reactivities_agents_md_base_standards, reactivities_claude_md_base_standards, reactivities_gemini_md_base_standards, readme_base_standards_single_source [EXTRACTED 1.00]
 - **Reactivities Backend Architecture: Clean Architecture + CQRS + MediatR** — claude_md_clean_architecture_cqrs, claude_md_mediator_pattern, claude_md_automapper, openspec_config_tech_stack [INFERRED 0.85]
 
-## Communities (67 total, 26 thin omitted)
+## Communities (66 total, 23 thin omitted)
 
 ### Community 0 - "Reactivities CQRS Handlers"
 Cohesion: 0.09
@@ -140,8 +139,8 @@ Cohesion: 0.11
 Nodes (22): AI Specs Learning from Feedback, Application Entity (LTI), LTI Backend Standards (Node.js/TypeScript/Express), LTI Base Development Standards, Candidate Entity (LTI), Cypress E2E Testing (LTI Frontend), LTI Data Model Documentation, Domain-Driven Design Principles (LTI) (+14 more)
 
 ### Community 5 - "Backend Standards and Data Model"
-Cohesion: 0.12
-Nodes (20): Base Standards — Core Principles, Base Standards — Language Standards (English Only), Base Standards — Mandatory OpenSpec Artifact Updates, Data Model — Activity Entity, Data Model — ActivityRequest Write DTO, Data Model — Entity-Relationship Diagram, Data Model — Frontend TypeScript Activity Type, Data Model — Seed Data (DbInitializer) (+12 more)
+Cohesion: 0.40
+Nodes (5): Development Guide — Manual API Testing with curl, OpenSpec Tasks Mandatory Steps — Agent Must Execute Tests, OpenSpec Tasks Mandatory Steps — Build Verification & DB Check, OpenSpec Tasks Mandatory Steps — Implementation Checklist, OpenSpec Tasks Mandatory Steps — E2E Testing with Playwright MCP
 
 ### Community 6 - "TypeScript App Config"
 Cohesion: 0.11
@@ -172,8 +171,8 @@ Cohesion: 0.18
 Nodes (7): WeatherForecast, ControllerBase, BaseApiController, WeatherForecastController, IEnumerable, IMediator, string
 
 ### Community 13 - "Activity Mapper Planning"
-Cohesion: 0.33
-Nodes (6): Plan: ActivityRequestMapper, ActivityRequest DTO Mapping Plan, ActivityRequestMapper implements IMapper, ActivityRequest Schema (API), Activity Resource (API Schema), Reactivities API Spec (OpenAPI 3.0)
+Cohesion: 0.67
+Nodes (3): Plan: ActivityRequestMapper, ActivityRequest DTO Mapping Plan, ActivityRequestMapper implements IMapper
 
 ### Community 14 - "ASP.NET Launch Config"
 Cohesion: 0.20
@@ -215,8 +214,16 @@ Nodes (3): Serena Language Server Configuration, Serena Project Config, Serena P
 Cohesion: 0.67
 Nodes (3): Development Guide — Frontend Setup (Vite / React), Frontend Standards — Code Quality (ESLint/Prettier/Husky), Implementation Plan — ESLint + Prettier + Husky Setup
 
+### Community 37 - "Planning Model Requirement"
+Cohesion: 0.67
+Nodes (3): Frontend Standards — HTTP Client (Axios with interceptors), Frontend Standards — Client State with MobX (uiStore), Frontend Standards — Data Fetching with React Query
+
+### Community 40 - "Documentation AI Standards"
+Cohesion: 0.07
+Nodes (23): 1. Core Principles, 2. Language Standards, 3. Specific Standards, 4. Project Skills, 5. Planning Model Requirement, 6. Symlink Integrity and Multi-Agent Portability, 7. Mandatory OpenSpec Artifact Updates for Post-Apply Changes, 1. Activity (+15 more)
+
 ### Community 51 - "Community 51"
-Cohesion: 0.11
+Cohesion: 0.12
 Nodes (17): Architecture Patterns, Backend Standards, Build Verification, Code Style, Controller Pattern, CORS, CQRS with MediatR, Dependency Injection (+9 more)
 
 ### Community 52 - "Community 52"
@@ -280,17 +287,19 @@ Cohesion: 0.33
 Nodes (5): 1. Add Custom Mapper Interface and Implementation, 2. Update DI Registration, 3. Update MediatR Handlers, 4. Remove AutoMapper, 5. Verify
 
 ## Knowledge Gaps
-- **275 isolated node(s):** `Context`, `Goals / Non-Goals`, `1. Interface `IActivityMapper` over a static class`, `2. Placement in `Application/Core/` (not `Domain/`)`, `3. Two methods on the interface` (+270 more)
+- **285 isolated node(s):** `Technology Stack`, `Project Structure (Clean Architecture)`, `CQRS with MediatR`, `Controller Pattern`, `DTOs` (+280 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **26 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **23 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `devDependencies` connect `Frontend Dev Toolchain` to `Frontend Dependencies`?**
   _High betweenness centrality (0.008) - this node is a cross-community bridge._
-- **What connects `Context`, `Goals / Non-Goals`, `1. Interface `IActivityMapper` over a static class` to the rest of the system?**
-  _283 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Why does `Backend Standards` connect `Community 51` to `Documentation AI Standards`?**
+  _High betweenness centrality (0.004) - this node is a cross-community bridge._
+- **What connects `Technology Stack`, `Project Structure (Clean Architecture)`, `CQRS with MediatR` to the rest of the system?**
+  _293 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Reactivities CQRS Handlers` be split into smaller, more focused modules?**
   _Cohesion score 0.08502415458937199 - nodes in this community are weakly interconnected._
 - **Should `Frontend Dependencies` be split into smaller, more focused modules?**
@@ -299,5 +308,3 @@ _Questions this graph is uniquely positioned to answer:_
   _Cohesion score 0.12280701754385964 - nodes in this community are weakly interconnected._
 - **Should `Frontend Dev Toolchain` be split into smaller, more focused modules?**
   _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
-- **Should `LTI Project Docs` be split into smaller, more focused modules?**
-  _Cohesion score 0.11255411255411256 - nodes in this community are weakly interconnected._
