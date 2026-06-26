@@ -95,14 +95,14 @@ public async Task<ActionResult<List<Activity>>> GetActivities()
     => await Mediator.Send(new GetActivityList.Query());
 
 [HttpPost]
-public async Task<ActionResult<string>> CreateActivity(ActivityRequest activityRequest)
+public async Task<ActionResult<string>> CreateActivity(CreateActivityRequest activityRequest)
     => await Mediator.Send(new CreateActivity.Command { ActivityRequest = activityRequest });
 ```
 
 ### DTOs
 
-- `ActivityRequest` is the write DTO used for POST. It omits `Id` and `IsCancelled` — fields that must never come from the client on create.
-- PUT uses the full `Activity` entity (the `Id` from the route is trusted server-side).
+- `CreateActivityRequest` is the write DTO used for POST. It omits `Id` and `IsCancelled` — fields that must never come from the client on create.
+- PUT uses the full `Activity` entity (the `Id` from the request body is trusted server-side).
 - **Never** bind a domain entity directly as a POST request body.
 
 ---

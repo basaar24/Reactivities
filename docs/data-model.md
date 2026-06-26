@@ -27,14 +27,14 @@ Represents a social activity that users can browse, create, edit, and delete.
 - `Title`, `Description`, `Category`, `City`, `Venue` — required; no max length enforced at the database layer.
 - `Category` — free text; the application uses the values `drinks`, `culture`, `music`, `travel`, `film` in seed data and UI filters.
 - `Latitude` / `Longitude` — optional; default `0.0` when not provided.
-- `Id` — auto-generated; excluded from `ActivityRequest` DTO to prevent client-supplied IDs.
-- `IsCancelled` — excluded from `ActivityRequest` DTO; can only be set server-side (future feature).
+- `Id` — auto-generated; excluded from `CreateActivityRequest` DTO to prevent client-supplied IDs.
+- `IsCancelled` — excluded from `CreateActivityRequest` DTO; can only be set server-side (future feature).
 
 ---
 
-### 2. ActivityRequest (Write DTO)
+### 2. CreateActivityRequest (Write DTO)
 
-Used as the request body for POST (create). Defined in `backend/Application/Activities/Requests/ActivityRequest.cs`.
+Used as the request body for POST (create). Defined in `backend/Application/Activities/Requests/CreateActivityRequest.cs`.
 
 | Field | C# Type | Required | Notes |
 |---|---|---|---|
@@ -47,7 +47,7 @@ Used as the request body for POST (create). Defined in `backend/Application/Acti
 | `Latitude` | `double` | no | |
 | `Longitude` | `double` | no | |
 
-`Id` and `IsCancelled` are deliberately omitted — these fields must not be set by the client on create.
+`Id` and `IsCancelled` are deliberately omitted from `CreateActivityRequest` — these fields must not be set by the client on create.
 
 ---
 

@@ -48,7 +48,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/ActivityRequest'
+              $ref: '#/components/schemas/CreateActivityRequest'
             example:
               title: "Craft Beer Tasting"
               date: "2026-09-20T19:00:00"
@@ -202,7 +202,7 @@ components:
           description: Geographic longitude coordinate (optional, defaults to 0.0)
           example: -0.1278
 
-    ActivityRequest:
+    CreateActivityRequest:
       type: object
       description: >
         Write DTO used for POST (create). Omits `id` and `isCancelled` —

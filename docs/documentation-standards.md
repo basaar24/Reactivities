@@ -23,7 +23,7 @@ When updating documentation, I will:
 2. Identify which documentation files need updates based on the changes. Clear examples:
    - For `Activity` entity changes (new fields, renamed fields, type changes): Update `docs/data-model.md`
    - For API endpoint changes (new routes, changed request/response shapes, new status codes): Update `docs/api-spec.yml`
-   - For backend architecture changes (new MediatR handlers, DI registrations, AutoMapper profiles, EF Core migrations): Update `docs/backend-standards.md`
+   - For backend architecture changes (new MediatR handlers, DI registrations, custom mapper registrations (`IActivityMapper`), EF Core migrations): Update `docs/backend-standards.md`
    - For frontend changes (new hooks, routing changes, new MUI patterns, MobX store changes): Update `docs/frontend-standards.md`
    - For development environment changes (new prerequisites, env vars, startup steps): Update `docs/development_guide.md`
 3. Update each affected documentation file in English, maintaining consistency with existing documentation
