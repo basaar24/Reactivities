@@ -85,7 +85,7 @@
     "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
   },
   ".vscode/settings.json": {
-    "mtime": 1782424679.3638742,
+    "mtime": 1779145955.353611,
     "ast_hash": "99914b932bd37a50b983c5e7c90ae93b",
     "semantic_hash": "99914b932bd37a50b983c5e7c90ae93b"
   },
@@ -393,6 +393,21 @@
     "mtime": 1781561762.3475187,
     "ast_hash": "f08268f6bce170296988ed3d20087a52",
     "semantic_hash": "f08268f6bce170296988ed3d20087a52"
+  },
+  "lidr-specboot/.vscode/settings.json": {
+    "mtime": 1782239539.9556038,
+    "ast_hash": "f540e639c6f2a5060c09ae4fec1eaf1d",
+    "semantic_hash": "f540e639c6f2a5060c09ae4fec1eaf1d"
+  },
+  "lidr-specboot/ai-specs/scripts/code_review.sh": {
+    "mtime": 1782239539.962608,
+    "ast_hash": "7589f32e5e78281e9f58e63079c7f599",
+    "semantic_hash": "7589f32e5e78281e9f58e63079c7f599"
+  },
+  "lidr-specboot/ai-specs/skills/writing-skills/render-graphs.js": {
+    "mtime": 1782239539.988572,
+    "ast_hash": "8146396a77faca5a8b3358d1a274b654",
+    "semantic_hash": "8146396a77faca5a8b3358d1a274b654"
   },
   ".claude/commands/opsx/apply.md": {
     "mtime": 1782248144.3421888,
@@ -729,6 +744,211 @@
     "ast_hash": "385c3f8102951db7ea803da3fd6327b3",
     "semantic_hash": "385c3f8102951db7ea803da3fd6327b3"
   },
+  "lidr-specboot/.claude/agents/backend-developer.md": {
+    "mtime": 1782239539.933606,
+    "ast_hash": "fde99375f268adcf443f811842685def",
+    "semantic_hash": "fde99375f268adcf443f811842685def"
+  },
+  "lidr-specboot/.claude/agents/frontend-developer.md": {
+    "mtime": 1782239539.9346025,
+    "ast_hash": "483dac9a6a27ef7fcb72709774b317cd",
+    "semantic_hash": "483dac9a6a27ef7fcb72709774b317cd"
+  },
+  "lidr-specboot/.claude/agents/product-strategy-analyst.md": {
+    "mtime": 1782239539.935605,
+    "ast_hash": "5d514e25d2f811f976897fd24d1ed671",
+    "semantic_hash": "5d514e25d2f811f976897fd24d1ed671"
+  },
+  "lidr-specboot/.cursor/agents/backend-developer.md": {
+    "mtime": 1782239539.9446096,
+    "ast_hash": "fde99375f268adcf443f811842685def",
+    "semantic_hash": "fde99375f268adcf443f811842685def"
+  },
+  "lidr-specboot/.cursor/agents/frontend-developer.md": {
+    "mtime": 1782239539.9446096,
+    "ast_hash": "483dac9a6a27ef7fcb72709774b317cd",
+    "semantic_hash": "483dac9a6a27ef7fcb72709774b317cd"
+  },
+  "lidr-specboot/.cursor/agents/product-strategy-analyst.md": {
+    "mtime": 1782239539.9456017,
+    "ast_hash": "5d514e25d2f811f976897fd24d1ed671",
+    "semantic_hash": "5d514e25d2f811f976897fd24d1ed671"
+  },
+  "lidr-specboot/AGENTS.md": {
+    "mtime": 1782239539.9556038,
+    "ast_hash": "1a8f84017d79c4b22c75445669accdba",
+    "semantic_hash": "1a8f84017d79c4b22c75445669accdba"
+  },
+  "lidr-specboot/CLAUDE.md": {
+    "mtime": 1782239539.956603,
+    "ast_hash": "1a8f84017d79c4b22c75445669accdba",
+    "semantic_hash": "1a8f84017d79c4b22c75445669accdba"
+  },
+  "lidr-specboot/GEMINI.md": {
+    "mtime": 1782239539.9576025,
+    "ast_hash": "1a8f84017d79c4b22c75445669accdba",
+    "semantic_hash": "1a8f84017d79c4b22c75445669accdba"
+  },
+  "lidr-specboot/README.md": {
+    "mtime": 1782239539.9586039,
+    "ast_hash": "59f6e3332d2efc8609ff5b4bf06a4c25",
+    "semantic_hash": "59f6e3332d2efc8609ff5b4bf06a4c25"
+  },
+  "lidr-specboot/ai-specs/agents/backend-developer.md": {
+    "mtime": 1782239539.9596045,
+    "ast_hash": "0a1f96224bb44c0c406b33555d5386f4",
+    "semantic_hash": "0a1f96224bb44c0c406b33555d5386f4"
+  },
+  "lidr-specboot/ai-specs/agents/frontend-developer.md": {
+    "mtime": 1782239539.9606042,
+    "ast_hash": "c86bbe7cff94ca8238cdcde47e026537",
+    "semantic_hash": "c86bbe7cff94ca8238cdcde47e026537"
+  },
+  "lidr-specboot/ai-specs/agents/product-strategy-analyst.md": {
+    "mtime": 1782239539.9606042,
+    "ast_hash": "292c71dde061bfecbdbde14ff721d35c",
+    "semantic_hash": "292c71dde061bfecbdbde14ff721d35c"
+  },
+  "lidr-specboot/ai-specs/skills/adversarial-review/SKILL.md": {
+    "mtime": 1782239539.9636066,
+    "ast_hash": "4a33d0bf0b5546499dd68662ce952715",
+    "semantic_hash": "4a33d0bf0b5546499dd68662ce952715"
+  },
+  "lidr-specboot/ai-specs/skills/code-auditing/SKILL.md": {
+    "mtime": 1782239539.9656043,
+    "ast_hash": "d52377a930a877770ca6aeefaf172ac0",
+    "semantic_hash": "d52377a930a877770ca6aeefaf172ac0"
+  },
+  "lidr-specboot/ai-specs/skills/code-auditing/references/audit-methodology.md": {
+    "mtime": 1782239539.9666078,
+    "ast_hash": "8187afaa221a153f0c8574d88082fe76",
+    "semantic_hash": "8187afaa221a153f0c8574d88082fe76"
+  },
+  "lidr-specboot/ai-specs/skills/code-auditing/references/dead-code-methodology.md": {
+    "mtime": 1782239539.9679918,
+    "ast_hash": "a2bf26f710e0640a7aff27d578cd0de1",
+    "semantic_hash": "a2bf26f710e0640a7aff27d578cd0de1"
+  },
+  "lidr-specboot/ai-specs/skills/commit/SKILL.md": {
+    "mtime": 1782239539.970054,
+    "ast_hash": "c55dc79f058d6f148a48e0050cf9443d",
+    "semantic_hash": "c55dc79f058d6f148a48e0050cf9443d"
+  },
+  "lidr-specboot/ai-specs/skills/enrich-us/SKILL.md": {
+    "mtime": 1782239539.9720614,
+    "ast_hash": "9237064aee3f349304d3503f12592aed",
+    "semantic_hash": "9237064aee3f349304d3503f12592aed"
+  },
+  "lidr-specboot/ai-specs/skills/explain/SKILL.md": {
+    "mtime": 1782239539.973052,
+    "ast_hash": "f564d6ed7029163848f1c53a7cf70562",
+    "semantic_hash": "f564d6ed7029163848f1c53a7cf70562"
+  },
+  "lidr-specboot/ai-specs/skills/meta-prompt/SKILL.md": {
+    "mtime": 1782239539.9750526,
+    "ast_hash": "00abcdb2373dcc207086289bdb707879",
+    "semantic_hash": "00abcdb2373dcc207086289bdb707879"
+  },
+  "lidr-specboot/ai-specs/skills/openspec-sync-specs/SKILL.md": {
+    "mtime": 1782239539.976051,
+    "ast_hash": "b1a03347ff71e17de3e3ad978e55ccc1",
+    "semantic_hash": "b1a03347ff71e17de3e3ad978e55ccc1"
+  },
+  "lidr-specboot/ai-specs/skills/show-spec-working/SKILL.md": {
+    "mtime": 1782239539.978052,
+    "ast_hash": "6ce2229e14ecc24b17109f52d0aec8a7",
+    "semantic_hash": "6ce2229e14ecc24b17109f52d0aec8a7"
+  },
+  "lidr-specboot/ai-specs/skills/sync-agent-symlinks/SKILL.md": {
+    "mtime": 1782239539.9800506,
+    "ast_hash": "284b7e2f7f7d5cb4c278dff8e4d0e2fd",
+    "semantic_hash": "284b7e2f7f7d5cb4c278dff8e4d0e2fd"
+  },
+  "lidr-specboot/ai-specs/skills/update-docs/SKILL.md": {
+    "mtime": 1782239539.9810488,
+    "ast_hash": "f460a4945bdedd71e8ae9dfbd4ed23e2",
+    "semantic_hash": "f460a4945bdedd71e8ae9dfbd4ed23e2"
+  },
+  "lidr-specboot/ai-specs/skills/using-git-worktrees/SKILL.md": {
+    "mtime": 1782239539.9820504,
+    "ast_hash": "0d1c81e45e89fcefa807827e6d65a2ed",
+    "semantic_hash": "0d1c81e45e89fcefa807827e6d65a2ed"
+  },
+  "lidr-specboot/ai-specs/skills/writing-skills/SKILL.md": {
+    "mtime": 1782239539.983054,
+    "ast_hash": "de569b05480693ff08b9beaf2a2c53e5",
+    "semantic_hash": "de569b05480693ff08b9beaf2a2c53e5"
+  },
+  "lidr-specboot/ai-specs/skills/writing-skills/anthropic-best-practices.md": {
+    "mtime": 1782239539.9845624,
+    "ast_hash": "715e96cb6568b6839440ccf0aaf957cb",
+    "semantic_hash": "715e96cb6568b6839440ccf0aaf957cb"
+  },
+  "lidr-specboot/ai-specs/skills/writing-skills/examples/CLAUDE_MD_TESTING.md": {
+    "mtime": 1782239539.9865696,
+    "ast_hash": "d61368c6ad05eedaed01370b63d7b451",
+    "semantic_hash": "d61368c6ad05eedaed01370b63d7b451"
+  },
+  "lidr-specboot/ai-specs/skills/writing-skills/persuasion-principles.md": {
+    "mtime": 1782239539.9875674,
+    "ast_hash": "4d5ec4a25f77be81b486b0a563235a69",
+    "semantic_hash": "4d5ec4a25f77be81b486b0a563235a69"
+  },
+  "lidr-specboot/ai-specs/skills/writing-skills/testing-skills-with-subagents.md": {
+    "mtime": 1782239539.989569,
+    "ast_hash": "15bcbb42a293d8330f82a349b4281d6f",
+    "semantic_hash": "15bcbb42a293d8330f82a349b4281d6f"
+  },
+  "lidr-specboot/ai-specs/specboot-instructions.md": {
+    "mtime": 1782239539.990568,
+    "ast_hash": "3af88e2d5f99b5321c2ed95978e7bab3",
+    "semantic_hash": "3af88e2d5f99b5321c2ed95978e7bab3"
+  },
+  "lidr-specboot/codex.md": {
+    "mtime": 1782239539.9915702,
+    "ast_hash": "1a8f84017d79c4b22c75445669accdba",
+    "semantic_hash": "1a8f84017d79c4b22c75445669accdba"
+  },
+  "lidr-specboot/docs/api-spec.yml": {
+    "mtime": 1782239539.9935756,
+    "ast_hash": "a5f177323c3d147c562861c298a9af8d",
+    "semantic_hash": "a5f177323c3d147c562861c298a9af8d"
+  },
+  "lidr-specboot/docs/backend-standards.md": {
+    "mtime": 1782239539.9955666,
+    "ast_hash": "9cb6e59bea078ed34b9d3efd9bc89268",
+    "semantic_hash": "9cb6e59bea078ed34b9d3efd9bc89268"
+  },
+  "lidr-specboot/docs/base-standards.md": {
+    "mtime": 1782239539.9965682,
+    "ast_hash": "47b413e34447f05ab1bd7f49e018015b",
+    "semantic_hash": "47b413e34447f05ab1bd7f49e018015b"
+  },
+  "lidr-specboot/docs/data-model.md": {
+    "mtime": 1782239539.997569,
+    "ast_hash": "3d2496d111e2506faa7bf7281034f4f6",
+    "semantic_hash": "3d2496d111e2506faa7bf7281034f4f6"
+  },
+  "lidr-specboot/docs/development_guide.md": {
+    "mtime": 1782239539.997569,
+    "ast_hash": "ed3a842d68e2aa5dbe1dca4f0416a0c9",
+    "semantic_hash": "ed3a842d68e2aa5dbe1dca4f0416a0c9"
+  },
+  "lidr-specboot/docs/documentation-standards.md": {
+    "mtime": 1782239539.9985883,
+    "ast_hash": "c80669e12ec31e239af2f6e6742b40d9",
+    "semantic_hash": "c80669e12ec31e239af2f6e6742b40d9"
+  },
+  "lidr-specboot/docs/frontend-standards.md": {
+    "mtime": 1782239539.99957,
+    "ast_hash": "5b41fef69f18d4c9be7e9dfe6db75b97",
+    "semantic_hash": "5b41fef69f18d4c9be7e9dfe6db75b97"
+  },
+  "lidr-specboot/docs/openspec-tasks-mandatory-steps.md": {
+    "mtime": 1782239540.0005665,
+    "ast_hash": "f03fe2b3b57458e4e51426cc4ea5145a",
+    "semantic_hash": "f03fe2b3b57458e4e51426cc4ea5145a"
+  },
   "openspec/config.yaml": {
     "mtime": 1782320147.3818016,
     "ast_hash": "41e7e829874890a38b375444a5edf4e7",
@@ -790,9 +1010,9 @@
     "semantic_hash": "219eaea67aafa864db091919ce3f5d82"
   },
   ".claude/settings.local.json": {
-    "mtime": 1782490422.4325829,
-    "ast_hash": "e07c3437fd71e0bf26b073ebec6eb8cf",
-    "semantic_hash": ""
+    "mtime": 1782335271.9194877,
+    "ast_hash": "f777025e0c18a1b5862e77d9becd44b7",
+    "semantic_hash": "f777025e0c18a1b5862e77d9becd44b7"
   },
   ".husky/post-checkout": {
     "mtime": 1782319769.6165144,
@@ -818,6 +1038,41 @@
     "mtime": 1782322461.4822974,
     "ast_hash": "df50f6f636e2050b914e4c11c1921d22",
     "semantic_hash": "df50f6f636e2050b914e4c11c1921d22"
+  },
+  "ai-specs/prompts/setup-docs.md": {
+    "mtime": 1782334420.5747068,
+    "ast_hash": "7a46ffa672a84f9ba4caeceacf700afa",
+    "semantic_hash": "7a46ffa672a84f9ba4caeceacf700afa"
+  },
+  "ai-specs/prompts/setup-openspec.md": {
+    "mtime": 1782334422.4891634,
+    "ast_hash": "dbe68de5d805f04e3d70cd491bb65cc1",
+    "semantic_hash": "dbe68de5d805f04e3d70cd491bb65cc1"
+  },
+  "openspec/changes/migrate-automapper-to-custommapper/.openspec.yaml": {
+    "mtime": 1782336099.2645683,
+    "ast_hash": "73ffee90dc3b87122c6566135315bcf3",
+    "semantic_hash": "73ffee90dc3b87122c6566135315bcf3"
+  },
+  "openspec/changes/migrate-automapper-to-custommapper/design.md": {
+    "mtime": 1782336271.660622,
+    "ast_hash": "387852d84c147b5cf5a62bb82ea79da1",
+    "semantic_hash": "387852d84c147b5cf5a62bb82ea79da1"
+  },
+  "openspec/changes/migrate-automapper-to-custommapper/proposal.md": {
+    "mtime": 1782336212.912165,
+    "ast_hash": "628359496a9425dfd9b486aa833ca152",
+    "semantic_hash": "628359496a9425dfd9b486aa833ca152"
+  },
+  "openspec/changes/migrate-automapper-to-custommapper/specs/activity-mapping/spec.md": {
+    "mtime": 1782336311.2109172,
+    "ast_hash": "6033ecfba34da494b75b600a6e9c3abf",
+    "semantic_hash": "6033ecfba34da494b75b600a6e9c3abf"
+  },
+  "openspec/changes/migrate-automapper-to-custommapper/tasks.md": {
+    "mtime": 1782340030.7393646,
+    "ast_hash": "c33d80a46ae5886e37696ca8f823247b",
+    "semantic_hash": ""
   },
   "backend/Application/Core/ActivityMapper.cs": {
     "mtime": 1782339919.7877128,
@@ -867,41 +1122,6 @@
   ".serena/memories/tech_stack.md": {
     "mtime": 1782342134.6884978,
     "ast_hash": "05de6b5cbc5fcb54782cd969a30a3678",
-    "semantic_hash": ""
-  },
-  "openspec/.openspecui.json": {
-    "mtime": 1782490664.3107915,
-    "ast_hash": "f64105922424557f9f0d510093a582ce",
-    "semantic_hash": ""
-  },
-  "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/.openspec.yaml": {
-    "mtime": 1782336099.2645683,
-    "ast_hash": "73ffee90dc3b87122c6566135315bcf3",
-    "semantic_hash": ""
-  },
-  "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/design.md": {
-    "mtime": 1782336271.660622,
-    "ast_hash": "387852d84c147b5cf5a62bb82ea79da1",
-    "semantic_hash": ""
-  },
-  "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/proposal.md": {
-    "mtime": 1782336212.912165,
-    "ast_hash": "628359496a9425dfd9b486aa833ca152",
-    "semantic_hash": ""
-  },
-  "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/specs/activity-mapping/spec.md": {
-    "mtime": 1782336311.2109172,
-    "ast_hash": "6033ecfba34da494b75b600a6e9c3abf",
-    "semantic_hash": ""
-  },
-  "openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/tasks.md": {
-    "mtime": 1782490473.9101374,
-    "ast_hash": "7f0a1f9965df140cf06c009ba86ee89c",
-    "semantic_hash": ""
-  },
-  "openspec/specs/activity-mapping/spec.md": {
-    "mtime": 1782490860.1628833,
-    "ast_hash": "1d77a4dbfb6c1051d5f0f7d25855696c",
     "semantic_hash": ""
   }
 }
