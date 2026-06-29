@@ -1,1 +1,98 @@
-{}
+{
+  // ── File exclusions ───────────────────────────────────────────────────────
+  "files.exclude": {
+    "**/bin": true,
+    "**/obj": true
+  },
+  // ── File hygiene ──────────────────────────────────────────────────────────
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.eol": "\n",
+  // ── Search: skip generated/dependency folders ─────────────────────────────
+  "search.exclude": {
+    "**/bin": true,
+    "**/obj": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/.git": true
+  },
+  // ── Explorer ──────────────────────────────────────────────────────────────
+  // Show each folder level individually instead of collapsing single-child chains.
+  "explorer.compactFolders": false,
+  // ── Editor — general ─────────────────────────────────────────────────────
+  "editor.formatOnSave": true,
+  // Rainbow bracket colors and guides for nested blocks.
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  // Show the current scope (class/method/block) pinned at the top while scrolling.
+  "editor.stickyScroll.enabled": true,
+  // Auto-rename the matching opening/closing HTML/JSX tag when one is edited.
+  "editor.linkedEditing": true,
+  // Show ghost-text preview of the top autocomplete suggestion inline.
+  "editor.suggest.preview": true,
+  // Enable inlay hints globally (per-language settings below refine which ones appear).
+  "editor.inlayHints.enabled": "on",
+  // ── ESLint ────────────────────────────────────────────────────────────────
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  // ── TypeScript / React ────────────────────────────────────────────────────
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  // Auto-update import paths when a TS/TSX file is renamed or moved.
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  // Match the single-quote style declared in .prettierrc.
+  "typescript.preferences.quoteStyle": "single",
+  // TypeScript inlay hints — show parameter names for literals, return types,
+  // and types on property declarations; skip variable types (too noisy with React).
+  "typescript.inlayHints.parameterNames.enabled": "literals",
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.parameterTypes.enabled": false,
+  "typescript.inlayHints.variableTypes.enabled": false,
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  // ── C# / .NET ─────────────────────────────────────────────────────────────
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp",
+    "editor.codeActionsOnSave": {
+      // Applies all Roslyn code fixes on save, including removing unnecessary
+      // usings flagged as warnings by IDE0005 in .editorconfig.
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    }
+  },
+  // ── Git ───────────────────────────────────────────────────────────────────
+  // Keep local refs up to date without a manual fetch.
+  "git.autofetch": true,
+  // Skip the confirmation dialog when syncing (push + pull).
+  "git.confirmSync": false,
+  "yaml.schemas": {
+    "https://www.artillery.io/schema.json": []
+  },
+  "dotnet.inlayHints.enableInlayHintsForParameters": true,
+  "dotnet.inlayHints.enableInlayHintsForLiteralParameters": true,
+  "dotnet.inlayHints.suppressInlayHintsForParametersThatMatchMethodIntent": true,
+  "csharp.inlayHints.enableInlayHintsForTypes": true,
+  "csharp.inlayHints.enableInlayHintsForImplicitVariableTypes": false,
+  "csharp.inlayHints.enableInlayHintsForLambdaParameterTypes": true,
+  "csharp.inlayHints.enableInlayHintsForImplicitObjectCreation": true
+}
