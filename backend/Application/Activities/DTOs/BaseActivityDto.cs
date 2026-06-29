@@ -1,6 +1,6 @@
-namespace Application.Activities.Requests;
+namespace Application.Activities.DTOs;
 
-public class CreateActivityRequest
+public class BaseActivityDto
 {
     public string Title { get; set; } = "";
     public DateTime Date { get; set; }

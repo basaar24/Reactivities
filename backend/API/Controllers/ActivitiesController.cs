@@ -1,6 +1,6 @@
 using Application.Activities.Queries;
 using Application.Activities.Commands;
-using Application.Activities.Requests;
+using Application.Activities.DTOs;
 using Domain;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,10 +15,10 @@ public class ActivitiesController : BaseApiController
     public async Task<ActionResult<Activity>> GetActivityDetailAsync(string id) => HandleResult(await Mediator.Send(new GetActivityDetails.Query { Id = id }));
 
     [HttpPost]
-    public async Task<ActionResult<string>> CreateActivityAsync(CreateActivityRequest activityRequest) => HandleResult(await Mediator.Send(new CreateActivity.Command { ActivityRequest = activityRequest }));
+    public async Task<ActionResult<string>> CreateActivityAsync(CreateActivityDto activityDto) => HandleResult(await Mediator.Send(new CreateActivity.Command { ActivityDto = activityDto }));
 
     [HttpPut]
-    public async Task<ActionResult> UpdateActivityAsync(Activity activity) => HandleResult(await Mediator.Send(new UpdateActivity.Command { Activity = activity }));
+    public async Task<ActionResult> UpdateActivityAsync(UpdateActivityDto activity) => HandleResult(await Mediator.Send(new UpdateActivity.Command { ActivityDto = activity }));
 
     [HttpDelete("{id}")]
     public async Task<ActionResult> DeleteActivityAsync(string id) => HandleResult(await Mediator.Send(new DeleteActivity.Command { Id = id }));

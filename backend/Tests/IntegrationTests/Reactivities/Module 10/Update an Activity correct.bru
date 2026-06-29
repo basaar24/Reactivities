@@ -5,7 +5,7 @@ meta {
 }
 
 put {
-  url: {{url}}/api/activities/2
+  url: {{url}}/api/activities
   body: json
   auth: inherit
 }
@@ -16,13 +16,17 @@ headers {
 
 body:json {
   {
-  	"title": "Test Create Activity updated",
-  	"description": "Description of the test event",
-  	"category": "Culture",
-  	"date": "{{activityDate}}",
-  	"city": "London",
-  	"venue": "Tower of London"
-  }
+      "id": "15b63c9b-42e6-4d20-a115-34655b74b6e0",
+      "title": "Future Activity 33",
+      "date": "2026-08-20T00:00:00",
+      "description": "Activity 3 months in future",
+      "category": "drinks",
+      "isCancelled": false,
+      "city": "London",
+      "venue": "The Mayflower",
+      "latitude": 0,
+      "longitude": 0
+    }
 }
 
 script:pre-request {
