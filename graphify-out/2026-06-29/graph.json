@@ -93,56 +93,6 @@
   },
   "nodes": [
     {
-      "label": "API.csproj",
-      "file_type": "code",
-      "source_file": "backend/API/API.csproj",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "api_api",
-      "community": 10,
-      "norm_label": "api.csproj"
-    },
-    {
-      "label": "net10.0",
-      "file_type": "concept",
-      "source_file": "backend/API/API.csproj",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "backend_api_api_csproj_framework_net10_0",
-      "community": 10,
-      "norm_label": "net10.0"
-    },
-    {
-      "label": "Microsoft.EntityFrameworkCore.Design (10.0.9)",
-      "file_type": "code",
-      "source_file": "backend/API/API.csproj",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "nuget_microsoft_entityframeworkcore_design",
-      "community": 10,
-      "norm_label": "microsoft.entityframeworkcore.design (10.0.9)"
-    },
-    {
-      "label": "Application.csproj",
-      "file_type": "code",
-      "source_file": "backend/Application/Application.csproj",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "application_application",
-      "community": 10,
-      "norm_label": "application.csproj"
-    },
-    {
-      "label": "Microsoft.NET.Sdk.Web",
-      "file_type": "concept",
-      "source_file": "backend/API/API.csproj",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "sdk_microsoft_net_sdk_web",
-      "community": 10,
-      "norm_label": "microsoft.net.sdk.web"
-    },
-    {
       "label": "ActivitiesController.cs",
       "file_type": "code",
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
@@ -161,6 +111,16 @@
       "id": "controllers_activitiescontroller_activitiescontroller",
       "community": 0,
       "norm_label": "activitiescontroller"
+    },
+    {
+      "label": "BaseApiController",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "baseapicontroller",
+      "community": 0,
+      "norm_label": "baseapicontroller"
     },
     {
       "label": ".GetActivitiesAsync()",
@@ -226,21 +186,21 @@
       "label": ".GetActivityDetailAsync()",
       "file_type": "code",
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
-      "source_location": "L17",
+      "source_location": "L14",
       "_origin": "ast",
       "id": "controllers_activitiescontroller_activitiescontroller_getactivitydetailasync",
       "community": 0,
       "norm_label": ".getactivitydetailasync()"
     },
     {
-      "label": ".CreateActivity()",
+      "label": ".CreateActivityAsync()",
       "file_type": "code",
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
-      "source_location": "L23",
+      "source_location": "L17",
       "_origin": "ast",
-      "id": "controllers_activitiescontroller_activitiescontroller_createactivity",
+      "id": "controllers_activitiescontroller_activitiescontroller_createactivityasync",
       "community": 0,
-      "norm_label": ".createactivity()"
+      "norm_label": ".createactivityasync()"
     },
     {
       "label": "HttpPost",
@@ -253,14 +213,14 @@
       "norm_label": "httppost"
     },
     {
-      "label": ".UpdateActivity()",
+      "label": ".UpdateActivityAsync()",
       "file_type": "code",
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
-      "source_location": "L29",
+      "source_location": "L20",
       "_origin": "ast",
-      "id": "controllers_activitiescontroller_activitiescontroller_updateactivity",
+      "id": "controllers_activitiescontroller_activitiescontroller_updateactivityasync",
       "community": 0,
-      "norm_label": ".updateactivity()"
+      "norm_label": ".updateactivityasync()"
     },
     {
       "label": "HttpPut",
@@ -273,14 +233,14 @@
       "norm_label": "httpput"
     },
     {
-      "label": ".DeleteActivity()",
+      "label": ".DeleteActivityAsync()",
       "file_type": "code",
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
-      "source_location": "L35",
+      "source_location": "L23",
       "_origin": "ast",
-      "id": "controllers_activitiescontroller_activitiescontroller_deleteactivity",
+      "id": "controllers_activitiescontroller_activitiescontroller_deleteactivityasync",
       "community": 0,
-      "norm_label": ".deleteactivity()"
+      "norm_label": ".deleteactivityasync()"
     },
     {
       "label": "HttpDelete",
@@ -291,66 +251,6 @@
       "id": "httpdelete",
       "community": 0,
       "norm_label": "httpdelete"
-    },
-    {
-      "label": "BaseApiController.cs",
-      "file_type": "code",
-      "source_file": "backend/API/Controllers/BaseApiController.cs",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "controllers_baseapicontroller",
-      "community": 0,
-      "norm_label": "baseapicontroller.cs"
-    },
-    {
-      "label": "BaseApiController",
-      "file_type": "code",
-      "source_file": "backend/API/Controllers/BaseApiController.cs",
-      "source_location": "L7",
-      "_origin": "ast",
-      "id": "controllers_baseapicontroller_baseapicontroller",
-      "community": 0,
-      "norm_label": "baseapicontroller"
-    },
-    {
-      "label": "ControllerBase",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "controllerbase",
-      "community": 12,
-      "norm_label": "controllerbase"
-    },
-    {
-      "label": "IMediator",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "imediator",
-      "community": 0,
-      "norm_label": "imediator"
-    },
-    {
-      "label": ".HandleResult()",
-      "file_type": "code",
-      "source_file": "backend/API/Controllers/BaseApiController.cs",
-      "source_location": "L14",
-      "_origin": "ast",
-      "id": "controllers_baseapicontroller_baseapicontroller_handleresult",
-      "community": 0,
-      "norm_label": ".handleresult()"
-    },
-    {
-      "label": "T",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "t",
-      "community": 39,
-      "norm_label": "t"
     },
     {
       "label": "ExceptionMiddleware.cs",
@@ -366,7 +266,7 @@
       "label": "ExceptionMiddleware",
       "file_type": "code",
       "source_file": "backend/API/Middlewares/ExceptionMiddleware.cs",
-      "source_location": "L6",
+      "source_location": "L7",
       "_origin": "ast",
       "id": "middlewares_exceptionmiddleware_exceptionmiddleware",
       "community": 52,
@@ -386,7 +286,7 @@
       "label": ".InvokeAsync()",
       "file_type": "code",
       "source_file": "backend/API/Middlewares/ExceptionMiddleware.cs",
-      "source_location": "L8",
+      "source_location": "L9",
       "_origin": "ast",
       "id": "middlewares_exceptionmiddleware_exceptionmiddleware_invokeasync",
       "community": 52,
@@ -416,7 +316,7 @@
       "label": ".HandleValidationException()",
       "file_type": "code",
       "source_file": "backend/API/Middlewares/ExceptionMiddleware.cs",
-      "source_location": "L24",
+      "source_location": "L25",
       "_origin": "ast",
       "id": "middlewares_exceptionmiddleware_exceptionmiddleware_handlevalidationexception",
       "community": 52,
@@ -506,7 +406,7 @@
       "label": ".ConfigureMiddleware()",
       "file_type": "code",
       "source_file": "backend/API/Program.cs",
-      "source_location": "L71",
+      "source_location": "L68",
       "_origin": "ast",
       "id": "api_program_program_configuremiddleware",
       "community": 33,
@@ -529,7 +429,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "commands_createactivity",
-      "community": 39,
+      "community": 0,
       "norm_label": "createactivity.cs"
     },
     {
@@ -539,7 +439,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "commands_createactivity_createactivity",
-      "community": 39,
+      "community": 0,
       "norm_label": "createactivity"
     },
     {
@@ -549,7 +449,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "commands_createactivity_command",
-      "community": 39,
+      "community": 0,
       "norm_label": "command"
     },
     {
@@ -559,8 +459,18 @@
       "source_location": "",
       "_origin": "ast",
       "id": "irequest",
-      "community": 39,
+      "community": 0,
       "norm_label": "irequest"
+    },
+    {
+      "label": "Result",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "result",
+      "community": 0,
+      "norm_label": "result"
     },
     {
       "label": "Handler",
@@ -569,7 +479,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "commands_createactivity_handler",
-      "community": 39,
+      "community": 0,
       "norm_label": "handler"
     },
     {
@@ -579,7 +489,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "irequesthandler",
-      "community": 39,
+      "community": 0,
       "norm_label": "irequesthandler"
     },
     {
@@ -589,7 +499,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "commands_createactivity_handler_handle",
-      "community": 39,
+      "community": 0,
       "norm_label": ".handle()"
     },
     {
@@ -599,7 +509,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "cancellationtoken",
-      "community": 39,
+      "community": 0,
       "norm_label": "cancellationtoken"
     },
     {
@@ -609,7 +519,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "commands_deleteactivity",
-      "community": 39,
+      "community": 0,
       "norm_label": "deleteactivity.cs"
     },
     {
@@ -619,7 +529,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "commands_deleteactivity_deleteactivity",
-      "community": 39,
+      "community": 0,
       "norm_label": "deleteactivity"
     },
     {
@@ -629,7 +539,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "commands_deleteactivity_command",
-      "community": 39,
+      "community": 0,
       "norm_label": "command"
     },
     {
@@ -639,7 +549,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "unit",
-      "community": 39,
+      "community": 0,
       "norm_label": "unit"
     },
     {
@@ -649,7 +559,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "commands_deleteactivity_handler",
-      "community": 39,
+      "community": 0,
       "norm_label": "handler"
     },
     {
@@ -659,7 +569,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "commands_deleteactivity_handler_handle",
-      "community": 39,
+      "community": 0,
       "norm_label": ".handle()"
     },
     {
@@ -669,7 +579,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "commands_updateactivity",
-      "community": 39,
+      "community": 0,
       "norm_label": "updateactivity.cs"
     },
     {
@@ -679,7 +589,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "commands_updateactivity_updateactivity",
-      "community": 39,
+      "community": 0,
       "norm_label": "updateactivity"
     },
     {
@@ -689,7 +599,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "commands_updateactivity_command",
-      "community": 39,
+      "community": 0,
       "norm_label": "command"
     },
     {
@@ -699,7 +609,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "commands_updateactivity_handler",
-      "community": 39,
+      "community": 0,
       "norm_label": "handler"
     },
     {
@@ -709,56 +619,56 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "commands_updateactivity_handler_handle",
-      "community": 39,
+      "community": 0,
       "norm_label": ".handle()"
     },
     {
-      "label": "GetActivityDetails.cs",
+      "label": "GetActivityList.cs",
       "file_type": "code",
-      "source_file": "backend/Application/Activities/Queries/GetActivityDetails.cs",
+      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "queries_getactivitydetails",
+      "id": "queries_getactivitylist",
       "community": 0,
-      "norm_label": "getactivitydetails.cs"
+      "norm_label": "getactivitylist.cs"
     },
     {
-      "label": "GetActivityDetails",
+      "label": "GetActivityList",
       "file_type": "code",
-      "source_file": "backend/Application/Activities/Queries/GetActivityDetails.cs",
+      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "queries_getactivitydetails_getactivitydetails",
+      "id": "queries_getactivitylist_getactivitylist",
       "community": 0,
-      "norm_label": "getactivitydetails"
+      "norm_label": "getactivitylist"
     },
     {
       "label": "Query",
       "file_type": "code",
-      "source_file": "backend/Application/Activities/Queries/GetActivityDetails.cs",
+      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
       "source_location": "L10",
       "_origin": "ast",
-      "id": "queries_getactivitydetails_query",
+      "id": "queries_getactivitylist_query",
       "community": 0,
       "norm_label": "query"
     },
     {
       "label": "Handler",
       "file_type": "code",
-      "source_file": "backend/Application/Activities/Queries/GetActivityDetails.cs",
-      "source_location": "L15",
+      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
+      "source_location": "L12",
       "_origin": "ast",
-      "id": "queries_getactivitydetails_handler",
+      "id": "queries_getactivitylist_handler",
       "community": 0,
       "norm_label": "handler"
     },
     {
       "label": ".Handle()",
       "file_type": "code",
-      "source_file": "backend/Application/Activities/Queries/GetActivityDetails.cs",
-      "source_location": "L17",
+      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
+      "source_location": "L14",
       "_origin": "ast",
-      "id": "queries_getactivitydetails_handler_handle",
+      "id": "queries_getactivitylist_handler_handle",
       "community": 0,
       "norm_label": ".handle()"
     },
@@ -769,158 +679,98 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "requests_createactivityrequest",
-      "community": 0,
+      "community": 68,
       "norm_label": "createactivityrequest.cs"
     },
     {
       "label": "CreateActivityRequest",
       "file_type": "code",
       "source_file": "backend/Application/Activities/Requests/CreateActivityRequest.cs",
-      "source_location": "L5",
+      "source_location": "L3",
       "_origin": "ast",
       "id": "requests_createactivityrequest_createactivityrequest",
-      "community": 0,
+      "community": 68,
       "norm_label": "createactivityrequest"
     },
     {
-      "label": "CreateActivityValidator.cs",
+      "label": "ActivityMapper.cs",
       "file_type": "code",
-      "source_file": "backend/Application/Activities/Validators/CreateActivityValidator.cs",
+      "source_file": "backend/Application/Core/ActivityMapper.cs",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "validators_createactivityvalidator",
-      "community": 67,
-      "norm_label": "createactivityvalidator.cs"
+      "id": "core_activitymapper",
+      "community": 68,
+      "norm_label": "activitymapper.cs"
     },
     {
-      "label": "CreateActivityValidator",
+      "label": "ActivityMapper",
       "file_type": "code",
-      "source_file": "backend/Application/Activities/Validators/CreateActivityValidator.cs",
+      "source_file": "backend/Application/Core/ActivityMapper.cs",
       "source_location": "L6",
       "_origin": "ast",
-      "id": "validators_createactivityvalidator_createactivityvalidator",
-      "community": 67,
-      "norm_label": "createactivityvalidator"
+      "id": "core_activitymapper_activitymapper",
+      "community": 68,
+      "norm_label": "activitymapper"
     },
     {
-      "label": "AbstractValidator",
+      "label": ".ToActivity()",
       "file_type": "code",
-      "source_file": "",
-      "source_location": "",
+      "source_file": "backend/Application/Core/ActivityMapper.cs",
+      "source_location": "L8",
       "_origin": "ast",
-      "id": "abstractvalidator",
-      "community": 67,
-      "norm_label": "abstractvalidator"
+      "id": "core_activitymapper_activitymapper_toactivity",
+      "community": 68,
+      "norm_label": ".toactivity()"
     },
     {
-      "label": "Command",
+      "label": ".UpdateActivity()",
       "file_type": "code",
-      "source_file": "",
-      "source_location": "",
+      "source_file": "backend/Application/Core/ActivityMapper.cs",
+      "source_location": "L20",
       "_origin": "ast",
-      "id": "command",
-      "community": 67,
-      "norm_label": "command"
+      "id": "core_activitymapper_activitymapper_updateactivity",
+      "community": 68,
+      "norm_label": ".updateactivity()"
     },
     {
-      "label": "net10.0",
-      "file_type": "concept",
-      "source_file": "backend/Application/Application.csproj",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "backend_application_application_csproj_framework_net10_0",
-      "community": 10,
-      "norm_label": "net10.0"
-    },
-    {
-      "label": "FluentValidation.DependencyInjectionExtensions (12.1.1)",
+      "label": "IActivityMapper.cs",
       "file_type": "code",
-      "source_file": "backend/Application/Application.csproj",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "nuget_fluentvalidation_dependencyinjectionextensions",
-      "community": 10,
-      "norm_label": "fluentvalidation.dependencyinjectionextensions (12.1.1)"
-    },
-    {
-      "label": "MediatR (14.1.0)",
-      "file_type": "code",
-      "source_file": "backend/Application/Application.csproj",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "nuget_mediatr",
-      "community": 10,
-      "norm_label": "mediatr (14.1.0)"
-    },
-    {
-      "label": "Domain.csproj",
-      "file_type": "code",
-      "source_file": "backend/Domain/Domain.csproj",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "c_sources_react_reactivities_backend_domain_domain_csproj",
-      "community": 10,
-      "norm_label": "domain.csproj"
-    },
-    {
-      "label": "Persistence.csproj",
-      "file_type": "code",
-      "source_file": "backend/Persistence/Persistence.csproj",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "persistence_persistence",
-      "community": 10,
-      "norm_label": "persistence.csproj"
-    },
-    {
-      "label": "Microsoft.NET.Sdk",
-      "file_type": "concept",
-      "source_file": "backend/Application/Application.csproj",
-      "source_location": null,
-      "_origin": "ast",
-      "id": "backend_application_application_csproj_sdk_microsoft_net_sdk",
-      "community": 10,
-      "norm_label": "microsoft.net.sdk"
-    },
-    {
-      "label": "Result.cs",
-      "file_type": "code",
-      "source_file": "backend/Application/Core/Result.cs",
+      "source_file": "backend/Application/Core/IActivityMapper.cs",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "core_result",
-      "community": 39,
-      "norm_label": "result.cs"
+      "id": "core_iactivitymapper",
+      "community": 68,
+      "norm_label": "iactivitymapper.cs"
     },
     {
-      "label": "Result",
+      "label": "IActivityMapper",
       "file_type": "code",
-      "source_file": "backend/Application/Core/Result.cs",
-      "source_location": "L3",
+      "source_file": "backend/Application/Core/IActivityMapper.cs",
+      "source_location": "L6",
       "_origin": "ast",
-      "id": "core_result_result",
-      "community": 39,
-      "norm_label": "result"
+      "id": "core_iactivitymapper_iactivitymapper",
+      "community": 68,
+      "norm_label": "iactivitymapper"
     },
     {
-      "label": ".Success()",
+      "label": ".ToActivity()",
       "file_type": "code",
-      "source_file": "backend/Application/Core/Result.cs",
-      "source_location": "L10",
+      "source_file": "backend/Application/Core/IActivityMapper.cs",
+      "source_location": "L8",
       "_origin": "ast",
-      "id": "core_result_result_success",
-      "community": 39,
-      "norm_label": ".success()"
+      "id": "core_iactivitymapper_iactivitymapper_toactivity",
+      "community": 68,
+      "norm_label": ".toactivity()"
     },
     {
-      "label": ".Failure()",
+      "label": ".UpdateActivity()",
       "file_type": "code",
-      "source_file": "backend/Application/Core/Result.cs",
-      "source_location": "L11",
+      "source_file": "backend/Application/Core/IActivityMapper.cs",
+      "source_location": "L9",
       "_origin": "ast",
-      "id": "core_result_result_failure",
-      "community": 39,
-      "norm_label": ".failure()"
+      "id": "core_iactivitymapper_iactivitymapper_updateactivity",
+      "community": 68,
+      "norm_label": ".updateactivity()"
     },
     {
       "label": "ValidationBehavior.cs",
@@ -936,7 +786,7 @@
       "label": "ValidationBehavior",
       "file_type": "code",
       "source_file": "backend/Application/Core/ValidationBehavior.cs",
-      "source_location": "L6",
+      "source_location": "L7",
       "_origin": "ast",
       "id": "core_validationbehavior_validationbehavior",
       "community": 39,
@@ -976,7 +826,7 @@
       "label": ".Handle()",
       "file_type": "code",
       "source_file": "backend/Application/Core/ValidationBehavior.cs",
-      "source_location": "L9",
+      "source_location": "L10",
       "_origin": "ast",
       "id": "core_validationbehavior_validationbehavior_handle",
       "community": 39,
@@ -993,14 +843,354 @@
       "norm_label": "requesthandlerdelegate"
     },
     {
+      "label": "DbInitializer.cs",
+      "file_type": "code",
+      "source_file": "backend/Persistence/DbInitializer.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "persistence_dbinitializer",
+      "community": 69,
+      "norm_label": "dbinitializer.cs"
+    },
+    {
+      "label": "DbInitializer",
+      "file_type": "code",
+      "source_file": "backend/Persistence/DbInitializer.cs",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "persistence_dbinitializer_dbinitializer",
+      "community": 69,
+      "norm_label": "dbinitializer"
+    },
+    {
+      "label": ".SeedDataAsync()",
+      "file_type": "code",
+      "source_file": "backend/Persistence/DbInitializer.cs",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "persistence_dbinitializer_dbinitializer_seeddataasync",
+      "community": 69,
+      "norm_label": ".seeddataasync()"
+    },
+    {
+      "label": "AppDbContext",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "appdbcontext",
+      "community": 69,
+      "norm_label": "appdbcontext"
+    },
+    {
+      "label": "API.csproj",
+      "file_type": "code",
+      "source_file": "backend/API/API.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "api.csproj",
+      "id": "api_api"
+    },
+    {
+      "label": "net10.0",
+      "file_type": "concept",
+      "source_file": "backend/API/API.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "net10.0",
+      "id": "backend_api_api_csproj_framework_net10_0"
+    },
+    {
+      "label": "Microsoft.EntityFrameworkCore.Design (10.0.9)",
+      "file_type": "code",
+      "source_file": "backend/API/API.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "microsoft.entityframeworkcore.design (10.0.9)",
+      "id": "nuget_microsoft_entityframeworkcore_design"
+    },
+    {
+      "label": "Application.csproj",
+      "file_type": "code",
+      "source_file": "backend/Application/Application.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "application.csproj",
+      "id": "application_application"
+    },
+    {
+      "label": "Microsoft.NET.Sdk.Web",
+      "file_type": "concept",
+      "source_file": "backend/API/API.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "microsoft.net.sdk.web",
+      "id": "sdk_microsoft_net_sdk_web"
+    },
+    {
+      "label": "BaseApiController.cs",
+      "file_type": "code",
+      "source_file": "backend/API/Controllers/BaseApiController.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 12,
+      "norm_label": "baseapicontroller.cs",
+      "id": "controllers_baseapicontroller"
+    },
+    {
+      "label": "BaseApiController",
+      "file_type": "code",
+      "source_file": "backend/API/Controllers/BaseApiController.cs",
+      "source_location": "L7",
+      "_origin": "ast",
+      "community": 12,
+      "norm_label": "baseapicontroller",
+      "id": "controllers_baseapicontroller_baseapicontroller"
+    },
+    {
+      "label": "ControllerBase",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 12,
+      "norm_label": "controllerbase",
+      "id": "controllerbase"
+    },
+    {
+      "label": "IMediator",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 12,
+      "norm_label": "imediator",
+      "id": "imediator"
+    },
+    {
+      "label": ".HandleResult()",
+      "file_type": "code",
+      "source_file": "backend/API/Controllers/BaseApiController.cs",
+      "source_location": "L14",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": ".handleresult()",
+      "id": "controllers_baseapicontroller_baseapicontroller_handleresult"
+    },
+    {
+      "label": "T",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "t",
+      "id": "t"
+    },
+    {
+      "label": "GetActivityDetails.cs",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/Queries/GetActivityDetails.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "getactivitydetails.cs",
+      "id": "queries_getactivitydetails"
+    },
+    {
+      "label": "GetActivityDetails",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/Queries/GetActivityDetails.cs",
+      "source_location": "L8",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "getactivitydetails",
+      "id": "queries_getactivitydetails_getactivitydetails"
+    },
+    {
+      "label": "Query",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/Queries/GetActivityDetails.cs",
+      "source_location": "L10",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "query",
+      "id": "queries_getactivitydetails_query"
+    },
+    {
+      "label": "Handler",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/Queries/GetActivityDetails.cs",
+      "source_location": "L15",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "handler",
+      "id": "queries_getactivitydetails_handler"
+    },
+    {
+      "label": ".Handle()",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/Queries/GetActivityDetails.cs",
+      "source_location": "L17",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": ".handle()",
+      "id": "queries_getactivitydetails_handler_handle"
+    },
+    {
+      "label": "CreateActivityValidator.cs",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/Validators/CreateActivityValidator.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 67,
+      "norm_label": "createactivityvalidator.cs",
+      "id": "validators_createactivityvalidator"
+    },
+    {
+      "label": "CreateActivityValidator",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/Validators/CreateActivityValidator.cs",
+      "source_location": "L6",
+      "_origin": "ast",
+      "community": 67,
+      "norm_label": "createactivityvalidator",
+      "id": "validators_createactivityvalidator_createactivityvalidator"
+    },
+    {
+      "label": "AbstractValidator",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 67,
+      "norm_label": "abstractvalidator",
+      "id": "abstractvalidator"
+    },
+    {
+      "label": "Command",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 67,
+      "norm_label": "command",
+      "id": "command"
+    },
+    {
+      "label": "net10.0",
+      "file_type": "concept",
+      "source_file": "backend/Application/Application.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "net10.0",
+      "id": "backend_application_application_csproj_framework_net10_0"
+    },
+    {
+      "label": "FluentValidation.DependencyInjectionExtensions (12.1.1)",
+      "file_type": "code",
+      "source_file": "backend/Application/Application.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "fluentvalidation.dependencyinjectionextensions (12.1.1)",
+      "id": "nuget_fluentvalidation_dependencyinjectionextensions"
+    },
+    {
+      "label": "MediatR (14.1.0)",
+      "file_type": "code",
+      "source_file": "backend/Application/Application.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "mediatr (14.1.0)",
+      "id": "nuget_mediatr"
+    },
+    {
+      "label": "Domain.csproj",
+      "file_type": "code",
+      "source_file": "backend/Domain/Domain.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "domain.csproj",
+      "id": "c_sources_react_reactivities_backend_domain_domain_csproj"
+    },
+    {
+      "label": "Persistence.csproj",
+      "file_type": "code",
+      "source_file": "backend/Persistence/Persistence.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "persistence.csproj",
+      "id": "persistence_persistence"
+    },
+    {
+      "label": "Microsoft.NET.Sdk",
+      "file_type": "concept",
+      "source_file": "backend/Application/Application.csproj",
+      "source_location": null,
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "microsoft.net.sdk",
+      "id": "backend_application_application_csproj_sdk_microsoft_net_sdk"
+    },
+    {
+      "label": "Result.cs",
+      "file_type": "code",
+      "source_file": "backend/Application/Core/Result.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "result.cs",
+      "id": "core_result"
+    },
+    {
+      "label": "Result",
+      "file_type": "code",
+      "source_file": "backend/Application/Core/Result.cs",
+      "source_location": "L3",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "result",
+      "id": "core_result_result"
+    },
+    {
+      "label": ".Success()",
+      "file_type": "code",
+      "source_file": "backend/Application/Core/Result.cs",
+      "source_location": "L10",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": ".success()",
+      "id": "core_result_result_success"
+    },
+    {
+      "label": ".Failure()",
+      "file_type": "code",
+      "source_file": "backend/Application/Core/Result.cs",
+      "source_location": "L11",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": ".failure()",
+      "id": "core_result_result_failure"
+    },
+    {
       "label": "net10.0",
       "file_type": "concept",
       "source_file": "backend/Persistence/Persistence.csproj",
       "source_location": null,
       "_origin": "ast",
-      "id": "backend_persistence_persistence_csproj_framework_net10_0",
       "community": 10,
-      "norm_label": "net10.0"
+      "norm_label": "net10.0",
+      "id": "backend_persistence_persistence_csproj_framework_net10_0"
     },
     {
       "label": "Microsoft.EntityFrameworkCore.Sqlite (10.0.9)",
@@ -1008,9 +1198,9 @@
       "source_file": "backend/Persistence/Persistence.csproj",
       "source_location": null,
       "_origin": "ast",
-      "id": "nuget_microsoft_entityframeworkcore_sqlite",
       "community": 10,
-      "norm_label": "microsoft.entityframeworkcore.sqlite (10.0.9)"
+      "norm_label": "microsoft.entityframeworkcore.sqlite (10.0.9)",
+      "id": "nuget_microsoft_entityframeworkcore_sqlite"
     },
     {
       "label": "Microsoft.NET.Sdk",
@@ -1018,9 +1208,9 @@
       "source_file": "backend/Persistence/Persistence.csproj",
       "source_location": null,
       "_origin": "ast",
-      "id": "backend_persistence_persistence_csproj_sdk_microsoft_net_sdk",
       "community": 10,
-      "norm_label": "microsoft.net.sdk"
+      "norm_label": "microsoft.net.sdk",
+      "id": "backend_persistence_persistence_csproj_sdk_microsoft_net_sdk"
     },
     {
       "label": "backend-standards.md",
@@ -2363,94 +2553,14 @@
       "id": "memories_tech_stack_frontend"
     },
     {
-      "label": "ActivityMapper.cs",
-      "file_type": "code",
-      "source_file": "backend/Application/Core/ActivityMapper.cs",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "activitymapper.cs",
-      "id": "core_activitymapper"
-    },
-    {
-      "label": "ActivityMapper",
-      "file_type": "code",
-      "source_file": "backend/Application/Core/ActivityMapper.cs",
-      "source_location": "L6",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "activitymapper",
-      "id": "core_activitymapper_activitymapper"
-    },
-    {
-      "label": ".ToActivity()",
-      "file_type": "code",
-      "source_file": "backend/Application/Core/ActivityMapper.cs",
-      "source_location": "L8",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": ".toactivity()",
-      "id": "core_activitymapper_activitymapper_toactivity"
-    },
-    {
       "label": "CreateActivityRequest",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 0,
+      "community": 68,
       "norm_label": "createactivityrequest",
       "id": "createactivityrequest"
-    },
-    {
-      "label": ".UpdateActivity()",
-      "file_type": "code",
-      "source_file": "backend/Application/Core/ActivityMapper.cs",
-      "source_location": "L20",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": ".updateactivity()",
-      "id": "core_activitymapper_activitymapper_updateactivity"
-    },
-    {
-      "label": "IActivityMapper.cs",
-      "file_type": "code",
-      "source_file": "backend/Application/Core/IActivityMapper.cs",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "iactivitymapper.cs",
-      "id": "core_iactivitymapper"
-    },
-    {
-      "label": "IActivityMapper",
-      "file_type": "code",
-      "source_file": "backend/Application/Core/IActivityMapper.cs",
-      "source_location": "L6",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "iactivitymapper",
-      "id": "core_iactivitymapper_iactivitymapper"
-    },
-    {
-      "label": ".ToActivity()",
-      "file_type": "code",
-      "source_file": "backend/Application/Core/IActivityMapper.cs",
-      "source_location": "L8",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": ".toactivity()",
-      "id": "core_iactivitymapper_iactivitymapper_toactivity"
-    },
-    {
-      "label": ".UpdateActivity()",
-      "file_type": "code",
-      "source_file": "backend/Application/Core/IActivityMapper.cs",
-      "source_location": "L9",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": ".updateactivity()",
-      "id": "core_iactivitymapper_iactivitymapper_updateactivity"
     },
     {
       "label": "tasks.md",
@@ -2739,56 +2849,6 @@
       "id": "api_weatherforecast_weatherforecast"
     },
     {
-      "label": "GetActivityList.cs",
-      "file_type": "code",
-      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "getactivitylist.cs",
-      "id": "queries_getactivitylist"
-    },
-    {
-      "label": "GetActivityList",
-      "file_type": "code",
-      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
-      "source_location": "L8",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "getactivitylist",
-      "id": "queries_getactivitylist_getactivitylist"
-    },
-    {
-      "label": "Query",
-      "file_type": "code",
-      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
-      "source_location": "L10",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "query",
-      "id": "queries_getactivitylist_query"
-    },
-    {
-      "label": "Handler",
-      "file_type": "code",
-      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
-      "source_location": "L12",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "handler",
-      "id": "queries_getactivitylist_handler"
-    },
-    {
-      "label": ".Handle()",
-      "file_type": "code",
-      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
-      "source_location": "L14",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": ".handle()",
-      "id": "queries_getactivitylist_handler_handle"
-    },
-    {
       "label": "Domain",
       "file_type": "code",
       "source_file": "backend/Domain/Domain.csproj",
@@ -2877,36 +2937,6 @@
       "community": 18,
       "norm_label": "dbcontext",
       "id": "dbcontext"
-    },
-    {
-      "label": "DbInitializer.cs",
-      "file_type": "code",
-      "source_file": "backend/Persistence/DbInitializer.cs",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 18,
-      "norm_label": "dbinitializer.cs",
-      "id": "persistence_dbinitializer"
-    },
-    {
-      "label": "DbInitializer",
-      "file_type": "code",
-      "source_file": "backend/Persistence/DbInitializer.cs",
-      "source_location": "L5",
-      "_origin": "ast",
-      "community": 18,
-      "norm_label": "dbinitializer",
-      "id": "persistence_dbinitializer_dbinitializer"
-    },
-    {
-      "label": ".SeedData()",
-      "file_type": "code",
-      "source_file": "backend/Persistence/DbInitializer.cs",
-      "source_location": "L7",
-      "_origin": "ast",
-      "community": 18,
-      "norm_label": ".seeddata()",
-      "id": "persistence_dbinitializer_dbinitializer_seeddata"
     },
     {
       "label": "Reactivities.slnx",
@@ -6063,123 +6093,6 @@
   ],
   "links": [
     {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/API.csproj",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "api_api",
-      "target": "application_application"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/API.csproj",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "api_api",
-      "target": "backend_api_api_csproj_framework_net10_0"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/API.csproj",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "api_api",
-      "target": "nuget_microsoft_entityframeworkcore_design"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/API.csproj",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "api_api",
-      "target": "sdk_microsoft_net_sdk_web"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Reactivities.slnx",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "backend_reactivities",
-      "target": "api_api"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Application.csproj",
-      "weight": 1.0,
-      "source": "application_application",
-      "target": "backend_application_application_csproj_framework_net10_0",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Application.csproj",
-      "weight": 1.0,
-      "source": "application_application",
-      "target": "backend_application_application_csproj_sdk_microsoft_net_sdk",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Application.csproj",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "application_application",
-      "target": "c_sources_react_reactivities_backend_domain_domain_csproj"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Application.csproj",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "application_application",
-      "target": "domain_domain"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Application.csproj",
-      "weight": 1.0,
-      "source": "application_application",
-      "target": "nuget_fluentvalidation_dependencyinjectionextensions",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Application.csproj",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "application_application",
-      "target": "nuget_mediatr"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Application.csproj",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "application_application",
-      "target": "persistence_persistence"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Reactivities.slnx",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "backend_reactivities",
-      "target": "application_application"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
@@ -6190,24 +6103,34 @@
       "target": "controllers_activitiescontroller_activitiescontroller"
     },
     {
-      "relation": "method",
+      "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
-      "source_location": "L23",
+      "source_location": "L9",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_activitiescontroller_activitiescontroller",
-      "target": "controllers_activitiescontroller_activitiescontroller_createactivity"
+      "target": "baseapicontroller",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
-      "source_location": "L36",
+      "source_location": "L17",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_activitiescontroller_activitiescontroller",
-      "target": "controllers_activitiescontroller_activitiescontroller_deleteactivity"
+      "target": "controllers_activitiescontroller_activitiescontroller_createactivityasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Controllers/ActivitiesController.cs",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "controllers_activitiescontroller_activitiescontroller",
+      "target": "controllers_activitiescontroller_activitiescontroller_deleteactivityasync",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -6233,11 +6156,11 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
-      "source_location": "L29",
+      "source_location": "L20",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "controllers_activitiescontroller_activitiescontroller",
-      "target": "controllers_activitiescontroller_activitiescontroller_updateactivity"
+      "target": "controllers_activitiescontroller_activitiescontroller_updateactivityasync",
+      "confidence_score": 1.0
     },
     {
       "relation": "inherits",
@@ -6267,9 +6190,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "controllers_activitiescontroller_activitiescontroller_getactivitiesasync",
-      "target": "activity",
-      "confidence_score": 1.0
+      "target": "activity"
     },
     {
       "relation": "references",
@@ -6322,9 +6245,9 @@
       "source_location": "L13",
       "weight": 1.0,
       "context": "return_type",
+      "confidence_score": 1.0,
       "source": "api_program_program_main",
-      "target": "task",
-      "confidence_score": 1.0
+      "target": "task"
     },
     {
       "relation": "references",
@@ -6363,23 +6286,23 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
-      "source_location": "L23",
+      "source_location": "L17",
       "weight": 1.0,
       "context": "return_type",
-      "confidence_score": 1.0,
-      "source": "controllers_activitiescontroller_activitiescontroller_createactivity",
-      "target": "task"
+      "source": "controllers_activitiescontroller_activitiescontroller_createactivityasync",
+      "target": "task",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
-      "source_location": "L36",
+      "source_location": "L23",
       "weight": 1.0,
       "context": "return_type",
-      "confidence_score": 1.0,
-      "source": "controllers_activitiescontroller_activitiescontroller_deleteactivity",
-      "target": "task"
+      "source": "controllers_activitiescontroller_activitiescontroller_deleteactivityasync",
+      "target": "task",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -6396,12 +6319,12 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
-      "source_location": "L29",
+      "source_location": "L20",
       "weight": 1.0,
       "context": "return_type",
-      "confidence_score": 1.0,
-      "source": "controllers_activitiescontroller_activitiescontroller_updateactivity",
-      "target": "task"
+      "source": "controllers_activitiescontroller_activitiescontroller_updateactivityasync",
+      "target": "task",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -6410,9 +6333,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "context": "return_type",
+      "confidence_score": 1.0,
       "source": "core_validationbehavior_validationbehavior_handle",
-      "target": "task",
-      "confidence_score": 1.0
+      "target": "task"
     },
     {
       "relation": "references",
@@ -6421,9 +6344,9 @@
       "source_location": "L24",
       "weight": 1.0,
       "context": "return_type",
+      "confidence_score": 1.0,
       "source": "middlewares_exceptionmiddleware_exceptionmiddleware_handlevalidationexception",
-      "target": "task",
-      "confidence_score": 1.0
+      "target": "task"
     },
     {
       "relation": "references",
@@ -6432,9 +6355,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "context": "return_type",
+      "confidence_score": 1.0,
       "source": "middlewares_exceptionmiddleware_exceptionmiddleware_invokeasync",
-      "target": "task",
-      "confidence_score": 1.0
+      "target": "task"
     },
     {
       "relation": "references",
@@ -6443,9 +6366,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "context": "return_type",
-      "confidence_score": 1.0,
-      "source": "persistence_dbinitializer_dbinitializer_seeddata",
-      "target": "task"
+      "source": "persistence_dbinitializer_dbinitializer_seeddataasync",
+      "target": "task",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -6473,23 +6396,23 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
-      "source_location": "L23",
+      "source_location": "L17",
       "weight": 1.0,
       "context": "generic_arg",
-      "confidence_score": 1.0,
-      "source": "controllers_activitiescontroller_activitiescontroller_createactivity",
-      "target": "actionresult"
+      "source": "controllers_activitiescontroller_activitiescontroller_createactivityasync",
+      "target": "actionresult",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
-      "source_location": "L36",
+      "source_location": "L23",
       "weight": 1.0,
       "context": "generic_arg",
-      "confidence_score": 1.0,
-      "source": "controllers_activitiescontroller_activitiescontroller_deleteactivity",
-      "target": "actionresult"
+      "source": "controllers_activitiescontroller_activitiescontroller_deleteactivityasync",
+      "target": "actionresult",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -6506,12 +6429,12 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
-      "source_location": "L29",
+      "source_location": "L20",
       "weight": 1.0,
       "context": "generic_arg",
-      "confidence_score": 1.0,
-      "source": "controllers_activitiescontroller_activitiescontroller_updateactivity",
-      "target": "actionresult"
+      "source": "controllers_activitiescontroller_activitiescontroller_updateactivityasync",
+      "target": "actionresult",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -6520,9 +6443,9 @@
       "source_location": "L14",
       "weight": 1.0,
       "context": "return_type",
+      "confidence_score": 1.0,
       "source": "controllers_baseapicontroller_baseapicontroller_handleresult",
-      "target": "actionresult",
-      "confidence_score": 1.0
+      "target": "actionresult"
     },
     {
       "relation": "references",
@@ -6564,18 +6487,18 @@
       "source_location": "L17",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "controllers_activitiescontroller_activitiescontroller_getactivitydetailasync",
-      "target": "activity",
-      "confidence_score": 1.0
+      "target": "activity"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
-      "source_location": "L29",
+      "source_location": "L20",
       "weight": 1.0,
       "context": "parameter_type",
-      "source": "controllers_activitiescontroller_activitiescontroller_updateactivity",
+      "source": "controllers_activitiescontroller_activitiescontroller_updateactivityasync",
       "target": "activity",
       "confidence_score": 1.0
     },
@@ -6630,9 +6553,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "queries_getactivitydetails_handler",
-      "target": "activity",
-      "confidence_score": 1.0
+      "target": "activity"
     },
     {
       "relation": "references",
@@ -6641,9 +6564,9 @@
       "source_location": "L17",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "queries_getactivitydetails_handler_handle",
-      "target": "activity",
-      "confidence_score": 1.0
+      "target": "activity"
     },
     {
       "relation": "references",
@@ -6652,7 +6575,40 @@
       "source_location": "L10",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "queries_getactivitydetails_query",
+      "target": "activity"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "queries_getactivitylist_handler",
+      "target": "activity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "queries_getactivitylist_handler_handle",
+      "target": "activity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "queries_getactivitylist_query",
       "target": "activity",
       "confidence_score": 1.0
     },
@@ -6701,15 +6657,37 @@
       "target": "domain_activity_activity"
     },
     {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
+      "relation": "references",
+      "confidence": "EXTRACTED",
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
-      "source_location": "L26",
+      "source_location": "L17",
       "weight": 1.0,
-      "source": "controllers_activitiescontroller_activitiescontroller_createactivity",
-      "target": "controllers_baseapicontroller_baseapicontroller_handleresult"
+      "context": "attribute",
+      "source": "controllers_activitiescontroller_activitiescontroller_createactivityasync",
+      "target": "httppost",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Controllers/ActivitiesController.cs",
+      "source_location": "L17",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "controllers_activitiescontroller_activitiescontroller_createactivityasync",
+      "target": "requests_createactivityrequest_createactivityrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Controllers/ActivitiesController.cs",
+      "source_location": "L20",
+      "weight": 1.0,
+      "context": "attribute",
+      "source": "controllers_activitiescontroller_activitiescontroller_updateactivityasync",
+      "target": "httpput",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -6718,169 +6696,8 @@
       "source_location": "L23",
       "weight": 1.0,
       "context": "attribute",
-      "confidence_score": 1.0,
-      "source": "controllers_activitiescontroller_activitiescontroller_createactivity",
-      "target": "httppost"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/Controllers/ActivitiesController.cs",
-      "source_location": "L23",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "confidence_score": 1.0,
-      "source": "controllers_activitiescontroller_activitiescontroller_createactivity",
-      "target": "requests_createactivityrequest_createactivityrequest"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/API/Controllers/ActivitiesController.cs",
-      "source_location": "L32",
-      "weight": 1.0,
-      "source": "controllers_activitiescontroller_activitiescontroller_updateactivity",
-      "target": "controllers_baseapicontroller_baseapicontroller_handleresult"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/Controllers/ActivitiesController.cs",
-      "source_location": "L29",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "confidence_score": 1.0,
-      "source": "controllers_activitiescontroller_activitiescontroller_updateactivity",
-      "target": "domain_activity_activity"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/Controllers/ActivitiesController.cs",
-      "source_location": "L29",
-      "weight": 1.0,
-      "context": "attribute",
-      "confidence_score": 1.0,
-      "source": "controllers_activitiescontroller_activitiescontroller_updateactivity",
-      "target": "httpput"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/API/Controllers/ActivitiesController.cs",
-      "source_location": "L38",
-      "weight": 1.0,
-      "source": "controllers_activitiescontroller_activitiescontroller_deleteactivity",
-      "target": "controllers_baseapicontroller_baseapicontroller_handleresult"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/Controllers/ActivitiesController.cs",
-      "source_location": "L36",
-      "weight": 1.0,
-      "context": "attribute",
-      "confidence_score": 1.0,
-      "source": "controllers_activitiescontroller_activitiescontroller_deleteactivity",
-      "target": "httpdelete"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/Controllers/BaseApiController.cs",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "controllers_baseapicontroller",
-      "target": "controllers_baseapicontroller_baseapicontroller"
-    },
-    {
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/Controllers/BaseApiController.cs",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "controllers_baseapicontroller_baseapicontroller",
-      "target": "controllerbase"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/Controllers/BaseApiController.cs",
-      "source_location": "L14",
-      "weight": 1.0,
-      "source": "controllers_baseapicontroller_baseapicontroller",
-      "target": "controllers_baseapicontroller_baseapicontroller_handleresult",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/Controllers/BaseApiController.cs",
-      "source_location": "L10",
-      "weight": 1.0,
-      "context": "field",
-      "confidence_score": 1.0,
-      "source": "controllers_baseapicontroller_baseapicontroller",
-      "target": "imediator"
-    },
-    {
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/Controllers/WeatherForecastController.cs",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "controllers_weatherforecastcontroller_weatherforecastcontroller",
-      "target": "controllerbase"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/Controllers/BaseApiController.cs",
-      "source_location": "L14",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "controllers_baseapicontroller_baseapicontroller_handleresult",
-      "target": "core_result_result",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/Controllers/BaseApiController.cs",
-      "source_location": "L14",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "source": "controllers_baseapicontroller_baseapicontroller_handleresult",
-      "target": "t",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/Result.cs",
-      "source_location": "L11",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "source": "core_result_result_failure",
-      "target": "t",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/Result.cs",
-      "source_location": "L10",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "source": "core_result_result_success",
-      "target": "t",
+      "source": "controllers_activitiescontroller_activitiescontroller_deleteactivityasync",
+      "target": "httpdelete",
       "confidence_score": 1.0
     },
     {
@@ -6889,9 +6706,9 @@
       "source_file": "backend/API/Middlewares/ExceptionMiddleware.cs",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "middlewares_exceptionmiddleware",
-      "target": "middlewares_exceptionmiddleware_exceptionmiddleware",
-      "confidence_score": 1.0
+      "target": "middlewares_exceptionmiddleware_exceptionmiddleware"
     },
     {
       "relation": "implements",
@@ -6899,9 +6716,9 @@
       "source_file": "backend/API/Middlewares/ExceptionMiddleware.cs",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "middlewares_exceptionmiddleware_exceptionmiddleware",
-      "target": "imiddleware",
-      "confidence_score": 1.0
+      "target": "imiddleware"
     },
     {
       "relation": "method",
@@ -6909,9 +6726,9 @@
       "source_file": "backend/API/Middlewares/ExceptionMiddleware.cs",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "middlewares_exceptionmiddleware_exceptionmiddleware",
-      "target": "middlewares_exceptionmiddleware_exceptionmiddleware_handlevalidationexception",
-      "confidence_score": 1.0
+      "target": "middlewares_exceptionmiddleware_exceptionmiddleware_handlevalidationexception"
     },
     {
       "relation": "method",
@@ -6919,9 +6736,9 @@
       "source_file": "backend/API/Middlewares/ExceptionMiddleware.cs",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "middlewares_exceptionmiddleware_exceptionmiddleware",
-      "target": "middlewares_exceptionmiddleware_exceptionmiddleware_invokeasync",
-      "confidence_score": 1.0
+      "target": "middlewares_exceptionmiddleware_exceptionmiddleware_invokeasync"
     },
     {
       "relation": "references",
@@ -6930,9 +6747,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "context": "parameter_type",
+      "confidence_score": 1.0,
       "source": "middlewares_exceptionmiddleware_exceptionmiddleware_invokeasync",
-      "target": "httpcontext",
-      "confidence_score": 1.0
+      "target": "httpcontext"
     },
     {
       "relation": "calls",
@@ -6941,9 +6758,9 @@
       "source_file": "backend/API/Middlewares/ExceptionMiddleware.cs",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "middlewares_exceptionmiddleware_exceptionmiddleware_invokeasync",
-      "target": "middlewares_exceptionmiddleware_exceptionmiddleware_handlevalidationexception",
-      "confidence_score": 1.0
+      "target": "middlewares_exceptionmiddleware_exceptionmiddleware_handlevalidationexception"
     },
     {
       "relation": "references",
@@ -6952,9 +6769,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "context": "parameter_type",
+      "confidence_score": 1.0,
       "source": "middlewares_exceptionmiddleware_exceptionmiddleware_invokeasync",
-      "target": "requestdelegate",
-      "confidence_score": 1.0
+      "target": "requestdelegate"
     },
     {
       "relation": "references",
@@ -6963,9 +6780,9 @@
       "source_location": "L24",
       "weight": 1.0,
       "context": "parameter_type",
+      "confidence_score": 1.0,
       "source": "middlewares_exceptionmiddleware_exceptionmiddleware_handlevalidationexception",
-      "target": "httpcontext",
-      "confidence_score": 1.0
+      "target": "httpcontext"
     },
     {
       "relation": "references",
@@ -6974,9 +6791,9 @@
       "source_location": "L24",
       "weight": 1.0,
       "context": "parameter_type",
+      "confidence_score": 1.0,
       "source": "middlewares_exceptionmiddleware_exceptionmiddleware_handlevalidationexception",
-      "target": "validationexception",
-      "confidence_score": 1.0
+      "target": "validationexception"
     },
     {
       "relation": "contains",
@@ -6984,9 +6801,9 @@
       "source_file": "backend/API/Program.cs",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_program",
-      "target": "api_program_program",
-      "confidence_score": 1.0
+      "target": "api_program_program"
     },
     {
       "relation": "method",
@@ -6994,9 +6811,9 @@
       "source_file": "backend/API/Program.cs",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_program_program",
-      "target": "api_program_program_addapplicationservices",
-      "confidence_score": 1.0
+      "target": "api_program_program_addapplicationservices"
     },
     {
       "relation": "method",
@@ -7004,9 +6821,9 @@
       "source_file": "backend/API/Program.cs",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_program_program",
-      "target": "api_program_program_adddbcontext",
-      "confidence_score": 1.0
+      "target": "api_program_program_adddbcontext"
     },
     {
       "relation": "method",
@@ -7014,9 +6831,9 @@
       "source_file": "backend/API/Program.cs",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_program_program",
-      "target": "api_program_program_addmiddlewareservices",
-      "confidence_score": 1.0
+      "target": "api_program_program_addmiddlewareservices"
     },
     {
       "relation": "method",
@@ -7024,9 +6841,9 @@
       "source_file": "backend/API/Program.cs",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_program_program",
-      "target": "api_program_program_configuremiddleware",
-      "confidence_score": 1.0
+      "target": "api_program_program_configuremiddleware"
     },
     {
       "relation": "method",
@@ -7034,9 +6851,9 @@
       "source_file": "backend/API/Program.cs",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_program_program",
-      "target": "api_program_program_main",
-      "confidence_score": 1.0
+      "target": "api_program_program_main"
     },
     {
       "relation": "calls",
@@ -7045,9 +6862,9 @@
       "source_file": "backend/API/Program.cs",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_program_program_main",
-      "target": "api_program_program_addapplicationservices",
-      "confidence_score": 1.0
+      "target": "api_program_program_addapplicationservices"
     },
     {
       "relation": "calls",
@@ -7056,9 +6873,9 @@
       "source_file": "backend/API/Program.cs",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_program_program_main",
-      "target": "api_program_program_adddbcontext",
-      "confidence_score": 1.0
+      "target": "api_program_program_adddbcontext"
     },
     {
       "relation": "calls",
@@ -7067,9 +6884,9 @@
       "source_file": "backend/API/Program.cs",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_program_program_main",
-      "target": "api_program_program_addmiddlewareservices",
-      "confidence_score": 1.0
+      "target": "api_program_program_addmiddlewareservices"
     },
     {
       "relation": "calls",
@@ -7078,9 +6895,9 @@
       "source_file": "backend/API/Program.cs",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_program_program_main",
-      "target": "api_program_program_configuremiddleware",
-      "confidence_score": 1.0
+      "target": "api_program_program_configuremiddleware"
     },
     {
       "relation": "references",
@@ -7089,9 +6906,9 @@
       "source_location": "L46",
       "weight": 1.0,
       "context": "parameter_type",
+      "confidence_score": 1.0,
       "source": "api_program_program_adddbcontext",
-      "target": "webapplicationbuilder",
-      "confidence_score": 1.0
+      "target": "webapplicationbuilder"
     },
     {
       "relation": "references",
@@ -7100,9 +6917,9 @@
       "source_location": "L53",
       "weight": 1.0,
       "context": "parameter_type",
+      "confidence_score": 1.0,
       "source": "api_program_program_addapplicationservices",
-      "target": "webapplicationbuilder",
-      "confidence_score": 1.0
+      "target": "webapplicationbuilder"
     },
     {
       "relation": "references",
@@ -7111,9 +6928,9 @@
       "source_location": "L65",
       "weight": 1.0,
       "context": "parameter_type",
+      "confidence_score": 1.0,
       "source": "api_program_program_addmiddlewareservices",
-      "target": "webapplicationbuilder",
-      "confidence_score": 1.0
+      "target": "webapplicationbuilder"
     },
     {
       "relation": "references",
@@ -7122,9 +6939,9 @@
       "source_location": "L71",
       "weight": 1.0,
       "context": "parameter_type",
+      "confidence_score": 1.0,
       "source": "api_program_program_configuremiddleware",
-      "target": "webapplication",
-      "confidence_score": 1.0
+      "target": "webapplication"
     },
     {
       "relation": "contains",
@@ -7163,9 +6980,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "commands_createactivity_command",
-      "target": "core_result_result",
-      "confidence_score": 1.0
+      "target": "core_result_result"
     },
     {
       "relation": "implements",
@@ -7176,6 +6993,17 @@
       "confidence_score": 1.0,
       "source": "commands_createactivity_command",
       "target": "irequest"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Commands/CreateActivity.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "commands_createactivity_command",
+      "target": "result",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -7240,6 +7068,94 @@
       "target": "irequest"
     },
     {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Commands/CreateActivity.cs",
+      "source_location": "L15",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "commands_createactivity_handler",
+      "target": "result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Commands/CreateActivity.cs",
+      "source_location": "L17",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "commands_createactivity_handler_handle",
+      "target": "result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "commands_deleteactivity_command",
+      "target": "result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
+      "source_location": "L15",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "commands_deleteactivity_handler",
+      "target": "result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
+      "source_location": "L17",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "commands_deleteactivity_handler_handle",
+      "target": "result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Commands/UpdateActivity.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "commands_updateactivity_command",
+      "target": "result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Commands/UpdateActivity.cs",
+      "source_location": "L15",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "commands_updateactivity_handler",
+      "target": "result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Commands/UpdateActivity.cs",
+      "source_location": "L17",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "commands_updateactivity_handler_handle",
+      "target": "result",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "backend/Application/Activities/Commands/CreateActivity.cs",
@@ -7256,9 +7172,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "commands_createactivity_handler",
-      "target": "core_result_result",
-      "confidence_score": 1.0
+      "target": "core_result_result"
     },
     {
       "relation": "implements",
@@ -7328,9 +7244,9 @@
       "source_location": "L17",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "commands_createactivity_handler_handle",
-      "target": "core_result_result",
-      "confidence_score": 1.0
+      "target": "core_result_result"
     },
     {
       "relation": "references",
@@ -7361,9 +7277,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "context": "parameter_type",
+      "confidence_score": 1.0,
       "source": "core_validationbehavior_validationbehavior_handle",
-      "target": "cancellationtoken",
-      "confidence_score": 1.0
+      "target": "cancellationtoken"
     },
     {
       "relation": "references",
@@ -7424,9 +7340,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "commands_deleteactivity_command",
-      "target": "core_result_result",
-      "confidence_score": 1.0
+      "target": "core_result_result"
     },
     {
       "relation": "references",
@@ -7435,9 +7351,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "commands_deleteactivity_command",
-      "target": "unit",
-      "confidence_score": 1.0
+      "target": "unit"
     },
     {
       "relation": "references",
@@ -7468,9 +7384,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "commands_deleteactivity_handler",
-      "target": "unit",
-      "confidence_score": 1.0
+      "target": "unit"
     },
     {
       "relation": "references",
@@ -7479,9 +7395,9 @@
       "source_location": "L17",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "commands_deleteactivity_handler_handle",
-      "target": "unit",
-      "confidence_score": 1.0
+      "target": "unit"
     },
     {
       "relation": "references",
@@ -7490,9 +7406,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "commands_updateactivity_command",
-      "target": "unit",
-      "confidence_score": 1.0
+      "target": "unit"
     },
     {
       "relation": "references",
@@ -7501,9 +7417,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "commands_updateactivity_handler",
-      "target": "unit",
-      "confidence_score": 1.0
+      "target": "unit"
     },
     {
       "relation": "references",
@@ -7512,9 +7428,9 @@
       "source_location": "L17",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "commands_updateactivity_handler_handle",
-      "target": "unit",
-      "confidence_score": 1.0
+      "target": "unit"
     },
     {
       "relation": "method",
@@ -7533,9 +7449,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "commands_deleteactivity_handler",
-      "target": "core_result_result",
-      "confidence_score": 1.0
+      "target": "core_result_result"
     },
     {
       "relation": "references",
@@ -7544,9 +7460,9 @@
       "source_location": "L17",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "commands_deleteactivity_handler_handle",
-      "target": "core_result_result",
-      "confidence_score": 1.0
+      "target": "core_result_result"
     },
     {
       "relation": "contains",
@@ -7596,9 +7512,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "commands_updateactivity_command",
-      "target": "core_result_result",
-      "confidence_score": 1.0
+      "target": "core_result_result"
     },
     {
       "relation": "references",
@@ -7639,9 +7555,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "commands_updateactivity_handler",
-      "target": "core_result_result",
-      "confidence_score": 1.0
+      "target": "core_result_result"
     },
     {
       "relation": "references",
@@ -7650,9 +7566,556 @@
       "source_location": "L17",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "commands_updateactivity_handler_handle",
-      "target": "core_result_result",
+      "target": "core_result_result"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "queries_getactivitylist",
+      "target": "queries_getactivitylist_getactivitylist"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "queries_getactivitylist",
+      "target": "queries_getactivitylist_handler"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "queries_getactivitylist",
+      "target": "queries_getactivitylist_query"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "confidence_score": 1.0,
+      "source": "queries_getactivitylist_handler",
+      "target": "queries_getactivitylist_query"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "confidence_score": 1.0,
+      "source": "queries_getactivitylist_handler_handle",
+      "target": "queries_getactivitylist_query"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "confidence_score": 1.0,
+      "source": "queries_getactivitylist_query",
+      "target": "domain_activity_activity"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "confidence_score": 1.0,
+      "source": "queries_getactivitylist_handler",
+      "target": "domain_activity_activity"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "queries_getactivitylist_handler",
+      "target": "queries_getactivitylist_handler_handle"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "confidence_score": 1.0,
+      "source": "queries_getactivitylist_handler_handle",
+      "target": "domain_activity_activity"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Requests/CreateActivityRequest.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "requests_createactivityrequest",
+      "target": "requests_createactivityrequest_createactivityrequest"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/ActivityMapper.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "core_activitymapper_activitymapper_toactivity",
+      "target": "requests_createactivityrequest_createactivityrequest",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/IActivityMapper.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "core_iactivitymapper_iactivitymapper_toactivity",
+      "target": "requests_createactivityrequest_createactivityrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/ActivityMapper.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_activitymapper",
+      "target": "core_activitymapper_activitymapper"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/ActivityMapper.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_activitymapper_activitymapper",
+      "target": "core_activitymapper_activitymapper_toactivity"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/ActivityMapper.cs",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_activitymapper_activitymapper",
+      "target": "core_activitymapper_activitymapper_updateactivity"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/ActivityMapper.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_activitymapper_activitymapper",
+      "target": "core_iactivitymapper_iactivitymapper"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/ActivityMapper.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "confidence_score": 1.0,
+      "source": "core_activitymapper_activitymapper_toactivity",
+      "target": "createactivityrequest"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/IActivityMapper.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_iactivitymapper",
+      "target": "core_iactivitymapper_iactivitymapper"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/IActivityMapper.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_iactivitymapper_iactivitymapper",
+      "target": "core_iactivitymapper_iactivitymapper_toactivity"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/IActivityMapper.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_iactivitymapper_iactivitymapper",
+      "target": "core_iactivitymapper_iactivitymapper_updateactivity"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/IActivityMapper.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "confidence_score": 1.0,
+      "source": "core_iactivitymapper_iactivitymapper_toactivity",
+      "target": "createactivityrequest"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/ValidationBehavior.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_validationbehavior",
+      "target": "core_validationbehavior_validationbehavior"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/ValidationBehavior.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_validationbehavior_validationbehavior",
+      "target": "core_validationbehavior_validationbehavior_handle"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/ValidationBehavior.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_validationbehavior_validationbehavior",
+      "target": "ipipelinebehavior"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/ValidationBehavior.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "confidence_score": 1.0,
+      "source": "core_validationbehavior_validationbehavior",
+      "target": "trequest"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/ValidationBehavior.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "confidence_score": 1.0,
+      "source": "core_validationbehavior_validationbehavior",
+      "target": "tresponse"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/ValidationBehavior.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "confidence_score": 1.0,
+      "source": "core_validationbehavior_validationbehavior_handle",
+      "target": "trequest"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/ValidationBehavior.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "confidence_score": 1.0,
+      "source": "core_validationbehavior_validationbehavior_handle",
+      "target": "tresponse"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/ValidationBehavior.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "confidence_score": 1.0,
+      "source": "core_validationbehavior_validationbehavior_handle",
+      "target": "requesthandlerdelegate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Persistence/DbInitializer.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "persistence_dbinitializer",
+      "target": "persistence_dbinitializer_dbinitializer"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Persistence/DbInitializer.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "persistence_dbinitializer_dbinitializer",
+      "target": "persistence_dbinitializer_dbinitializer_seeddataasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Persistence/DbInitializer.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "persistence_dbinitializer_dbinitializer_seeddataasync",
+      "target": "appdbcontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/API.csproj",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_api",
+      "target": "application_application"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/API.csproj",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_api",
+      "target": "backend_api_api_csproj_framework_net10_0"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/API.csproj",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_api",
+      "target": "nuget_microsoft_entityframeworkcore_design"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/API.csproj",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_api",
+      "target": "sdk_microsoft_net_sdk_web"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Reactivities.slnx",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_reactivities",
+      "target": "api_api"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Application.csproj",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "application_application",
+      "target": "backend_application_application_csproj_framework_net10_0"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Application.csproj",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "application_application",
+      "target": "backend_application_application_csproj_sdk_microsoft_net_sdk"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Application.csproj",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "application_application",
+      "target": "c_sources_react_reactivities_backend_domain_domain_csproj"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Application.csproj",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "application_application",
+      "target": "domain_domain"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Application.csproj",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "application_application",
+      "target": "nuget_fluentvalidation_dependencyinjectionextensions"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Application.csproj",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "application_application",
+      "target": "nuget_mediatr"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Application.csproj",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "application_application",
+      "target": "persistence_persistence"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Reactivities.slnx",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_reactivities",
+      "target": "application_application"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Controllers/BaseApiController.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_baseapicontroller",
+      "target": "controllers_baseapicontroller_baseapicontroller"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Controllers/BaseApiController.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_baseapicontroller_baseapicontroller",
+      "target": "controllerbase"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Controllers/BaseApiController.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_baseapicontroller_baseapicontroller",
+      "target": "controllers_baseapicontroller_baseapicontroller_handleresult"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Controllers/BaseApiController.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "field",
+      "confidence_score": 1.0,
+      "source": "controllers_baseapicontroller_baseapicontroller",
+      "target": "imediator"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Controllers/WeatherForecastController.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "controllers_weatherforecastcontroller_weatherforecastcontroller",
+      "target": "controllerbase"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Controllers/BaseApiController.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "confidence_score": 1.0,
+      "source": "controllers_baseapicontroller_baseapicontroller_handleresult",
+      "target": "core_result_result"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Controllers/BaseApiController.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "confidence_score": 1.0,
+      "source": "controllers_baseapicontroller_baseapicontroller_handleresult",
+      "target": "t"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/Result.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "confidence_score": 1.0,
+      "source": "core_result_result_failure",
+      "target": "t"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/Result.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "confidence_score": 1.0,
+      "source": "core_result_result_success",
+      "target": "t"
     },
     {
       "relation": "contains",
@@ -7713,9 +8176,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "queries_getactivitydetails_query",
-      "target": "core_result_result",
-      "confidence_score": 1.0
+      "target": "core_result_result"
     },
     {
       "relation": "references",
@@ -7735,9 +8198,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "queries_getactivitydetails_handler",
-      "target": "core_result_result",
-      "confidence_score": 1.0
+      "target": "core_result_result"
     },
     {
       "relation": "references",
@@ -7767,9 +8230,9 @@
       "source_location": "L17",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "queries_getactivitydetails_handler_handle",
-      "target": "core_result_result",
-      "confidence_score": 1.0
+      "target": "core_result_result"
     },
     {
       "relation": "references",
@@ -7785,22 +8248,12 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Requests/CreateActivityRequest.cs",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "requests_createactivityrequest",
-      "target": "requests_createactivityrequest_createactivityrequest"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "backend/Application/Activities/Validators/CreateActivityValidator.cs",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "validators_createactivityvalidator",
-      "target": "validators_createactivityvalidator_createactivityvalidator",
-      "confidence_score": 1.0
+      "target": "validators_createactivityvalidator_createactivityvalidator"
     },
     {
       "relation": "inherits",
@@ -7808,9 +8261,9 @@
       "source_file": "backend/Application/Activities/Validators/CreateActivityValidator.cs",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "validators_createactivityvalidator_createactivityvalidator",
-      "target": "abstractvalidator",
-      "confidence_score": 1.0
+      "target": "abstractvalidator"
     },
     {
       "relation": "references",
@@ -7819,18 +8272,18 @@
       "source_location": "L6",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "validators_createactivityvalidator_createactivityvalidator",
-      "target": "command",
-      "confidence_score": 1.0
+      "target": "command"
     },
     {
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "backend/Persistence/Persistence.csproj",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "persistence_persistence",
-      "target": "c_sources_react_reactivities_backend_domain_domain_csproj",
-      "confidence_score": 1.0
+      "target": "c_sources_react_reactivities_backend_domain_domain_csproj"
     },
     {
       "relation": "contains",
@@ -7883,9 +8336,9 @@
       "source_file": "backend/Application/Core/Result.cs",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "core_result",
-      "target": "core_result_result",
-      "confidence_score": 1.0
+      "target": "core_result_result"
     },
     {
       "relation": "references",
@@ -7894,9 +8347,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "context": "return_type",
+      "confidence_score": 1.0,
       "source": "core_result_result_failure",
-      "target": "core_result_result",
-      "confidence_score": 1.0
+      "target": "core_result_result"
     },
     {
       "relation": "references",
@@ -7905,94 +8358,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "context": "return_type",
+      "confidence_score": 1.0,
       "source": "core_result_result_success",
-      "target": "core_result_result",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/ValidationBehavior.cs",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "core_validationbehavior",
-      "target": "core_validationbehavior_validationbehavior",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/ValidationBehavior.cs",
-      "source_location": "L9",
-      "weight": 1.0,
-      "source": "core_validationbehavior_validationbehavior",
-      "target": "core_validationbehavior_validationbehavior_handle",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/ValidationBehavior.cs",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "core_validationbehavior_validationbehavior",
-      "target": "ipipelinebehavior",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/ValidationBehavior.cs",
-      "source_location": "L6",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "source": "core_validationbehavior_validationbehavior",
-      "target": "trequest",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/ValidationBehavior.cs",
-      "source_location": "L6",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "source": "core_validationbehavior_validationbehavior",
-      "target": "tresponse",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/ValidationBehavior.cs",
-      "source_location": "L9",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "core_validationbehavior_validationbehavior_handle",
-      "target": "trequest",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/ValidationBehavior.cs",
-      "source_location": "L9",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "source": "core_validationbehavior_validationbehavior_handle",
-      "target": "tresponse",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/ValidationBehavior.cs",
-      "source_location": "L9",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "core_validationbehavior_validationbehavior_handle",
-      "target": "requesthandlerdelegate",
-      "confidence_score": 1.0
+      "target": "core_result_result"
     },
     {
       "relation": "contains",
@@ -9207,98 +9575,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/ActivityMapper.cs",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "core_activitymapper",
-      "target": "core_activitymapper_activitymapper"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/ActivityMapper.cs",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "core_activitymapper_activitymapper",
-      "target": "core_activitymapper_activitymapper_toactivity"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/ActivityMapper.cs",
-      "source_location": "L20",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "core_activitymapper_activitymapper",
-      "target": "core_activitymapper_activitymapper_updateactivity"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/ActivityMapper.cs",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "core_activitymapper_activitymapper",
-      "target": "core_iactivitymapper_iactivitymapper"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/ActivityMapper.cs",
-      "source_location": "L8",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "confidence_score": 1.0,
-      "source": "core_activitymapper_activitymapper_toactivity",
-      "target": "createactivityrequest"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/IActivityMapper.cs",
-      "source_location": "L8",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "confidence_score": 1.0,
-      "source": "core_iactivitymapper_iactivitymapper_toactivity",
-      "target": "createactivityrequest"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/IActivityMapper.cs",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "core_iactivitymapper",
-      "target": "core_iactivitymapper_iactivitymapper"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/IActivityMapper.cs",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "core_iactivitymapper_iactivitymapper",
-      "target": "core_iactivitymapper_iactivitymapper_toactivity"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/IActivityMapper.cs",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "core_iactivitymapper_iactivitymapper",
-      "target": "core_iactivitymapper_iactivitymapper_updateactivity"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "openspec/changes/migrate-automapper-to-custommapper/tasks.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -9533,101 +9809,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "queries_getactivitylist",
-      "target": "queries_getactivitylist_getactivitylist"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "queries_getactivitylist",
-      "target": "queries_getactivitylist_handler"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "queries_getactivitylist",
-      "target": "queries_getactivitylist_query"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
-      "source_location": "L12",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "confidence_score": 1.0,
-      "source": "queries_getactivitylist_handler",
-      "target": "queries_getactivitylist_query"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
-      "source_location": "L14",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "confidence_score": 1.0,
-      "source": "queries_getactivitylist_handler_handle",
-      "target": "queries_getactivitylist_query"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
-      "source_location": "L10",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "confidence_score": 1.0,
-      "source": "queries_getactivitylist_query",
-      "target": "domain_activity_activity"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
-      "source_location": "L12",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "confidence_score": 1.0,
-      "source": "queries_getactivitylist_handler",
-      "target": "domain_activity_activity"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
-      "source_location": "L14",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "queries_getactivitylist_handler",
-      "target": "queries_getactivitylist_handler_handle"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
-      "source_location": "L14",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "confidence_score": 1.0,
-      "source": "queries_getactivitylist_handler_handle",
-      "target": "domain_activity_activity"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "backend/Reactivities.slnx",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -9681,37 +9862,6 @@
       "confidence_score": 1.0,
       "source": "persistence_appdbcontext_appdbcontext",
       "target": "dbcontext"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Persistence/DbInitializer.cs",
-      "source_location": "L7",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "confidence_score": 1.0,
-      "source": "persistence_dbinitializer_dbinitializer_seeddata",
-      "target": "persistence_appdbcontext_appdbcontext"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Persistence/DbInitializer.cs",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "persistence_dbinitializer",
-      "target": "persistence_dbinitializer_dbinitializer"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Persistence/DbInitializer.cs",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "persistence_dbinitializer_dbinitializer",
-      "target": "persistence_dbinitializer_dbinitializer_seeddata"
     },
     {
       "relation": "contains",
@@ -12282,5 +12432,5 @@
       "source_file": "CLAUDE.md"
     }
   ],
-  "built_at_commit": "1829a5df7892c1336c0987282010884c4b13f0b8"
+  "built_at_commit": "a997888609c22975c5cf70d0a6dd39ec09dcb7e9"
 }

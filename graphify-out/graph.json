@@ -266,7 +266,7 @@
       "label": "ExceptionMiddleware",
       "file_type": "code",
       "source_file": "backend/API/Middlewares/ExceptionMiddleware.cs",
-      "source_location": "L7",
+      "source_location": "L9",
       "_origin": "ast",
       "id": "middlewares_exceptionmiddleware_exceptionmiddleware",
       "community": 52,
@@ -283,10 +283,20 @@
       "norm_label": "imiddleware"
     },
     {
+      "label": "JsonSerializerOptions",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "jsonserializeroptions",
+      "community": 52,
+      "norm_label": "jsonserializeroptions"
+    },
+    {
       "label": ".InvokeAsync()",
       "file_type": "code",
       "source_file": "backend/API/Middlewares/ExceptionMiddleware.cs",
-      "source_location": "L9",
+      "source_location": "L14",
       "_origin": "ast",
       "id": "middlewares_exceptionmiddleware_exceptionmiddleware_invokeasync",
       "community": 52,
@@ -313,14 +323,14 @@
       "norm_label": "requestdelegate"
     },
     {
-      "label": ".HandleValidationException()",
+      "label": ".HandleValidationExceptionAsync()",
       "file_type": "code",
       "source_file": "backend/API/Middlewares/ExceptionMiddleware.cs",
-      "source_location": "L25",
+      "source_location": "L30",
       "_origin": "ast",
-      "id": "middlewares_exceptionmiddleware_exceptionmiddleware_handlevalidationexception",
+      "id": "middlewares_exceptionmiddleware_exceptionmiddleware_handlevalidationexceptionasync",
       "community": 52,
-      "norm_label": ".handlevalidationexception()"
+      "norm_label": ".handlevalidationexceptionasync()"
     },
     {
       "label": "ValidationException",
@@ -333,94 +343,24 @@
       "norm_label": "validationexception"
     },
     {
-      "label": "Program.cs",
+      "label": ".HandleExceptionAsync()",
       "file_type": "code",
-      "source_file": "backend/API/Program.cs",
-      "source_location": "L1",
+      "source_file": "backend/API/Middlewares/ExceptionMiddleware.cs",
+      "source_location": "L61",
       "_origin": "ast",
-      "id": "api_program",
-      "community": 33,
-      "norm_label": "program.cs"
+      "id": "middlewares_exceptionmiddleware_exceptionmiddleware_handleexceptionasync",
+      "community": 52,
+      "norm_label": ".handleexceptionasync()"
     },
     {
-      "label": "Program",
-      "file_type": "code",
-      "source_file": "backend/API/Program.cs",
-      "source_location": "L11",
-      "_origin": "ast",
-      "id": "api_program_program",
-      "community": 33,
-      "norm_label": "program"
-    },
-    {
-      "label": ".Main()",
-      "file_type": "code",
-      "source_file": "backend/API/Program.cs",
-      "source_location": "L13",
-      "_origin": "ast",
-      "id": "api_program_program_main",
-      "community": 33,
-      "norm_label": ".main()"
-    },
-    {
-      "label": ".AddDbContext()",
-      "file_type": "code",
-      "source_file": "backend/API/Program.cs",
-      "source_location": "L46",
-      "_origin": "ast",
-      "id": "api_program_program_adddbcontext",
-      "community": 33,
-      "norm_label": ".adddbcontext()"
-    },
-    {
-      "label": "WebApplicationBuilder",
+      "label": "Exception",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "webapplicationbuilder",
-      "community": 33,
-      "norm_label": "webapplicationbuilder"
-    },
-    {
-      "label": ".AddApplicationServices()",
-      "file_type": "code",
-      "source_file": "backend/API/Program.cs",
-      "source_location": "L53",
-      "_origin": "ast",
-      "id": "api_program_program_addapplicationservices",
-      "community": 33,
-      "norm_label": ".addapplicationservices()"
-    },
-    {
-      "label": ".AddMiddlewareServices()",
-      "file_type": "code",
-      "source_file": "backend/API/Program.cs",
-      "source_location": "L65",
-      "_origin": "ast",
-      "id": "api_program_program_addmiddlewareservices",
-      "community": 33,
-      "norm_label": ".addmiddlewareservices()"
-    },
-    {
-      "label": ".ConfigureMiddleware()",
-      "file_type": "code",
-      "source_file": "backend/API/Program.cs",
-      "source_location": "L68",
-      "_origin": "ast",
-      "id": "api_program_program_configuremiddleware",
-      "community": 33,
-      "norm_label": ".configuremiddleware()"
-    },
-    {
-      "label": "WebApplication",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "webapplication",
-      "community": 33,
-      "norm_label": "webapplication"
+      "id": "exception",
+      "community": 52,
+      "norm_label": "exception"
     },
     {
       "label": "CreateActivity.cs",
@@ -429,27 +369,27 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "commands_createactivity",
-      "community": 0,
+      "community": 39,
       "norm_label": "createactivity.cs"
     },
     {
       "label": "CreateActivity",
       "file_type": "code",
       "source_file": "backend/Application/Activities/Commands/CreateActivity.cs",
-      "source_location": "L8",
+      "source_location": "L9",
       "_origin": "ast",
       "id": "commands_createactivity_createactivity",
-      "community": 0,
+      "community": 39,
       "norm_label": "createactivity"
     },
     {
       "label": "Command",
       "file_type": "code",
       "source_file": "backend/Application/Activities/Commands/CreateActivity.cs",
-      "source_location": "L10",
+      "source_location": "L11",
       "_origin": "ast",
       "id": "commands_createactivity_command",
-      "community": 0,
+      "community": 39,
       "norm_label": "command"
     },
     {
@@ -469,17 +409,17 @@
       "source_location": "",
       "_origin": "ast",
       "id": "result",
-      "community": 0,
+      "community": 39,
       "norm_label": "result"
     },
     {
       "label": "Handler",
       "file_type": "code",
       "source_file": "backend/Application/Activities/Commands/CreateActivity.cs",
-      "source_location": "L15",
+      "source_location": "L16",
       "_origin": "ast",
       "id": "commands_createactivity_handler",
-      "community": 0,
+      "community": 39,
       "norm_label": "handler"
     },
     {
@@ -489,17 +429,17 @@
       "source_location": "",
       "_origin": "ast",
       "id": "irequesthandler",
-      "community": 0,
+      "community": 39,
       "norm_label": "irequesthandler"
     },
     {
       "label": ".Handle()",
       "file_type": "code",
       "source_file": "backend/Application/Activities/Commands/CreateActivity.cs",
-      "source_location": "L17",
+      "source_location": "L18",
       "_origin": "ast",
       "id": "commands_createactivity_handler_handle",
-      "community": 0,
+      "community": 39,
       "norm_label": ".handle()"
     },
     {
@@ -509,37 +449,37 @@
       "source_location": "",
       "_origin": "ast",
       "id": "cancellationtoken",
-      "community": 0,
+      "community": 39,
       "norm_label": "cancellationtoken"
     },
     {
-      "label": "DeleteActivity.cs",
+      "label": "UpdateActivity.cs",
       "file_type": "code",
-      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
+      "source_file": "backend/Application/Activities/Commands/UpdateActivity.cs",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "commands_deleteactivity",
-      "community": 0,
-      "norm_label": "deleteactivity.cs"
+      "id": "commands_updateactivity",
+      "community": 39,
+      "norm_label": "updateactivity.cs"
     },
     {
-      "label": "DeleteActivity",
+      "label": "UpdateActivity",
       "file_type": "code",
-      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
-      "source_location": "L8",
+      "source_file": "backend/Application/Activities/Commands/UpdateActivity.cs",
+      "source_location": "L9",
       "_origin": "ast",
-      "id": "commands_deleteactivity_deleteactivity",
-      "community": 0,
-      "norm_label": "deleteactivity"
+      "id": "commands_updateactivity_updateactivity",
+      "community": 39,
+      "norm_label": "updateactivity"
     },
     {
       "label": "Command",
       "file_type": "code",
-      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
-      "source_location": "L10",
+      "source_file": "backend/Application/Activities/Commands/UpdateActivity.cs",
+      "source_location": "L11",
       "_origin": "ast",
-      "id": "commands_deleteactivity_command",
-      "community": 0,
+      "id": "commands_updateactivity_command",
+      "community": 39,
       "norm_label": "command"
     },
     {
@@ -549,148 +489,178 @@
       "source_location": "",
       "_origin": "ast",
       "id": "unit",
-      "community": 0,
+      "community": 39,
       "norm_label": "unit"
     },
     {
       "label": "Handler",
       "file_type": "code",
-      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
-      "source_location": "L15",
+      "source_file": "backend/Application/Activities/Commands/UpdateActivity.cs",
+      "source_location": "L16",
       "_origin": "ast",
-      "id": "commands_deleteactivity_handler",
-      "community": 0,
+      "id": "commands_updateactivity_handler",
+      "community": 39,
       "norm_label": "handler"
     },
     {
       "label": ".Handle()",
       "file_type": "code",
-      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
-      "source_location": "L17",
+      "source_file": "backend/Application/Activities/Commands/UpdateActivity.cs",
+      "source_location": "L18",
       "_origin": "ast",
-      "id": "commands_deleteactivity_handler_handle",
-      "community": 0,
+      "id": "commands_updateactivity_handler_handle",
+      "community": 39,
       "norm_label": ".handle()"
     },
     {
-      "label": "UpdateActivity.cs",
+      "label": "BaseActivityDto.cs",
       "file_type": "code",
-      "source_file": "backend/Application/Activities/Commands/UpdateActivity.cs",
+      "source_file": "backend/Application/Activities/DTOs/BaseActivityDto.cs",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "commands_updateactivity",
-      "community": 0,
-      "norm_label": "updateactivity.cs"
+      "id": "dtos_baseactivitydto",
+      "community": 68,
+      "norm_label": "baseactivitydto.cs"
     },
     {
-      "label": "UpdateActivity",
+      "label": "BaseActivityDto",
       "file_type": "code",
-      "source_file": "backend/Application/Activities/Commands/UpdateActivity.cs",
-      "source_location": "L8",
+      "source_file": "backend/Application/Activities/DTOs/BaseActivityDto.cs",
+      "source_location": "L3",
       "_origin": "ast",
-      "id": "commands_updateactivity_updateactivity",
-      "community": 0,
-      "norm_label": "updateactivity"
+      "id": "dtos_baseactivitydto_baseactivitydto",
+      "community": 68,
+      "norm_label": "baseactivitydto"
+    },
+    {
+      "label": "CreateActivityDto.cs",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/DTOs/CreateActivityDto.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "dtos_createactivitydto",
+      "community": 68,
+      "norm_label": "createactivitydto.cs"
+    },
+    {
+      "label": "CreateActivityDto",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/DTOs/CreateActivityDto.cs",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "dtos_createactivitydto_createactivitydto",
+      "community": 68,
+      "norm_label": "createactivitydto"
+    },
+    {
+      "label": "UpdateActivityDto.cs",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/DTOs/UpdateActivityDto.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "dtos_updateactivitydto",
+      "community": 68,
+      "norm_label": "updateactivitydto.cs"
+    },
+    {
+      "label": "UpdateActivityDto",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/DTOs/UpdateActivityDto.cs",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "dtos_updateactivitydto_updateactivitydto",
+      "community": 68,
+      "norm_label": "updateactivitydto"
+    },
+    {
+      "label": "BaseActivityValidator.cs",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/Validators/BaseActivityValidator.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "validators_baseactivityvalidator",
+      "community": 68,
+      "norm_label": "baseactivityvalidator.cs"
+    },
+    {
+      "label": "BaseActivityValidator",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/Validators/BaseActivityValidator.cs",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "validators_baseactivityvalidator_baseactivityvalidator",
+      "community": 68,
+      "norm_label": "baseactivityvalidator"
+    },
+    {
+      "label": "AbstractValidator",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "abstractvalidator",
+      "community": 68,
+      "norm_label": "abstractvalidator"
+    },
+    {
+      "label": "T",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "t",
+      "community": 39,
+      "norm_label": "t"
+    },
+    {
+      "label": "CreateActivityValidator.cs",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/Validators/CreateActivityValidator.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "validators_createactivityvalidator",
+      "community": 68,
+      "norm_label": "createactivityvalidator.cs"
+    },
+    {
+      "label": "CreateActivityValidator",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/Validators/CreateActivityValidator.cs",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "validators_createactivityvalidator_createactivityvalidator",
+      "community": 68,
+      "norm_label": "createactivityvalidator"
     },
     {
       "label": "Command",
       "file_type": "code",
-      "source_file": "backend/Application/Activities/Commands/UpdateActivity.cs",
-      "source_location": "L10",
+      "source_file": "",
+      "source_location": "",
       "_origin": "ast",
-      "id": "commands_updateactivity_command",
-      "community": 0,
+      "id": "command",
+      "community": 68,
       "norm_label": "command"
     },
     {
-      "label": "Handler",
+      "label": "UpdateActivityValidator.cs",
       "file_type": "code",
-      "source_file": "backend/Application/Activities/Commands/UpdateActivity.cs",
-      "source_location": "L15",
-      "_origin": "ast",
-      "id": "commands_updateactivity_handler",
-      "community": 0,
-      "norm_label": "handler"
-    },
-    {
-      "label": ".Handle()",
-      "file_type": "code",
-      "source_file": "backend/Application/Activities/Commands/UpdateActivity.cs",
-      "source_location": "L17",
-      "_origin": "ast",
-      "id": "commands_updateactivity_handler_handle",
-      "community": 0,
-      "norm_label": ".handle()"
-    },
-    {
-      "label": "GetActivityList.cs",
-      "file_type": "code",
-      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
+      "source_file": "backend/Application/Activities/Validators/UpdateActivityValidator.cs",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "queries_getactivitylist",
-      "community": 0,
-      "norm_label": "getactivitylist.cs"
-    },
-    {
-      "label": "GetActivityList",
-      "file_type": "code",
-      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "queries_getactivitylist_getactivitylist",
-      "community": 0,
-      "norm_label": "getactivitylist"
-    },
-    {
-      "label": "Query",
-      "file_type": "code",
-      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "queries_getactivitylist_query",
-      "community": 0,
-      "norm_label": "query"
-    },
-    {
-      "label": "Handler",
-      "file_type": "code",
-      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
-      "source_location": "L12",
-      "_origin": "ast",
-      "id": "queries_getactivitylist_handler",
-      "community": 0,
-      "norm_label": "handler"
-    },
-    {
-      "label": ".Handle()",
-      "file_type": "code",
-      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
-      "source_location": "L14",
-      "_origin": "ast",
-      "id": "queries_getactivitylist_handler_handle",
-      "community": 0,
-      "norm_label": ".handle()"
-    },
-    {
-      "label": "CreateActivityRequest.cs",
-      "file_type": "code",
-      "source_file": "backend/Application/Activities/Requests/CreateActivityRequest.cs",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "requests_createactivityrequest",
+      "id": "validators_updateactivityvalidator",
       "community": 68,
-      "norm_label": "createactivityrequest.cs"
+      "norm_label": "updateactivityvalidator.cs"
     },
     {
-      "label": "CreateActivityRequest",
+      "label": "UpdateActivityValidator",
       "file_type": "code",
-      "source_file": "backend/Application/Activities/Requests/CreateActivityRequest.cs",
-      "source_location": "L3",
+      "source_file": "backend/Application/Activities/Validators/UpdateActivityValidator.cs",
+      "source_location": "L7",
       "_origin": "ast",
-      "id": "requests_createactivityrequest_createactivityrequest",
+      "id": "validators_updateactivityvalidator_updateactivityvalidator",
       "community": 68,
-      "norm_label": "createactivityrequest"
+      "norm_label": "updateactivityvalidator"
     },
     {
       "label": "ActivityMapper.cs",
@@ -713,24 +683,44 @@
       "norm_label": "activitymapper"
     },
     {
-      "label": ".ToActivity()",
+      "label": ".ToDomain()",
       "file_type": "code",
       "source_file": "backend/Application/Core/ActivityMapper.cs",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "core_activitymapper_activitymapper_toactivity",
+      "id": "core_activitymapper_activitymapper_todomain",
       "community": 68,
-      "norm_label": ".toactivity()"
+      "norm_label": ".todomain()"
     },
     {
       "label": ".UpdateActivity()",
       "file_type": "code",
       "source_file": "backend/Application/Core/ActivityMapper.cs",
-      "source_location": "L20",
+      "source_location": "L33",
       "_origin": "ast",
       "id": "core_activitymapper_activitymapper_updateactivity",
       "community": 68,
       "norm_label": ".updateactivity()"
+    },
+    {
+      "label": "AppException.cs",
+      "file_type": "code",
+      "source_file": "backend/Application/Core/AppException.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "core_appexception",
+      "community": 67,
+      "norm_label": "appexception.cs"
+    },
+    {
+      "label": "AppException",
+      "file_type": "code",
+      "source_file": "backend/Application/Core/AppException.cs",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "core_appexception_appexception",
+      "community": 67,
+      "norm_label": "appexception"
     },
     {
       "label": "IActivityMapper.cs",
@@ -753,24 +743,234 @@
       "norm_label": "iactivitymapper"
     },
     {
-      "label": ".ToActivity()",
+      "label": ".ToDomain()",
       "file_type": "code",
       "source_file": "backend/Application/Core/IActivityMapper.cs",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "core_iactivitymapper_iactivitymapper_toactivity",
+      "id": "core_iactivitymapper_iactivitymapper_todomain",
       "community": 68,
-      "norm_label": ".toactivity()"
+      "norm_label": ".todomain()"
     },
     {
       "label": ".UpdateActivity()",
       "file_type": "code",
       "source_file": "backend/Application/Core/IActivityMapper.cs",
-      "source_location": "L9",
+      "source_location": "L10",
       "_origin": "ast",
       "id": "core_iactivitymapper_iactivitymapper_updateactivity",
       "community": 68,
       "norm_label": ".updateactivity()"
+    },
+    {
+      "label": "Program.cs",
+      "file_type": "code",
+      "source_file": "backend/API/Program.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 33,
+      "norm_label": "program.cs",
+      "id": "api_program"
+    },
+    {
+      "label": "Program",
+      "file_type": "code",
+      "source_file": "backend/API/Program.cs",
+      "source_location": "L11",
+      "_origin": "ast",
+      "community": 33,
+      "norm_label": "program",
+      "id": "api_program_program"
+    },
+    {
+      "label": ".Main()",
+      "file_type": "code",
+      "source_file": "backend/API/Program.cs",
+      "source_location": "L13",
+      "_origin": "ast",
+      "community": 33,
+      "norm_label": ".main()",
+      "id": "api_program_program_main"
+    },
+    {
+      "label": ".AddDbContext()",
+      "file_type": "code",
+      "source_file": "backend/API/Program.cs",
+      "source_location": "L46",
+      "_origin": "ast",
+      "community": 33,
+      "norm_label": ".adddbcontext()",
+      "id": "api_program_program_adddbcontext"
+    },
+    {
+      "label": "WebApplicationBuilder",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 33,
+      "norm_label": "webapplicationbuilder",
+      "id": "webapplicationbuilder"
+    },
+    {
+      "label": ".AddApplicationServices()",
+      "file_type": "code",
+      "source_file": "backend/API/Program.cs",
+      "source_location": "L53",
+      "_origin": "ast",
+      "community": 33,
+      "norm_label": ".addapplicationservices()",
+      "id": "api_program_program_addapplicationservices"
+    },
+    {
+      "label": ".AddMiddlewareServices()",
+      "file_type": "code",
+      "source_file": "backend/API/Program.cs",
+      "source_location": "L65",
+      "_origin": "ast",
+      "community": 33,
+      "norm_label": ".addmiddlewareservices()",
+      "id": "api_program_program_addmiddlewareservices"
+    },
+    {
+      "label": ".ConfigureMiddleware()",
+      "file_type": "code",
+      "source_file": "backend/API/Program.cs",
+      "source_location": "L68",
+      "_origin": "ast",
+      "community": 33,
+      "norm_label": ".configuremiddleware()",
+      "id": "api_program_program_configuremiddleware"
+    },
+    {
+      "label": "WebApplication",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 33,
+      "norm_label": "webapplication",
+      "id": "webapplication"
+    },
+    {
+      "label": "DeleteActivity.cs",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 39,
+      "norm_label": "deleteactivity.cs",
+      "id": "commands_deleteactivity"
+    },
+    {
+      "label": "DeleteActivity",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
+      "source_location": "L8",
+      "_origin": "ast",
+      "community": 39,
+      "norm_label": "deleteactivity",
+      "id": "commands_deleteactivity_deleteactivity"
+    },
+    {
+      "label": "Command",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
+      "source_location": "L10",
+      "_origin": "ast",
+      "community": 39,
+      "norm_label": "command",
+      "id": "commands_deleteactivity_command"
+    },
+    {
+      "label": "Handler",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
+      "source_location": "L15",
+      "_origin": "ast",
+      "community": 39,
+      "norm_label": "handler",
+      "id": "commands_deleteactivity_handler"
+    },
+    {
+      "label": ".Handle()",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
+      "source_location": "L17",
+      "_origin": "ast",
+      "community": 39,
+      "norm_label": ".handle()",
+      "id": "commands_deleteactivity_handler_handle"
+    },
+    {
+      "label": "GetActivityList.cs",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "getactivitylist.cs",
+      "id": "queries_getactivitylist"
+    },
+    {
+      "label": "GetActivityList",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
+      "source_location": "L8",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "getactivitylist",
+      "id": "queries_getactivitylist_getactivitylist"
+    },
+    {
+      "label": "Query",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
+      "source_location": "L10",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "query",
+      "id": "queries_getactivitylist_query"
+    },
+    {
+      "label": "Handler",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
+      "source_location": "L12",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "handler",
+      "id": "queries_getactivitylist_handler"
+    },
+    {
+      "label": ".Handle()",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
+      "source_location": "L14",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": ".handle()",
+      "id": "queries_getactivitylist_handler_handle"
+    },
+    {
+      "label": "CreateActivityRequest.cs",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/Requests/CreateActivityRequest.cs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "createactivityrequest.cs",
+      "id": "requests_createactivityrequest"
+    },
+    {
+      "label": "CreateActivityRequest",
+      "file_type": "code",
+      "source_file": "backend/Application/Activities/Requests/CreateActivityRequest.cs",
+      "source_location": "L3",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "createactivityrequest",
+      "id": "requests_createactivityrequest_createactivityrequest"
     },
     {
       "label": "ValidationBehavior.cs",
@@ -778,9 +978,9 @@
       "source_file": "backend/Application/Core/ValidationBehavior.cs",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "core_validationbehavior",
       "community": 39,
-      "norm_label": "validationbehavior.cs"
+      "norm_label": "validationbehavior.cs",
+      "id": "core_validationbehavior"
     },
     {
       "label": "ValidationBehavior",
@@ -788,9 +988,9 @@
       "source_file": "backend/Application/Core/ValidationBehavior.cs",
       "source_location": "L7",
       "_origin": "ast",
-      "id": "core_validationbehavior_validationbehavior",
       "community": 39,
-      "norm_label": "validationbehavior"
+      "norm_label": "validationbehavior",
+      "id": "core_validationbehavior_validationbehavior"
     },
     {
       "label": "IPipelineBehavior",
@@ -798,9 +998,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "ipipelinebehavior",
       "community": 39,
-      "norm_label": "ipipelinebehavior"
+      "norm_label": "ipipelinebehavior",
+      "id": "ipipelinebehavior"
     },
     {
       "label": "TRequest",
@@ -808,9 +1008,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "trequest",
       "community": 39,
-      "norm_label": "trequest"
+      "norm_label": "trequest",
+      "id": "trequest"
     },
     {
       "label": "TResponse",
@@ -818,9 +1018,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "tresponse",
       "community": 39,
-      "norm_label": "tresponse"
+      "norm_label": "tresponse",
+      "id": "tresponse"
     },
     {
       "label": ".Handle()",
@@ -828,9 +1028,9 @@
       "source_file": "backend/Application/Core/ValidationBehavior.cs",
       "source_location": "L10",
       "_origin": "ast",
-      "id": "core_validationbehavior_validationbehavior_handle",
       "community": 39,
-      "norm_label": ".handle()"
+      "norm_label": ".handle()",
+      "id": "core_validationbehavior_validationbehavior_handle"
     },
     {
       "label": "RequestHandlerDelegate",
@@ -838,9 +1038,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "requesthandlerdelegate",
       "community": 39,
-      "norm_label": "requesthandlerdelegate"
+      "norm_label": "requesthandlerdelegate",
+      "id": "requesthandlerdelegate"
     },
     {
       "label": "DbInitializer.cs",
@@ -848,9 +1048,9 @@
       "source_file": "backend/Persistence/DbInitializer.cs",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "persistence_dbinitializer",
-      "community": 69,
-      "norm_label": "dbinitializer.cs"
+      "community": 0,
+      "norm_label": "dbinitializer.cs",
+      "id": "persistence_dbinitializer"
     },
     {
       "label": "DbInitializer",
@@ -858,9 +1058,9 @@
       "source_file": "backend/Persistence/DbInitializer.cs",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "persistence_dbinitializer_dbinitializer",
-      "community": 69,
-      "norm_label": "dbinitializer"
+      "community": 0,
+      "norm_label": "dbinitializer",
+      "id": "persistence_dbinitializer_dbinitializer"
     },
     {
       "label": ".SeedDataAsync()",
@@ -868,9 +1068,9 @@
       "source_file": "backend/Persistence/DbInitializer.cs",
       "source_location": "L7",
       "_origin": "ast",
-      "id": "persistence_dbinitializer_dbinitializer_seeddataasync",
-      "community": 69,
-      "norm_label": ".seeddataasync()"
+      "community": 0,
+      "norm_label": ".seeddataasync()",
+      "id": "persistence_dbinitializer_dbinitializer_seeddataasync"
     },
     {
       "label": "AppDbContext",
@@ -878,9 +1078,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "appdbcontext",
-      "community": 69,
-      "norm_label": "appdbcontext"
+      "community": 0,
+      "norm_label": "appdbcontext",
+      "id": "appdbcontext"
     },
     {
       "label": "API.csproj",
@@ -938,7 +1138,7 @@
       "source_file": "backend/API/Controllers/BaseApiController.cs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 12,
+      "community": 0,
       "norm_label": "baseapicontroller.cs",
       "id": "controllers_baseapicontroller"
     },
@@ -948,7 +1148,7 @@
       "source_file": "backend/API/Controllers/BaseApiController.cs",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 12,
+      "community": 0,
       "norm_label": "baseapicontroller",
       "id": "controllers_baseapicontroller_baseapicontroller"
     },
@@ -968,7 +1168,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 12,
+      "community": 0,
       "norm_label": "imediator",
       "id": "imediator"
     },
@@ -981,16 +1181,6 @@
       "community": 0,
       "norm_label": ".handleresult()",
       "id": "controllers_baseapicontroller_baseapicontroller_handleresult"
-    },
-    {
-      "label": "T",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "t",
-      "id": "t"
     },
     {
       "label": "GetActivityDetails.cs",
@@ -1041,46 +1231,6 @@
       "community": 0,
       "norm_label": ".handle()",
       "id": "queries_getactivitydetails_handler_handle"
-    },
-    {
-      "label": "CreateActivityValidator.cs",
-      "file_type": "code",
-      "source_file": "backend/Application/Activities/Validators/CreateActivityValidator.cs",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 67,
-      "norm_label": "createactivityvalidator.cs",
-      "id": "validators_createactivityvalidator"
-    },
-    {
-      "label": "CreateActivityValidator",
-      "file_type": "code",
-      "source_file": "backend/Application/Activities/Validators/CreateActivityValidator.cs",
-      "source_location": "L6",
-      "_origin": "ast",
-      "community": 67,
-      "norm_label": "createactivityvalidator",
-      "id": "validators_createactivityvalidator_createactivityvalidator"
-    },
-    {
-      "label": "AbstractValidator",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "community": 67,
-      "norm_label": "abstractvalidator",
-      "id": "abstractvalidator"
-    },
-    {
-      "label": "Command",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "community": 67,
-      "norm_label": "command",
-      "id": "command"
     },
     {
       "label": "net10.0",
@@ -1148,7 +1298,7 @@
       "source_file": "backend/Application/Core/Result.cs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 0,
+      "community": 39,
       "norm_label": "result.cs",
       "id": "core_result"
     },
@@ -1158,7 +1308,7 @@
       "source_file": "backend/Application/Core/Result.cs",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 0,
+      "community": 39,
       "norm_label": "result",
       "id": "core_result_result"
     },
@@ -1168,7 +1318,7 @@
       "source_file": "backend/Application/Core/Result.cs",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 0,
+      "community": 39,
       "norm_label": ".success()",
       "id": "core_result_result_success"
     },
@@ -1178,7 +1328,7 @@
       "source_file": "backend/Application/Core/Result.cs",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 0,
+      "community": 39,
       "norm_label": ".failure()",
       "id": "core_result_result_failure"
     },
@@ -2558,7 +2708,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 68,
+      "community": 69,
       "norm_label": "createactivityrequest",
       "id": "createactivityrequest"
     },
@@ -6108,9 +6258,9 @@
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_activitiescontroller_activitiescontroller",
-      "target": "baseapicontroller",
-      "confidence_score": 1.0
+      "target": "baseapicontroller"
     },
     {
       "relation": "method",
@@ -6118,9 +6268,9 @@
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_activitiescontroller_activitiescontroller",
-      "target": "controllers_activitiescontroller_activitiescontroller_createactivityasync",
-      "confidence_score": 1.0
+      "target": "controllers_activitiescontroller_activitiescontroller_createactivityasync"
     },
     {
       "relation": "method",
@@ -6128,9 +6278,9 @@
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_activitiescontroller_activitiescontroller",
-      "target": "controllers_activitiescontroller_activitiescontroller_deleteactivityasync",
-      "confidence_score": 1.0
+      "target": "controllers_activitiescontroller_activitiescontroller_deleteactivityasync"
     },
     {
       "relation": "method",
@@ -6158,9 +6308,9 @@
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_activitiescontroller_activitiescontroller",
-      "target": "controllers_activitiescontroller_activitiescontroller_updateactivityasync",
-      "confidence_score": 1.0
+      "target": "controllers_activitiescontroller_activitiescontroller_updateactivityasync"
     },
     {
       "relation": "inherits",
@@ -6289,9 +6439,9 @@
       "source_location": "L17",
       "weight": 1.0,
       "context": "return_type",
+      "confidence_score": 1.0,
       "source": "controllers_activitiescontroller_activitiescontroller_createactivityasync",
-      "target": "task",
-      "confidence_score": 1.0
+      "target": "task"
     },
     {
       "relation": "references",
@@ -6300,9 +6450,9 @@
       "source_location": "L23",
       "weight": 1.0,
       "context": "return_type",
+      "confidence_score": 1.0,
       "source": "controllers_activitiescontroller_activitiescontroller_deleteactivityasync",
-      "target": "task",
-      "confidence_score": 1.0
+      "target": "task"
     },
     {
       "relation": "references",
@@ -6322,9 +6472,9 @@
       "source_location": "L20",
       "weight": 1.0,
       "context": "return_type",
+      "confidence_score": 1.0,
       "source": "controllers_activitiescontroller_activitiescontroller_updateactivityasync",
-      "target": "task",
-      "confidence_score": 1.0
+      "target": "task"
     },
     {
       "relation": "references",
@@ -6341,12 +6491,23 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/API/Middlewares/ExceptionMiddleware.cs",
-      "source_location": "L24",
+      "source_location": "L61",
       "weight": 1.0,
       "context": "return_type",
-      "confidence_score": 1.0,
-      "source": "middlewares_exceptionmiddleware_exceptionmiddleware_handlevalidationexception",
-      "target": "task"
+      "source": "middlewares_exceptionmiddleware_exceptionmiddleware_handleexceptionasync",
+      "target": "task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Middlewares/ExceptionMiddleware.cs",
+      "source_location": "L30",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "middlewares_exceptionmiddleware_exceptionmiddleware_handlevalidationexceptionasync",
+      "target": "task",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -6366,9 +6527,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "context": "return_type",
+      "confidence_score": 1.0,
       "source": "persistence_dbinitializer_dbinitializer_seeddataasync",
-      "target": "task",
-      "confidence_score": 1.0
+      "target": "task"
     },
     {
       "relation": "references",
@@ -6399,9 +6560,9 @@
       "source_location": "L17",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "controllers_activitiescontroller_activitiescontroller_createactivityasync",
-      "target": "actionresult",
-      "confidence_score": 1.0
+      "target": "actionresult"
     },
     {
       "relation": "references",
@@ -6410,9 +6571,9 @@
       "source_location": "L23",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "controllers_activitiescontroller_activitiescontroller_deleteactivityasync",
-      "target": "actionresult",
-      "confidence_score": 1.0
+      "target": "actionresult"
     },
     {
       "relation": "references",
@@ -6432,9 +6593,9 @@
       "source_location": "L20",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "controllers_activitiescontroller_activitiescontroller_updateactivityasync",
-      "target": "actionresult",
-      "confidence_score": 1.0
+      "target": "actionresult"
     },
     {
       "relation": "references",
@@ -6498,20 +6659,20 @@
       "source_location": "L20",
       "weight": 1.0,
       "context": "parameter_type",
+      "confidence_score": 1.0,
       "source": "controllers_activitiescontroller_activitiescontroller_updateactivityasync",
-      "target": "activity",
-      "confidence_score": 1.0
+      "target": "activity"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/Application/Core/ActivityMapper.cs",
-      "source_location": "L8",
+      "source_location": "L20",
       "weight": 1.0,
-      "context": "return_type",
-      "confidence_score": 1.0,
-      "source": "core_activitymapper_activitymapper_toactivity",
-      "target": "activity"
+      "context": "parameter_type",
+      "source": "core_activitymapper_activitymapper_todomain",
+      "target": "activity",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -6528,12 +6689,12 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/Application/Core/IActivityMapper.cs",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0,
-      "context": "return_type",
-      "confidence_score": 1.0,
-      "source": "core_iactivitymapper_iactivitymapper_toactivity",
-      "target": "activity"
+      "context": "parameter_type",
+      "source": "core_iactivitymapper_iactivitymapper_todomain",
+      "target": "activity",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -6586,9 +6747,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "queries_getactivitylist_handler",
-      "target": "activity",
-      "confidence_score": 1.0
+      "target": "activity"
     },
     {
       "relation": "references",
@@ -6597,9 +6758,9 @@
       "source_location": "L14",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "queries_getactivitylist_handler_handle",
-      "target": "activity",
-      "confidence_score": 1.0
+      "target": "activity"
     },
     {
       "relation": "references",
@@ -6608,9 +6769,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "queries_getactivitylist_query",
-      "target": "activity",
-      "confidence_score": 1.0
+      "target": "activity"
     },
     {
       "relation": "references",
@@ -6662,9 +6823,9 @@
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
       "source_location": "L17",
       "weight": 1.0,
-      "context": "attribute",
+      "context": "parameter_type",
       "source": "controllers_activitiescontroller_activitiescontroller_createactivityasync",
-      "target": "httppost",
+      "target": "dtos_createactivitydto_createactivitydto",
       "confidence_score": 1.0
     },
     {
@@ -6673,9 +6834,31 @@
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
       "source_location": "L17",
       "weight": 1.0,
-      "context": "parameter_type",
+      "context": "attribute",
+      "confidence_score": 1.0,
       "source": "controllers_activitiescontroller_activitiescontroller_createactivityasync",
-      "target": "requests_createactivityrequest_createactivityrequest",
+      "target": "httppost"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Controllers/ActivitiesController.cs",
+      "source_location": "L17",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "confidence_score": 1.0,
+      "source": "controllers_activitiescontroller_activitiescontroller_createactivityasync",
+      "target": "requests_createactivityrequest_createactivityrequest"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Controllers/ActivitiesController.cs",
+      "source_location": "L20",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "controllers_activitiescontroller_activitiescontroller_updateactivityasync",
+      "target": "dtos_updateactivitydto_updateactivitydto",
       "confidence_score": 1.0
     },
     {
@@ -6685,9 +6868,9 @@
       "source_location": "L20",
       "weight": 1.0,
       "context": "attribute",
+      "confidence_score": 1.0,
       "source": "controllers_activitiescontroller_activitiescontroller_updateactivityasync",
-      "target": "httpput",
-      "confidence_score": 1.0
+      "target": "httpput"
     },
     {
       "relation": "references",
@@ -6696,9 +6879,9 @@
       "source_location": "L23",
       "weight": 1.0,
       "context": "attribute",
+      "confidence_score": 1.0,
       "source": "controllers_activitiescontroller_activitiescontroller_deleteactivityasync",
-      "target": "httpdelete",
-      "confidence_score": 1.0
+      "target": "httpdelete"
     },
     {
       "relation": "contains",
@@ -6721,14 +6904,35 @@
       "target": "imiddleware"
     },
     {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Middlewares/ExceptionMiddleware.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "field",
+      "source": "middlewares_exceptionmiddleware_exceptionmiddleware",
+      "target": "jsonserializeroptions",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "backend/API/Middlewares/ExceptionMiddleware.cs",
-      "source_location": "L24",
+      "source_location": "L61",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "middlewares_exceptionmiddleware_exceptionmiddleware",
-      "target": "middlewares_exceptionmiddleware_exceptionmiddleware_handlevalidationexception"
+      "target": "middlewares_exceptionmiddleware_exceptionmiddleware_handleexceptionasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Middlewares/ExceptionMiddleware.cs",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "middlewares_exceptionmiddleware_exceptionmiddleware",
+      "target": "middlewares_exceptionmiddleware_exceptionmiddleware_handlevalidationexceptionasync",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -6756,11 +6960,22 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/API/Middlewares/ExceptionMiddleware.cs",
-      "source_location": "L16",
+      "source_location": "L26",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "middlewares_exceptionmiddleware_exceptionmiddleware_invokeasync",
-      "target": "middlewares_exceptionmiddleware_exceptionmiddleware_handlevalidationexception"
+      "target": "middlewares_exceptionmiddleware_exceptionmiddleware_handleexceptionasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Middlewares/ExceptionMiddleware.cs",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "middlewares_exceptionmiddleware_exceptionmiddleware_invokeasync",
+      "target": "middlewares_exceptionmiddleware_exceptionmiddleware_handlevalidationexceptionasync",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -6777,171 +6992,45 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/API/Middlewares/ExceptionMiddleware.cs",
-      "source_location": "L24",
+      "source_location": "L61",
       "weight": 1.0,
       "context": "parameter_type",
-      "confidence_score": 1.0,
-      "source": "middlewares_exceptionmiddleware_exceptionmiddleware_handlevalidationexception",
-      "target": "httpcontext"
+      "source": "middlewares_exceptionmiddleware_exceptionmiddleware_handleexceptionasync",
+      "target": "httpcontext",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/API/Middlewares/ExceptionMiddleware.cs",
-      "source_location": "L24",
+      "source_location": "L30",
       "weight": 1.0,
       "context": "parameter_type",
-      "confidence_score": 1.0,
-      "source": "middlewares_exceptionmiddleware_exceptionmiddleware_handlevalidationexception",
-      "target": "validationexception"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/Program.cs",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "api_program",
-      "target": "api_program_program"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/Program.cs",
-      "source_location": "L53",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "api_program_program",
-      "target": "api_program_program_addapplicationservices"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/Program.cs",
-      "source_location": "L46",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "api_program_program",
-      "target": "api_program_program_adddbcontext"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/Program.cs",
-      "source_location": "L65",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "api_program_program",
-      "target": "api_program_program_addmiddlewareservices"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/Program.cs",
-      "source_location": "L71",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "api_program_program",
-      "target": "api_program_program_configuremiddleware"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/Program.cs",
-      "source_location": "L13",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "api_program_program",
-      "target": "api_program_program_main"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/Program.cs",
-      "source_location": "L20",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "api_program_program_main",
-      "target": "api_program_program_addapplicationservices"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/Program.cs",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "api_program_program_main",
-      "target": "api_program_program_adddbcontext"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/Program.cs",
-      "source_location": "L21",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "api_program_program_main",
-      "target": "api_program_program_addmiddlewareservices"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/Program.cs",
-      "source_location": "L25",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "api_program_program_main",
-      "target": "api_program_program_configuremiddleware"
+      "source": "middlewares_exceptionmiddleware_exceptionmiddleware_handlevalidationexceptionasync",
+      "target": "httpcontext",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
-      "source_file": "backend/API/Program.cs",
-      "source_location": "L46",
+      "source_file": "backend/API/Middlewares/ExceptionMiddleware.cs",
+      "source_location": "L30",
       "weight": 1.0,
       "context": "parameter_type",
-      "confidence_score": 1.0,
-      "source": "api_program_program_adddbcontext",
-      "target": "webapplicationbuilder"
+      "source": "middlewares_exceptionmiddleware_exceptionmiddleware_handlevalidationexceptionasync",
+      "target": "validationexception",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
-      "source_file": "backend/API/Program.cs",
-      "source_location": "L53",
+      "source_file": "backend/API/Middlewares/ExceptionMiddleware.cs",
+      "source_location": "L61",
       "weight": 1.0,
       "context": "parameter_type",
-      "confidence_score": 1.0,
-      "source": "api_program_program_addapplicationservices",
-      "target": "webapplicationbuilder"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/Program.cs",
-      "source_location": "L65",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "confidence_score": 1.0,
-      "source": "api_program_program_addmiddlewareservices",
-      "target": "webapplicationbuilder"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/Program.cs",
-      "source_location": "L71",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "confidence_score": 1.0,
-      "source": "api_program_program_configuremiddleware",
-      "target": "webapplication"
+      "source": "middlewares_exceptionmiddleware_exceptionmiddleware_handleexceptionasync",
+      "target": "exception",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -7001,9 +7090,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "commands_createactivity_command",
-      "target": "result",
-      "confidence_score": 1.0
+      "target": "result"
     },
     {
       "relation": "references",
@@ -7074,9 +7163,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "commands_createactivity_handler",
-      "target": "result",
-      "confidence_score": 1.0
+      "target": "result"
     },
     {
       "relation": "references",
@@ -7085,9 +7174,9 @@
       "source_location": "L17",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "commands_createactivity_handler_handle",
-      "target": "result",
-      "confidence_score": 1.0
+      "target": "result"
     },
     {
       "relation": "references",
@@ -7096,9 +7185,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "commands_deleteactivity_command",
-      "target": "result",
-      "confidence_score": 1.0
+      "target": "result"
     },
     {
       "relation": "references",
@@ -7107,9 +7196,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "commands_deleteactivity_handler",
-      "target": "result",
-      "confidence_score": 1.0
+      "target": "result"
     },
     {
       "relation": "references",
@@ -7118,9 +7207,9 @@
       "source_location": "L17",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "commands_deleteactivity_handler_handle",
-      "target": "result",
-      "confidence_score": 1.0
+      "target": "result"
     },
     {
       "relation": "references",
@@ -7129,9 +7218,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "commands_updateactivity_command",
-      "target": "result",
-      "confidence_score": 1.0
+      "target": "result"
     },
     {
       "relation": "references",
@@ -7140,9 +7229,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "commands_updateactivity_handler",
-      "target": "result",
-      "confidence_score": 1.0
+      "target": "result"
     },
     {
       "relation": "references",
@@ -7151,9 +7240,9 @@
       "source_location": "L17",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "commands_updateactivity_handler_handle",
-      "target": "result",
-      "confidence_score": 1.0
+      "target": "result"
     },
     {
       "relation": "method",
@@ -7306,167 +7395,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "commands_deleteactivity",
-      "target": "commands_deleteactivity_command"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "commands_deleteactivity",
-      "target": "commands_deleteactivity_deleteactivity"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
-      "source_location": "L14",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "commands_deleteactivity",
-      "target": "commands_deleteactivity_handler"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
-      "source_location": "L10",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "confidence_score": 1.0,
-      "source": "commands_deleteactivity_command",
-      "target": "core_result_result"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
-      "source_location": "L10",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "confidence_score": 1.0,
-      "source": "commands_deleteactivity_command",
-      "target": "unit"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
-      "source_location": "L14",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "confidence_score": 1.0,
-      "source": "commands_deleteactivity_handler",
-      "target": "commands_deleteactivity_command"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
-      "source_location": "L16",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "confidence_score": 1.0,
-      "source": "commands_deleteactivity_handler_handle",
-      "target": "commands_deleteactivity_command"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
-      "source_location": "L15",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "confidence_score": 1.0,
-      "source": "commands_deleteactivity_handler",
-      "target": "unit"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
-      "source_location": "L17",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "confidence_score": 1.0,
-      "source": "commands_deleteactivity_handler_handle",
-      "target": "unit"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Commands/UpdateActivity.cs",
-      "source_location": "L10",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "confidence_score": 1.0,
-      "source": "commands_updateactivity_command",
-      "target": "unit"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Commands/UpdateActivity.cs",
-      "source_location": "L15",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "confidence_score": 1.0,
-      "source": "commands_updateactivity_handler",
-      "target": "unit"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Commands/UpdateActivity.cs",
-      "source_location": "L17",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "confidence_score": 1.0,
-      "source": "commands_updateactivity_handler_handle",
-      "target": "unit"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
-      "source_location": "L16",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "commands_deleteactivity_handler",
-      "target": "commands_deleteactivity_handler_handle"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
-      "source_location": "L15",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "confidence_score": 1.0,
-      "source": "commands_deleteactivity_handler",
-      "target": "core_result_result"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
-      "source_location": "L17",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "confidence_score": 1.0,
-      "source": "commands_deleteactivity_handler_handle",
-      "target": "core_result_result"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "backend/Application/Activities/Commands/UpdateActivity.cs",
       "source_location": "L10",
       "weight": 1.0,
@@ -7520,6 +7448,17 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/Application/Activities/Commands/UpdateActivity.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "confidence_score": 1.0,
+      "source": "commands_updateactivity_command",
+      "target": "unit"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Commands/UpdateActivity.cs",
       "source_location": "L15",
       "weight": 1.0,
       "context": "generic_arg",
@@ -7537,6 +7476,61 @@
       "confidence_score": 1.0,
       "source": "commands_updateactivity_handler_handle",
       "target": "commands_updateactivity_command"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "confidence_score": 1.0,
+      "source": "commands_deleteactivity_command",
+      "target": "unit"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
+      "source_location": "L15",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "confidence_score": 1.0,
+      "source": "commands_deleteactivity_handler",
+      "target": "unit"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
+      "source_location": "L17",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "confidence_score": 1.0,
+      "source": "commands_deleteactivity_handler_handle",
+      "target": "unit"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Commands/UpdateActivity.cs",
+      "source_location": "L15",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "confidence_score": 1.0,
+      "source": "commands_updateactivity_handler",
+      "target": "unit"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Commands/UpdateActivity.cs",
+      "source_location": "L17",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "confidence_score": 1.0,
+      "source": "commands_updateactivity_handler_handle",
+      "target": "unit"
     },
     {
       "relation": "method",
@@ -7568,6 +7562,581 @@
       "context": "generic_arg",
       "confidence_score": 1.0,
       "source": "commands_updateactivity_handler_handle",
+      "target": "core_result_result"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/DTOs/BaseActivityDto.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "dtos_baseactivitydto",
+      "target": "dtos_baseactivitydto_baseactivitydto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/DTOs/CreateActivityDto.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "dtos_createactivitydto_createactivitydto",
+      "target": "dtos_baseactivitydto_baseactivitydto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/DTOs/UpdateActivityDto.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "dtos_updateactivitydto_updateactivitydto",
+      "target": "dtos_baseactivitydto_baseactivitydto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/DTOs/CreateActivityDto.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "dtos_createactivitydto",
+      "target": "dtos_createactivitydto_createactivitydto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/ActivityMapper.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "core_activitymapper_activitymapper_todomain",
+      "target": "dtos_createactivitydto_createactivitydto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/IActivityMapper.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "core_iactivitymapper_iactivitymapper_todomain",
+      "target": "dtos_createactivitydto_createactivitydto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Validators/CreateActivityValidator.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "validators_createactivityvalidator_createactivityvalidator",
+      "target": "dtos_createactivitydto_createactivitydto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/DTOs/UpdateActivityDto.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "dtos_updateactivitydto",
+      "target": "dtos_updateactivitydto_updateactivitydto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/ActivityMapper.cs",
+      "source_location": "L20",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "core_activitymapper_activitymapper_todomain",
+      "target": "dtos_updateactivitydto_updateactivitydto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/IActivityMapper.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "core_iactivitymapper_iactivitymapper_todomain",
+      "target": "dtos_updateactivitydto_updateactivitydto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Validators/UpdateActivityValidator.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "validators_updateactivityvalidator_updateactivityvalidator",
+      "target": "dtos_updateactivitydto_updateactivitydto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Validators/BaseActivityValidator.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "validators_baseactivityvalidator",
+      "target": "validators_baseactivityvalidator_baseactivityvalidator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Validators/BaseActivityValidator.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "validators_baseactivityvalidator_baseactivityvalidator",
+      "target": "abstractvalidator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Validators/BaseActivityValidator.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "validators_baseactivityvalidator_baseactivityvalidator",
+      "target": "t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Validators/CreateActivityValidator.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "validators_createactivityvalidator_createactivityvalidator",
+      "target": "validators_baseactivityvalidator_baseactivityvalidator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Validators/UpdateActivityValidator.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "validators_updateactivityvalidator_updateactivityvalidator",
+      "target": "validators_baseactivityvalidator_baseactivityvalidator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Validators/CreateActivityValidator.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "validators_createactivityvalidator_createactivityvalidator",
+      "target": "abstractvalidator"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Controllers/BaseApiController.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "confidence_score": 1.0,
+      "source": "controllers_baseapicontroller_baseapicontroller_handleresult",
+      "target": "t"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/Result.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "confidence_score": 1.0,
+      "source": "core_result_result_failure",
+      "target": "t"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/Result.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "confidence_score": 1.0,
+      "source": "core_result_result_success",
+      "target": "t"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Validators/CreateActivityValidator.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "validators_createactivityvalidator",
+      "target": "validators_createactivityvalidator_createactivityvalidator"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Validators/CreateActivityValidator.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "confidence_score": 1.0,
+      "source": "validators_createactivityvalidator_createactivityvalidator",
+      "target": "command"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Validators/UpdateActivityValidator.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "validators_updateactivityvalidator_updateactivityvalidator",
+      "target": "command",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Validators/UpdateActivityValidator.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "validators_updateactivityvalidator",
+      "target": "validators_updateactivityvalidator_updateactivityvalidator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/ActivityMapper.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_activitymapper",
+      "target": "core_activitymapper_activitymapper"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/ActivityMapper.cs",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "core_activitymapper_activitymapper",
+      "target": "core_activitymapper_activitymapper_todomain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/ActivityMapper.cs",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_activitymapper_activitymapper",
+      "target": "core_activitymapper_activitymapper_updateactivity"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/ActivityMapper.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_activitymapper_activitymapper",
+      "target": "core_iactivitymapper_iactivitymapper"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/AppException.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "core_appexception",
+      "target": "core_appexception_appexception",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/IActivityMapper.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_iactivitymapper",
+      "target": "core_iactivitymapper_iactivitymapper"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/IActivityMapper.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "core_iactivitymapper_iactivitymapper",
+      "target": "core_iactivitymapper_iactivitymapper_todomain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Core/IActivityMapper.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "core_iactivitymapper_iactivitymapper",
+      "target": "core_iactivitymapper_iactivitymapper_updateactivity"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Program.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_program",
+      "target": "api_program_program"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Program.cs",
+      "source_location": "L53",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_program_program",
+      "target": "api_program_program_addapplicationservices"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Program.cs",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_program_program",
+      "target": "api_program_program_adddbcontext"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Program.cs",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_program_program",
+      "target": "api_program_program_addmiddlewareservices"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Program.cs",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_program_program",
+      "target": "api_program_program_configuremiddleware"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Program.cs",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_program_program",
+      "target": "api_program_program_main"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Program.cs",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_program_program_main",
+      "target": "api_program_program_addapplicationservices"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Program.cs",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_program_program_main",
+      "target": "api_program_program_adddbcontext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Program.cs",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_program_program_main",
+      "target": "api_program_program_addmiddlewareservices"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Program.cs",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_program_program_main",
+      "target": "api_program_program_configuremiddleware"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Program.cs",
+      "source_location": "L46",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "confidence_score": 1.0,
+      "source": "api_program_program_adddbcontext",
+      "target": "webapplicationbuilder"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Program.cs",
+      "source_location": "L53",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "confidence_score": 1.0,
+      "source": "api_program_program_addapplicationservices",
+      "target": "webapplicationbuilder"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Program.cs",
+      "source_location": "L65",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "confidence_score": 1.0,
+      "source": "api_program_program_addmiddlewareservices",
+      "target": "webapplicationbuilder"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/API/Program.cs",
+      "source_location": "L71",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "confidence_score": 1.0,
+      "source": "api_program_program_configuremiddleware",
+      "target": "webapplication"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "commands_deleteactivity",
+      "target": "commands_deleteactivity_command"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "commands_deleteactivity",
+      "target": "commands_deleteactivity_deleteactivity"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "commands_deleteactivity",
+      "target": "commands_deleteactivity_handler"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "confidence_score": 1.0,
+      "source": "commands_deleteactivity_command",
+      "target": "core_result_result"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "confidence_score": 1.0,
+      "source": "commands_deleteactivity_handler",
+      "target": "commands_deleteactivity_command"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
+      "source_location": "L16",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "confidence_score": 1.0,
+      "source": "commands_deleteactivity_handler_handle",
+      "target": "commands_deleteactivity_command"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "commands_deleteactivity_handler",
+      "target": "commands_deleteactivity_handler_handle"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
+      "source_location": "L15",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "confidence_score": 1.0,
+      "source": "commands_deleteactivity_handler",
+      "target": "core_result_result"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Application/Activities/Commands/DeleteActivity.cs",
+      "source_location": "L17",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "confidence_score": 1.0,
+      "source": "commands_deleteactivity_handler_handle",
       "target": "core_result_result"
     },
     {
@@ -7676,120 +8245,6 @@
       "target": "requests_createactivityrequest_createactivityrequest"
     },
     {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/ActivityMapper.cs",
-      "source_location": "L8",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "core_activitymapper_activitymapper_toactivity",
-      "target": "requests_createactivityrequest_createactivityrequest",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/IActivityMapper.cs",
-      "source_location": "L8",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "source": "core_iactivitymapper_iactivitymapper_toactivity",
-      "target": "requests_createactivityrequest_createactivityrequest",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/ActivityMapper.cs",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "core_activitymapper",
-      "target": "core_activitymapper_activitymapper"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/ActivityMapper.cs",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "core_activitymapper_activitymapper",
-      "target": "core_activitymapper_activitymapper_toactivity"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/ActivityMapper.cs",
-      "source_location": "L20",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "core_activitymapper_activitymapper",
-      "target": "core_activitymapper_activitymapper_updateactivity"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/ActivityMapper.cs",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "core_activitymapper_activitymapper",
-      "target": "core_iactivitymapper_iactivitymapper"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/ActivityMapper.cs",
-      "source_location": "L8",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "confidence_score": 1.0,
-      "source": "core_activitymapper_activitymapper_toactivity",
-      "target": "createactivityrequest"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/IActivityMapper.cs",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "core_iactivitymapper",
-      "target": "core_iactivitymapper_iactivitymapper"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/IActivityMapper.cs",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "core_iactivitymapper_iactivitymapper",
-      "target": "core_iactivitymapper_iactivitymapper_toactivity"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/IActivityMapper.cs",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "core_iactivitymapper_iactivitymapper",
-      "target": "core_iactivitymapper_iactivitymapper_updateactivity"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/IActivityMapper.cs",
-      "source_location": "L8",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "confidence_score": 1.0,
-      "source": "core_iactivitymapper_iactivitymapper_toactivity",
-      "target": "createactivityrequest"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/Application/Core/ValidationBehavior.cs",
@@ -7890,9 +8345,9 @@
       "source_file": "backend/Persistence/DbInitializer.cs",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "persistence_dbinitializer_dbinitializer",
-      "target": "persistence_dbinitializer_dbinitializer_seeddataasync",
-      "confidence_score": 1.0
+      "target": "persistence_dbinitializer_dbinitializer_seeddataasync"
     },
     {
       "relation": "references",
@@ -7901,9 +8356,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "context": "parameter_type",
+      "confidence_score": 1.0,
       "source": "persistence_dbinitializer_dbinitializer_seeddataasync",
-      "target": "appdbcontext",
-      "confidence_score": 1.0
+      "target": "appdbcontext"
     },
     {
       "relation": "imports",
@@ -8085,39 +8540,6 @@
       "target": "core_result_result"
     },
     {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/API/Controllers/BaseApiController.cs",
-      "source_location": "L14",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "confidence_score": 1.0,
-      "source": "controllers_baseapicontroller_baseapicontroller_handleresult",
-      "target": "t"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/Result.cs",
-      "source_location": "L11",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "confidence_score": 1.0,
-      "source": "core_result_result_failure",
-      "target": "t"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Core/Result.cs",
-      "source_location": "L10",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "confidence_score": 1.0,
-      "source": "core_result_result_success",
-      "target": "t"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/Application/Activities/Queries/GetActivityDetails.cs",
@@ -8244,37 +8666,6 @@
       "confidence_score": 1.0,
       "source": "queries_getactivitydetails_handler_handle",
       "target": "domain_activity_activity"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Validators/CreateActivityValidator.cs",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "validators_createactivityvalidator",
-      "target": "validators_createactivityvalidator_createactivityvalidator"
-    },
-    {
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Validators/CreateActivityValidator.cs",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "validators_createactivityvalidator_createactivityvalidator",
-      "target": "abstractvalidator"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Application/Activities/Validators/CreateActivityValidator.cs",
-      "source_location": "L6",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "confidence_score": 1.0,
-      "source": "validators_createactivityvalidator_createactivityvalidator",
-      "target": "command"
     },
     {
       "relation": "imports",
@@ -12432,5 +12823,5 @@
       "source_file": "CLAUDE.md"
     }
   ],
-  "built_at_commit": "a997888609c22975c5cf70d0a6dd39ec09dcb7e9"
+  "built_at_commit": "1cde035d39cf5be402fc99001f607b13be4be684"
 }

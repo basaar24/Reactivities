@@ -95,12 +95,12 @@
     "semantic_hash": ""
   },
   "backend/API/Controllers/ActivitiesController.cs": {
-    "mtime": 1782759267.3964648,
-    "ast_hash": "b149b4e08e8901307c303fdce507e684",
+    "mtime": 1782759339.0618963,
+    "ast_hash": "06e481824b8ad63f95b8451255116583",
     "semantic_hash": ""
   },
   "backend/API/Controllers/BaseApiController.cs": {
-    "mtime": 1782758821.0351152,
+    "mtime": 1782759355.9736495,
     "ast_hash": "eb1800bc04d9aad6c9645e21d35f5354",
     "semantic_hash": ""
   },
@@ -110,8 +110,8 @@
     "semantic_hash": "202cc927dd7747cd945e011d8cb1d001"
   },
   "backend/API/Program.cs": {
-    "mtime": 1782753325.969365,
-    "ast_hash": "9769ef6ecfb620fc33b22370fc6ee467",
+    "mtime": 1782759558.640187,
+    "ast_hash": "82ce72c1fd8ab77fc5d6e211339323ac",
     "semantic_hash": ""
   },
   "backend/API/Properties/launchSettings.json": {
@@ -130,18 +130,18 @@
     "semantic_hash": "521f6acea5555df7367cb0e7a37948f2"
   },
   "backend/Application/Activities/Commands/CreateActivity.cs": {
-    "mtime": 1782758614.9543045,
-    "ast_hash": "9f4a4768fdf7d0a3d0f6c373c4206641",
+    "mtime": 1782759385.1950445,
+    "ast_hash": "ce749263dbc9e408ed9eec94f6d02273",
     "semantic_hash": ""
   },
   "backend/Application/Activities/Commands/DeleteActivity.cs": {
-    "mtime": 1782758302.7332196,
-    "ast_hash": "2f1b2b879623dd49e2054155db727a9d",
+    "mtime": 1782759427.888554,
+    "ast_hash": "ef1c516505bb55cc2b82a672b8110283",
     "semantic_hash": ""
   },
   "backend/Application/Activities/Commands/UpdateActivity.cs": {
-    "mtime": 1782758436.293214,
-    "ast_hash": "951628756b101a602c6e4756e1f6faf7",
+    "mtime": 1782759427.888554,
+    "ast_hash": "27657edef5f438aad30034faea682d05",
     "semantic_hash": ""
   },
   "backend/Application/Activities/Queries/GetActivityDetails.cs": {
@@ -150,13 +150,13 @@
     "semantic_hash": ""
   },
   "backend/Application/Activities/Queries/GetActivityList.cs": {
-    "mtime": 1782494588.484434,
-    "ast_hash": "a196e2a7ddaf6dccc3d08845b3ead2d1",
-    "semantic_hash": "a196e2a7ddaf6dccc3d08845b3ead2d1"
+    "mtime": 1782759503.0641673,
+    "ast_hash": "3f653b38679ca81fcea9de4c16279166",
+    "semantic_hash": ""
   },
   "backend/Application/Activities/Requests/CreateActivityRequest.cs": {
-    "mtime": 1782749044.278327,
-    "ast_hash": "a52bd9c1fb5d1fff64513647021d56c8",
+    "mtime": 1782759412.916226,
+    "ast_hash": "f7364fb766926a75a7d79ef738c551aa",
     "semantic_hash": ""
   },
   "backend/Application/Application.csproj": {
@@ -180,9 +180,9 @@
     "semantic_hash": "e4aa52f232c96c5802bc4fe8cc292303"
   },
   "backend/Persistence/DbInitializer.cs": {
-    "mtime": 1782494588.488543,
-    "ast_hash": "e848d209f8ee5a396cc3d9e503da65ec",
-    "semantic_hash": "e848d209f8ee5a396cc3d9e503da65ec"
+    "mtime": 1782759563.1390984,
+    "ast_hash": "c0454ee45517d03586791ffff183cc30",
+    "semantic_hash": ""
   },
   "backend/Persistence/Migrations/20260519165100_InitialCreate.Designer.cs": {
     "mtime": 1779304298.7694993,
@@ -580,13 +580,13 @@
     "semantic_hash": ""
   },
   "backend/Application/Core/ActivityMapper.cs": {
-    "mtime": 1782494588.4854345,
-    "ast_hash": "6d8e91cf165f825c713ae82d899243ef",
+    "mtime": 1782759515.8756475,
+    "ast_hash": "47c5ec11d2bb7aa1d19594129c036490",
     "semantic_hash": ""
   },
   "backend/Application/Core/IActivityMapper.cs": {
-    "mtime": 1782494588.4864357,
-    "ast_hash": "fbad72a934e5b0f60dc75485969db591",
+    "mtime": 1782759536.2885506,
+    "ast_hash": "b0a1dc1608f355ea6eb82ebd35f5fd10",
     "semantic_hash": ""
   },
   ".serena/memories/backend/core.md": {
@@ -665,8 +665,8 @@
     "semantic_hash": ""
   },
   "backend/API/Middlewares/ExceptionMiddleware.cs": {
-    "mtime": 1782752883.1183698,
-    "ast_hash": "5a2f83ac36eed1800dc10d0131ba66f0",
+    "mtime": 1782759427.889555,
+    "ast_hash": "fe55c880c040bf9e6efea2ffc8fdfc70",
     "semantic_hash": ""
   },
   "backend/Application/Activities/Validators/CreateActivityValidator.cs": {
@@ -680,8 +680,8 @@
     "semantic_hash": ""
   },
   "backend/Application/Core/ValidationBehavior.cs": {
-    "mtime": 1782750779.8542843,
-    "ast_hash": "617d2476804ac038f6eb626034c6c099",
+    "mtime": 1782759427.888554,
+    "ast_hash": "97afc51e848260c3a3efed2d877650c9",
     "semantic_hash": ""
   }
 }

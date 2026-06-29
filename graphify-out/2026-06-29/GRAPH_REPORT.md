@@ -1,16 +1,16 @@
 # Graph Report - Reactivities  (2026-06-29)
 
 ## Corpus Check
-- 116 files · ~29,747 words
+- 116 files · ~29,753 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 546 nodes · 603 edges · 68 communities (45 shown, 23 thin omitted)
-- Extraction: 92% EXTRACTED · 8% INFERRED · 0% AMBIGUOUS · INFERRED: 50 edges (avg confidence: 0.87)
+- 549 nodes · 614 edges · 70 communities (45 shown, 25 thin omitted)
+- Extraction: 92% EXTRACTED · 8% INFERRED · 0% AMBIGUOUS · INFERRED: 47 edges (avg confidence: 0.88)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1829a5df`
+- Built from commit: `a9978886`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -83,17 +83,19 @@
 - [[_COMMUNITY_Community 65|Community 65]]
 - [[_COMMUNITY_Community 66|Community 66]]
 - [[_COMMUNITY_Community 67|Community 67]]
+- [[_COMMUNITY_Community 68|Community 68]]
+- [[_COMMUNITY_Community 69|Community 69]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 17 edges
 2. `Result` - 16 edges
 3. `compilerOptions` - 16 edges
 4. `Backend Standards` - 13 edges
-5. `Activity` - 10 edges
-6. `scripts` - 8 edges
-7. `LTI Base Development Standards` - 8 edges
-8. `ActivitiesController` - 7 edges
-9. `Query` - 7 edges
+5. `Activity` - 9 edges
+6. `ActivitiesController` - 8 edges
+7. `scripts` - 8 edges
+8. `LTI Base Development Standards` - 8 edges
+9. `Command` - 7 edges
 10. `Handler` - 7 edges
 
 ## Surprising Connections (you probably didn't know these)
@@ -119,11 +121,11 @@
 - **Multi-Copilot Config Files All Referencing base-standards.md** — reactivities_agents_md_base_standards, reactivities_claude_md_base_standards, reactivities_gemini_md_base_standards, readme_base_standards_single_source [EXTRACTED 1.00]
 - **Reactivities Backend Architecture: Clean Architecture + CQRS + MediatR** — claude_md_clean_architecture_cqrs, claude_md_mediator_pattern, claude_md_automapper, openspec_config_tech_stack [INFERRED 0.85]
 
-## Communities (68 total, 23 thin omitted)
+## Communities (70 total, 25 thin omitted)
 
 ### Community 0 - "Reactivities CQRS Handlers"
 Cohesion: 0.09
-Nodes (22): ActionResult, Activity, ActivitiesController, BaseApiController, ActivityMapper, IActivityMapper, CreateActivityRequest, Activity (+14 more)
+Nodes (33): ActionResult, Activity, BaseApiController, CancellationToken, Command, CreateActivity, Handler, Command (+25 more)
 
 ### Community 1 - "Frontend Dependencies"
 Cohesion: 0.06
@@ -170,8 +172,8 @@ Cohesion: 0.23
 Nodes (13): Delta Spec Sync Pattern, OpenSpec Workflow System, Spec-Driven Change Lifecycle, openspec-apply-change Skill, openspec-archive-change Skill, openspec-explore Skill, openspec-propose Skill, openspec-sync-specs Skill (+5 more)
 
 ### Community 12 - "ASP.NET Controller Base"
-Cohesion: 0.25
-Nodes (5): WeatherForecast, ControllerBase, WeatherForecastController, IEnumerable, string
+Cohesion: 0.18
+Nodes (7): WeatherForecast, ControllerBase, BaseApiController, WeatherForecastController, IEnumerable, IMediator, string
 
 ### Community 13 - "Activity Mapper Planning"
 Cohesion: 0.67
@@ -192,10 +194,6 @@ Nodes (8): Application Schema (Candidate Job Application), Candidate Domain Sche
 ### Community 17 - "Agent Symlink Mirrors"
 Cohesion: 0.29
 Nodes (7): Backend Developer Agent (Claude), Backend Developer Agent (Cursor), Frontend Developer Agent (Claude), Frontend Developer Agent (Cursor), Product Strategy Analyst Agent (Claude), Product Strategy Analyst Agent (Cursor), AI Agent Spec Files
-
-### Community 18 - "EF Core DbContext and Seeding"
-Cohesion: 0.33
-Nodes (3): DbContext, AppDbContext, DbInitializer
 
 ### Community 19 - "LTI Backend Agent Specs"
 Cohesion: 0.40
@@ -226,8 +224,8 @@ Cohesion: 0.67
 Nodes (3): Frontend Standards — HTTP Client (Axios with interceptors), Frontend Standards — Client State with MobX (uiStore), Frontend Standards — Data Fetching with React Query
 
 ### Community 39 - "Community 39"
-Cohesion: 0.12
-Nodes (20): CancellationToken, Command, CreateActivity, Handler, Command, DeleteActivity, Handler, Command (+12 more)
+Cohesion: 0.38
+Nodes (5): ValidationBehavior, IPipelineBehavior, RequestHandlerDelegate, TRequest, TResponse
 
 ### Community 40 - "Documentation AI Standards"
 Cohesion: 0.07
@@ -301,25 +299,29 @@ Nodes (5): 1. Add Custom Mapper Interface and Implementation, 2. Update DI Regis
 Cohesion: 0.50
 Nodes (3): AbstractValidator, Command, CreateActivityValidator
 
+### Community 68 - "Community 68"
+Cohesion: 0.22
+Nodes (4): ActivityMapper, IActivityMapper, CreateActivityRequest, CreateActivityRequest
+
 ## Knowledge Gaps
-- **286 isolated node(s):** `net10.0`, `Microsoft.EntityFrameworkCore.Design (10.0.9)`, `Microsoft.NET.Sdk.Web`, `CreateActivity`, `DeleteActivity` (+281 more)
+- **286 isolated node(s):** `CreateActivity`, `DeleteActivity`, `GetActivityList`, `net10.0`, `Microsoft.EntityFrameworkCore.Design (10.0.9)` (+281 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **23 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **25 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `devDependencies` connect `Frontend Dev Toolchain` to `Frontend Dependencies`?**
   _High betweenness centrality (0.007) - this node is a cross-community bridge._
-- **Why does `Result` connect `Community 39` to `Reactivities CQRS Handlers`?**
-  _High betweenness centrality (0.005) - this node is a cross-community bridge._
-- **What connects `net10.0`, `Microsoft.EntityFrameworkCore.Design (10.0.9)`, `Microsoft.NET.Sdk.Web` to the rest of the system?**
+- **What connects `CreateActivity`, `DeleteActivity`, `GetActivityList` to the rest of the system?**
   _294 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Reactivities CQRS Handlers` be split into smaller, more focused modules?**
-  _Cohesion score 0.09175377468060394 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09154437456324249 - nodes in this community are weakly interconnected._
 - **Should `Frontend Dependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.0625 - nodes in this community are weakly interconnected._
 - **Should `Reactivities Architecture Docs` be split into smaller, more focused modules?**
   _Cohesion score 0.12280701754385964 - nodes in this community are weakly interconnected._
 - **Should `Frontend Dev Toolchain` be split into smaller, more focused modules?**
   _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
+- **Should `LTI Project Docs` be split into smaller, more focused modules?**
+  _Cohesion score 0.11255411255411256 - nodes in this community are weakly interconnected._
