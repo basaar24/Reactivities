@@ -5,6 +5,6 @@ namespace Application.Core;
 
 public interface IActivityMapper
 {
-    Activity ToActivity(CreateActivityRequest request);
-    void UpdateActivity(Activity source, Activity destination);
+    public Activity ToActivity(CreateActivityRequest request);
+    public void UpdateActivity(Activity source, Activity destination);
 }

@@ -4,9 +4,12 @@ namespace Persistence;
 
 public static class DbInitializer
 {
-    public static async Task SeedData(AppDbContext context)
+    public static async Task SeedDataAsync(AppDbContext context)
     {
-        if (context.Activities.Any()) return;
+        if (context.Activities.Any())
+        {
+            return;
+        }
 
         var activities = new List<Activity>
         {

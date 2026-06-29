@@ -5,7 +5,7 @@ namespace Application.Core;
 
 public class ActivityMapper : IActivityMapper
 {
-    public Activity ToActivity(CreateActivityRequest request) => new Activity
+    public Activity ToActivity(CreateActivityRequest request) => new()
     {
         Title = request.Title,
         Date = request.Date,

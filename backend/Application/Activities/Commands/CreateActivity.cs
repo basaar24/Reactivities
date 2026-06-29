@@ -18,9 +18,12 @@ public class CreateActivity
         {
             var activity = mapper.ToActivity(request.ActivityRequest);
             context.Activities.Add(activity);
-            var result = await context.SaveChangesAsync(cancellationToken) > 0;
+            bool result = await context.SaveChangesAsync(cancellationToken) > 0;
 
-            if (!result) return Result<string>.Failure("Failed to delete the activity", 400);
+            if (!result)
+            {
+                return Result<string>.Failure("Failed to delete the activity", 400);
+            }
 
             return Result<string>.Success(activity.Id);
         }

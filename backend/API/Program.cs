@@ -12,7 +12,7 @@ public static class Program
 {
     public static async Task Main(string[] args)
     {
-        var builder = WebApplication.CreateBuilder(args);
+        WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
         builder.Services.AddControllers();
         builder.Services.AddCors();
@@ -20,22 +20,22 @@ public static class Program
         AddApplicationServices(builder);
         AddMiddlewareServices(builder);
 
-        var app = builder.Build();
+        WebApplication app = builder.Build();
 
         ConfigureMiddleware(app);
 
-        using var scope = app.Services.CreateScope();
-        var services = scope.ServiceProvider;
+        using IServiceScope scope = app.Services.CreateScope();
+        IServiceProvider services = scope.ServiceProvider;
 
         try
         {
-            var context = services.GetRequiredService<AppDbContext>();
+            AppDbContext context = services.GetRequiredService<AppDbContext>();
             await context.Database.MigrateAsync();
-            await DbInitializer.SeedData(context);
+            await DbInitializer.SeedDataAsync(context);
         }
         catch (Exception ex)
         {
-            var logger = services.GetRequiredService<ILoggerFactory>().CreateLogger(nameof(Program));
+            ILogger logger = services.GetRequiredService<ILoggerFactory>().CreateLogger(nameof(Program));
             logger.LogError(ex, "Error while seeding the database");
         }
 
@@ -62,10 +62,7 @@ public static class Program
     }
 
     // Registers custom middleware classes with the DI container.
-    private static void AddMiddlewareServices(WebApplicationBuilder builder)
-    {
-        builder.Services.AddTransient<ExceptionMiddleware>();
-    }
+    private static void AddMiddlewareServices(WebApplicationBuilder builder) => builder.Services.AddTransient<ExceptionMiddleware>();
 
     // Configures the HTTP request pipeline order.
     private static void ConfigureMiddleware(WebApplication app)

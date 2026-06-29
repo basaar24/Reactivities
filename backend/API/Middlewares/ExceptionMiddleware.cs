@@ -1,4 +1,5 @@
 using FluentValidation;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Middlewares;
@@ -27,9 +28,9 @@ public class ExceptionMiddleware : IMiddleware
 
         if (vex.Errors is not null)
         {
-            foreach (var error in vex.Errors)
+            foreach (ValidationFailure? error in vex.Errors)
             {
-                if (validationErrors.TryGetValue(error.PropertyName, out var existingErrors))
+                if (validationErrors.TryGetValue(error.PropertyName, out string[]? existingErrors))
                 {
                     validationErrors[error.PropertyName] = [.. existingErrors, error.ErrorMessage];
                 }

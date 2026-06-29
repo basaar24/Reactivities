@@ -1,4 +1,5 @@
 using FluentValidation;
+using FluentValidation.Results;
 using MediatR;
 
 namespace Application.Core;
@@ -8,11 +9,17 @@ public class ValidationBehavior<TRequest, TResponse>(IValidator<TRequest>? valid
 {
     public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
     {
-        if (validator == null) return await next(cancellationToken);
+        if (validator == null)
+        {
+            return await next(cancellationToken);
+        }
 
-        var validationResult = await validator.ValidateAsync(request, cancellationToken);
+        ValidationResult validationResult = await validator.ValidateAsync(request, cancellationToken);
 
-        if (!validationResult.IsValid) throw new ValidationException(validationResult.Errors);
+        if (!validationResult.IsValid)
+        {
+            throw new ValidationException(validationResult.Errors);
+        }
 
         return await next(cancellationToken);
     }

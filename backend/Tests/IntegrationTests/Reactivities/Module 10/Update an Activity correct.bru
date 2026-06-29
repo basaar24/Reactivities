@@ -1,11 +1,11 @@
 meta {
-  name: Edit an Activity as Bob who is host
+  name: Update an Activity correct
   type: http
-  seq: 7
+  seq: 4
 }
 
 put {
-  url: {{url}}/api/activities/5a62197b-be97-49f6-acb0-db1135afbe48
+  url: {{url}}/api/activities/2
   body: json
   auth: inherit
 }
@@ -16,14 +16,12 @@ headers {
 
 body:json {
   {
-      "title": "Editing activity as bob the host",
+  	"title": "Test Create Activity updated",
   	"description": "Description of the test event",
   	"category": "Culture",
   	"date": "{{activityDate}}",
-      "city": "London",
-      "venue": "London venue",
-      "latitude": 51.5074,
-      "longitude": -0.1278
+  	"city": "London",
+  	"venue": "Tower of London"
   }
 }
 
@@ -35,4 +33,5 @@ script:pre-request {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

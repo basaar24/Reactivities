@@ -16,15 +16,21 @@ public class UpdateActivity
     {
         public async Task<Result<Unit>> Handle(Command request, CancellationToken cancellationToken)
         {
-            var activity = await context.Activities.FindAsync([request.Activity.Id], cancellationToken);
+            Activity? activity = await context.Activities.FindAsync([request.Activity.Id], cancellationToken);
 
-            if (activity == null) return Result<Unit>.Failure("Activity not found", 404);
+            if (activity == null)
+            {
+                return Result<Unit>.Failure("Activity not found", 404);
+            }
 
             mapper.UpdateActivity(request.Activity, activity);
 
-            var result = await context.SaveChangesAsync(cancellationToken) > 0;
+            bool result = await context.SaveChangesAsync(cancellationToken) > 0;
 
-            if (!result) return Result<Unit>.Failure("Failed to delete the activity", 400);
+            if (!result)
+            {
+                return Result<Unit>.Failure("Failed to delete the activity", 400);
+            }
 
             return Result<Unit>.Success(Unit.Value);
         }

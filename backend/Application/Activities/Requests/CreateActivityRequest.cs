@@ -1,5 +1,3 @@
-using System.ComponentModel.DataAnnotations;
-
 namespace Application.Activities.Requests;
 
 public class CreateActivityRequest
