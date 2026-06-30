@@ -83,6 +83,7 @@ export default function ActivityDetailsHeader({ activity }: Props) {
               >
                 Manage Event
               </Button>
+              <Button fullWidth component={Link} to={`/activities`}></Button>
             </>
           ) : (
             <Button
