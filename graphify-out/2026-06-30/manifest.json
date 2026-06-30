@@ -95,7 +95,7 @@
     "semantic_hash": ""
   },
   "backend/API/Controllers/ActivitiesController.cs": {
-    "mtime": 1782835496.0083883,
+    "mtime": 1782773239.094282,
     "ast_hash": "9111b2cecdfab9fe40636b9c24ffa508",
     "semantic_hash": ""
   },
@@ -225,9 +225,9 @@
     "semantic_hash": "da189d760785bdfa055a2e5859f9beff"
   },
   "client/package.json": {
-    "mtime": 1782835949.2822354,
-    "ast_hash": "7a2ab48785d7532ed34e751da961367b",
-    "semantic_hash": ""
+    "mtime": 1781563391.130897,
+    "ast_hash": "1126bb69548bfc314982747acacfde60",
+    "semantic_hash": "1126bb69548bfc314982747acacfde60"
   },
   "client/src/app/layout/App.tsx": {
     "mtime": 1781561431.0664606,
@@ -235,14 +235,14 @@
     "semantic_hash": "24bd4b75eb690588f14c324e8820fb52"
   },
   "client/src/app/layout/NavBar.tsx": {
-    "mtime": 1782835857.0964284,
-    "ast_hash": "32959e6ecca47821d4f46a3158bc6584",
-    "semantic_hash": ""
+    "mtime": 1781807246.375724,
+    "ast_hash": "de7aa27f4f1bdb6338235fe8d5b1f040",
+    "semantic_hash": "de7aa27f4f1bdb6338235fe8d5b1f040"
   },
   "client/src/app/router/Routes.tsx": {
-    "mtime": 1782838892.103541,
-    "ast_hash": "f472a1b6cc0702414391cac7b2d24227",
-    "semantic_hash": ""
+    "mtime": 1781795788.0853229,
+    "ast_hash": "794b4643c2e2392cbcbd3f5668585bbb",
+    "semantic_hash": "794b4643c2e2392cbcbd3f5668585bbb"
   },
   "client/src/app/shared/components/MenuItemLink.tsx": {
     "mtime": 1781561431.1366966,
@@ -275,9 +275,9 @@
     "semantic_hash": "0a053a15a274b142a73ea3d6ccaa7f57"
   },
   "client/src/features/activities/details/ActivityDetailsHeader.tsx": {
-    "mtime": 1782837300.4982817,
-    "ast_hash": "8c1c94981ee74b48090d0e9eaa173a3a",
-    "semantic_hash": ""
+    "mtime": 1781561431.2326047,
+    "ast_hash": "3659fcc5f00f738db699f55b5651f825",
+    "semantic_hash": "3659fcc5f00f738db699f55b5651f825"
   },
   "client/src/features/activities/details/ActivityDetailsInfo.tsx": {
     "mtime": 1781561431.23946,
@@ -310,9 +310,9 @@
     "semantic_hash": "9fdffdb193021ffc1d1dbe7a886f07b3"
   },
   "client/src/lib/api/agent.ts": {
-    "mtime": 1782838508.161842,
-    "ast_hash": "89fc9af8393bbfb7914b1f8feb7bb85c",
-    "semantic_hash": ""
+    "mtime": 1781806977.9476488,
+    "ast_hash": "d9b7a17694f41650d31f132c2c0414d3",
+    "semantic_hash": "d9b7a17694f41650d31f132c2c0414d3"
   },
   "client/src/lib/hooks/useActivities.ts": {
     "mtime": 1781807897.3580706,
@@ -350,9 +350,9 @@
     "semantic_hash": "e3b1102e0f98ec288020330ad047e481"
   },
   "client/src/main.tsx": {
-    "mtime": 1782836201.8358066,
-    "ast_hash": "4a190dcafd7715031dbfcc8d81d206a4",
-    "semantic_hash": ""
+    "mtime": 1781563866.0002615,
+    "ast_hash": "f0c3d0f65b1cff117a31de84c86e3eb8",
+    "semantic_hash": "f0c3d0f65b1cff117a31de84c86e3eb8"
   },
   "client/tsconfig.app.json": {
     "mtime": 1781209975.2898054,
@@ -707,26 +707,6 @@
   "backend/Application/Core/AppException.cs": {
     "mtime": 1782761760.4111567,
     "ast_hash": "2d5a349521f8d3ab3e22bedb15891ca7",
-    "semantic_hash": ""
-  },
-  "backend/API/Controllers/BuggyController.cs": {
-    "mtime": 1782835654.3914237,
-    "ast_hash": "3b7be3e90cfdf5b686377c75f6a3568b",
-    "semantic_hash": ""
-  },
-  "client/src/features/errors/NotFound.tsx": {
-    "mtime": 1782837378.723236,
-    "ast_hash": "ff92e3204f61039730ebb6093ae22275",
-    "semantic_hash": ""
-  },
-  "client/src/features/errors/ServerError.tsx": {
-    "mtime": 1782839322.4320273,
-    "ast_hash": "b502fd53b9f66237b0c8cab30f649711",
-    "semantic_hash": ""
-  },
-  "client/src/features/errors/TestErrors.tsx": {
-    "mtime": 1782838173.969715,
-    "ast_hash": "b37de35090c743d8710bea4ca07c9d17",
     "semantic_hash": ""
   }
 }
