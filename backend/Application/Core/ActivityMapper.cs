@@ -5,7 +5,7 @@ namespace Application.Core;
 
 public class ActivityMapper : IActivityMapper
 {
-    public Activity ToDomain(CreateActivityDto createDto) => new()
+    public Activity CreateActivity(CreateActivityDto createDto) => new()
     {
         Title = createDto.Title,
         Date = createDto.Date,
@@ -17,7 +17,7 @@ public class ActivityMapper : IActivityMapper
         Longitude = createDto.Longitude
     };
 
-    public void ToDomain(UpdateActivityDto source, Activity destination)
+    public void ApplyUpdate(UpdateActivityDto source, Activity destination)
     {
         destination.Id = source.Id;
         destination.Title = source.Title;
@@ -30,7 +30,7 @@ public class ActivityMapper : IActivityMapper
         destination.Longitude = source.Longitude;
     }
 
-    public void UpdateActivity(Activity source, Activity destination)
+    public void CopyTo(Activity source, Activity destination)
     {
         destination.Title = source.Title;
         destination.Date = source.Date;

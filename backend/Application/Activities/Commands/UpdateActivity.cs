@@ -24,7 +24,7 @@ public class UpdateActivity
                 return Result<Unit>.Failure("Activity not found", 404);
             }
 
-            mapper.ToDomain(request.ActivityDto, activity);
+            mapper.ApplyUpdate(request.ActivityDto, activity);
 
             bool result = await context.SaveChangesAsync(cancellationToken) > 0;
 

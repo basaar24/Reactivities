@@ -17,7 +17,7 @@ public class CreateActivity
     {
         public async Task<Result<string>> Handle(Command request, CancellationToken cancellationToken)
         {
-            Activity activity = mapper.ToDomain(request.ActivityDto);
+            Activity activity = mapper.CreateActivity(request.ActivityDto);
             context.Activities.Add(activity);
             bool result = await context.SaveChangesAsync(cancellationToken) > 0;
 

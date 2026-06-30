@@ -5,7 +5,7 @@ namespace Application.Core;
 
 public interface IActivityMapper
 {
-    public Activity ToDomain(CreateActivityDto request);
-    public void ToDomain(UpdateActivityDto source, Activity destination);
-    public void UpdateActivity(Activity source, Activity destination);
+    public Activity CreateActivity(CreateActivityDto request);
+    public void ApplyUpdate(UpdateActivityDto source, Activity destination);
+    public void CopyTo(Activity source, Activity destination);
 }
