@@ -730,23 +730,18 @@
     "semantic_hash": ""
   },
   ".claude/rules/dotnet-csharp.md": {
-    "mtime": 1783358910.0089931,
-    "ast_hash": "56ae5dc397f363678d44ced67803557d",
+    "mtime": 1783358803.6554031,
+    "ast_hash": "5a2e6c64584f111de531860bbb36888f",
     "semantic_hash": ""
   },
   ".claude/rules/react-typescript.md": {
-    "mtime": 1783358937.8705506,
-    "ast_hash": "967ace854a69712dbae4a25c96e6f675",
+    "mtime": 1783358816.7493598,
+    "ast_hash": "146dc4185a8913e6cbb19b412a1888b9",
     "semantic_hash": ""
   },
   ".claude/rules/workflow.md": {
-    "mtime": 1783358869.5780368,
+    "mtime": 1783358506.7192576,
     "ast_hash": "73bfdaeac459a130bd5851254abf0e25",
-    "semantic_hash": ""
-  },
-  ".claude/rules/security.md": {
-    "mtime": 1783358870.4823732,
-    "ast_hash": "c87efe686c8eb8de968156060cc20b23",
     "semantic_hash": ""
   }
 }

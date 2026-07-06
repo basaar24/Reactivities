@@ -1,16 +1,16 @@
 # Graph Report - Reactivities  (2026-07-06)
 
 ## Corpus Check
-- 129 files · ~32,432 words
+- 128 files · ~31,871 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 629 nodes · 711 edges · 74 communities (48 shown, 26 thin omitted)
+- 618 nodes · 701 edges · 72 communities (46 shown, 26 thin omitted)
 - Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 47 edges (avg confidence: 0.88)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `2b695477`
+- Built from commit: `91821b61`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -87,17 +87,15 @@
 - [[_COMMUNITY_Community 69|Community 69]]
 - [[_COMMUNITY_Community 70|Community 70]]
 - [[_COMMUNITY_Community 71|Community 71]]
-- [[_COMMUNITY_Community 72|Community 72]]
-- [[_COMMUNITY_Community 73|Community 73]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 17 edges
 2. `Result` - 16 edges
 3. `compilerOptions` - 16 edges
 4. `Backend Standards` - 13 edges
-5. `React + TypeScript Rules` - 11 edges
-6. `.NET / C# Rules` - 10 edges
-7. `Activity` - 9 edges
+5. `Activity` - 9 edges
+6. `.NET / C# Rules` - 8 edges
+7. `React + TypeScript Rules` - 8 edges
 8. `scripts` - 8 edges
 9. `ActivitiesController` - 8 edges
 10. `LTI Base Development Standards` - 8 edges
@@ -125,11 +123,11 @@
 - **Multi-Copilot Config Files All Referencing base-standards.md** — reactivities_agents_md_base_standards, reactivities_claude_md_base_standards, reactivities_gemini_md_base_standards, readme_base_standards_single_source [EXTRACTED 1.00]
 - **Reactivities Backend Architecture: Clean Architecture + CQRS + MediatR** — claude_md_clean_architecture_cqrs, claude_md_mediator_pattern, claude_md_automapper, openspec_config_tech_stack [INFERRED 0.85]
 
-## Communities (74 total, 26 thin omitted)
+## Communities (72 total, 26 thin omitted)
 
 ### Community 0 - "Reactivities CQRS Handlers"
-Cohesion: 0.18
-Nodes (10): Architecture & structure, Async & performance, Cross-cutting concerns, Data access (EF Core), Dependency injection, Error handling, Naming & style, .NET / C# Rules (+2 more)
+Cohesion: 0.22
+Nodes (8): Architecture & structure, Async & performance, Dependency injection, Error handling, Naming & style, .NET / C# Rules, Nullability & types, Testing
 
 ### Community 1 - "Frontend Dependencies"
 Cohesion: 0.06
@@ -176,8 +174,8 @@ Cohesion: 0.23
 Nodes (13): Delta Spec Sync Pattern, OpenSpec Workflow System, Spec-Driven Change Lifecycle, openspec-apply-change Skill, openspec-archive-change Skill, openspec-explore Skill, openspec-propose Skill, openspec-sync-specs Skill (+5 more)
 
 ### Community 12 - "ASP.NET Controller Base"
-Cohesion: 0.16
-Nodes (10): Activity, ActivityMapper, IActivityMapper, CreateActivityDto, Activity, List, GetActivityList, Handler (+2 more)
+Cohesion: 0.14
+Nodes (13): Activity, ActivityMapper, IActivityMapper, CreateActivityDto, Activity, List, GetActivityDetails, Handler (+5 more)
 
 ### Community 13 - "Activity Mapper Planning"
 Cohesion: 0.67
@@ -228,16 +226,16 @@ Cohesion: 0.67
 Nodes (3): Frontend Standards — HTTP Client (Axios with interceptors), Frontend Standards — Client State with MobX (uiStore), Frontend Standards — Data Fetching with React Query
 
 ### Community 39 - "Community 39"
-Cohesion: 0.12
-Nodes (24): CancellationToken, Command, CreateActivity, Handler, Command, DeleteActivity, Handler, Command (+16 more)
+Cohesion: 0.14
+Nodes (21): CancellationToken, Command, CreateActivity, Handler, Command, DeleteActivity, Handler, Command (+13 more)
 
 ### Community 40 - "Documentation AI Standards"
-Cohesion: 0.07
-Nodes (23): 1. Core Principles, 2. Language Standards, 3. Specific Standards, 4. Project Skills, 5. Planning Model Requirement, 6. Symlink Integrity and Multi-Agent Portability, 7. Mandatory OpenSpec Artifact Updates for Post-Apply Changes, 1. Activity (+15 more)
+Cohesion: 0.05
+Nodes (40): Architecture Patterns, Backend Standards, Build Verification, Code Style, Controller Pattern, CORS, CQRS with MediatR, Dependency Injection (+32 more)
 
 ### Community 51 - "Community 51"
-Cohesion: 0.17
-Nodes (11): Accessibility & UX states, Cleanup, Component design, Lists, Naming & structure, React + TypeScript Rules, Security, State & data (+3 more)
+Cohesion: 0.22
+Nodes (8): Cleanup, Component design, Naming & structure, React + TypeScript Rules, State & data, Styling, Testing, TypeScript strictness
 
 ### Community 52 - "Community 52"
 Cohesion: 0.09
@@ -311,16 +309,8 @@ Nodes (4): agent, ServerError(), router, queryClient
 Cohesion: 0.29
 Nodes (6): Code quality bar, Communication, Errors and type safety, Scope discipline, Verification, Workflow & Collaboration Rules
 
-### Community 72 - "Community 72"
-Cohesion: 0.12
-Nodes (17): Architecture Patterns, Backend Standards, Build Verification, Code Style, Controller Pattern, CORS, CQRS with MediatR, Dependency Injection (+9 more)
-
-### Community 73 - "Community 73"
-Cohesion: 0.33
-Nodes (5): Config, Git hygiene, Input & data handling, Secrets & credentials, Security Rules
-
 ## Knowledge Gaps
-- **317 isolated node(s):** `Architecture & structure`, `Async & performance`, `Nullability & types`, `Error handling`, `Testing` (+312 more)
+- **308 isolated node(s):** `Architecture & structure`, `Async & performance`, `Nullability & types`, `Error handling`, `Testing` (+303 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **26 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -329,10 +319,10 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `devDependencies` connect `Frontend Dev Toolchain` to `Frontend Dependencies`?**
   _High betweenness centrality (0.005) - this node is a cross-community bridge._
-- **Why does `Result` connect `Community 39` to `Community 52`?**
+- **Why does `Result` connect `Community 39` to `Community 52`, `ASP.NET Controller Base`?**
   _High betweenness centrality (0.005) - this node is a cross-community bridge._
 - **What connects `Architecture & structure`, `Async & performance`, `Nullability & types` to the rest of the system?**
-  _325 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _316 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Frontend Dependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.06060606060606061 - nodes in this community are weakly interconnected._
 - **Should `Reactivities Architecture Docs` be split into smaller, more focused modules?**

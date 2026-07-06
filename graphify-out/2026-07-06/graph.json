@@ -126,7 +126,7 @@
       "label": "Async & performance",
       "file_type": "document",
       "source_file": ".claude/rules/dotnet-csharp.md",
-      "source_location": "L14",
+      "source_location": "L13",
       "_origin": "ast",
       "id": "rules_dotnet_csharp_async_performance",
       "community": 0,
@@ -136,7 +136,7 @@
       "label": "Nullability & types",
       "file_type": "document",
       "source_file": ".claude/rules/dotnet-csharp.md",
-      "source_location": "L21",
+      "source_location": "L19",
       "_origin": "ast",
       "id": "rules_dotnet_csharp_nullability_types",
       "community": 0,
@@ -146,7 +146,7 @@
       "label": "Error handling",
       "file_type": "document",
       "source_file": ".claude/rules/dotnet-csharp.md",
-      "source_location": "L27",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "rules_dotnet_csharp_error_handling",
       "community": 0,
@@ -156,37 +156,17 @@
       "label": "Testing",
       "file_type": "document",
       "source_file": ".claude/rules/dotnet-csharp.md",
-      "source_location": "L33",
+      "source_location": "L29",
       "_origin": "ast",
       "id": "rules_dotnet_csharp_testing",
       "community": 0,
       "norm_label": "testing"
     },
     {
-      "label": "Data access (EF Core)",
-      "file_type": "document",
-      "source_file": ".claude/rules/dotnet-csharp.md",
-      "source_location": "L39",
-      "_origin": "ast",
-      "id": "rules_dotnet_csharp_data_access_ef_core",
-      "community": 0,
-      "norm_label": "data access (ef core)"
-    },
-    {
-      "label": "Cross-cutting concerns",
-      "file_type": "document",
-      "source_file": ".claude/rules/dotnet-csharp.md",
-      "source_location": "L46",
-      "_origin": "ast",
-      "id": "rules_dotnet_csharp_cross_cutting_concerns",
-      "community": 0,
-      "norm_label": "cross-cutting concerns"
-    },
-    {
       "label": "Dependency injection",
       "file_type": "document",
       "source_file": ".claude/rules/dotnet-csharp.md",
-      "source_location": "L52",
+      "source_location": "L34",
       "_origin": "ast",
       "id": "rules_dotnet_csharp_dependency_injection",
       "community": 0,
@@ -196,7 +176,7 @@
       "label": "Naming & style",
       "file_type": "document",
       "source_file": ".claude/rules/dotnet-csharp.md",
-      "source_location": "L57",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "rules_dotnet_csharp_naming_style",
       "community": 0,
@@ -236,7 +216,7 @@
       "label": "Component design",
       "file_type": "document",
       "source_file": ".claude/rules/react-typescript.md",
-      "source_location": "L15",
+      "source_location": "L14",
       "_origin": "ast",
       "id": "rules_react_typescript_component_design",
       "community": 51,
@@ -246,7 +226,7 @@
       "label": "State & data",
       "file_type": "document",
       "source_file": ".claude/rules/react-typescript.md",
-      "source_location": "L22",
+      "source_location": "L20",
       "_origin": "ast",
       "id": "rules_react_typescript_state_data",
       "community": 51,
@@ -256,47 +236,17 @@
       "label": "Styling",
       "file_type": "document",
       "source_file": ".claude/rules/react-typescript.md",
-      "source_location": "L28",
+      "source_location": "L25",
       "_origin": "ast",
       "id": "rules_react_typescript_styling",
       "community": 51,
       "norm_label": "styling"
     },
     {
-      "label": "Accessibility & UX states",
-      "file_type": "document",
-      "source_file": ".claude/rules/react-typescript.md",
-      "source_location": "L33",
-      "_origin": "ast",
-      "id": "rules_react_typescript_accessibility_ux_states",
-      "community": 51,
-      "norm_label": "accessibility & ux states"
-    },
-    {
-      "label": "Security",
-      "file_type": "document",
-      "source_file": ".claude/rules/react-typescript.md",
-      "source_location": "L41",
-      "_origin": "ast",
-      "id": "rules_react_typescript_security",
-      "community": 51,
-      "norm_label": "security"
-    },
-    {
-      "label": "Lists",
-      "file_type": "document",
-      "source_file": ".claude/rules/react-typescript.md",
-      "source_location": "L46",
-      "_origin": "ast",
-      "id": "rules_react_typescript_lists",
-      "community": 51,
-      "norm_label": "lists"
-    },
-    {
       "label": "Testing",
       "file_type": "document",
       "source_file": ".claude/rules/react-typescript.md",
-      "source_location": "L50",
+      "source_location": "L29",
       "_origin": "ast",
       "id": "rules_react_typescript_testing",
       "community": 51,
@@ -306,7 +256,7 @@
       "label": "Naming & structure",
       "file_type": "document",
       "source_file": ".claude/rules/react-typescript.md",
-      "source_location": "L56",
+      "source_location": "L34",
       "_origin": "ast",
       "id": "rules_react_typescript_naming_structure",
       "community": 51,
@@ -316,71 +266,11 @@
       "label": "Cleanup",
       "file_type": "document",
       "source_file": ".claude/rules/react-typescript.md",
-      "source_location": "L62",
+      "source_location": "L39",
       "_origin": "ast",
       "id": "rules_react_typescript_cleanup",
       "community": 51,
       "norm_label": "cleanup"
-    },
-    {
-      "label": "security.md",
-      "file_type": "document",
-      "source_file": ".claude/rules/security.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "rules_security",
-      "community": 73,
-      "norm_label": "security.md"
-    },
-    {
-      "label": "Security Rules",
-      "file_type": "document",
-      "source_file": ".claude/rules/security.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "rules_security_security_rules",
-      "community": 73,
-      "norm_label": "security rules"
-    },
-    {
-      "label": "Secrets & credentials",
-      "file_type": "document",
-      "source_file": ".claude/rules/security.md",
-      "source_location": "L5",
-      "_origin": "ast",
-      "id": "rules_security_secrets_credentials",
-      "community": 73,
-      "norm_label": "secrets & credentials"
-    },
-    {
-      "label": "Input & data handling",
-      "file_type": "document",
-      "source_file": ".claude/rules/security.md",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "rules_security_input_data_handling",
-      "community": 73,
-      "norm_label": "input & data handling"
-    },
-    {
-      "label": "Config",
-      "file_type": "document",
-      "source_file": ".claude/rules/security.md",
-      "source_location": "L15",
-      "_origin": "ast",
-      "id": "rules_security_config",
-      "community": 73,
-      "norm_label": "config"
-    },
-    {
-      "label": "Git hygiene",
-      "file_type": "document",
-      "source_file": ".claude/rules/security.md",
-      "source_location": "L18",
-      "_origin": "ast",
-      "id": "rules_security_git_hygiene",
-      "community": 73,
-      "norm_label": "git hygiene"
     },
     {
       "label": "workflow.md",
@@ -388,9 +278,9 @@
       "source_file": ".claude/rules/workflow.md",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "rules_workflow",
       "community": 71,
-      "norm_label": "workflow.md",
-      "id": "rules_workflow"
+      "norm_label": "workflow.md"
     },
     {
       "label": "Workflow & Collaboration Rules",
@@ -398,9 +288,9 @@
       "source_file": ".claude/rules/workflow.md",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "rules_workflow_workflow_collaboration_rules",
       "community": 71,
-      "norm_label": "workflow & collaboration rules",
-      "id": "rules_workflow_workflow_collaboration_rules"
+      "norm_label": "workflow & collaboration rules"
     },
     {
       "label": "Communication",
@@ -408,9 +298,9 @@
       "source_file": ".claude/rules/workflow.md",
       "source_location": "L5",
       "_origin": "ast",
+      "id": "rules_workflow_communication",
       "community": 71,
-      "norm_label": "communication",
-      "id": "rules_workflow_communication"
+      "norm_label": "communication"
     },
     {
       "label": "Code quality bar",
@@ -418,9 +308,9 @@
       "source_file": ".claude/rules/workflow.md",
       "source_location": "L10",
       "_origin": "ast",
+      "id": "rules_workflow_code_quality_bar",
       "community": 71,
-      "norm_label": "code quality bar",
-      "id": "rules_workflow_code_quality_bar"
+      "norm_label": "code quality bar"
     },
     {
       "label": "Errors and type safety",
@@ -428,9 +318,9 @@
       "source_file": ".claude/rules/workflow.md",
       "source_location": "L17",
       "_origin": "ast",
+      "id": "rules_workflow_errors_and_type_safety",
       "community": 71,
-      "norm_label": "errors and type safety",
-      "id": "rules_workflow_errors_and_type_safety"
+      "norm_label": "errors and type safety"
     },
     {
       "label": "Verification",
@@ -438,9 +328,9 @@
       "source_file": ".claude/rules/workflow.md",
       "source_location": "L21",
       "_origin": "ast",
+      "id": "rules_workflow_verification",
       "community": 71,
-      "norm_label": "verification",
-      "id": "rules_workflow_verification"
+      "norm_label": "verification"
     },
     {
       "label": "Scope discipline",
@@ -448,9 +338,9 @@
       "source_file": ".claude/rules/workflow.md",
       "source_location": "L25",
       "_origin": "ast",
+      "id": "rules_workflow_scope_discipline",
       "community": 71,
-      "norm_label": "scope discipline",
-      "id": "rules_workflow_scope_discipline"
+      "norm_label": "scope discipline"
     },
     {
       "label": "BuggyController.cs",
@@ -2378,7 +2268,7 @@
       "source_file": "backend/Application/Activities/Queries/GetActivityDetails.cs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 39,
+      "community": 12,
       "norm_label": "getactivitydetails.cs",
       "id": "queries_getactivitydetails"
     },
@@ -2388,7 +2278,7 @@
       "source_file": "backend/Application/Activities/Queries/GetActivityDetails.cs",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 39,
+      "community": 12,
       "norm_label": "getactivitydetails",
       "id": "queries_getactivitydetails_getactivitydetails"
     },
@@ -2398,7 +2288,7 @@
       "source_file": "backend/Application/Activities/Queries/GetActivityDetails.cs",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 39,
+      "community": 12,
       "norm_label": "query",
       "id": "queries_getactivitydetails_query"
     },
@@ -2408,7 +2298,7 @@
       "source_file": "backend/Application/Activities/Queries/GetActivityDetails.cs",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 39,
+      "community": 12,
       "norm_label": "handler",
       "id": "queries_getactivitydetails_handler"
     },
@@ -2418,7 +2308,7 @@
       "source_file": "backend/Application/Activities/Queries/GetActivityDetails.cs",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 39,
+      "community": 12,
       "norm_label": ".handle()",
       "id": "queries_getactivitydetails_handler_handle"
     },
@@ -2568,7 +2458,7 @@
       "source_file": "docs/backend-standards.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 72,
+      "community": 40,
       "norm_label": "backend standards",
       "id": "docs_backend_standards_backend_standards"
     },
@@ -2578,7 +2468,7 @@
       "source_file": "docs/backend-standards.md",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 72,
+      "community": 40,
       "norm_label": "technology stack",
       "id": "docs_backend_standards_technology_stack"
     },
@@ -2588,7 +2478,7 @@
       "source_file": "docs/backend-standards.md",
       "source_location": "L19",
       "_origin": "ast",
-      "community": 72,
+      "community": 40,
       "norm_label": "project structure (clean architecture)",
       "id": "docs_backend_standards_project_structure_clean_architecture"
     },
@@ -2598,7 +2488,7 @@
       "source_file": "docs/backend-standards.md",
       "source_location": "L47",
       "_origin": "ast",
-      "community": 72,
+      "community": 40,
       "norm_label": "architecture patterns",
       "id": "docs_backend_standards_architecture_patterns"
     },
@@ -2608,7 +2498,7 @@
       "source_file": "docs/backend-standards.md",
       "source_location": "L49",
       "_origin": "ast",
-      "community": 72,
+      "community": 40,
       "norm_label": "cqrs with mediatr",
       "id": "docs_backend_standards_cqrs_with_mediatr"
     },
@@ -2618,7 +2508,7 @@
       "source_file": "docs/backend-standards.md",
       "source_location": "L88",
       "_origin": "ast",
-      "community": 72,
+      "community": 40,
       "norm_label": "controller pattern",
       "id": "docs_backend_standards_controller_pattern"
     },
@@ -2628,7 +2518,7 @@
       "source_file": "docs/backend-standards.md",
       "source_location": "L102",
       "_origin": "ast",
-      "community": 72,
+      "community": 40,
       "norm_label": "dtos",
       "id": "docs_backend_standards_dtos"
     },
@@ -2638,7 +2528,7 @@
       "source_file": "docs/backend-standards.md",
       "source_location": "L110",
       "_origin": "ast",
-      "community": 72,
+      "community": 40,
       "norm_label": "mapping",
       "id": "docs_backend_standards_mapping"
     },
@@ -2648,7 +2538,7 @@
       "source_file": "docs/backend-standards.md",
       "source_location": "L131",
       "_origin": "ast",
-      "community": 72,
+      "community": 40,
       "norm_label": "domain entity conventions",
       "id": "docs_backend_standards_domain_entity_conventions"
     },
@@ -2658,7 +2548,7 @@
       "source_file": "docs/backend-standards.md",
       "source_location": "L155",
       "_origin": "ast",
-      "community": 72,
+      "community": 40,
       "norm_label": "naming conventions",
       "id": "docs_backend_standards_naming_conventions"
     },
@@ -2668,7 +2558,7 @@
       "source_file": "docs/backend-standards.md",
       "source_location": "L169",
       "_origin": "ast",
-      "community": 72,
+      "community": 40,
       "norm_label": "dependency injection",
       "id": "docs_backend_standards_dependency_injection"
     },
@@ -2678,7 +2568,7 @@
       "source_file": "docs/backend-standards.md",
       "source_location": "L186",
       "_origin": "ast",
-      "community": 72,
+      "community": 40,
       "norm_label": "error handling",
       "id": "docs_backend_standards_error_handling"
     },
@@ -2688,7 +2578,7 @@
       "source_file": "docs/backend-standards.md",
       "source_location": "L194",
       "_origin": "ast",
-      "community": 72,
+      "community": 40,
       "norm_label": "cors",
       "id": "docs_backend_standards_cors"
     },
@@ -2698,7 +2588,7 @@
       "source_file": "docs/backend-standards.md",
       "source_location": "L210",
       "_origin": "ast",
-      "community": 72,
+      "community": 40,
       "norm_label": "ef core / database",
       "id": "docs_backend_standards_ef_core_database"
     },
@@ -2708,7 +2598,7 @@
       "source_file": "docs/backend-standards.md",
       "source_location": "L218",
       "_origin": "ast",
-      "community": 72,
+      "community": 40,
       "norm_label": "migration workflow",
       "id": "docs_backend_standards_migration_workflow"
     },
@@ -2718,7 +2608,7 @@
       "source_file": "docs/backend-standards.md",
       "source_location": "L228",
       "_origin": "ast",
-      "community": 72,
+      "community": 40,
       "norm_label": "code style",
       "id": "docs_backend_standards_code_style"
     },
@@ -2728,7 +2618,7 @@
       "source_file": "docs/backend-standards.md",
       "source_location": "L238",
       "_origin": "ast",
-      "community": 72,
+      "community": 40,
       "norm_label": "build verification",
       "id": "docs_backend_standards_build_verification"
     },
@@ -6898,9 +6788,9 @@
       "source_file": ".claude/rules/dotnet-csharp.md",
       "source_location": "L5",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "rules_dotnet_csharp",
-      "target": "rules_dotnet_csharp_net_c_rules"
+      "target": "rules_dotnet_csharp_net_c_rules",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6908,9 +6798,9 @@
       "source_file": ".claude/rules/dotnet-csharp.md",
       "source_location": "L7",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "rules_dotnet_csharp_net_c_rules",
-      "target": "rules_dotnet_csharp_architecture_structure"
+      "target": "rules_dotnet_csharp_architecture_structure",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6918,28 +6808,8 @@
       "source_file": ".claude/rules/dotnet-csharp.md",
       "source_location": "L13",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "rules_dotnet_csharp_net_c_rules",
-      "target": "rules_dotnet_csharp_async_performance"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/rules/dotnet-csharp.md",
-      "source_location": "L46",
-      "weight": 1.0,
-      "source": "rules_dotnet_csharp_net_c_rules",
-      "target": "rules_dotnet_csharp_cross_cutting_concerns",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/rules/dotnet-csharp.md",
-      "source_location": "L39",
-      "weight": 1.0,
-      "source": "rules_dotnet_csharp_net_c_rules",
-      "target": "rules_dotnet_csharp_data_access_ef_core",
+      "target": "rules_dotnet_csharp_async_performance",
       "confidence_score": 1.0
     },
     {
@@ -6948,9 +6818,9 @@
       "source_file": ".claude/rules/dotnet-csharp.md",
       "source_location": "L34",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "rules_dotnet_csharp_net_c_rules",
-      "target": "rules_dotnet_csharp_dependency_injection"
+      "target": "rules_dotnet_csharp_dependency_injection",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6958,9 +6828,9 @@
       "source_file": ".claude/rules/dotnet-csharp.md",
       "source_location": "L24",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "rules_dotnet_csharp_net_c_rules",
-      "target": "rules_dotnet_csharp_error_handling"
+      "target": "rules_dotnet_csharp_error_handling",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6968,9 +6838,9 @@
       "source_file": ".claude/rules/dotnet-csharp.md",
       "source_location": "L38",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "rules_dotnet_csharp_net_c_rules",
-      "target": "rules_dotnet_csharp_naming_style"
+      "target": "rules_dotnet_csharp_naming_style",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6978,9 +6848,9 @@
       "source_file": ".claude/rules/dotnet-csharp.md",
       "source_location": "L19",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "rules_dotnet_csharp_net_c_rules",
-      "target": "rules_dotnet_csharp_nullability_types"
+      "target": "rules_dotnet_csharp_nullability_types",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6988,9 +6858,9 @@
       "source_file": ".claude/rules/dotnet-csharp.md",
       "source_location": "L29",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "rules_dotnet_csharp_net_c_rules",
-      "target": "rules_dotnet_csharp_testing"
+      "target": "rules_dotnet_csharp_testing",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6998,18 +6868,8 @@
       "source_file": ".claude/rules/react-typescript.md",
       "source_location": "L5",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "rules_react_typescript",
-      "target": "rules_react_typescript_react_typescript_rules"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/rules/react-typescript.md",
-      "source_location": "L33",
-      "weight": 1.0,
-      "source": "rules_react_typescript_react_typescript_rules",
-      "target": "rules_react_typescript_accessibility_ux_states",
+      "target": "rules_react_typescript_react_typescript_rules",
       "confidence_score": 1.0
     },
     {
@@ -7018,9 +6878,9 @@
       "source_file": ".claude/rules/react-typescript.md",
       "source_location": "L39",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "rules_react_typescript_react_typescript_rules",
-      "target": "rules_react_typescript_cleanup"
+      "target": "rules_react_typescript_cleanup",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -7028,18 +6888,8 @@
       "source_file": ".claude/rules/react-typescript.md",
       "source_location": "L14",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "rules_react_typescript_react_typescript_rules",
-      "target": "rules_react_typescript_component_design"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/rules/react-typescript.md",
-      "source_location": "L46",
-      "weight": 1.0,
-      "source": "rules_react_typescript_react_typescript_rules",
-      "target": "rules_react_typescript_lists",
+      "target": "rules_react_typescript_component_design",
       "confidence_score": 1.0
     },
     {
@@ -7048,18 +6898,8 @@
       "source_file": ".claude/rules/react-typescript.md",
       "source_location": "L34",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "rules_react_typescript_react_typescript_rules",
-      "target": "rules_react_typescript_naming_structure"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/rules/react-typescript.md",
-      "source_location": "L41",
-      "weight": 1.0,
-      "source": "rules_react_typescript_react_typescript_rules",
-      "target": "rules_react_typescript_security",
+      "target": "rules_react_typescript_naming_structure",
       "confidence_score": 1.0
     },
     {
@@ -7068,9 +6908,9 @@
       "source_file": ".claude/rules/react-typescript.md",
       "source_location": "L20",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "rules_react_typescript_react_typescript_rules",
-      "target": "rules_react_typescript_state_data"
+      "target": "rules_react_typescript_state_data",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -7078,9 +6918,9 @@
       "source_file": ".claude/rules/react-typescript.md",
       "source_location": "L25",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "rules_react_typescript_react_typescript_rules",
-      "target": "rules_react_typescript_styling"
+      "target": "rules_react_typescript_styling",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -7088,9 +6928,9 @@
       "source_file": ".claude/rules/react-typescript.md",
       "source_location": "L29",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "rules_react_typescript_react_typescript_rules",
-      "target": "rules_react_typescript_testing"
+      "target": "rules_react_typescript_testing",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -7098,58 +6938,8 @@
       "source_file": ".claude/rules/react-typescript.md",
       "source_location": "L7",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "rules_react_typescript_react_typescript_rules",
-      "target": "rules_react_typescript_typescript_strictness"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/rules/security.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "rules_security",
-      "target": "rules_security_security_rules",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/rules/security.md",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "rules_security_security_rules",
-      "target": "rules_security_config",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/rules/security.md",
-      "source_location": "L18",
-      "weight": 1.0,
-      "source": "rules_security_security_rules",
-      "target": "rules_security_git_hygiene",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/rules/security.md",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "rules_security_security_rules",
-      "target": "rules_security_input_data_handling",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/rules/security.md",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "rules_security_security_rules",
-      "target": "rules_security_secrets_credentials",
+      "target": "rules_react_typescript_typescript_strictness",
       "confidence_score": 1.0
     },
     {
@@ -7158,9 +6948,9 @@
       "source_file": ".claude/rules/workflow.md",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "rules_workflow",
-      "target": "rules_workflow_workflow_collaboration_rules"
+      "target": "rules_workflow_workflow_collaboration_rules",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -7168,9 +6958,9 @@
       "source_file": ".claude/rules/workflow.md",
       "source_location": "L10",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "rules_workflow_workflow_collaboration_rules",
-      "target": "rules_workflow_code_quality_bar"
+      "target": "rules_workflow_code_quality_bar",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -7178,9 +6968,9 @@
       "source_file": ".claude/rules/workflow.md",
       "source_location": "L5",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "rules_workflow_workflow_collaboration_rules",
-      "target": "rules_workflow_communication"
+      "target": "rules_workflow_communication",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -7188,9 +6978,9 @@
       "source_file": ".claude/rules/workflow.md",
       "source_location": "L17",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "rules_workflow_workflow_collaboration_rules",
-      "target": "rules_workflow_errors_and_type_safety"
+      "target": "rules_workflow_errors_and_type_safety",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -7198,9 +6988,9 @@
       "source_file": ".claude/rules/workflow.md",
       "source_location": "L25",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "rules_workflow_workflow_collaboration_rules",
-      "target": "rules_workflow_scope_discipline"
+      "target": "rules_workflow_scope_discipline",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -7208,9 +6998,9 @@
       "source_file": ".claude/rules/workflow.md",
       "source_location": "L21",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "rules_workflow_workflow_collaboration_rules",
-      "target": "rules_workflow_verification"
+      "target": "rules_workflow_verification",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -14236,5 +14026,5 @@
       "source_file": "CLAUDE.md"
     }
   ],
-  "built_at_commit": "2b6954771cdfcecd35b481734fe794877578de45"
+  "built_at_commit": "91821b618f7eacd2779c0a89115968647c4d1fc4"
 }
