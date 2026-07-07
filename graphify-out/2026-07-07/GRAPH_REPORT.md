@@ -1,18 +1,13 @@
-# Graph Report - Reactivities  (2026-07-07)
+# Graph Report - .  (2026-07-06)
 
 ## Corpus Check
-- 129 files · ~33,167 words
+- 77 files · ~32,432 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 555 nodes · 679 edges · 66 communities (32 shown, 34 thin omitted)
-- Extraction: 91% EXTRACTED · 9% INFERRED · 0% AMBIGUOUS · INFERRED: 64 edges (avg confidence: 0.87)
-- Token cost: 0 input · 0 output
-
-## Graph Freshness
-- Built from commit: `eb56ea65`
-- Run `git rev-parse HEAD` and compare to check if the graph is stale.
-- Run `graphify update .` after code changes (no API cost).
+- 525 nodes · 657 edges · 62 communities (28 shown, 34 thin omitted)
+- Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 68 edges (avg confidence: 0.86)
+- Token cost: 176,417 input · 0 output
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_API Controllers & Middleware|API Controllers & Middleware]]
@@ -77,22 +72,18 @@
 - [[_COMMUNITY_CounterStore|CounterStore]]
 - [[_COMMUNITY_UiStore|UiStore]]
 - [[_COMMUNITY_UpdateActivityDto|UpdateActivityDto]]
-- [[_COMMUNITY_Community 62|Community 62]]
-- [[_COMMUNITY_Community 63|Community 63]]
-- [[_COMMUNITY_Community 64|Community 64]]
-- [[_COMMUNITY_Community 65|Community 65]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 17 edges
 2. `compilerOptions` - 16 edges
 3. `Result` - 16 edges
 4. `Backend Standards` - 14 edges
-5. `.NET / C# Rules` - 13 edges
-6. `React + TypeScript Rules` - 13 edges
-7. `Base Standards (AI Governance Root)` - 12 edges
-8. `Data Model Documentation` - 11 edges
-9. `Reactivities API (OpenAPI Spec)` - 10 edges
-10. `Frontend Standards` - 10 edges
+5. `Base Standards (AI Governance Root)` - 12 edges
+6. `Data Model Documentation` - 11 edges
+7. `Reactivities API (OpenAPI Spec)` - 10 edges
+8. `Frontend Standards` - 10 edges
+9. `OpenSpec Tasks Mandatory Steps` - 10 edges
+10. `OpenSpec config.yaml` - 9 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `LTI API OpenAPI 3.0 Specification` --semantically_similar_to--> `Reactivities API Routes /api/activities`  [INFERRED] [semantically similar]
@@ -101,10 +92,10 @@
   CLAUDE.md → openspec/changes/migrate-automapper-to-custommapper/design.md
 - `Mandatory Graphify Pre-Task Protocol` --conceptually_related_to--> `Specboot: Augmented Spec-Driven Development Framework`  [INFERRED]
   CLAUDE.md → Reactivities/README.md
-- `IActivityMapper Interface` --conceptually_related_to--> `IActivityMapper (Backend Standards reference)`  [INFERRED]
-  openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/design.md → docs/backend-standards.md
-- `Migrate AutoMapper to Custom Mapper — Tasks` --references--> `OpenSpec Tasks Mandatory Steps`  [INFERRED]
-  openspec/changes/archive/2026-06-26-migrate-automapper-to-custommapper/tasks.md → docs/openspec-tasks-mandatory-steps.md
+- `.NET / C# Rules` --conceptually_related_to--> `Backend Architecture Memory`  [INFERRED]
+  .claude/rules/dotnet-csharp.md → .serena/memories/backend/core.md
+- `React + TypeScript Rules` --conceptually_related_to--> `Frontend Architecture Memory`  [INFERRED]
+  .claude/rules/react-typescript.md → .serena/memories/frontend/core.md
 
 ## Import Cycles
 - 3-file cycle: `client/src/app/router/Routes.tsx -> client/src/features/errors/TestErrors.tsx -> client/src/lib/api/agent.ts -> client/src/app/router/Routes.tsx`
@@ -117,11 +108,11 @@
 - **Activity Entity Shape Shared Across API Spec, Data Model, Backend, and Frontend Docs** — docs_api_spec_activity_schema, docs_data_model_activity_entity, docs_backend_standards_activity_entity, docs_frontend_standards_activity_type, docs_data_model_frontend_activity_type [INFERRED 0.90]
 - **OpenSpec Mandatory Task Workflow Steps** — docs_openspec_tasks_mandatory_steps_step0_branch, docs_openspec_tasks_mandatory_steps_build_verification, docs_openspec_tasks_mandatory_steps_curl_testing, docs_openspec_tasks_mandatory_steps_e2e_playwright, docs_openspec_tasks_mandatory_steps_doc_update_step [EXTRACTED 1.00]
 
-## Communities (66 total, 34 thin omitted)
+## Communities (62 total, 34 thin omitted)
 
 ### Community 0 - "API Controllers & Middleware"
-Cohesion: 0.10
-Nodes (17): ActionResult, WeatherForecast, AppDbContext, ControllerBase, ActivitiesController, BaseApiController, BuggyController, WeatherForecastController (+9 more)
+Cohesion: 0.07
+Nodes (24): ActionResult, WeatherForecast, AppDbContext, ControllerBase, ActivitiesController, BaseApiController, BuggyController, WeatherForecastController (+16 more)
 
 ### Community 1 - "Docs: Backend/Frontend/Data-Model Standards"
 Cohesion: 0.07
@@ -144,8 +135,8 @@ Cohesion: 0.15
 Nodes (18): CancellationToken, Command, CreateActivity, Handler, Command, DeleteActivity, Handler, Command (+10 more)
 
 ### Community 6 - "Claude Rules, Memories & OpenSpec Skills"
-Cohesion: 0.16
-Nodes (19): Backend Architecture Memory, IActivityMapper (custom mapping abstraction), Frontend Architecture Memory, Coding Conventions Memory, Reactivities Project Core Memory, Suggested Commands Memory, Task Completion Checklist Memory, Tech Stack Memory (+11 more)
+Cohesion: 0.13
+Nodes (24): Backend Architecture Memory, IActivityMapper (custom mapping abstraction), Frontend Architecture Memory, Coding Conventions Memory, Reactivities Project Core Memory, Suggested Commands Memory, Task Completion Checklist Memory, Tech Stack Memory (+16 more)
 
 ### Community 7 - "Client devDependencies & Husky"
 Cohesion: 0.08
@@ -231,24 +222,8 @@ Nodes (3): Serena Language Server Configuration, Serena Project Config, Serena P
 Cohesion: 0.67
 Nodes (3): Plan: ActivityRequestMapper, ActivityRequest DTO Mapping Plan, ActivityRequestMapper implements IMapper
 
-### Community 62 - "Community 62"
-Cohesion: 0.14
-Nodes (13): API design, API documentation, Architecture & structure, Async & performance, Background work, Cross-cutting concerns, Data access (EF Core), Dependency injection (+5 more)
-
-### Community 63 - "Community 63"
-Cohesion: 0.14
-Nodes (13): Accessibility & UX states, Cleanup, Component design, Lists, Naming & structure, React 19 patterns, React + TypeScript Rules, Routing (React Router v7) (+5 more)
-
-### Community 64 - "Community 64"
-Cohesion: 0.25
-Nodes (7): Exception, HttpContext, IMiddleware, JsonSerializerOptions, ExceptionMiddleware, RequestDelegate, ValidationException
-
-### Community 65 - "Community 65"
-Cohesion: 0.29
-Nodes (6): Config, Git hygiene, Input & data handling, Secrets & credentials, Security Rules, Web & API security
-
 ## Knowledge Gaps
-- **233 isolated node(s):** `Architecture & structure`, `Async & performance`, `Nullability & types`, `Error handling`, `Testing` (+228 more)
+- **204 isolated node(s):** `CreateActivityRequest`, `1. Add Custom Mapper Interface and Implementation`, `2. Update DI Registration`, `3. Update MediatR Handlers`, `4. Remove AutoMapper` (+199 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **34 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -256,15 +231,15 @@ Nodes (6): Config, Git hygiene, Input & data handling, Secrets & credentials, Se
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Result` connect `Activity CQRS Commands & Queries` to `API Controllers & Middleware`?**
-  _High betweenness centrality (0.007) - this node is a cross-community bridge._
+  _High betweenness centrality (0.008) - this node is a cross-community bridge._
 - **Why does `devDependencies` connect `Client devDependencies & Husky` to `Client package.json Dependencies`?**
   _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **Why does `Migrate AutoMapper to Custom Mapper — Proposal` connect `AutoMapper to Custom Mapper Migration Spec` to `Docs: Backend/Frontend/Data-Model Standards`?**
-  _High betweenness centrality (0.005) - this node is a cross-community bridge._
-- **What connects `Architecture & structure`, `Async & performance`, `Nullability & types` to the rest of the system?**
-  _253 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.006) - this node is a cross-community bridge._
+- **What connects `CreateActivityRequest`, `1. Add Custom Mapper Interface and Implementation`, `2. Update DI Registration` to the rest of the system?**
+  _224 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `API Controllers & Middleware` be split into smaller, more focused modules?**
-  _Cohesion score 0.0957983193277311 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07149758454106281 - nodes in this community are weakly interconnected._
 - **Should `Docs: Backend/Frontend/Data-Model Standards` be split into smaller, more focused modules?**
   _Cohesion score 0.07419712070874862 - nodes in this community are weakly interconnected._
 - **Should `Client package.json Dependencies` be split into smaller, more focused modules?**
