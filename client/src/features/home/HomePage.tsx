@@ -1,6 +1,7 @@
 import { Group } from '@mui/icons-material'
 import { Box, Button, Paper, Typography } from '@mui/material'
 import { useNavigate } from 'react-router'
+import styles from './HomePage.module.scss'
 
 export default function HomePage() {
   const navigate = useNavigate()
@@ -32,14 +33,16 @@ export default function HomePage() {
         <Typography variant="h1">Reactivities</Typography>
       </Box>
       <Typography variant="h2">Welcome to reactivities</Typography>
-      <Button
-        onClick={() => navigate('/activities')}
-        size="large"
-        variant="contained"
-        sx={{ height: 80, borderRadius: 4, fontSize: '1.5rem' }}
-      >
-        Take me to the activities!
-      </Button>
+      <Box className={styles.haloButton} sx={{ display: 'inline-block', borderRadius: 1 }}>
+        <Button
+          onClick={() => navigate('/activities')}
+          size="large"
+          variant="contained"
+          sx={{ height: 80, borderRadius: 4, fontSize: '1.5rem' }}
+        >
+          Take me to the activities!
+        </Button>
+      </Box>
     </Paper>
   )
 }
