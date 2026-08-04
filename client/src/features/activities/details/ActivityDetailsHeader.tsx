@@ -71,6 +71,7 @@ export default function ActivityDetailsHeader({ activity }: Props) {
                 variant="contained"
                 color={isCancelled ? 'success' : 'error'}
                 onClick={() => {}}
+                sx={{ flexShrink: 0 }}
               >
                 {isCancelled ? 'Re-activate Activity' : 'Cancel Activity'}
               </Button>
@@ -78,8 +79,9 @@ export default function ActivityDetailsHeader({ activity }: Props) {
                 variant="contained"
                 color="primary"
                 component={Link}
-                to={`/manage/activityId`}
+                to={`/manage/${activity.id}`}
                 disabled={isCancelled}
+                sx={{ flexShrink: 0 }}
               >
                 Manage Event
               </Button>

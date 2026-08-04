@@ -1,16 +1,16 @@
-# Graph Report - Reactivities  (2026-08-03)
+# Graph Report - Reactivities  (2026-07-07)
 
 ## Corpus Check
-- 127 files · ~33,108 words
+- 129 files · ~33,167 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 558 nodes · 681 edges · 65 communities (31 shown, 34 thin omitted)
+- 555 nodes · 679 edges · 66 communities (32 shown, 34 thin omitted)
 - Extraction: 91% EXTRACTED · 9% INFERRED · 0% AMBIGUOUS · INFERRED: 64 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d35911e8`
+- Built from commit: `eb56ea65`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -36,6 +36,7 @@
 - [[_COMMUNITY_Code-Auditing & Adversarial-Review Skills|Code-Auditing & Adversarial-Review Skills]]
 - [[_COMMUNITY_LTI API Spec Schemas|LTI API Spec Schemas]]
 - [[_COMMUNITY_AI Agent Spec Definitions|AI Agent Spec Definitions]]
+- [[_COMMUNITY_MediatR ValidationBehavior Pipeline|MediatR ValidationBehavior Pipeline]]
 - [[_COMMUNITY_AutoMapper Migration Tasks Checklist|AutoMapper Migration Tasks Checklist]]
 - [[_COMMUNITY_Backend Agent Spec Variants|Backend Agent Spec Variants]]
 - [[_COMMUNITY_Frontend Agent Spec Variants|Frontend Agent Spec Variants]]
@@ -78,6 +79,7 @@
 - [[_COMMUNITY_UpdateActivityDto|UpdateActivityDto]]
 - [[_COMMUNITY_Community 62|Community 62]]
 - [[_COMMUNITY_Community 63|Community 63]]
+- [[_COMMUNITY_Community 64|Community 64]]
 - [[_COMMUNITY_Community 65|Community 65]]
 
 ## God Nodes (most connected - your core abstractions)
@@ -115,11 +117,11 @@
 - **Activity Entity Shape Shared Across API Spec, Data Model, Backend, and Frontend Docs** — docs_api_spec_activity_schema, docs_data_model_activity_entity, docs_backend_standards_activity_entity, docs_frontend_standards_activity_type, docs_data_model_frontend_activity_type [INFERRED 0.90]
 - **OpenSpec Mandatory Task Workflow Steps** — docs_openspec_tasks_mandatory_steps_step0_branch, docs_openspec_tasks_mandatory_steps_build_verification, docs_openspec_tasks_mandatory_steps_curl_testing, docs_openspec_tasks_mandatory_steps_e2e_playwright, docs_openspec_tasks_mandatory_steps_doc_update_step [EXTRACTED 1.00]
 
-## Communities (65 total, 34 thin omitted)
+## Communities (66 total, 34 thin omitted)
 
 ### Community 0 - "API Controllers & Middleware"
-Cohesion: 0.07
-Nodes (24): ActionResult, WeatherForecast, AppDbContext, ControllerBase, ActivitiesController, BaseApiController, BuggyController, WeatherForecastController (+16 more)
+Cohesion: 0.10
+Nodes (17): ActionResult, WeatherForecast, AppDbContext, ControllerBase, ActivitiesController, BaseApiController, BuggyController, WeatherForecastController (+9 more)
 
 ### Community 1 - "Docs: Backend/Frontend/Data-Model Standards"
 Cohesion: 0.07
@@ -138,8 +140,8 @@ Cohesion: 0.09
 Nodes (31): activity-mapping Spec (archived change), Requirement: Mapper Registered in DI Container, Requirement: Map CreateActivityRequest to Activity, Requirement: Update Activity from another Activity, activity-mapping Spec (current), Requirement: Mapper Registered in DI Container (current spec), Requirement: Map CreateActivityRequest to Activity (current spec), Requirement: Update Activity from another Activity (current spec) (+23 more)
 
 ### Community 5 - "Activity CQRS Commands & Queries"
-Cohesion: 0.11
-Nodes (23): CancellationToken, Command, CreateActivity, Handler, Command, DeleteActivity, Handler, Command (+15 more)
+Cohesion: 0.15
+Nodes (18): CancellationToken, Command, CreateActivity, Handler, Command, DeleteActivity, Handler, Command (+10 more)
 
 ### Community 6 - "Claude Rules, Memories & OpenSpec Skills"
 Cohesion: 0.16
@@ -147,7 +149,7 @@ Nodes (19): Backend Architecture Memory, IActivityMapper (custom mapping abstrac
 
 ### Community 7 - "Client devDependencies & Husky"
 Cohesion: 0.08
-Nodes (24): husky.sh script, devDependencies, @babel/core, babel-plugin-react-compiler, eslint, eslint-config-prettier, @eslint/js, eslint-plugin-react-hooks (+16 more)
+Nodes (23): husky.sh script, devDependencies, @babel/core, babel-plugin-react-compiler, eslint, eslint-config-prettier, @eslint/js, eslint-plugin-react-hooks (+15 more)
 
 ### Community 8 - "LTI Project Docs (external context)"
 Cohesion: 0.11
@@ -201,6 +203,10 @@ Nodes (8): Application Schema (Candidate Job Application), Candidate Domain Sche
 Cohesion: 0.29
 Nodes (7): Backend Developer Agent (Claude), Backend Developer Agent (Cursor), Frontend Developer Agent (Claude), Frontend Developer Agent (Cursor), Product Strategy Analyst Agent (Claude), Product Strategy Analyst Agent (Cursor), AI Agent Spec Files
 
+### Community 21 - "MediatR ValidationBehavior Pipeline"
+Cohesion: 0.38
+Nodes (5): ValidationBehavior, IPipelineBehavior, RequestHandlerDelegate, TRequest, TResponse
+
 ### Community 22 - "AutoMapper Migration Tasks Checklist"
 Cohesion: 0.33
 Nodes (5): 1. Add Custom Mapper Interface and Implementation, 2. Update DI Registration, 3. Update MediatR Handlers, 4. Remove AutoMapper, 5. Verify
@@ -233,28 +239,32 @@ Nodes (13): API design, API documentation, Architecture & structure, Async & per
 Cohesion: 0.14
 Nodes (13): Accessibility & UX states, Cleanup, Component design, Lists, Naming & structure, React 19 patterns, React + TypeScript Rules, Routing (React Router v7) (+5 more)
 
+### Community 64 - "Community 64"
+Cohesion: 0.25
+Nodes (7): Exception, HttpContext, IMiddleware, JsonSerializerOptions, ExceptionMiddleware, RequestDelegate, ValidationException
+
 ### Community 65 - "Community 65"
 Cohesion: 0.29
 Nodes (6): Config, Git hygiene, Input & data handling, Secrets & credentials, Security Rules, Web & API security
 
 ## Knowledge Gaps
-- **234 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+229 more)
+- **233 isolated node(s):** `Architecture & structure`, `Async & performance`, `Nullability & types`, `Error handling`, `Testing` (+228 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **34 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `devDependencies` connect `Client devDependencies & Husky` to `Client package.json Dependencies`?**
-  _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **Why does `Result` connect `Activity CQRS Commands & Queries` to `API Controllers & Middleware`?**
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
+- **Why does `devDependencies` connect `Client devDependencies & Husky` to `Client package.json Dependencies`?**
   _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **Why does `Migrate AutoMapper to Custom Mapper — Proposal` connect `AutoMapper to Custom Mapper Migration Spec` to `Docs: Backend/Frontend/Data-Model Standards`?**
   _High betweenness centrality (0.005) - this node is a cross-community bridge._
-- **What connects `name`, `private`, `version` to the rest of the system?**
-  _254 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `Architecture & structure`, `Async & performance`, `Nullability & types` to the rest of the system?**
+  _253 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `API Controllers & Middleware` be split into smaller, more focused modules?**
-  _Cohesion score 0.07149758454106281 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.0957983193277311 - nodes in this community are weakly interconnected._
 - **Should `Docs: Backend/Frontend/Data-Model Standards` be split into smaller, more focused modules?**
   _Cohesion score 0.07419712070874862 - nodes in this community are weakly interconnected._
 - **Should `Client package.json Dependencies` be split into smaller, more focused modules?**
