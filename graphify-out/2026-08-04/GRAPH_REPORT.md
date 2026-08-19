@@ -1,16 +1,16 @@
-# Graph Report - Reactivities  (2026-08-19)
+# Graph Report - Reactivities  (2026-08-04)
 
 ## Corpus Check
-- 138 files · ~34,793 words
+- 132 files · ~33,478 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 613 nodes · 743 edges · 65 communities (35 shown, 30 thin omitted)
+- 581 nodes · 707 edges · 66 communities (33 shown, 33 thin omitted)
 - Extraction: 91% EXTRACTED · 9% INFERRED · 0% AMBIGUOUS · INFERRED: 64 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `dd291998`
+- Built from commit: `efcd1ace`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -60,6 +60,7 @@
 - [[_COMMUNITY_BaseApiController|BaseApiController]]
 - [[_COMMUNITY_CLAUDE.md Reactivities Architecture|CLAUDE.md Reactivities Architecture]]
 - [[_COMMUNITY_MenuItemLink Component|MenuItemLink Component]]
+- [[_COMMUNITY_CreateActivityDto|CreateActivityDto]]
 - [[_COMMUNITY_CreateActivityRequest|CreateActivityRequest]]
 - [[_COMMUNITY_ActivityDashboard Component|ActivityDashboard Component]]
 - [[_COMMUNITY_ActivityDetailsPage Component|ActivityDetailsPage Component]]
@@ -74,11 +75,11 @@
 - [[_COMMUNITY_Update-Docs Skill|Update-Docs Skill]]
 - [[_COMMUNITY_CounterStore|CounterStore]]
 - [[_COMMUNITY_UiStore|UiStore]]
+- [[_COMMUNITY_UpdateActivityDto|UpdateActivityDto]]
 - [[_COMMUNITY_Community 62|Community 62]]
 - [[_COMMUNITY_Community 63|Community 63]]
 - [[_COMMUNITY_Community 64|Community 64]]
 - [[_COMMUNITY_Community 65|Community 65]]
-- [[_COMMUNITY_Community 67|Community 67]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 17 edges
@@ -115,11 +116,11 @@
 - **Activity Entity Shape Shared Across API Spec, Data Model, Backend, and Frontend Docs** — docs_api_spec_activity_schema, docs_data_model_activity_entity, docs_backend_standards_activity_entity, docs_frontend_standards_activity_type, docs_data_model_frontend_activity_type [INFERRED 0.90]
 - **OpenSpec Mandatory Task Workflow Steps** — docs_openspec_tasks_mandatory_steps_step0_branch, docs_openspec_tasks_mandatory_steps_build_verification, docs_openspec_tasks_mandatory_steps_curl_testing, docs_openspec_tasks_mandatory_steps_e2e_playwright, docs_openspec_tasks_mandatory_steps_doc_update_step [EXTRACTED 1.00]
 
-## Communities (65 total, 30 thin omitted)
+## Communities (66 total, 33 thin omitted)
 
 ### Community 0 - "API Controllers & Middleware"
-Cohesion: 0.06
-Nodes (28): ActionResult, WeatherForecast, AppDbContext, BaseApiController, ControllerBase, ActivitiesController, BaseApiController, BuggyController (+20 more)
+Cohesion: 0.07
+Nodes (24): ActionResult, WeatherForecast, AppDbContext, ControllerBase, ActivitiesController, BaseApiController, BuggyController, WeatherForecastController (+16 more)
 
 ### Community 1 - "Docs: Backend/Frontend/Data-Model Standards"
 Cohesion: 0.06
@@ -127,7 +128,7 @@ Nodes (50): Activity Schema, CreateActivityRequest Schema, DELETE /activities/{i
 
 ### Community 2 - "Client package.json Dependencies"
 Cohesion: 0.05
-Nodes (38): dependencies, axios, date-fns, @emotion/react, @emotion/styled, @fontsource/roboto, @hookform/resolvers, leaflet (+30 more)
+Nodes (36): dependencies, axios, date-fns, @emotion/react, @emotion/styled, @fontsource/roboto, @hookform/resolvers, mobx (+28 more)
 
 ### Community 3 - "Activity Mapping & Validation"
 Cohesion: 0.10
@@ -147,7 +148,7 @@ Nodes (19): Backend Architecture Memory, IActivityMapper (custom mapping abstrac
 
 ### Community 7 - "Client devDependencies & Husky"
 Cohesion: 0.08
-Nodes (25): husky.sh script, devDependencies, @babel/core, babel-plugin-react-compiler, eslint, eslint-config-prettier, @eslint/js, eslint-plugin-react-hooks (+17 more)
+Nodes (24): husky.sh script, devDependencies, @babel/core, babel-plugin-react-compiler, eslint, eslint-config-prettier, @eslint/js, eslint-plugin-react-hooks (+16 more)
 
 ### Community 8 - "LTI Project Docs (external context)"
 Cohesion: 0.11
@@ -170,8 +171,8 @@ Cohesion: 0.14
 Nodes (17): Mandatory Graphify Pre-Task Protocol, Parallel Tasks File Format (Task Block Structure), AGENTS.md Reference to base-standards.md, CLAUDE.md Reference to base-standards.md (Reactivities sub), GEMINI.md Reference to base-standards.md, ai-specs/skills Reusable Workflow Skills, base-standards.md Single Source of Truth Principle, docs/ Technical Context Folder (+9 more)
 
 ### Community 13 - "Backend .csproj & NuGet Dependencies"
-Cohesion: 0.09
-Nodes (18): net10.0, Newtonsoft.Json (13.0.4), NSwag.AspNetCore (14.7.1), net10.0, Newtonsoft.Json (13.0.4), NSwag.AspNetCore (14.7.1), net10.0, Microsoft.NET.Sdk (+10 more)
+Cohesion: 0.16
+Nodes (10): net10.0, net10.0, Microsoft.NET.Sdk, net10.0, Microsoft.NET.Sdk, FluentValidation.DependencyInjectionExtensions (12.1.1), MediatR (14.1.0), Microsoft.EntityFrameworkCore.Design (10.0.9) (+2 more)
 
 ### Community 14 - "Frontend Errors & Routing"
 Cohesion: 0.22
@@ -214,8 +215,8 @@ Cohesion: 0.40
 Nodes (5): frontend-developer agent, Implementation plan output: .claude/doc/{feature_name}/frontend.md, React component-based architecture, React Bootstrap (UI library), React Router (client-side routing)
 
 ### Community 25 - "ActivityDetailsHeader Component"
-Cohesion: 0.17
-Nodes (6): MapComponent(), Props, Props, Props, Props, formatDate
+Cohesion: 0.29
+Nodes (3): Props, Props, formatDate
 
 ### Community 26 - "Client Index/React Query/README"
 Cohesion: 0.67
@@ -229,10 +230,6 @@ Nodes (3): Serena Language Server Configuration, Serena Project Config, Serena P
 Cohesion: 0.67
 Nodes (3): Plan: ActivityRequestMapper, ActivityRequest DTO Mapping Plan, ActivityRequestMapper implements IMapper
 
-### Community 43 - "BaseApiController"
-Cohesion: 0.40
-Nodes (3): NonRpcTypesProcessor, DocumentProcessorContext, IDocumentProcessor
-
 ### Community 62 - "Community 62"
 Cohesion: 0.14
 Nodes (13): API design, API documentation, Architecture & structure, Async & performance, Background work, Cross-cutting concerns, Data access (EF Core), Dependency injection (+5 more)
@@ -242,21 +239,17 @@ Cohesion: 0.14
 Nodes (13): Accessibility & UX states, Cleanup, Component design, Lists, Naming & structure, React 19 patterns, React + TypeScript Rules, Routing (React Router v7) (+5 more)
 
 ### Community 64 - "Community 64"
-Cohesion: 0.13
-Nodes (9): Props, LocationInput(), Props, Props, SelectInput(), Props, TextInput(), categoryOptions (+1 more)
+Cohesion: 0.16
+Nodes (7): Props, Props, SelectInput(), Props, TextInput(), categoryOptions, ActivitySchema
 
 ### Community 65 - "Community 65"
 Cohesion: 0.29
 Nodes (6): Config, Git hygiene, Input & data handling, Secrets & credentials, Security Rules, Web & API security
 
-### Community 67 - "Community 67"
-Cohesion: 0.50
-Nodes (3): Activity, LocationIQAddress, LocationIQSuggestion
-
 ## Knowledge Gaps
-- **258 isolated node(s):** `net10.0`, `Moq (4.20.72)`, `NSwag.AspNetCore (14.7.1)`, `Newtonsoft.Json (13.0.4)`, `Microsoft.NET.Sdk` (+253 more)
+- **241 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+236 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **30 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **33 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -265,13 +258,13 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **Why does `Result` connect `Activity CQRS Commands & Queries` to `API Controllers & Middleware`?**
   _High betweenness centrality (0.006) - this node is a cross-community bridge._
-- **What connects `net10.0`, `Moq (4.20.72)`, `NSwag.AspNetCore (14.7.1)` to the rest of the system?**
-  _278 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `name`, `private`, `version` to the rest of the system?**
+  _261 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `API Controllers & Middleware` be split into smaller, more focused modules?**
-  _Cohesion score 0.06448979591836734 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07149758454106281 - nodes in this community are weakly interconnected._
 - **Should `Docs: Backend/Frontend/Data-Model Standards` be split into smaller, more focused modules?**
   _Cohesion score 0.06448979591836734 - nodes in this community are weakly interconnected._
 - **Should `Client package.json Dependencies` be split into smaller, more focused modules?**
-  _Cohesion score 0.05128205128205128 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05405405405405406 - nodes in this community are weakly interconnected._
 - **Should `Activity Mapping & Validation` be split into smaller, more focused modules?**
   _Cohesion score 0.0989247311827957 - nodes in this community are weakly interconnected._
