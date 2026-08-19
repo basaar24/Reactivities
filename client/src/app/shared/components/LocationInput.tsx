@@ -15,7 +15,7 @@ export default function LocationInput<T extends FieldValues>(props: Props<T>) {
   const inputValue =
     field.value && typeof field.value === 'object' ? field.value.venue || '' : field.value || ''
 
-  const locationUrl = `https://us1.locationiq.com/v1/search?key=${import.meta.env.VITE_LOCATIONIQ_KEY}&format=json&limit=5&dedupe=1&`
+  const locationUrl = `https://api.locationiq.com/v1/autocomplete?key=${import.meta.env.VITE_LOCATIONIQ_KEY}&format=json&limit=5&dedupe=1&`
 
   const fetchSuggestions = useMemo(
     () =>
