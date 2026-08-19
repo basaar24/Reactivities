@@ -9,9 +9,12 @@ namespace API.Controllers;
 public class ActivitiesController : BaseApiController
 {
     [HttpGet]
+    [ProducesResponseType(typeof(Activity), StatusCodes.Status200OK)]
     public async Task<ActionResult<List<Activity>>> GetActivitiesAsync() => await Mediator.Send(new GetActivityList.Query());
 
     [HttpGet("{id}")]
+    [ProducesResponseType(typeof(Activity), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult<Activity>> GetActivityDetailAsync(string id) => HandleResult(await Mediator.Send(new GetActivityDetails.Query { Id = id }));
 
     [HttpPost]

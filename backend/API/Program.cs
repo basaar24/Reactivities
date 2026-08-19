@@ -20,6 +20,13 @@ public static class Program
         AddApplicationServices(builder);
         AddMiddlewareServices(builder);
 
+        builder.Services.AddOpenApiDocument(cfg =>
+        {
+            cfg.DocumentName = "Reactivities";
+            cfg.Title = "Reactivities V1";
+            cfg.Version = "1.0.0";
+        });
+
         WebApplication app = builder.Build();
 
         ConfigureMiddleware(app);
@@ -39,6 +46,8 @@ public static class Program
             logger.LogError(ex, "Error while seeding the database");
         }
 
+        app.UseOpenApi();
+        app.UseSwaggerUi();
         app.Run();
     }
 
