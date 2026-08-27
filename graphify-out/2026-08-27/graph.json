@@ -103,114 +103,14 @@
   },
   "nodes": [
     {
-      "label": "OpenApi.md",
-      "file_type": "document",
-      "source_file": "OpenApi.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "openapi",
-      "community": 46,
-      "norm_label": "openapi.md"
-    },
-    {
-      "label": "Manual setup \u2014 OpenAPI doc generation + typed client for the Reactivities API",
-      "file_type": "document",
-      "source_file": "OpenApi.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "openapi_manual_setup_openapi_doc_generation_typed_client_for_the_reactivities_api",
-      "community": 46,
-      "norm_label": "manual setup \u2014 openapi doc generation + typed client for the reactivities api"
-    },
-    {
-      "label": "Part 1 \u2014 Manually scaffold the pieces",
-      "file_type": "document",
-      "source_file": "OpenApi.md",
-      "source_location": "L24",
-      "_origin": "ast",
-      "id": "openapi_part_1_manually_scaffold_the_pieces",
-      "community": 46,
-      "norm_label": "part 1 \u2014 manually scaffold the pieces"
-    },
-    {
-      "label": "Step 1: Create `API.OpenApi/` (the standalone doc-generation host)",
-      "file_type": "document",
-      "source_file": "OpenApi.md",
-      "source_location": "L26",
-      "_origin": "ast",
-      "id": "openapi_step_1_create_api_openapi_the_standalone_doc_generation_host",
-      "community": 46,
-      "norm_label": "step 1: create `api.openapi/` (the standalone doc-generation host)"
-    },
-    {
-      "label": "Step 2: Create `openapi/` (generated output folder)",
-      "file_type": "document",
-      "source_file": "OpenApi.md",
-      "source_location": "L130",
-      "_origin": "ast",
-      "id": "openapi_step_2_create_openapi_generated_output_folder",
-      "community": 46,
-      "norm_label": "step 2: create `openapi/` (generated output folder)"
-    },
-    {
-      "label": "Step 3: Create `nswag/API.nswag` (checked-in codegen config)",
-      "file_type": "document",
-      "source_file": "OpenApi.md",
-      "source_location": "L139",
-      "_origin": "ast",
-      "id": "openapi_step_3_create_nswag_api_nswag_checked_in_codegen_config",
-      "community": 46,
-      "norm_label": "step 3: create `nswag/api.nswag` (checked-in codegen config)"
-    },
-    {
-      "label": "Step 4: Register the NSwag CLI as a local tool",
-      "file_type": "document",
-      "source_file": "OpenApi.md",
-      "source_location": "L182",
-      "_origin": "ast",
-      "id": "openapi_step_4_register_the_nswag_cli_as_a_local_tool",
-      "community": 46,
-      "norm_label": "step 4: register the nswag cli as a local tool"
-    },
-    {
-      "label": "Part 2 \u2014 Populate the generated content",
-      "file_type": "document",
-      "source_file": "OpenApi.md",
-      "source_location": "L198",
-      "_origin": "ast",
-      "id": "openapi_part_2_populate_the_generated_content",
-      "community": 46,
-      "norm_label": "part 2 \u2014 populate the generated content"
-    },
-    {
-      "label": "Summary of what gets created vs. hand-maintained",
-      "file_type": "document",
-      "source_file": "OpenApi.md",
-      "source_location": "L238",
-      "_origin": "ast",
-      "id": "openapi_summary_of_what_gets_created_vs_hand_maintained",
-      "community": 46,
-      "norm_label": "summary of what gets created vs. hand-maintained"
-    },
-    {
-      "label": "Validation notes \u2014 discrepancies in the current checked-in files",
-      "file_type": "document",
-      "source_file": "OpenApi.md",
-      "source_location": "L249",
-      "_origin": "ast",
-      "id": "openapi_validation_notes_discrepancies_in_the_current_checked_in_files",
-      "community": 46,
-      "norm_label": "validation notes \u2014 discrepancies in the current checked-in files"
-    },
-    {
       "label": "ActivitiesController.cs",
       "file_type": "code",
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "controllers_activitiescontroller",
       "community": 0,
-      "norm_label": "activitiescontroller.cs",
-      "id": "controllers_activitiescontroller"
+      "norm_label": "activitiescontroller.cs"
     },
     {
       "label": "ActivitiesController",
@@ -218,9 +118,9 @@
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
       "source_location": "L10",
       "_origin": "ast",
+      "id": "controllers_activitiescontroller_activitiescontroller",
       "community": 0,
-      "norm_label": "activitiescontroller",
-      "id": "controllers_activitiescontroller_activitiescontroller"
+      "norm_label": "activitiescontroller"
     },
     {
       "label": "BaseApiController",
@@ -228,9 +128,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "baseapicontroller",
       "community": 0,
-      "norm_label": "baseapicontroller",
-      "id": "baseapicontroller"
+      "norm_label": "baseapicontroller"
     },
     {
       "label": ".GetActivitiesAsync()",
@@ -238,9 +138,9 @@
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
       "source_location": "L12",
       "_origin": "ast",
+      "id": "controllers_activitiescontroller_activitiescontroller_getactivitiesasync",
       "community": 0,
-      "norm_label": ".getactivitiesasync()",
-      "id": "controllers_activitiescontroller_activitiescontroller_getactivitiesasync"
+      "norm_label": ".getactivitiesasync()"
     },
     {
       "label": "Task",
@@ -248,9 +148,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "task",
       "community": 17,
-      "norm_label": "task",
-      "id": "task"
+      "norm_label": "task"
     },
     {
       "label": "ActionResult",
@@ -258,9 +158,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "actionresult",
       "community": 0,
-      "norm_label": "actionresult",
-      "id": "actionresult"
+      "norm_label": "actionresult"
     },
     {
       "label": "List",
@@ -268,9 +168,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "list",
-      "id": "list"
+      "id": "list",
+      "community": 5,
+      "norm_label": "list"
     },
     {
       "label": "Activity",
@@ -278,9 +178,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "activity",
-      "id": "activity"
+      "id": "activity",
+      "community": 5,
+      "norm_label": "activity"
     },
     {
       "label": "HttpGet",
@@ -288,9 +188,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "httpget",
       "community": 0,
-      "norm_label": "httpget",
-      "id": "httpget"
+      "norm_label": "httpget"
     },
     {
       "label": "ProducesResponseType",
@@ -298,9 +198,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "producesresponsetype",
       "community": 0,
-      "norm_label": "producesresponsetype",
-      "id": "producesresponsetype"
+      "norm_label": "producesresponsetype"
     },
     {
       "label": ".GetActivityDetailAsync()",
@@ -308,9 +208,9 @@
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
       "source_location": "L16",
       "_origin": "ast",
+      "id": "controllers_activitiescontroller_activitiescontroller_getactivitydetailasync",
       "community": 0,
-      "norm_label": ".getactivitydetailasync()",
-      "id": "controllers_activitiescontroller_activitiescontroller_getactivitydetailasync"
+      "norm_label": ".getactivitydetailasync()"
     },
     {
       "label": "Authorize",
@@ -318,9 +218,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "authorize",
       "community": 0,
-      "norm_label": "authorize",
-      "id": "authorize"
+      "norm_label": "authorize"
     },
     {
       "label": ".CreateActivityAsync()",
@@ -328,9 +228,9 @@
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
       "source_location": "L22",
       "_origin": "ast",
+      "id": "controllers_activitiescontroller_activitiescontroller_createactivityasync",
       "community": 0,
-      "norm_label": ".createactivityasync()",
-      "id": "controllers_activitiescontroller_activitiescontroller_createactivityasync"
+      "norm_label": ".createactivityasync()"
     },
     {
       "label": "CreateActivityDto",
@@ -338,9 +238,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "createactivitydto",
       "community": 0,
-      "norm_label": "createactivitydto",
-      "id": "createactivitydto"
+      "norm_label": "createactivitydto"
     },
     {
       "label": "HttpPost",
@@ -348,9 +248,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "httppost",
       "community": 0,
-      "norm_label": "httppost",
-      "id": "httppost"
+      "norm_label": "httppost"
     },
     {
       "label": ".UpdateActivityAsync()",
@@ -358,9 +258,9 @@
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
       "source_location": "L25",
       "_origin": "ast",
+      "id": "controllers_activitiescontroller_activitiescontroller_updateactivityasync",
       "community": 0,
-      "norm_label": ".updateactivityasync()",
-      "id": "controllers_activitiescontroller_activitiescontroller_updateactivityasync"
+      "norm_label": ".updateactivityasync()"
     },
     {
       "label": "UpdateActivityDto",
@@ -368,9 +268,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "updateactivitydto",
       "community": 0,
-      "norm_label": "updateactivitydto",
-      "id": "updateactivitydto"
+      "norm_label": "updateactivitydto"
     },
     {
       "label": "HttpPut",
@@ -378,9 +278,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "httpput",
       "community": 0,
-      "norm_label": "httpput",
-      "id": "httpput"
+      "norm_label": "httpput"
     },
     {
       "label": ".DeleteActivityAsync()",
@@ -388,9 +288,9 @@
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
       "source_location": "L28",
       "_origin": "ast",
+      "id": "controllers_activitiescontroller_activitiescontroller_deleteactivityasync",
       "community": 0,
-      "norm_label": ".deleteactivityasync()",
-      "id": "controllers_activitiescontroller_activitiescontroller_deleteactivityasync"
+      "norm_label": ".deleteactivityasync()"
     },
     {
       "label": "HttpDelete",
@@ -398,9 +298,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "httpdelete",
       "community": 0,
-      "norm_label": "httpdelete",
-      "id": "httpdelete"
+      "norm_label": "httpdelete"
     },
     {
       "label": "Program.cs",
@@ -408,9 +308,9 @@
       "source_file": "backend/API/Program.cs",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "api_program",
       "community": 17,
-      "norm_label": "program.cs",
-      "id": "api_program"
+      "norm_label": "program.cs"
     },
     {
       "label": "Program",
@@ -418,9 +318,9 @@
       "source_file": "backend/API/Program.cs",
       "source_location": "L13",
       "_origin": "ast",
+      "id": "api_program_program",
       "community": 17,
-      "norm_label": "program",
-      "id": "api_program_program"
+      "norm_label": "program"
     },
     {
       "label": ".Main()",
@@ -428,9 +328,9 @@
       "source_file": "backend/API/Program.cs",
       "source_location": "L15",
       "_origin": "ast",
+      "id": "api_program_program_main",
       "community": 17,
-      "norm_label": ".main()",
-      "id": "api_program_program_main"
+      "norm_label": ".main()"
     },
     {
       "label": ".AddDbContext()",
@@ -438,9 +338,9 @@
       "source_file": "backend/API/Program.cs",
       "source_location": "L58",
       "_origin": "ast",
+      "id": "api_program_program_adddbcontext",
       "community": 17,
-      "norm_label": ".adddbcontext()",
-      "id": "api_program_program_adddbcontext"
+      "norm_label": ".adddbcontext()"
     },
     {
       "label": "WebApplicationBuilder",
@@ -448,9 +348,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "webapplicationbuilder",
       "community": 17,
-      "norm_label": "webapplicationbuilder",
-      "id": "webapplicationbuilder"
+      "norm_label": "webapplicationbuilder"
     },
     {
       "label": ".AddApplicationServices()",
@@ -458,9 +358,9 @@
       "source_file": "backend/API/Program.cs",
       "source_location": "L65",
       "_origin": "ast",
+      "id": "api_program_program_addapplicationservices",
       "community": 17,
-      "norm_label": ".addapplicationservices()",
-      "id": "api_program_program_addapplicationservices"
+      "norm_label": ".addapplicationservices()"
     },
     {
       "label": ".AddMiddlewareServices()",
@@ -468,9 +368,9 @@
       "source_file": "backend/API/Program.cs",
       "source_location": "L83",
       "_origin": "ast",
+      "id": "api_program_program_addmiddlewareservices",
       "community": 17,
-      "norm_label": ".addmiddlewareservices()",
-      "id": "api_program_program_addmiddlewareservices"
+      "norm_label": ".addmiddlewareservices()"
     },
     {
       "label": ".ConfigureMiddleware()",
@@ -478,9 +378,9 @@
       "source_file": "backend/API/Program.cs",
       "source_location": "L86",
       "_origin": "ast",
+      "id": "api_program_program_configuremiddleware",
       "community": 17,
-      "norm_label": ".configuremiddleware()",
-      "id": "api_program_program_configuremiddleware"
+      "norm_label": ".configuremiddleware()"
     },
     {
       "label": "WebApplication",
@@ -488,9 +388,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "webapplication",
       "community": 17,
-      "norm_label": "webapplication",
-      "id": "webapplication"
+      "norm_label": "webapplication"
     },
     {
       "label": "Domain.csproj",
@@ -498,9 +398,9 @@
       "source_file": "backend/Domain/Domain.csproj",
       "source_location": null,
       "_origin": "ast",
+      "id": "domain_domain",
       "community": 13,
-      "norm_label": "domain.csproj",
-      "id": "domain_domain"
+      "norm_label": "domain.csproj"
     },
     {
       "label": "net10.0",
@@ -508,9 +408,9 @@
       "source_file": "backend/Domain/Domain.csproj",
       "source_location": null,
       "_origin": "ast",
+      "id": "framework_net10_0",
       "community": 13,
-      "norm_label": "net10.0",
-      "id": "framework_net10_0"
+      "norm_label": "net10.0"
     },
     {
       "label": "Microsoft.AspNetCore.Identity.EntityFrameworkCore (10.0.11)",
@@ -518,9 +418,9 @@
       "source_file": "backend/Domain/Domain.csproj",
       "source_location": null,
       "_origin": "ast",
+      "id": "nuget_microsoft_aspnetcore_identity_entityframeworkcore",
       "community": 13,
-      "norm_label": "microsoft.aspnetcore.identity.entityframeworkcore (10.0.11)",
-      "id": "nuget_microsoft_aspnetcore_identity_entityframeworkcore"
+      "norm_label": "microsoft.aspnetcore.identity.entityframeworkcore (10.0.11)"
     },
     {
       "label": "Microsoft.NET.Sdk",
@@ -528,9 +428,9 @@
       "source_file": "backend/Domain/Domain.csproj",
       "source_location": null,
       "_origin": "ast",
+      "id": "sdk_microsoft_net_sdk",
       "community": 13,
-      "norm_label": "microsoft.net.sdk",
-      "id": "sdk_microsoft_net_sdk"
+      "norm_label": "microsoft.net.sdk"
     },
     {
       "label": "User.cs",
@@ -538,9 +438,9 @@
       "source_file": "backend/Domain/User.cs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 29,
-      "norm_label": "user.cs",
-      "id": "domain_user"
+      "id": "domain_user",
+      "community": 17,
+      "norm_label": "user.cs"
     },
     {
       "label": "User",
@@ -548,9 +448,9 @@
       "source_file": "backend/Domain/User.cs",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 29,
-      "norm_label": "user",
-      "id": "domain_user_user"
+      "id": "domain_user_user",
+      "community": 17,
+      "norm_label": "user"
     },
     {
       "label": "IdentityUser",
@@ -558,9 +458,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 29,
-      "norm_label": "identityuser",
-      "id": "identityuser"
+      "id": "identityuser",
+      "community": 17,
+      "norm_label": "identityuser"
     },
     {
       "label": "AppDbContext.cs",
@@ -568,9 +468,9 @@
       "source_file": "backend/Persistence/AppDbContext.cs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 29,
-      "norm_label": "appdbcontext.cs",
-      "id": "persistence_appdbcontext"
+      "id": "persistence_appdbcontext",
+      "community": 17,
+      "norm_label": "appdbcontext.cs"
     },
     {
       "label": "AppDbContext",
@@ -578,9 +478,9 @@
       "source_file": "backend/Persistence/AppDbContext.cs",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 29,
-      "norm_label": "appdbcontext",
-      "id": "persistence_appdbcontext_appdbcontext"
+      "id": "persistence_appdbcontext_appdbcontext",
+      "community": 17,
+      "norm_label": "appdbcontext"
     },
     {
       "label": "IdentityDbContext",
@@ -588,9 +488,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 29,
-      "norm_label": "identitydbcontext",
-      "id": "identitydbcontext"
+      "id": "identitydbcontext",
+      "community": 17,
+      "norm_label": "identitydbcontext"
     },
     {
       "label": "DbInitializer.cs",
@@ -598,9 +498,9 @@
       "source_file": "backend/Persistence/DbInitializer.cs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 29,
-      "norm_label": "dbinitializer.cs",
-      "id": "persistence_dbinitializer"
+      "id": "persistence_dbinitializer",
+      "community": 17,
+      "norm_label": "dbinitializer.cs"
     },
     {
       "label": "DbInitializer",
@@ -608,9 +508,9 @@
       "source_file": "backend/Persistence/DbInitializer.cs",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 29,
-      "norm_label": "dbinitializer",
-      "id": "persistence_dbinitializer_dbinitializer"
+      "id": "persistence_dbinitializer_dbinitializer",
+      "community": 17,
+      "norm_label": "dbinitializer"
     },
     {
       "label": ".SeedDataAsync()",
@@ -618,9 +518,9 @@
       "source_file": "backend/Persistence/DbInitializer.cs",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 29,
-      "norm_label": ".seeddataasync()",
-      "id": "persistence_dbinitializer_dbinitializer_seeddataasync"
+      "id": "persistence_dbinitializer_dbinitializer_seeddataasync",
+      "community": 17,
+      "norm_label": ".seeddataasync()"
     },
     {
       "label": "UserManager",
@@ -628,9 +528,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 29,
-      "norm_label": "usermanager",
-      "id": "usermanager"
+      "id": "usermanager",
+      "community": 17,
+      "norm_label": "usermanager"
     },
     {
       "label": "API.OpenApi.csproj",
@@ -2388,7 +2288,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 29,
+      "community": 17,
       "norm_label": "appdbcontext",
       "id": "appdbcontext"
     },
@@ -2744,7 +2644,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 29,
+      "community": 17,
       "norm_label": "dbcontext",
       "id": "dbcontext"
     },
@@ -5276,7 +5176,7 @@
       "source_file": "backend/Application/Activities/DTOs/BaseActivityDto.cs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": "baseactivitydto.cs",
       "id": "dtos_baseactivitydto"
     },
@@ -5286,7 +5186,7 @@
       "source_file": "backend/Application/Activities/DTOs/BaseActivityDto.cs",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": "baseactivitydto",
       "id": "dtos_baseactivitydto_baseactivitydto"
     },
@@ -5296,7 +5196,7 @@
       "source_file": "backend/Application/Activities/DTOs/CreateActivityDto.cs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": "createactivitydto.cs",
       "id": "dtos_createactivitydto"
     },
@@ -5306,7 +5206,7 @@
       "source_file": "backend/Application/Activities/DTOs/CreateActivityDto.cs",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": "createactivitydto",
       "id": "dtos_createactivitydto_createactivitydto"
     },
@@ -5316,7 +5216,7 @@
       "source_file": "backend/Application/Activities/DTOs/UpdateActivityDto.cs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": "updateactivitydto.cs",
       "id": "dtos_updateactivitydto"
     },
@@ -5326,7 +5226,7 @@
       "source_file": "backend/Application/Activities/DTOs/UpdateActivityDto.cs",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": "updateactivitydto",
       "id": "dtos_updateactivitydto_updateactivitydto"
     },
@@ -5336,7 +5236,7 @@
       "source_file": "backend/Application/Activities/Queries/GetActivityDetails.cs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": "getactivitydetails.cs",
       "id": "queries_getactivitydetails"
     },
@@ -5346,7 +5246,7 @@
       "source_file": "backend/Application/Activities/Queries/GetActivityDetails.cs",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": "getactivitydetails",
       "id": "queries_getactivitydetails_getactivitydetails"
     },
@@ -5356,7 +5256,7 @@
       "source_file": "backend/Application/Activities/Queries/GetActivityDetails.cs",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": "query",
       "id": "queries_getactivitydetails_query"
     },
@@ -5366,7 +5266,7 @@
       "source_file": "backend/Application/Activities/Queries/GetActivityDetails.cs",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": "handler",
       "id": "queries_getactivitydetails_handler"
     },
@@ -5376,7 +5276,7 @@
       "source_file": "backend/Application/Activities/Queries/GetActivityDetails.cs",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": ".handle()",
       "id": "queries_getactivitydetails_handler_handle"
     },
@@ -5386,7 +5286,7 @@
       "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": "getactivitylist.cs",
       "id": "queries_getactivitylist"
     },
@@ -5396,7 +5296,7 @@
       "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": "getactivitylist",
       "id": "queries_getactivitylist_getactivitylist"
     },
@@ -5406,7 +5306,7 @@
       "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": "query",
       "id": "queries_getactivitylist_query"
     },
@@ -5416,7 +5316,7 @@
       "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": "handler",
       "id": "queries_getactivitylist_handler"
     },
@@ -5426,7 +5326,7 @@
       "source_file": "backend/Application/Activities/Queries/GetActivityList.cs",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": ".handle()",
       "id": "queries_getactivitylist_handler_handle"
     },
@@ -5546,7 +5446,7 @@
       "source_file": "backend/Application/Core/ActivityMapper.cs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": "activitymapper.cs",
       "id": "core_activitymapper"
     },
@@ -5556,7 +5456,7 @@
       "source_file": "backend/Application/Core/ActivityMapper.cs",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": "activitymapper",
       "id": "core_activitymapper_activitymapper"
     },
@@ -5566,7 +5466,7 @@
       "source_file": "backend/Application/Core/ActivityMapper.cs",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": ".createactivity()",
       "id": "core_activitymapper_activitymapper_createactivity"
     },
@@ -5576,7 +5476,7 @@
       "source_file": "backend/Application/Core/ActivityMapper.cs",
       "source_location": "L20",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": ".applyupdate()",
       "id": "core_activitymapper_activitymapper_applyupdate"
     },
@@ -5586,7 +5486,7 @@
       "source_file": "backend/Application/Core/ActivityMapper.cs",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": ".copyto()",
       "id": "core_activitymapper_activitymapper_copyto"
     },
@@ -5616,7 +5516,7 @@
       "source_file": "backend/Application/Core/IActivityMapper.cs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": "iactivitymapper.cs",
       "id": "core_iactivitymapper"
     },
@@ -5626,7 +5526,7 @@
       "source_file": "backend/Application/Core/IActivityMapper.cs",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": "iactivitymapper",
       "id": "core_iactivitymapper_iactivitymapper"
     },
@@ -5636,7 +5536,7 @@
       "source_file": "backend/Application/Core/IActivityMapper.cs",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": ".createactivity()",
       "id": "core_iactivitymapper_iactivitymapper_createactivity"
     },
@@ -5646,7 +5546,7 @@
       "source_file": "backend/Application/Core/IActivityMapper.cs",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": ".applyupdate()",
       "id": "core_iactivitymapper_iactivitymapper_applyupdate"
     },
@@ -5656,7 +5556,7 @@
       "source_file": "backend/Application/Core/IActivityMapper.cs",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 3,
+      "community": 5,
       "norm_label": ".copyto()",
       "id": "core_iactivitymapper_iactivitymapper_copyto"
     },
@@ -6237,7 +6137,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 4,
       "norm_label": "backend standards",
       "id": "docs_backend_standards_document"
     },
@@ -6250,7 +6150,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 4,
       "norm_label": "clean architecture (backend)",
       "id": "docs_backend_standards_clean_architecture"
     },
@@ -6263,7 +6163,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 4,
       "norm_label": "cqrs with mediatr pattern",
       "id": "docs_backend_standards_cqrs_mediatr_pattern"
     },
@@ -6276,7 +6176,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 4,
       "norm_label": "thin controller pattern",
       "id": "docs_backend_standards_controller_pattern"
     },
@@ -6315,7 +6215,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 4,
       "norm_label": "backend dependency rule",
       "id": "docs_backend_standards_dependency_rule"
     },
@@ -6328,7 +6228,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 4,
       "norm_label": "backend error handling convention",
       "id": "docs_backend_standards_error_handling"
     },
@@ -6341,7 +6241,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 4,
       "norm_label": "cors policy",
       "id": "docs_backend_standards_cors_policy"
     },
@@ -7117,96 +7017,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "OpenApi.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "openapi",
-      "target": "openapi_manual_setup_openapi_doc_generation_typed_client_for_the_reactivities_api",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "OpenApi.md",
-      "source_location": "L24",
-      "weight": 1.0,
-      "source": "openapi_manual_setup_openapi_doc_generation_typed_client_for_the_reactivities_api",
-      "target": "openapi_part_1_manually_scaffold_the_pieces",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "OpenApi.md",
-      "source_location": "L198",
-      "weight": 1.0,
-      "source": "openapi_manual_setup_openapi_doc_generation_typed_client_for_the_reactivities_api",
-      "target": "openapi_part_2_populate_the_generated_content",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "OpenApi.md",
-      "source_location": "L238",
-      "weight": 1.0,
-      "source": "openapi_manual_setup_openapi_doc_generation_typed_client_for_the_reactivities_api",
-      "target": "openapi_summary_of_what_gets_created_vs_hand_maintained",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "OpenApi.md",
-      "source_location": "L249",
-      "weight": 1.0,
-      "source": "openapi_manual_setup_openapi_doc_generation_typed_client_for_the_reactivities_api",
-      "target": "openapi_validation_notes_discrepancies_in_the_current_checked_in_files",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "OpenApi.md",
-      "source_location": "L26",
-      "weight": 1.0,
-      "source": "openapi_part_1_manually_scaffold_the_pieces",
-      "target": "openapi_step_1_create_api_openapi_the_standalone_doc_generation_host",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "OpenApi.md",
-      "source_location": "L130",
-      "weight": 1.0,
-      "source": "openapi_part_1_manually_scaffold_the_pieces",
-      "target": "openapi_step_2_create_openapi_generated_output_folder",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "OpenApi.md",
-      "source_location": "L139",
-      "weight": 1.0,
-      "source": "openapi_part_1_manually_scaffold_the_pieces",
-      "target": "openapi_step_3_create_nswag_api_nswag_checked_in_codegen_config",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "OpenApi.md",
-      "source_location": "L182",
-      "weight": 1.0,
-      "source": "openapi_part_1_manually_scaffold_the_pieces",
-      "target": "openapi_step_4_register_the_nswag_cli_as_a_local_tool",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "backend/API/Controllers/ActivitiesController.cs",
       "source_location": "L9",
       "weight": 1.0,
@@ -7874,9 +7684,9 @@
       "source_location": "L16",
       "weight": 1.0,
       "context": "attribute",
-      "confidence_score": 1.0,
       "source": "controllers_activitiescontroller_activitiescontroller_getactivitydetailasync",
-      "target": "authorize"
+      "target": "authorize",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -8152,27 +7962,27 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/Domain/Domain.csproj",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "domain_domain",
-      "target": "framework_net10_0"
+      "target": "framework_net10_0",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "backend/Domain/Domain.csproj",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "domain_domain",
-      "target": "nuget_microsoft_aspnetcore_identity_entityframeworkcore"
+      "target": "nuget_microsoft_aspnetcore_identity_entityframeworkcore",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/Domain/Domain.csproj",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "domain_domain",
-      "target": "sdk_microsoft_net_sdk"
+      "target": "sdk_microsoft_net_sdk",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -8189,9 +7999,9 @@
       "source_file": "backend/Domain/User.cs",
       "source_location": "L5",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "domain_user",
-      "target": "domain_user_user"
+      "target": "domain_user_user",
+      "confidence_score": 1.0
     },
     {
       "relation": "inherits",
@@ -8199,9 +8009,9 @@
       "source_file": "backend/Domain/User.cs",
       "source_location": "L5",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "domain_user_user",
-      "target": "identityuser"
+      "target": "identityuser",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -8210,9 +8020,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "context": "generic_arg",
-      "confidence_score": 1.0,
       "source": "persistence_appdbcontext_appdbcontext",
-      "target": "domain_user_user"
+      "target": "domain_user_user",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -8221,9 +8031,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "context": "generic_arg",
-      "confidence_score": 1.0,
       "source": "persistence_dbinitializer_dbinitializer_seeddataasync",
-      "target": "domain_user_user"
+      "target": "domain_user_user",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -8251,9 +8061,9 @@
       "source_file": "backend/Persistence/AppDbContext.cs",
       "source_location": "L7",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "persistence_appdbcontext_appdbcontext",
-      "target": "identitydbcontext"
+      "target": "identitydbcontext",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -8262,9 +8072,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "context": "parameter_type",
-      "confidence_score": 1.0,
       "source": "persistence_dbinitializer_dbinitializer_seeddataasync",
-      "target": "persistence_appdbcontext_appdbcontext"
+      "target": "persistence_appdbcontext_appdbcontext",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -8304,9 +8114,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "context": "parameter_type",
-      "confidence_score": 1.0,
       "source": "persistence_dbinitializer_dbinitializer_seeddataasync",
-      "target": "usermanager"
+      "target": "usermanager",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -14970,5 +14780,5 @@
       "source_file": "docs/openspec-tasks-mandatory-steps.md"
     }
   ],
-  "built_at_commit": "ce034129400642a6a99110cc4d314da3d2e530b1"
+  "built_at_commit": "d87b139fda625fc1231326ffc6ab779cc09b21b0"
 }

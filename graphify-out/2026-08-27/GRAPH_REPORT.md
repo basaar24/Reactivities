@@ -5,12 +5,12 @@
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 631 nodes · 761 edges · 66 communities (37 shown, 29 thin omitted)
-- Extraction: 92% EXTRACTED · 8% INFERRED · 0% AMBIGUOUS · INFERRED: 64 edges (avg confidence: 0.87)
+- 621 nodes · 752 edges · 64 communities (35 shown, 29 thin omitted)
+- Extraction: 91% EXTRACTED · 9% INFERRED · 0% AMBIGUOUS · INFERRED: 64 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `ce034129`
+- Built from commit: `d87b139f`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -43,7 +43,6 @@
 - [[_COMMUNITY_Client IndexReact QueryREADME|Client Index/React Query/README]]
 - [[_COMMUNITY_Client Root tsconfig|Client Root tsconfig]]
 - [[_COMMUNITY_Serena Project Config|Serena Project Config]]
-- [[_COMMUNITY_Community 29|Community 29]]
 - [[_COMMUNITY_PLAN-ActivityRequestMapper Doc|PLAN-ActivityRequestMapper Doc]]
 - [[_COMMUNITY_NavBar & useStore Hook|NavBar & useStore Hook]]
 - [[_COMMUNITY_Product Strategy Analyst Agent|Product Strategy Analyst Agent]]
@@ -60,7 +59,6 @@
 - [[_COMMUNITY_BaseApiController|BaseApiController]]
 - [[_COMMUNITY_CLAUDE.md Reactivities Architecture|CLAUDE.md Reactivities Architecture]]
 - [[_COMMUNITY_MenuItemLink Component|MenuItemLink Component]]
-- [[_COMMUNITY_Community 46|Community 46]]
 - [[_COMMUNITY_CreateActivityRequest|CreateActivityRequest]]
 - [[_COMMUNITY_ActivityDashboard Component|ActivityDashboard Component]]
 - [[_COMMUNITY_ActivityDetailsPage Component|ActivityDetailsPage Component]]
@@ -116,31 +114,31 @@
 - **Activity Entity Shape Shared Across API Spec, Data Model, Backend, and Frontend Docs** — docs_api_spec_activity_schema, docs_data_model_activity_entity, docs_backend_standards_activity_entity, docs_frontend_standards_activity_type, docs_data_model_frontend_activity_type [INFERRED 0.90]
 - **OpenSpec Mandatory Task Workflow Steps** — docs_openspec_tasks_mandatory_steps_step0_branch, docs_openspec_tasks_mandatory_steps_build_verification, docs_openspec_tasks_mandatory_steps_curl_testing, docs_openspec_tasks_mandatory_steps_e2e_playwright, docs_openspec_tasks_mandatory_steps_doc_update_step [EXTRACTED 1.00]
 
-## Communities (66 total, 29 thin omitted)
+## Communities (64 total, 29 thin omitted)
 
 ### Community 0 - "API Controllers & Middleware"
 Cohesion: 0.09
 Nodes (19): ActionResult, WeatherForecast, Authorize, BaseApiController, ControllerBase, ActivitiesController, BaseApiController, BuggyController (+11 more)
 
 ### Community 1 - "Docs: Backend/Frontend/Data-Model Standards"
-Cohesion: 0.06
-Nodes (50): Activity Schema, CreateActivityRequest Schema, DELETE /activities/{id} endpoint, GET /activities endpoint, POST /activities endpoint, Reactivities API (OpenAPI Spec), Activity Domain Entity (Backend Standards), Clean Architecture (Backend) (+42 more)
+Cohesion: 0.07
+Nodes (43): Activity Schema, CreateActivityRequest Schema, DELETE /activities/{id} endpoint, GET /activities endpoint, POST /activities endpoint, Reactivities API (OpenAPI Spec), Activity Domain Entity (Backend Standards), Core Principles (baby steps, TDD, type safety) (+35 more)
 
 ### Community 2 - "Client package.json Dependencies"
 Cohesion: 0.05
 Nodes (38): dependencies, axios, date-fns, @emotion/react, @emotion/styled, @fontsource/roboto, @hookform/resolvers, leaflet (+30 more)
 
 ### Community 3 - "Activity Mapping & Validation"
-Cohesion: 0.09
-Nodes (18): AbstractValidator, Activity, Command, ActivityMapper, IActivityMapper, BaseActivityDto, CreateActivityDto, UpdateActivityDto (+10 more)
+Cohesion: 0.29
+Nodes (5): AbstractValidator, Command, BaseActivityValidator, CreateActivityValidator, UpdateActivityValidator
 
 ### Community 4 - "AutoMapper to Custom Mapper Migration Spec"
-Cohesion: 0.12
-Nodes (24): activity-mapping Spec (archived change), Requirement: Mapper Registered in DI Container, Requirement: Map CreateActivityRequest to Activity, Requirement: Update Activity from another Activity, activity-mapping Spec (current), Requirement: Mapper Registered in DI Container (current spec), Requirement: Map CreateActivityRequest to Activity (current spec), Requirement: Update Activity from another Activity (current spec) (+16 more)
+Cohesion: 0.09
+Nodes (31): activity-mapping Spec (archived change), Requirement: Mapper Registered in DI Container, Requirement: Map CreateActivityRequest to Activity, Requirement: Update Activity from another Activity, activity-mapping Spec (current), Requirement: Mapper Registered in DI Container (current spec), Requirement: Map CreateActivityRequest to Activity (current spec), Requirement: Update Activity from another Activity (current spec) (+23 more)
 
 ### Community 5 - "Activity CQRS Commands & Queries"
-Cohesion: 0.12
-Nodes (20): CancellationToken, Command, CreateActivity, Handler, Command, DeleteActivity, Handler, Command (+12 more)
+Cohesion: 0.06
+Nodes (33): Activity, CancellationToken, Command, CreateActivity, Handler, Command, DeleteActivity, Handler (+25 more)
 
 ### Community 6 - "Claude Rules, Memories & OpenSpec Skills"
 Cohesion: 0.16
@@ -187,8 +185,8 @@ Cohesion: 0.20
 Nodes (9): ASPNETCORE_ENVIRONMENT, applicationUrl, commandName, dotnetRunMessages, environmentVariables, launchBrowser, profiles, https (+1 more)
 
 ### Community 17 - "API Program.cs Startup"
-Cohesion: 0.15
-Nodes (11): Program, Exception, HttpContext, IMiddleware, JsonSerializerOptions, ExceptionMiddleware, RequestDelegate, Task (+3 more)
+Cohesion: 0.09
+Nodes (19): Program, AppDbContext, DbContext, User, Exception, HttpContext, IdentityDbContext, IdentityUser (+11 more)
 
 ### Community 18 - "Code-Auditing & Adversarial-Review Skills"
 Cohesion: 0.22
@@ -226,10 +224,6 @@ Nodes (3): Client Entry HTML (index.html), TanStack React Query v5 State Managem
 Cohesion: 0.67
 Nodes (3): Serena Language Server Configuration, Serena Project Config, Serena Project Local Config
 
-### Community 29 - "Community 29"
-Cohesion: 0.18
-Nodes (8): AppDbContext, DbContext, User, IdentityDbContext, IdentityUser, AppDbContext, DbInitializer, UserManager
-
 ### Community 30 - "PLAN-ActivityRequestMapper Doc"
 Cohesion: 0.67
 Nodes (3): Plan: ActivityRequestMapper, ActivityRequest DTO Mapping Plan, ActivityRequestMapper implements IMapper
@@ -237,10 +231,6 @@ Nodes (3): Plan: ActivityRequestMapper, ActivityRequest DTO Mapping Plan, Activi
 ### Community 43 - "BaseApiController"
 Cohesion: 0.40
 Nodes (3): NonRpcTypesProcessor, DocumentProcessorContext, IDocumentProcessor
-
-### Community 46 - "Community 46"
-Cohesion: 0.20
-Nodes (9): Manual setup — OpenAPI doc generation + typed client for the Reactivities API, Part 1 — Manually scaffold the pieces, Part 2 — Populate the generated content, Step 1: Create `API.OpenApi/` (the standalone doc-generation host), Step 2: Create `openapi/` (generated output folder), Step 3: Create `nswag/API.nswag` (checked-in codegen config), Step 4: Register the NSwag CLI as a local tool, Summary of what gets created vs. hand-maintained (+1 more)
 
 ### Community 62 - "Community 62"
 Cohesion: 0.14
@@ -263,7 +253,7 @@ Cohesion: 0.50
 Nodes (3): Activity, LocationIQAddress, LocationIQSuggestion
 
 ## Knowledge Gaps
-- **266 isolated node(s):** `Step 1: Create `API.OpenApi/` (the standalone doc-generation host)`, `Step 2: Create `openapi/` (generated output folder)`, `Step 3: Create `nswag/API.nswag` (checked-in codegen config)`, `Step 4: Register the NSwag CLI as a local tool`, `Part 2 — Populate the generated content` (+261 more)
+- **259 isolated node(s):** `net10.0`, `Microsoft.AspNetCore.Identity.EntityFrameworkCore (10.0.11)`, `net10.0`, `Moq (4.20.72)`, `NSwag.AspNetCore (14.7.1)` (+254 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **29 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -271,16 +261,16 @@ Nodes (3): Activity, LocationIQAddress, LocationIQSuggestion
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `devDependencies` connect `Client devDependencies & Husky` to `Client package.json Dependencies`?**
-  _High betweenness centrality (0.006) - this node is a cross-community bridge._
-- **Why does `Result` connect `Activity CQRS Commands & Queries` to `Activity Mapping & Validation`?**
-  _High betweenness centrality (0.006) - this node is a cross-community bridge._
-- **What connects `Step 1: Create `API.OpenApi/` (the standalone doc-generation host)`, `Step 2: Create `openapi/` (generated output folder)`, `Step 3: Create `nswag/API.nswag` (checked-in codegen config)` to the rest of the system?**
-  _286 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
+- **What connects `net10.0`, `Microsoft.AspNetCore.Identity.EntityFrameworkCore (10.0.11)`, `net10.0` to the rest of the system?**
+  _279 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `API Controllers & Middleware` be split into smaller, more focused modules?**
   _Cohesion score 0.0855614973262032 - nodes in this community are weakly interconnected._
 - **Should `Docs: Backend/Frontend/Data-Model Standards` be split into smaller, more focused modules?**
-  _Cohesion score 0.06448979591836734 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07419712070874862 - nodes in this community are weakly interconnected._
 - **Should `Client package.json Dependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.05128205128205128 - nodes in this community are weakly interconnected._
-- **Should `Activity Mapping & Validation` be split into smaller, more focused modules?**
-  _Cohesion score 0.0873015873015873 - nodes in this community are weakly interconnected._
+- **Should `AutoMapper to Custom Mapper Migration Spec` be split into smaller, more focused modules?**
+  _Cohesion score 0.09462365591397849 - nodes in this community are weakly interconnected._
+- **Should `Activity CQRS Commands & Queries` be split into smaller, more focused modules?**
+  _Cohesion score 0.06384180790960452 - nodes in this community are weakly interconnected._
