@@ -3,6 +3,7 @@ using Application.Activities.Commands;
 using Application.Activities.DTOs;
 using Domain;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace API.Controllers;
 
@@ -12,6 +13,7 @@ public class ActivitiesController : BaseApiController
     [ProducesResponseType(typeof(Activity), StatusCodes.Status200OK)]
     public async Task<ActionResult<List<Activity>>> GetActivitiesAsync() => await Mediator.Send(new GetActivityList.Query());
 
+    [Authorize]
     [HttpGet("{id}")]
     [ProducesResponseType(typeof(Activity), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]

@@ -2,7 +2,9 @@ using API.Middlewares;
 using Application.Activities.Queries;
 using Application.Activities.Validators;
 using Application.Core;
+using Domain;
 using FluentValidation;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
 
@@ -37,8 +39,9 @@ public static class Program
         try
         {
             AppDbContext context = services.GetRequiredService<AppDbContext>();
+            UserManager<User> userManager = services.GetRequiredService<UserManager<User>>();
             await context.Database.MigrateAsync();
-            await DbInitializer.SeedDataAsync(context);
+            await DbInitializer.SeedDataAsync(context, userManager);
         }
         catch (Exception ex)
         {
@@ -68,6 +71,12 @@ public static class Program
         });
         builder.Services.AddScoped<IActivityMapper, ActivityMapper>();
         builder.Services.AddValidatorsFromAssemblyContaining<CreateActivityValidator>();
+        builder.Services.AddIdentityApiEndpoints<User>(opt =>
+        {
+            opt.User.RequireUniqueEmail = true;
+        })
+        .AddRoles<IdentityRole>()
+        .AddEntityFrameworkStores<AppDbContext>();
     }
 
     // Registers custom middleware classes with the DI container.
@@ -81,6 +90,11 @@ public static class Program
             .AllowAnyHeader()
             .AllowAnyMethod()
             .WithOrigins("http://localhost:3000", "https://localhost:3000"));
+
+        app.UseAuthentication();
+        app.UseAuthorization();
+
         app.MapControllers();
+        app.MapGroup("api").MapIdentityApi<User>();
     }
 }
