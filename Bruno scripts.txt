@@ -1,0 +1,72 @@
+test("Status code is 200 OK", function () {
+  expect(res.getStatus()).to.equal(200);
+});
+
+test("Response returns the requested plugin", function () {
+  const body = res.getBody();
+  expect(body.plugin.pluginId).to.equal(bru.getEnvVar("englishPluginId"));
+});
+
+test("Response includes the registered settingsGroup", function () {
+  const body = res.getBody();
+  expect(body.plugin.settingsGroups).to.be.an("array");
+  expect(body.plugin.settingsGroups.length).to.equal(2);
+  expect(body.plugin.settingsGroups[0].groupId).to.equal("drilling-limits-english");
+  expect(body.plugin.settingsGroups[1].groupId).to.equal("core-quantities-english");
+});
+
+test("Response includes all setting with defaults in ENGLISH", function () {
+  const settings = res.getBody().plugin.settingsGroups[0].settings;
+  expect(settings.maxTorque.defaultValue).to.equal(45000.0);
+  expect(settings.maxHookload.defaultValue).to.equal(250000.0);
+});
+
+
+
+
+
+
+test("Status code is 200", function () {
+  expect(res.getStatus()).to.equal(200);
+});
+
+test("Response returns the requested plugin", function () {
+  const body = res.getBody();
+  expect(body.every((segment) => segment.pluginId === bru.getEnvVar("englishPluginId"))).to.be.true;
+});
+
+test("Response returns the created segments for the requested group", function () {
+  const body = res.getBody();
+  expect(body).to.be.an("array");
+  expect(body.length).to.equal(3);
+
+  body.forEach((segment) => {
+    expect(segment.segmentId).to.exist;
+    expect(segment.groupId).to.equal("core-quantities-english");
+  });
+});
+
+test("Response includes the submitted setting values", function () {
+  const body = res.getBody();
+  body.forEach((segment) => {
+    const values = segment.values;
+    expect(values.maxTorque).to.equal(15.0);
+    expect(values.maxWob).to.equal(30.0);
+    expect(values.standLength).to.equal(90.0);
+  });
+});
+
+test("Segment depth ranges are contiguous", function () {
+  const body = res.getBody();
+  const first = body.find((segment) => segment.startDepth === 0.0);
+  const second = body.find((segment) => segment.startDepth === 100.0);
+  const third = body.find((segment) => segment.startDepth === 200.0);
+
+  expect(first, "segment starting at depth 0").to.exist;
+  expect(second, "segment starting at depth 100").to.exist;
+  expect(third, "segment starting at depth 200").to.exist;
+
+  expect(first.endDepth).to.equal(100.0);
+  expect(second.endDepth).to.equal(200.0);
+  expect(third.endDepth).to.equal(null);
+});
