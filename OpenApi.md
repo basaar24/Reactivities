@@ -12,12 +12,12 @@ All paths below are relative to `backend/` (the folder containing
 
 Repo layout produced by this procedure:
 
-| Path | Purpose |
-|---|---|
-| `backend/API.OpenApi/` | Standalone host that serves the live Swagger doc/UI |
-| `backend/nswag/API.nswag` | Checked-in NSwag codegen config |
-| `backend/openapi/Reactivities.v1.json` | Generated OpenAPI document (never hand-edited) |
-| `backend/API.OpenApi/Generated/ReactivitiesRpcClient.generated.cs` | Generated C# client (never hand-edited) |
+| Path                                                               | Purpose                                             |
+| ------------------------------------------------------------------ | --------------------------------------------------- |
+| `backend/API.OpenApi/`                                             | Standalone host that serves the live Swagger doc/UI |
+| `backend/nswag/API.nswag`                                          | Checked-in NSwag codegen config                     |
+| `backend/openapi/Reactivities.v1.json`                             | Generated OpenAPI document (never hand-edited)      |
+| `backend/API.OpenApi/Generated/ReactivitiesRpcClient.generated.cs` | Generated C# client (never hand-edited)             |
 
 ---
 
@@ -225,6 +225,12 @@ Get-Process -Name "API.OpenApi" | Stop-Process -Force
 dotnet tool run nswag run nswag/API.nswag
 ```
 
+If `dotnet tool run nswag` reports the tool isn't available even after `dotnet tool restore`, invoke the NSwag console DLL directly instead:
+
+```powershell
+dotnet "$env:NUGET_PACKAGES\nswag.consolecore\14.7.1\tools\net10.0\any\dotnet-nswag.dll" run src\nswag\API.nswag
+```
+
 This writes `API.OpenApi/Generated/ReactivitiesRpcClient.generated.cs`.
 
 5. **Rebuild the solution to confirm everything compiles:**
@@ -237,12 +243,12 @@ dotnet build Reactivities.slnx
 
 ## Summary of what gets created vs. hand-maintained
 
-| Path | Origin | Maintenance |
-|---|---|---|
-| `API.OpenApi/*.csproj`, `Program.cs`, `launchSettings.json` | Manual (Part 1) | Hand-edit when adding new controller dependencies to register |
-| `nswag/API.nswag` | Manual (Part 1) | Hand-edit only for codegen config changes (e.g. runtime bump) |
-| `openapi/Reactivities.v1.json` | Generated (Part 2, step 2) | **Never hand-edit** — overwritten by the pipeline |
-| `API.OpenApi/Generated/*.generated.cs` | Generated (Part 2, step 4) | **Never hand-edit** — overwritten by the pipeline |
+| Path                                                        | Origin                     | Maintenance                                                   |
+| ----------------------------------------------------------- | -------------------------- | ------------------------------------------------------------- |
+| `API.OpenApi/*.csproj`, `Program.cs`, `launchSettings.json` | Manual (Part 1)            | Hand-edit when adding new controller dependencies to register |
+| `nswag/API.nswag`                                           | Manual (Part 1)            | Hand-edit only for codegen config changes (e.g. runtime bump) |
+| `openapi/Reactivities.v1.json`                              | Generated (Part 2, step 2) | **Never hand-edit** — overwritten by the pipeline             |
+| `API.OpenApi/Generated/*.generated.cs`                      | Generated (Part 2, step 4) | **Never hand-edit** — overwritten by the pipeline             |
 
 ---
 
@@ -251,17 +257,17 @@ dotnet build Reactivities.slnx
 The three pieces already exist on this branch but still carry names from the
 project they were copied from. Fix these before running Part 2:
 
-| File | Current value | Should be |
-|---|---|---|
-| `nswag/API.nswag` → `runtime` | `"Net80"` | `"Net100"` (target is `net10.0` — NSwag will throw otherwise) |
-| `nswag/API.nswag` → `fromDocument.url` | `"../openapi/SettingsHub.v1.json"` | `"../openapi/Reactivities.v1.json"` |
-| `nswag/API.nswag` → `generateExceptionClasses` | `false` | `true` (client references `ApiException`) |
-| `nswag/API.nswag` → `namespace` | `"Slb.Planck.SettingsHub.OpenApi.Client"` | `"API.OpenApi.Client"` |
-| `nswag/API.nswag` → `output` | `"../SettingsHub.OpenApi/Generated/SettingsHubRpcClient.generated.cs"` | `"../API.OpenApi/Generated/ReactivitiesRpcClient.generated.cs"` |
-| `API.OpenApi/Program.cs` → `document.DocumentName` | `"SettingsHub"` | `"Reactivities"` (drives the `/swagger/{name}/swagger.json` URL) |
-| `API.OpenApi/properties/launchSettings.json` → profile key | `"ConfigurationHub.OpenApi"` | `"API.OpenApi"` |
-| `openapi/API.v1.json` | filename | rename to `openapi/Reactivities.v1.json` (or keep `API.v1.json` and use that name consistently everywhere above) |
-| `backend/.config/dotnet-tools.json` | missing | run Step 4 to create it |
+| File                                                       | Current value                                                          | Should be                                                                                                        |
+| ---------------------------------------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `nswag/API.nswag` → `runtime`                              | `"Net80"`                                                              | `"Net100"` (target is `net10.0` — NSwag will throw otherwise)                                                    |
+| `nswag/API.nswag` → `fromDocument.url`                     | `"../openapi/SettingsHub.v1.json"`                                     | `"../openapi/Reactivities.v1.json"`                                                                              |
+| `nswag/API.nswag` → `generateExceptionClasses`             | `false`                                                                | `true` (client references `ApiException`)                                                                        |
+| `nswag/API.nswag` → `namespace`                            | `"Slb.Planck.SettingsHub.OpenApi.Client"`                              | `"API.OpenApi.Client"`                                                                                           |
+| `nswag/API.nswag` → `output`                               | `"../SettingsHub.OpenApi/Generated/SettingsHubRpcClient.generated.cs"` | `"../API.OpenApi/Generated/ReactivitiesRpcClient.generated.cs"`                                                  |
+| `API.OpenApi/Program.cs` → `document.DocumentName`         | `"SettingsHub"`                                                        | `"Reactivities"` (drives the `/swagger/{name}/swagger.json` URL)                                                 |
+| `API.OpenApi/properties/launchSettings.json` → profile key | `"ConfigurationHub.OpenApi"`                                           | `"API.OpenApi"`                                                                                                  |
+| `openapi/API.v1.json`                                      | filename                                                               | rename to `openapi/Reactivities.v1.json` (or keep `API.v1.json` and use that name consistently everywhere above) |
+| `backend/.config/dotnet-tools.json`                        | missing                                                                | run Step 4 to create it                                                                                          |
 
 `Program.cs` is otherwise correct for this repo: it references
 `typeof(API.Program)`, references `..\API\API.csproj`, and needs no dependency
